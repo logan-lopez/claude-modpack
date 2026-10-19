@@ -5,7 +5,7 @@ gains a line pointing at its brief.
 
 ## Replacements for what didn't come over, and new mods
 
-**Next.** Logan wants this brief after brief 02 (2026-10-19).
+**Scheduled:** [brief 03](03-replacements-and-new-mods.md), with Logan's picks (2026-10-19).
 
 Brief 02 left a dozen of the old pack's mods behind for want of a 1.21.1 build (the Left behind
 table in [the mod list](../guide/mods.md#left-behind)). Logan wants the pack filled back out: a
@@ -69,8 +69,11 @@ defaults a new instance starts with.
 The pack moved from Sodium 0.6.13 to 0.8.12 after the first launch (Supplementaries requires
 it), so the question below is about Sodium 0.8. The old pack had Sodium Extras (as Embeddium
 Extras), Sodium Options API, Sodium Dynamic Lights, Sodium Options Mod Compat and Chloride. The
-first launch on plain Sodium + Iris works (Logan, 2026-10-19), so these are ready to try, likely
-in the replacements brief above.
+first launch on plain Sodium + Iris works (Logan, 2026-10-19).
+
+**Scheduled:** [brief 03](03-replacements-and-new-mods.md) takes Sodium Extra 0.9.3, Reese's
+2.2.3 and Chloride, and leaves Options API, Mod Compat and Sodium Dynamic Lights out: every
+Reese's 2.2.x declares Options API incompatible.
 
 - **The question:** which builds of these run with Sodium 0.8.12, and whether Options API's
   undeclared dependency on Reese's Sodium Options has a build that does too. Each add-on's own
@@ -116,6 +119,21 @@ unofficial port (Modrinth `unofficial-tacz-fallout-gunpack`, checked 2026-10-19)
   something a session can run.
 - **Kill criteria:** a pack that needs hand fixes after conversion stays out.
 
+## Better Combat, and combat as a direction
+
+Logan turned Better Combat down for brief 03 but wants it noted as a possible direction to
+explore (2026-10-19).
+
+- **The question:** whether melee in this pack should change, given guns (TaCZ), spells (Iron's,
+  Ars) and Apotheosis gear are already the main ways to fight.
+- **What's known:** Better Combat `2.4.0+1.21.1-neoforge` (Modrinth `better-combat`) needs Cloth
+  Config and playerAnimator, both already in. Apothic Combat (`apothic-combat`) bridges it with
+  Apotheosis; its last 1.21.1 build is 2025-01-19. How it behaves alongside TaCZ isn't known: a
+  mod called "Don't Punch My TACZ" exists to fix punch-animation conflicts around TaCZ, which
+  hints that the area is fiddly.
+- **Likely shape:** an ideate run on combat first, then a small brief with a world to try it in.
+- **Kill criteria:** if it fights TaCZ's aiming or firing, it stays out.
+
 ## `packwiz update`
 
 Adding Create and TaCZ, packwiz warned that each one's "latest version number and newest release
@@ -126,6 +144,9 @@ version ID). Sodium, Iris and JEI are pinned, so it leaves them alone.
 
 ## Parked
 
+- **Polymorph** (Modrinth `polymorph`, 1.2.0 beta): pick the result when two recipes share a
+  crafting grid. Turned down for brief 03, noted for later (Logan, 2026-10-19). Back when a
+  recipe conflict shows up in play.
 - **FTB Ultimine Addition as a hand-placed jar.** Its author excludes it from the CurseForge API,
   so packwiz can't manage it. Back if Logan wants it enough to keep a jar in the instance by hand.
 - **FTB Quests and FTB XMod Compat.** A new pack has no quest book. Back when there's a quest

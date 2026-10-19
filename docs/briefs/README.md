@@ -13,8 +13,8 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
   building, quality of life), a headless server check, and a `.mrpack` export. Logan plays it in
   Prism, synced from `packwiz serve`; it loads with 8 GB of memory and the mods work.
 - In flight: nothing.
-- Next: replacements for the mods that didn't come over, plus mods Claude suggests, needs a brief
-  ([`FUTURE.md`](FUTURE.md), first section). Then integrations and default settings (the second).
+- Next: brief 03, replacements for the mods that didn't come over and eight suggestions Logan
+  picked. Then integrations and default settings, which needs a brief ([`FUTURE.md`](FUTURE.md)).
 - Loose ends waiting on Logan: shaders on a moving Create contraption, and Controlling's keybind
   conflicts, haven't been checked yet (the second feeds the integrations brief).
 - Other loose ends: the server check binds Minecraft's default port 25565, so a local server
@@ -23,7 +23,9 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
 
 ## Open
 
-Nothing briefed. The next two are in [`FUTURE.md`](FUTURE.md).
+3. [`03-replacements-and-new-mods.md`](03-replacements-and-new-mods.md) (in progress): 1.21.1 stand-ins for
+   the old mods that didn't come over, the Sodium add-ons that fit Sodium 0.8.12, and eight
+   suggested mods, in four batches.
 
 ## Done
 
@@ -60,6 +62,9 @@ Don't relitigate these. If one turns out to be wrong in practice, stop and say s
 | Renderer | Sodium 0.8.12 + Iris 1.8.14-beta.1, both pinned. Was Sodium 0.6.13 + Iris 1.8.12 until Logan's first launch | Oculus has no 1.21.1 build (Logan chose Sodium + Iris, 2026-10-19). Supplementaries declares itself incompatible with Sodium below 0.8.12-beta.1, and Iris 1.8.14-beta.1 is the Iris built against that Sodium (Logan picked 0.8.12 over the exact beta, 2026-10-19). |
 | Ad Astra | In, without its Create integrations | They have no 1.21.1 build; KubeJS can bridge recipes later (Logan, 2026-10-19). |
 | JEI | Pinned to 19.56.0.441 | Petrolpark's Library (for Petrol's Parts) accepts only JEI below 19.57, as a client-side rule the server check can't see; newer JEI stops the client at the loading screen (brief 02, 2026-10-19). |
+| Alex's Mobs | The community port Alex's Mobs Continued, Modrinth `alexs-mobs-continued` | The official mod stops at 1.20.1; Continued is the active port, the other (`alexs-mobs-1.21.1`) stalled in 2026-01 (Logan, 2026-10-19). |
+| Sodium add-ons | Sodium Extra 0.9.3 and Reese's Sodium Options 2.2.3, pinned, plus Chloride; LambDynamicLights for dynamic lights. Sodium Options API, its Mod Compat and Sodium Dynamic Lights stay out | Newer Extra and Reese's need Sodium 0.8.13, and the pack keeps 0.8.12 for Iris. Every Reese's 2.2.x declares Options API incompatible (Logan, 2026-10-19). |
+| Mods considered and turned down | Friends & Foes, The Twilight Forest, Create Aeronautics; Polymorph and Better Combat noted in [`FUTURE.md`](FUTURE.md) | Logan's picks from brief 03's suggestion list (2026-10-19). |
 | CurseForge mods that block third-party downloads | Left out | packwiz-installer can't fetch them, so they break the server check and Prism's auto-sync (FTB Ultimine Addition, brief 02, 2026-10-19). |
 | How the server check fails | On NeoForge's mod-loading log lines, a crash report, an exit before Done, or a timeout. Never on the exit code, and not on ERROR lines after a pass | NeoForge 21.1.264 exits 0 after a mod-loading failure, and big packs log harmless errors. Evidence in [the server check page](../architecture/server-check.md#decisions) (2026-10-19). |
 
