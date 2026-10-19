@@ -20,7 +20,7 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
 
 ## Open
 
-2. [`02-port-old-mod-list.md`](02-port-old-mod-list.md): the old pack's mods that have NeoForge
+2. [`02-port-old-mod-list.md`](02-port-old-mod-list.md) (in progress): the old pack's mods that have NeoForge
    1.21.1 builds, about 200, in batches that each pass the server check, and a guide page of
    what's in and what was left behind.
 
