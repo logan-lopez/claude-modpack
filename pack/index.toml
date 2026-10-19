@@ -26,6 +26,16 @@ hash = "18a5b572a9afdb84b24f5c58c4a53022158f8db746dde95531b780d4713f3fc8"
 metafile = true
 
 [[files]]
+file = "mods/alexs-mobs-continued-delight.pw.toml"
+hash = "88d2fabeace0763014bb9c618d4a1c45d8c4cd1350a55812d4be0dca08263556"
+metafile = true
+
+[[files]]
+file = "mods/alexs-mobs-continued.pw.toml"
+hash = "633521478b5b493b8ff1d1aef2ea686cd6588fc610799d750b37c4610f364f27"
+metafile = true
+
+[[files]]
 file = "mods/almostunified.pw.toml"
 hash = "3805fe2877cffdae5e7bf74d85069a2535daa39a0f3ed766755be49294a07680"
 metafile = true
@@ -63,6 +73,11 @@ metafile = true
 [[files]]
 file = "mods/apothic-attributes.pw.toml"
 hash = "8f5f05a72596ecc0dd11be483785c8a521e987dc2fe6d2fef212c2a382a0c779"
+metafile = true
+
+[[files]]
+file = "mods/apothic-category-compat.pw.toml"
+hash = "806aa82d9603611c16f5de91e699a3926ba7feb916fe3571a8f06d3bf0a31bfb"
 metafile = true
 
 [[files]]
@@ -188,6 +203,11 @@ metafile = true
 [[files]]
 file = "mods/clumps.pw.toml"
 hash = "2acaff560bbda5741538528a2967355ec86a8f7564adba0b2316989c66892374"
+metafile = true
+
+[[files]]
+file = "mods/codxlib.pw.toml"
+hash = "10c5766cfee693bb3843ecd60334400b239b961c24fd4b9db60aceca272e3e17"
 metafile = true
 
 [[files]]
@@ -761,6 +781,11 @@ hash = "7e0eca275f27b6543f06c36dec433851a956960cbedd2be57d19e159d636bfc1"
 metafile = true
 
 [[files]]
+file = "mods/l_enders-cataclysm.pw.toml"
+hash = "f262b49b1038ef9f67704e0629da6aafa84cf4f760273589f5d73530ca5d74b5"
+metafile = true
+
+[[files]]
 file = "mods/laserio.pw.toml"
 hash = "0d7ce37fd00f170025118f0e3fbeef7f4e7147c332b1a5a4e924950eb5e36bc0"
 metafile = true
@@ -773,6 +798,11 @@ metafile = true
 [[files]]
 file = "mods/legendary-tooltips.pw.toml"
 hash = "9ca14134538c66b6d8ef74107f6b15ba9487ec632d984427e84ad38aa47afa60"
+metafile = true
+
+[[files]]
+file = "mods/lionfish-api.pw.toml"
+hash = "64acab1580ca6edd8b1dd185e914aeee7aa551a88a7cd7f0f9370a82aaadfef6"
 metafile = true
 
 [[files]]
@@ -878,6 +908,16 @@ metafile = true
 [[files]]
 file = "mods/mouse-tweaks.pw.toml"
 hash = "6bc414cc0f2d4c078fe83f384d786343f701f371d657c5279b5b0df1595804bd"
+metafile = true
+
+[[files]]
+file = "mods/mowzies-mobs.pw.toml"
+hash = "02aa4dcb8fa24cffcd2182c66683c2a476a95abf53002373f953a49737a587e3"
+metafile = true
+
+[[files]]
+file = "mods/naturalist.pw.toml"
+hash = "6ea52b0dccdc5110b48ac9d5528fc2accb1c970b1fbcae34120e16001ddf115f"
 metafile = true
 
 [[files]]
