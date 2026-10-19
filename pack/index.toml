@@ -206,6 +206,11 @@ hash = "24c6c3fe917ffbcef04e788dec3e003d0ed03433bc00f9cf4f23fe9b85636aa7"
 metafile = true
 
 [[files]]
+file = "mods/chloride.pw.toml"
+hash = "3a6a82de82d8767521b6da37d8a2bed2513e58c45e347a23e0d53803839f0a62"
+metafile = true
+
+[[files]]
 file = "mods/clean-swing-through-grass.pw.toml"
 hash = "671a37a0359769efdf835bc190c566856e01b4ad131b692535d38bccacef7489"
 metafile = true
@@ -836,6 +841,16 @@ hash = "f262b49b1038ef9f67704e0629da6aafa84cf4f760273589f5d73530ca5d74b5"
 metafile = true
 
 [[files]]
+file = "mods/lamb-lanterns.pw.toml"
+hash = "5633c9f1d347b6b90c7ece3b31a8783cf58e9e3b7df3cf6835286d6fc440aadf"
+metafile = true
+
+[[files]]
+file = "mods/lambdynamiclights.pw.toml"
+hash = "ebf0dae777cc19c354a662dc8144009dff7269b2d05624b4591fcb7de56fc14e"
+metafile = true
+
+[[files]]
 file = "mods/laserio.pw.toml"
 hash = "0d7ce37fd00f170025118f0e3fbeef7f4e7147c332b1a5a4e924950eb5e36bc0"
 metafile = true
@@ -1071,6 +1086,11 @@ hash = "6bee7be8af8f9247fbf84dcd1ec9af2adaa42e55d52ab8a5bfe9b6ff7c94da46"
 metafile = true
 
 [[files]]
+file = "mods/reeses-sodium-options.pw.toml"
+hash = "3809235005361fa1c9286bca1f26cc920c4f9f4f4f94afe753c55a0ac29711e0"
+metafile = true
+
+[[files]]
 file = "mods/relics-mod.pw.toml"
 hash = "69f7f6957a351617507c9961d98e2bbfcbd3f7dd48a47c7abf57447a1cbc2571"
 metafile = true
@@ -1158,6 +1178,11 @@ metafile = true
 [[files]]
 file = "mods/small-ships.pw.toml"
 hash = "921d02a072ec9644b1557eece1a090f0be59fae479e652b1ba9c5cd16afba8f7"
+metafile = true
+
+[[files]]
+file = "mods/sodium-extra.pw.toml"
+hash = "232e50bdbb4eb8026ae371868fa1459d59a863c9b0ebc12aa7c2b6bae48e3717"
 metafile = true
 
 [[files]]
