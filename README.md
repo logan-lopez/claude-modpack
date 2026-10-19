@@ -18,13 +18,13 @@ It's built around Create and Timeless and Classics Zero (TaCZ).
 - [Playing the pack](docs/guide/playing.md) in Prism Launcher, synced from the repo on each launch,
   or imported from a `.mrpack`, and looking after a world: timed backups and pregenerating
   terrain.
-- [What's in the pack](docs/guide/mods.md): about 200 mods from the old 1.20.1 pack and two
-  dozen added since, grouped by what they're for, what replaced the old mods that didn't come
+- [What's in the pack](docs/guide/mods.md): about 200 mods from the old 1.20.1 pack and
+  nearly forty added since, grouped by what they're for, what replaced the old mods that didn't come
   over, and what was left behind and why.
 - [Where guns come from](docs/guide/guns.md): three TaCZ gun packs on top of the port's own,
   crafting through Create, guns in structure chests, turrets and gun durability.
 - [Fighting up close](docs/guide/combat.md): melee with Better Combat's swings and combos, and a
-  dodge roll. A trial on the `better-combat-trial` branch.
+  dodge roll.
 
 ## Requirements
 

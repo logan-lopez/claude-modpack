@@ -8,9 +8,10 @@ didn't come over, with why, and what stands in for them. Compare it with the old
 
 294 entries in `pack/mods/`: about 200 picked from the old pack, 23 added as replacements and new
 picks, 8 TaCZ gun packs and addons, 3 for looking after a world (backups, pregeneration, sound), 3
-for melee (the Better Combat trial), the rest libraries they need. The server loads 269 jars; the
-other 25 are client-only (Sodium, Iris and their add-ons, the tooltip and overlay mods, TacZ Mesh
-Loader, Sound Physics, and the like). `pack/tacz/` has one more entry, the Create Armorer gun pack.
+for melee (Better Combat, Combat Roll, Apothic Combat), the rest libraries they need. The server
+loads 269 jars; the other 25 are client-only (Sodium, Iris and their add-ons, the tooltip and
+overlay mods, TacZ Mesh Loader, Sound Physics, and the like). `pack/tacz/` has one more entry, the
+Create Armorer gun pack.
 
 ## What's in
 
@@ -23,9 +24,8 @@ Durability, TACZ Turrets, TaCZ Structure Loot (guns in structure chests), Curios
 Immersive TaCZ Integration (Create recipes for Create Armorer's guns), and Apotheosis Modern
 Ragnarok (below).
 
-**Combat, up close.** A trial, on the `better-combat-trial` branch until you decide: Better Combat
-(swing animations, combos and arcs), Combat Roll (a dodge on a key) and Apothic Combat (tidies
-Better Combat's tooltips). In [their own page](combat.md).
+**Combat, up close.** Better Combat (swing animations, combos and arcs), Combat Roll (a dodge on a
+key) and Apothic Combat (tidies Better Combat's tooltips). In [their own page](combat.md).
 
 **Apotheosis.** Affixes, gems, spawner and enchanting rework, and the gateways to farm them:
 Apotheosis with its Apothic Attributes, Enchanting and Spawners modules, Gateways to Eternity,

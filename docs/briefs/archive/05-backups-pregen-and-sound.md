@@ -2,8 +2,8 @@
 
 **Size:** S. Three mods that resolved in a dry run and booted together in a scratch copy of the pack.
 
-Read `CLAUDE.md`, [`README.md`](README.md), [the server check page](../architecture/server-check.md),
-[the mod list](../guide/mods.md) and [the playing guide](../guide/playing.md) first.
+Read `CLAUDE.md`, [`README.md`](../README.md), [the server check page](../../architecture/server-check.md),
+[the mod list](../../guide/mods.md) and [the playing guide](../../guide/playing.md) first.
 [Brief 03](03-replacements-and-new-mods.md) is the pattern this one follows, including the
 client-side rule check. Prerequisite: brief 04's commits (through `d2ddd96`) are in the branch. Its
 review doesn't need to be finished.
@@ -32,7 +32,7 @@ Logan made these calls on 2026-10-19 (an ideate run, then a Parley round). Don't
   Better Combat adds no blocks, so it can be decided afterwards.
 - **Simple Backups runs on its defaults.** Don't ship a config. Read the defaults from the
   generated config and put them in the guide and the report. Changing them is the integrations
-  brief's job ([`FUTURE.md`](FUTURE.md), Integrations and default settings).
+  brief's job ([`FUTURE.md`](../FUTURE.md), Integrations and default settings).
 - **Sound Physics is accepted as an alpha.** Its only NeoForge 1.21.1 build is tagged alpha. If
   it costs too much frame time, it comes out (Logan's hand check).
 

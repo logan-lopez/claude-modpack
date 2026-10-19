@@ -3,8 +3,8 @@
 **Size:** M. A dozen entries that resolved in a dry run, pushed up a step because nobody here has
 run TaCZ Pack Upgrader on a 1.20.1 gun pack.
 
-Read `CLAUDE.md`, [`README.md`](README.md), [the server check page](../architecture/server-check.md),
-[the mod list](../guide/mods.md) and [`FUTURE.md`](FUTURE.md)'s "TaCZ gun packs and addons" first.
+Read `CLAUDE.md`, [`README.md`](../README.md), [the server check page](../../architecture/server-check.md),
+[the mod list](../../guide/mods.md) and [`FUTURE.md`](../FUTURE.md)'s "TaCZ gun packs and addons" first.
 [Brief 03](03-replacements-and-new-mods.md) is the pattern this one follows, the client-side rule
 check included. Prerequisite: brief 03's commits (through `b634f39`) are in the branch, since
 Create: Immersive TaCZ Integration came in with them. Its review doesn't need to be finished.

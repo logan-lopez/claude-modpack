@@ -44,10 +44,11 @@ Each time you play:
 and pick the file. It's a snapshot: it doesn't update when the pack does, so export and import
 again for a new build. This is also the file to share.
 
-The mods that come from CurseForge (the FTB mods, LaserIO, Ars Elemental and the rest) are inside
-the file, because a `.mrpack` can only link to Modrinth downloads. That makes it about 18 MB, and
-sharing it hands those jars on directly rather than through CurseForge. Fine between friends;
-it's the reason the pack couldn't be uploaded to Modrinth as it stands.
+The mods that come from CurseForge (the FTB mods, LaserIO, Ars Elemental and the rest) and the
+Create Armorer gun pack are inside the file, because a `.mrpack` can only link to Modrinth
+downloads. That makes it about 25 MB, and sharing it hands those files on directly rather than
+through CurseForge. Fine between friends; it's the reason the pack couldn't be uploaded to Modrinth
+as it stands.
 
 ## Looking after a world
 

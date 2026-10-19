@@ -9,4 +9,4 @@ How the pack works as you use it. One page per thing you do.
 - [Where guns come from](guns.md): the TaCZ gun packs and which table makes each, crafting guns
   through Create, chest loot, turrets, durability and the ammo box.
 - [Fighting up close](combat.md): Better Combat's swings and combos, which weapons get them, and
-  Combat Roll's dodge. A trial on the `better-combat-trial` branch.
+  Combat Roll's dodge.

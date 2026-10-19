@@ -3,8 +3,8 @@
 **Size:** S. Four entries that resolved in a dry run and booted in a scratch copy. Most of the
 verdict is Logan's hand checks, which don't count toward the size.
 
-Read `CLAUDE.md`, [`README.md`](README.md), [the server check page](../architecture/server-check.md),
-[the mod list](../guide/mods.md), [the guns page](../guide/guns.md) and [`FUTURE.md`](FUTURE.md)'s
+Read `CLAUDE.md`, [`README.md`](../README.md), [the server check page](../../architecture/server-check.md),
+[the mod list](../../guide/mods.md), [the guns page](../../guide/guns.md) and [`FUTURE.md`](../FUTURE.md)'s
 "Better Combat, and combat as a direction" first. Prerequisite: [brief 05](05-backups-pregen-and-sound.md)'s
 commits are on `main`, so the trial branch starts from the frozen list and `index.toml` doesn't
 conflict later.
@@ -20,7 +20,7 @@ them through the server check, writes down what Logan should test, and hands it 
 checks decide whether it merges.
 
 Balancing melee against guns (damage numbers, weapon data for modded weapons) is **not** this
-brief. It waits until the trial is decided and Logan has played with it ([`FUTURE.md`](FUTURE.md),
+brief. It waits until the trial is decided and Logan has played with it ([`FUTURE.md`](../FUTURE.md),
 "Melee parity").
 
 ## Decisions already made
@@ -227,7 +227,7 @@ it is yours at the verdict. Details under Deviations.
   2.0.6+1.21.1-neoforge, the versions Already checked lists. packwiz printed the right project name
   for each. All four are `side = "both"`. `git status --short pack/` showed the four new files plus
   `index.toml` and `pack.toml`, nothing else.
-- **Docs:** a new guide page, [Fighting up close](../guide/combat.md), with which weapons got a
+- **Docs:** a new guide page, [Fighting up close](../../guide/combat.md), with which weapons got a
   moveset, read from the server's own weapon registry. The mod list, the guns page, the guide index
   and the root README's feature list point at it.
 

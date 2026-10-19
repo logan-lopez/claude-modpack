@@ -5,7 +5,8 @@ gains a line pointing at its brief.
 
 ## Integrations and default settings
 
-**Next.** Logan wanted it after the replacements, which brief 03 added (2026-10-19).
+**Next.** Logan wanted it after the replacements (brief 03), and the main list is now frozen
+(brief 05), with Better Combat in on top (brief 06, 2026-10-19).
 
 The pack is mods with their default configs. This brief makes them work together and sets
 defaults a new instance starts with.
@@ -17,7 +18,19 @@ defaults a new instance starts with.
     1.21.1 build; decisions table).
   - Almost Unified's config, so the pack's many ore and ingot sources collapse to one item each.
   - Keybind conflicts: Logan hasn't been through Controlling's list yet. A default `options.txt`
-    (or a keybind config mod) could ship the resolved set.
+    (or a keybind config mod) could ship the resolved set. Known so far: Combat Roll's roll
+    defaults to R, which TaCZ (reload) and Iron's Spells also bind; Logan moved it to **X** in
+    his instance, "for now, might revisit" (2026-10-19). TaCZ Addon cycles guns on Tab + scroll,
+    and Tab is also the player list (brief 04).
+  - Simple Backups and Chunky defaults (brief 05): whether a backup every 120 minutes, keeping
+    10, suits a world Logan means to keep; whether `commandsCheatsDisabled = true` is worth it,
+    so a survival world without cheats can force a backup before something risky; and Chunky's
+    `continueOnRestart = false`.
+  - Just Enough Breeding's six Alex's Mobs recipes don't parse (brief 03). A KubeJS removal would
+    quiet the log.
+  - Better Combat's fallback gives Create Big Cannons' ram rod a wand moveset (its `rod`
+    pattern). If that gets in the way of loading a cannon, set `blacklist_item_id_regex` to
+    `pickaxe|ram_rod` in `config/bettercombat/fallback_compatibility.json` (brief 06).
   - Client defaults: render distance, a shader pack or none, JourneyMap and Jade settings.
 - **How defaults ship:** packwiz includes any file under `pack/` that its index lists, so
   `pack/config/` and `pack/defaultconfigs/` go to the instance and the server. Check whether
@@ -41,7 +54,8 @@ Two changes to `scripts/server-check.sh` from brief 02's report.
 - **Known-noise ERROR lines.** Every boot logs about 675 ERROR lines, nearly all loot tables and
   recipes for absent compat mods (`railways` alone is 492, then `create_connected`,
   `create_ironworks`). The summary prints the first 20, so a real error is buried. A filter for
-  known-noise sources would make the summary useful again.
+  known-noise sources would make the summary useful again. Apothic Category Compat's data map
+  errors (13 weapons from mods the pack doesn't have, logged twice) are a family brief 03 added.
 - **Also seen:** the resolver flags seven mods whose Minecraft range is `[1.21,1.21.1)` (JEI,
   Iris, Productive Bees, When Dungeons Arise, both compasses, Clean Swing), yet NeoForge loads
   them on 1.21.1. A check built on the resolver has to match NeoForge here, not the range as
@@ -56,30 +70,11 @@ Two changes to `scripts/server-check.sh` from brief 02's report.
 - **Kill criteria:** if the resolver can't match NeoForge's verdicts on the current pack (no
   false failures), keep it as a separate script rather than part of the pass.
 
-## Better Combat, and combat as a direction
-
-**Scheduled:** [brief 06](06-better-combat-trial.md), a trial on its own branch with Combat Roll
-and Apothic Combat, ending in Logan's go or no-go (2026-10-19).
-
-Logan turned Better Combat down for brief 03 but wants it noted as a possible direction to
-explore (2026-10-19).
-
-- **The question:** whether melee in this pack should change, given guns (TaCZ), spells (Iron's,
-  Ars) and Apotheosis gear are already the main ways to fight.
-- **What's known:** Better Combat `2.4.0+1.21.1-neoforge` (Modrinth `better-combat`) needs
-  playerAnimator, already in, and Cloth Config, which isn't (this section said both were in until
-  2026-10-19). Apothic Combat (`apothic-combat`) bridges it with Apotheosis; its last 1.21.1 build
-  is 2025-01-19. How it behaves alongside TaCZ isn't known. "Don't Punch My TACZ" was once read
-  here as a hint that the area is fiddly. It fixes TaCZ's clashes with Punchy, a different
-  animation mod that isn't in the pack, so it says nothing about Better Combat.
-- **Likely shape:** an ideate run on combat first, then a small brief with a world to try it in.
-  The ideate run happened on 2026-10-19 and produced brief 06.
-- **Kill criteria:** if it fights TaCZ's aiming or firing, it stays out.
-
 ## Melee parity
 
-After brief 06's go or no-go, and after Logan has played with guns in a real world. Logan wants it
-as a pass of its own, after the trial (2026-10-19).
+After Logan has played with guns and Better Combat in a real world. Logan wants it as a pass of
+its own (2026-10-19). Brief 06's trial was a go: Better Combat, Combat Roll and Apothic Combat are
+in (2026-10-19).
 
 - **The question:** once melee feels better (or doesn't), is it worth using next to guns? A TaCZ
   rifle hits from 60 blocks and a sword reaches 3, and that's a numbers problem that Better Combat
@@ -87,10 +82,16 @@ as a pass of its own, after the trial (2026-10-19).
 - **Likely shape:** config and datapacks, not mods:
   - TaCZ's server-side damage settings, and TaCZ Tweaks if it has the knobs.
   - Apotheosis' boss and invader spawn rates, so more fights happen up close.
-  - Better Combat weapon attribute data for the modded weapons the fallback patterns miss
-    (Cataclysm, Mowzie's, Alex's), if the trial went.
+  - Better Combat weapon attribute data for the weapons with no moveset: most of Alex's Mobs'
+    (only the Skelewag Sword has one) and Cataclysm's that aren't in its own data (the Meat
+    Shredder, say). Mowzie's are all covered. To list what has one, boot with
+    `weapon_registry_logging` on in `config/bettercombat/server.json5` and decode the `Weapon
+    Attribute assignments loaded:` log line (base64, gzip, JSON; `registrations` maps item to
+    moveset). [The combat guide page](../guide/combat.md#which-weapons-get-one) has the 150 as of
+    brief 06.
   - Combat Roll's server config (cooldown, invulnerability frames, which are off by default).
-- **Input it needs:** Logan's verdict from brief 06's last hand check, and a few hours of play.
+- **Input it needs:** Logan's answer to brief 06's last hand check (does melee feel like a real
+  choice next to guns?), which he hasn't given yet, and a few hours of play.
   Balancing before that is guessing.
 - **Overlaps** with Integrations and default settings: it can be a section of that brief rather
   than one of its own.

@@ -1,10 +1,10 @@
 # Fighting up close
 
 Melee with Better Combat: swing animations, combos and arcs that hit more than one mob, with
-Combat Roll for a dodge on a key. Guns are unchanged. This is a trial on the
-`better-combat-trial` branch, and the page goes wherever the branch goes.
+Combat Roll for a dodge on a key. Guns are unchanged.
 
-**Covers:** `pack/mods/better-combat.pw.toml`, `combat-roll.pw.toml`, `apothic-combat.pw.toml`
+**Covers:** `pack/mods/better-combat.pw.toml`, `pack/mods/combat-roll.pw.toml`,
+`pack/mods/apothic-combat.pw.toml`
 
 All three run on their defaults, keybinds included. Their settings are files in the instance's
 `minecraft/config/bettercombat/` and `minecraft/config/combat_roll/`.
@@ -86,12 +86,12 @@ swing's reach from your entity reach, so an attack-range affix should lengthen y
 
 Unchanged. No TaCZ item has a Better Combat moveset, so left-click fires and right-click aims as
 before, and TaCZ's melee key (V) still does a gun's melee or bayonet attack. If either stops
-working, the trial is over: that's the rule it runs on.
+working, Better Combat and Combat Roll come out: that's the condition they're in on.
 
 ## Not yet
 
 - **Balance between melee and guns.** Damage numbers are each mod's own. That's the melee parity
-  pass, after the trial.
+  pass, still to come.
 - **Movesets for the weapons the fallback misses** (most of Alex's Mobs' and Cataclysm's) need
   weapon data written for them, in the same pass.
 - **Keybinds.** The roll stays on R until the integrations work sets the pack's keys.

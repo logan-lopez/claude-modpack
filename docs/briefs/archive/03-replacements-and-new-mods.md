@@ -2,9 +2,9 @@
 
 **Size:** S. Twenty-one picks, all resolved by packwiz in a dry run, added in four batches.
 
-Read `CLAUDE.md`, [`README.md`](README.md), [the server check page](../architecture/server-check.md),
-[the mod list](../guide/mods.md) and [`FUTURE.md`](FUTURE.md)'s "Replacements for what didn't
-come over, and new mods" first. [Brief 02](archive/02-port-old-mod-list.md)'s Build order is the
+Read `CLAUDE.md`, [`README.md`](../README.md), [the server check page](../../architecture/server-check.md),
+[the mod list](../../guide/mods.md) and [`FUTURE.md`](../FUTURE.md)'s "Replacements for what didn't
+come over, and new mods" first. [Brief 02](02-port-old-mod-list.md)'s Build order is the
 pattern this one follows. No prerequisites: brief 02 has landed.
 
 ## Goal
