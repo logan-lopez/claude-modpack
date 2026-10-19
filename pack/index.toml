@@ -1311,11 +1311,6 @@ hash = "c747fc5ffd31b29d5810d1811499c6e5820ef12473be430802d3493691530f8d"
 metafile = true
 
 [[files]]
-file = "mods/tacz-endless-ammo-refabricated.pw.toml"
-hash = "c7067f132bbd9354db8364b34153c43defcb584012243a4fe2f61113a623f7e4"
-metafile = true
-
-[[files]]
 file = "mods/tacz-mesh-loader.pw.toml"
 hash = "6eebeab112724c63adc3df3d24c9759ad949c2e10a0e1de1799118ecba5f65e3"
 metafile = true

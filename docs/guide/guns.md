@@ -50,8 +50,6 @@ The Weapon Station recipes stay. Create is a second way to make the same guns, n
 ## Ammo
 
 Each pack's ammo is made at its own table, or the Ammo Assembly Table for the default pack's.
-Endless Ammo Refabricated adds an Ammo Bench (a 2×1 block) and 52 more calibers, but none of the
-guns in this pack fire them yet: it's a library for gun packs that use its calibers.
 
 **The ammo box** goes in its own Curios slot (Curios for Ammo Box), and a gun reloads from it
 there.

@@ -6,9 +6,9 @@ didn't come over, with why, and what stands in for them. Compare it with the old
 
 **Covers:** `pack/mods/`, `pack/tacz/`
 
-295 entries in `pack/mods/`: about 200 picked from the old pack, 23 added as replacements and new
-picks, 9 TaCZ gun packs and addons, 3 for looking after a world (backups, pregeneration, sound), 3
-for melee (the Better Combat trial), the rest libraries they need. The server loads 270 jars; the
+294 entries in `pack/mods/`: about 200 picked from the old pack, 23 added as replacements and new
+picks, 8 TaCZ gun packs and addons, 3 for looking after a world (backups, pregeneration, sound), 3
+for melee (the Better Combat trial), the rest libraries they need. The server loads 269 jars; the
 other 25 are client-only (Sodium, Iris and their add-ons, the tooltip and overlay mods, TacZ Mesh
 Loader, Sound Physics, and the like). `pack/tacz/` has one more entry, the Create Armorer gun pack.
 
@@ -16,12 +16,12 @@ Loader, Sound Physics, and the like). `pack/tacz/` has one more entry, the Creat
 
 **Create and the guns.** The core of the pack: Create, the TaCZ port and TaCZ Tweaks.
 
-**TaCZ gun packs and addons.** Where guns come from and what they do, in [their own
-page](guns.md): the Elite X Quality Guns and TaCZ Fallout gun packs, Create Armorer (a 1.20.1 gun
-pack in `pack/tacz/`, converted on load by TaCZ Pack Upgrader), TaCZ Addon (a better gunsmith
-table), Endless Ammo Refabricated, TaCZ Durability, TACZ Turrets, TaCZ Structure Loot (guns in
-structure chests), Curios for Ammo Box, Immersive TaCZ Integration (Create recipes for Create
-Armorer's guns), and Apotheosis Modern Ragnarok (below).
+**TaCZ gun packs and addons.** Where guns come from and what they do, in [their own page](guns.md):
+the Elite X Quality Guns and TaCZ Fallout gun packs, Create Armorer (a 1.20.1 gun pack in
+`pack/tacz/`, converted on load by TaCZ Pack Upgrader), TaCZ Addon (a better gunsmith table), TaCZ
+Durability, TACZ Turrets, TaCZ Structure Loot (guns in structure chests), Curios for Ammo Box,
+Immersive TaCZ Integration (Create recipes for Create Armorer's guns), and Apotheosis Modern
+Ragnarok (below).
 
 **Combat, up close.** A trial, on the `better-combat-trial` branch until you decide: Better Combat
 (swing animations, combos and arcs), Combat Roll (a dodge on a key) and Apothic Combat (tidies
@@ -122,7 +122,6 @@ Old mods with no 1.21.1 build, and what does their job now. Checked 2026-10-19.
 | Curious Lanterns | Lamb Lanterns, with LambDynamicLights for the light. |
 | Spyglass of Curios | DodoSpyglass. |
 | Create TaCZ Automation | Create: Immersive TaCZ Integration, with the Create Armorer gun pack it works through. |
-| Endless Ammo | Endless Ammo Refabricated, a 1.21.1 rebuild of it. |
 | Gun Durability | TaCZ Durability 2.2.2, the same mod (`gundb`) under a new name. |
 | Create Recycle | Create: Recycled, a different mod for the same job. |
 | Embeddium, Oculus | Sodium and Iris. |
@@ -143,6 +142,7 @@ From the old pack, checked 2026-10-19.
 | Structure Essentials, Silent Compat, Additional Lights | Not found for 1.21.1 on Modrinth or CurseForge. |
 | FTB Ultimine Addition | Its author has turned off third-party downloads on CurseForge, so packwiz can't fetch it, nor its library CoolCatLib. Adding it would mean putting the jar in the instance by hand. |
 | LesRaisinsAddon, Create Planetary Tweaks | Built for other modpacks. |
+| Endless Ammo | Endless Ammo Refabricated rebuilt it for 1.21.1, but it's an ammo library and no gun pack here fires its calibers. Dropped (your call, 2026-10-19). |
 | AllTheLeaks, Better FPS Distance, Better Compatibility Checker | 1.20.1 fixes, or only useful when publishing a pack. |
 | Sodium Options API, Sodium Options Mod Compat | Every Reese's Sodium Options 2.2.x declares Options API incompatible, and Reese's is in. Mod Compat needs Options API. |
 | FTB Quests, FTB XMod Compat | Waiting for a quest book. A new pack has no quests yet, and XMod Compat is mostly Quests integration. |
@@ -171,8 +171,5 @@ Pinned in packwiz, so `packwiz update` leaves them alone:
 - **Just Enough Breeding is likely missing six Alex's Mobs entries** (the rattlesnake, Tasmanian
   devil, triops, warped toad, straddler and warped mosco). It loads its Alex's Mobs recipes only
   when Alex's Mobs is in, and those six don't parse.
-- **Endless Ammo Refabricated's calibers have no guns yet.** It's an ammo library for gun packs,
-  and none of the four here use it, so its 52 ammo types and Ammo Bench are craftable but fire
-  from nothing.
 - **Sound Physics Remastered is an alpha build,** the only one for NeoForge 1.21.1. If it costs
   too much frame time, it comes out.
