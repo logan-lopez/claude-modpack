@@ -4,6 +4,7 @@
 #
 #   CHECK_PORT     port for `packwiz serve` (default 8080)
 #   CHECK_TIMEOUT  seconds to wait for "Done" (default 300)
+#   CHECK_UPDATE_BASELINE=1  after a pass, rewrite scripts/server-check.known-errors.txt from this run
 #
 # Running it accepts the Minecraft EULA for the throwaway server in run/server/.
 # How it works and what it can't catch: docs/architecture/server-check.md.
@@ -16,6 +17,7 @@ SERVER="$ROOT/run/server"
 PORT=${CHECK_PORT:-8080}
 TIMEOUT=${CHECK_TIMEOUT:-300}
 SEED=20261019
+BASELINE="$ROOT/scripts/server-check.known-errors.txt"
 
 # Mod-loading failures in latest.log, copied from a real NeoForge 21.1.264 failure (a missing
 # dependency). The server exits 0 after one, so the exit code can't be the signal. See
@@ -28,6 +30,33 @@ FAIL_PATTERNS=(
 
 say() { printf '[check] %s\n' "$*"; }
 die() { printf '[check] FAIL: %s\n' "$*" >&2; exit 1; }
+
+# Load errors keyed by kind and ID ("recipe create:foo"), sorted and unique: the baseline's format.
+# Data loads twice per boot, so most IDs are logged twice. KEYED matches the lines this keys, so
+# the summary can show the rest raw; change both together.
+ERROR_LINE='^\[[^]]+\] \[[^]]+/ERROR\]'
+KEYED='Parsing error loading recipe |Couldn.t parse element ResourceKey\[minecraft:root / minecraft:loot_table\]:|Couldn.t parse data file |DataMapLoader/[^]]*\]: Object with ID |Couldn.t load advancements: \['
+load_error_keys() {
+  local errors
+  errors=$(grep -E "$ERROR_LINE" "$1" || true)
+  {
+    sed -nE \
+      -e 's/.*: Parsing error loading recipe ([^ ]+): .*/recipe \1/p' \
+      -e 's/.*: Couldn.t parse element ResourceKey\[minecraft:root \/ minecraft:loot_table\]:([^ ]+) - .*/loot \1/p' \
+      -e 's/.*: Couldn.t parse data file ([^ ]+) from .*/datafile \1/p' \
+      -e 's/.*DataMapLoader\/[^]]*\]: Object with ID ([^ ]+) .*/datamap \1/p' <<<"$errors"
+    sed -nE 's/.*: Couldn.t load advancements: \[(.*)\].*/\1/p' <<<"$errors" | tr ',' '\n' | sed -E 's/^ *//; /^$/d; s/^/advancement /'
+  } | LC_ALL=C sort -u
+}
+# Prints up to 20 lines of $2, indented under the label $1, and a count of the rest.
+list_some() {
+  [[ -n $2 ]] || return 0
+  local n
+  n=$(wc -l <<<"$2" | tr -d ' ')
+  head -n20 <<<"$2" | sed "s/^/  $1 /"
+  (( n > 20 )) && echo "  ... and $((n - 20)) more"
+  return 0
+}
 
 # 1. Java 21. The default java here may be older, and run.sh calls whatever is on PATH.
 JAVA_HOME=$(/usr/libexec/java_home -v 21 2>/dev/null) || die "no Java 21 found (/usr/libexec/java_home -v 21)"
@@ -146,10 +175,29 @@ echo "NeoForge:  ${RUNNING:-$NEOFORGE (from pack.toml, not seen in the log)} (Mi
 echo "Mods:      ${LOADED:-?} loaded (incl. minecraft and neoforge), $JARS jar(s) in mods/"
 echo "Boot:      ${ELAPSED}s wall${DONE_LINE:+, server says $DONE_LINE}"
 if [[ $RESULT == pass ]]; then
-  ERRORS=$(grep -E '^\[[^]]+\] \[[^]]+/ERROR\]' "$LOG" || true)
-  if [[ -n $ERRORS ]]; then
-    echo "Warnings:  $(wc -l <<<"$ERRORS" | tr -d ' ') ERROR line(s) in the log (not failing on them):"
-    head -n20 <<<"$ERRORS" | sed 's/^/  /'
+  # Load errors against the baseline. New ones are reported, never failed on.
+  KEYS=$(load_error_keys "$LOG")
+  count() { [[ -n $1 ]] && wc -l <<<"$1" | tr -d ' ' || echo 0; }
+  if [[ -f $BASELINE ]]; then
+    KNOWN=$(LC_ALL=C sort -u "$BASELINE")
+    NEW=$(LC_ALL=C comm -13 <(echo "$KNOWN") <(echo "$KEYS") | sed '/^$/d')
+    GONE=$(LC_ALL=C comm -23 <(echo "$KNOWN") <(echo "$KEYS") | sed '/^$/d')
+    STILL=$(LC_ALL=C comm -12 <(echo "$KNOWN") <(echo "$KEYS") | sed '/^$/d')
+    echo "Load errors: $(count "$STILL") known, $(count "$NEW") new, $(count "$GONE") gone"
+    list_some 'new: ' "$NEW"
+    list_some 'gone:' "$GONE"
+  else
+    echo "Load errors: $(count "$KEYS") keys, no baseline (CHECK_UPDATE_BASELINE=1 writes ${BASELINE#"$ROOT"/})"
+  fi
+  # ERROR lines of no known kind, without their timestamps, so repeats collapse.
+  OTHER=$(grep -E "$ERROR_LINE" "$LOG" | grep -vE "$KEYED" | sed -E 's/^\[[^]]+\] //' || true)
+  if [[ -n $OTHER ]]; then
+    echo "Warnings:  $(count "$OTHER") other ERROR line(s) in the log (not failing on them):"
+    awk '!seen[$0]++' <<<"$OTHER" | head -n20 | sed 's/^/  /'
+  fi
+  if [[ ${CHECK_UPDATE_BASELINE:-} == 1 ]]; then
+    printf '%s\n' "$KEYS" | sed '/^$/d' >"$BASELINE"
+    echo "Baseline:  rewrote ${BASELINE#"$ROOT"/} ($(count "$KEYS") keys)"
   fi
   exit 0
 fi

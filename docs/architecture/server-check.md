@@ -4,7 +4,7 @@
 reached "Done". It's the only thing a session can verify about the pack on its own, so every
 change to the mod set ends with it passing.
 
-**Sources:** `scripts/server-check.sh`
+**Sources:** `scripts/server-check.sh`, `scripts/server-check.known-errors.txt`
 
 ## How it works
 
@@ -27,7 +27,10 @@ change to the mod set ends with it passing.
    pass, or kills the server on a fail.
 7. Prints a summary: the NeoForge version the server actually ran (from `--fml.neoForgeVersion`
    in the log), the mod count from the log's `Mod List:` table, the boot time, and on a fail the
-   reason with the log or crash-report lines that show it.
+   reason with the log or crash-report lines that show it. On a pass it compares the log's load
+   errors with the [baseline](#the-known-errors-baseline), lists the new and gone ones, then
+   prints the first 20 ERROR lines of no known kind, without timestamps and deduplicated.
+   `CHECK_UPDATE_BASELINE=1` then rewrites the baseline from this run.
 
 Logs from the steps around the boot are in `run/cache/`: `serve.log`, `install.log`, `sync.log`.
 The server's own output is `run/server/console.log`.
@@ -46,8 +49,35 @@ Checked in this order each second:
 - **The server exited before Done.**
 - **A timeout:** `CHECK_TIMEOUT` seconds (default 300) without Done.
 
-ERROR lines after a pass are listed as warnings, the first 20, and don't fail the check. Big packs
-log harmless errors, and failing on all of them would make the check useless.
+ERROR lines after a pass don't fail the check, known or new. Big packs log harmless errors, and
+failing on all of them would make the check useless. The baseline is how a session sees them.
+
+## The known-errors baseline
+
+`scripts/server-check.known-errors.txt` holds every load error the pack is known to log, one per
+line as `<kind> <id>`, sorted with `LC_ALL=C sort -u`. About 330 lines, almost all recipes and
+loot tables for mods that aren't in the pack. `load_error_keys` in the script turns a log into
+these keys, from ERROR lines of five shapes:
+
+| Kind | Line |
+| --- | --- |
+| `recipe` | `Parsing error loading recipe <id>:` |
+| `loot` | `Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:<id> -` |
+| `datafile` | `Couldn't parse data file <id> from` |
+| `datamap` | `DataMapLoader`'s `Object with ID <id>` |
+| `advancement` | each ID in `Couldn't load advancements: [<ids>]` |
+
+Data loads twice per boot, on `main` and again on the `Server thread`, so most IDs are logged
+twice; the keys are unique. `KEYED`, next to the function, matches the same lines so the summary
+can print the rest raw. Change the two together.
+
+On a pass the summary prints `Load errors: <n> known, <n> new, <n> gone` (from `comm` against
+the baseline), then up to 20 new and 20 gone keys. A new key is a recipe or loot table that
+stopped loading; a gone key is a fix that took, or a mod that left. Neither changes the exit
+code. With no baseline file the summary gives the key count and says so.
+
+To refresh it, run `CHECK_UPDATE_BASELINE=1 scripts/server-check.sh` and commit the file. It's
+written only after a pass. Read the diff first: a fix should only remove lines.
 
 ## Rules worth keeping
 
@@ -74,6 +104,10 @@ crashes that need a player, a particular structure or a later dimension. Those a
 checks.
 
 ## Decisions
+
+The baseline only reports (Logan, 2026-10-19, brief 07). A pass keeps meaning "it booted with no
+mod-loading failure", and a mod update that breaks one recipe in a pack of hundreds isn't a reason
+to stop. The summary's new keys are what a session reads to catch it.
 
 The failure run that proved the check, on 2026-10-19: `create-enchantment-industry` added
 without its required `create` and `create_dragons_plus`. `scripts/server-check.sh` exited 1 in
