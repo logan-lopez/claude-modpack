@@ -1,0 +1,13 @@
+name = "Create: Recycled"
+filename = "createrecycled-1.0.0-1.21.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/wvT6MWRC/versions/t2rUiUZI/createrecycled-1.0.0-1.21.jar"
+hash-format = "sha512"
+hash = "131e57bb00eeb204aa1d5637dc37a83f5bb83aa8f8ee2b7236bb08b359d0d02be4365e935a7849ebbe672ff899e10b32a4600e35f415d7e556fa88b3705251c4"
+
+[update]
+[update.modrinth]
+mod-id = "wvT6MWRC"
+version = "t2rUiUZI"
