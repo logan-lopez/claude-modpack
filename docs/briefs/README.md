@@ -13,8 +13,9 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
   building, quality of life), a headless server check, and a `.mrpack` export. Logan plays it in
   Prism, synced from `packwiz serve`; it loads with 8 GB of memory and the mods work.
 - In flight: nothing.
-- Next: brief 03, replacements for the mods that didn't come over and eight suggestions Logan
-  picked. Then integrations and default settings, which needs a brief ([`FUTURE.md`](FUTURE.md)).
+- Next: brief 03 is awaiting review. Then brief 04: the TaCZ gun packs and addons with 1.21.1
+  builds, Create Armorer for Immersive TaCZ, and four new addons. After that, integrations and
+  default settings, which needs a brief ([`FUTURE.md`](FUTURE.md)).
 - Loose ends waiting on Logan: shaders on a moving Create contraption, and Controlling's keybind
   conflicts, haven't been checked yet (the second feeds the integrations brief).
 - Other loose ends: the server check binds Minecraft's default port 25565, so a local server
@@ -26,6 +27,10 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
 3. [`03-replacements-and-new-mods.md`](03-replacements-and-new-mods.md) (done, awaiting
    review): 1.21.1 stand-ins for the old mods that didn't come over, the Sodium add-ons that fit
    Sodium 0.8.12, and eight suggested mods, in four batches.
+4. [`04-tacz-gun-packs-and-addons.md`](04-tacz-gun-packs-and-addons.md): Elite X, Fallout,
+   Endless Ammo and Gun Durability back. Create Armorer goes in `pack/tacz/` through TaCZ Pack
+   Upgrader. Adds TaCZ Addon, Turrets, Structure Loot and Curios for Ammo Box, plus a guide page
+   on where guns come from.
 
 ## Done
 
@@ -65,6 +70,9 @@ Don't relitigate these. If one turns out to be wrong in practice, stop and say s
 | Alex's Mobs | The community port Alex's Mobs Continued, Modrinth `alexs-mobs-continued` | The official mod stops at 1.20.1; Continued is the active port, the other (`alexs-mobs-1.21.1`) stalled in 2026-01 (Logan, 2026-10-19). |
 | Sodium add-ons | Sodium Extra 0.9.3 and Reese's Sodium Options 2.2.3, pinned, plus Chloride; LambDynamicLights for dynamic lights. Sodium Options API, its Mod Compat and Sodium Dynamic Lights stay out | Newer Extra and Reese's need Sodium 0.8.13, and the pack keeps 0.8.12 for Iris. Every Reese's 2.2.x declares Options API incompatible (Logan, 2026-10-19). |
 | Mods considered and turned down | Friends & Foes, The Twilight Forest, Create Aeronautics; Polymorph and Better Combat noted in [`FUTURE.md`](FUTURE.md) | Logan's picks from brief 03's suggestion list (2026-10-19). |
+| TaCZ gun packs | Elite X Quality Guns and the unofficial TaCZ Fallout port, both native 1.21.1. Create Armorer is the only 1.20.1 pack, converted by TaCZ Pack Upgrader from `pack/tacz/`. Maxstuff, Gucci & Vuitton and Fiber's stay out | Logan, 2026-10-19 (brief 04). |
+| Gun crafting | The gunsmith table keeps its recipes. Create crafting through Immersive TaCZ is an extra route, not a gate | Logan, 2026-10-19 (brief 04). |
+| TaCZ addons | TaCZ Tweaks, Apotheosis Modern Ragnarok, Immersive TaCZ, Endless Ammo Refabricated, TaCZ Durability, TaCZ Addon, TACZ Turrets, TaCZ Structure Loot, Curios for Ammo Box. Shod's Create and TacZ Bridge, ArcaneMag and Automagic TACZ Automation were turned down | Logan, 2026-10-19 (brief 04). |
 | CurseForge mods that block third-party downloads | Left out | packwiz-installer can't fetch them, so they break the server check and Prism's auto-sync (FTB Ultimine Addition, brief 02, 2026-10-19). |
 | How the server check fails | On NeoForge's mod-loading log lines, a crash report, an exit before Done, or a timeout. Never on the exit code, and not on ERROR lines after a pass | NeoForge 21.1.264 exits 0 after a mod-loading failure, and big packs log harmless errors. Evidence in [the server check page](../architecture/server-check.md#decisions) (2026-10-19). |
 
@@ -76,7 +84,8 @@ What's deliberately absent, so nobody flags it as missing. Point at `FUTURE.md` 
   guns feel are Logan's hand checks.
 - **Hosting the pack.** `packwiz serve` on localhost is the only source for the auto-sync
   instance; sharing a build means sending the `.mrpack`.
-- **TaCZ gun packs and the 1.20.1 pack converter.** See [`FUTURE.md`](FUTURE.md).
+- **TaCZ gun packs past the port's default.** Brief 04 adds them. Converted 1.20.1 packs other
+  than Create Armorer stay out.
 - **Configs, recipes and default settings.** Every mod runs on its own defaults, and no KubeJS
   scripts exist yet. See [`FUTURE.md`](FUTURE.md), Integrations.
 - **Quests.** No quest book, so FTB Quests is out ([`FUTURE.md`](FUTURE.md), Parked).

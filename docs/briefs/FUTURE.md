@@ -58,6 +58,8 @@ Two changes to `scripts/server-check.sh` from brief 02's report.
 
 ## TaCZ gun packs and addons
 
+**Scheduled:** [brief 04](04-tacz-gun-packs-and-addons.md) (2026-10-19).
+
 The old pack had Fiber's Gunspack, Elite X Quality Guns, Maxstuff, Gucci & Vuitton Attachments,
 TaCZ Fallout, Endless Ammo, Gun Durability and Create TaCZ Automation. Most are built for 1.20.1,
 and the gun packs need the 1.20.1 pack converter. Of those, only Fallout has a 1.21.1 build, an
