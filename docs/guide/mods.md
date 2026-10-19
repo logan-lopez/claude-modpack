@@ -136,7 +136,7 @@ From the old pack, checked 2026-10-19.
 | Old mod | Why |
 | --- | --- |
 | MineColonies, Jade Colonies, Town Talk, Colony Curios | Your call. The addons also have no 1.21.1 build. |
-| Create Ad Astra Compat, Create Ad Astra Recipes, Ad Astra: Rocketed | No 1.21.1 build. KubeJS recipes can stand in, later. |
+| Create Ad Astra Compat, Create Ad Astra Recipes, Ad Astra: Rocketed | No 1.21.1 build. The pack's own recipes stand in for Create Ad Astra Recipes' pressing and crushing: Create's press makes desh, ostrum and calorite plates from ingots, and its crushing wheels take the three ores. Ad Astra's compressor still works too. |
 | Apotheotic Additions, Apothic Curios | No 1.21.1 build, and no replacement found. |
 | Delightful, Silent's Delight | No 1.21.1 build, and no replacement found. |
 | Structure Essentials, Silent Compat, Additional Lights | Not found for 1.21.1 on Modrinth or CurseForge. |
@@ -171,5 +171,8 @@ Pinned in packwiz, so `packwiz update` leaves them alone:
 - **Just Enough Breeding is likely missing six Alex's Mobs entries** (the rattlesnake, Tasmanian
   devil, triops, warped toad, straddler and warped mosco). It loads its Alex's Mobs recipes only
   when Alex's Mobs is in, and those six don't parse.
+- **Rockets and rovers burn a short list:** Ad Astra's fuel and cryo fuel, and any diesel,
+  biodiesel, gasoline or kerosene. TFMG's gases, naphtha and creosote, and Create Crafts &
+  Additions' bioethanol, don't count, so a coke oven's byproducts won't get you to space.
 - **Sound Physics Remastered is an alpha build,** the only one for NeoForge 1.21.1. If it costs
   too much frame time, it comes out.

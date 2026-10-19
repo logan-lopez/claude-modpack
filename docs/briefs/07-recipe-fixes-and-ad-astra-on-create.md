@@ -326,3 +326,143 @@ To confirm it applied, without a client: a throwaway server script that logs the
 - Nothing he relies on vanished from JEI (Almost Unified's hiding is unchanged).
 
 Then stop. Report, and leave merging to Logan.
+
+## Report
+
+2026-10-19, on `main`. Commits: `ca489aa` (this brief as written, which was uncommitted in the
+tree when the session started), `47d6862` (step 0), `d01644d` (step 1), and the build commit with
+this report.
+
+### Built
+
+- **Server check** (`scripts/server-check.sh`, `scripts/server-check.known-errors.txt`):
+  `load_error_keys` turns a log into `<kind> <id>` keys for the five kinds in the brief, and is
+  what wrote the step 0 file. On a pass the summary prints `Load errors: <n> known, <n> new, <n>
+  gone`, up to 20 new and 20 gone keys with a count of the rest, then the ERROR lines of no known
+  kind, timestamps stripped and deduplicated. `CHECK_UPDATE_BASELINE=1` rewrites the baseline
+  after a pass. A missing baseline prints the key count. Exit codes unchanged.
+- **Step 0 baseline:** 333 keys from the 675 ERROR lines (263 loot, 52 recipe, 14 datamap, 2
+  datafile, 2 advancement). Each kind is exactly half its raw line count, so nothing keyed was
+  missed; the other 11 lines are RuntimeDistCleaner's 8 and Small Ships' 3 at shutdown.
+- **Recipe repairs:** `pack/config/almostunified/unification/materials.json` (the generated file,
+  13 IDs in `ignored_recipe_ids`, `pneumaticcraft` and `create_dd` out of `mod_priorities`);
+  seven `pack/kubejs/data/create_compressed/recipe/...` files and
+  `pack/kubejs/data/createdeco/recipe/placard.json`, copied from the jars with only the broken
+  fields changed.
+- **Ad Astra on Create:** six files under `pack/kubejs/data/claude_modpack/recipe/ad_astra/`,
+  pressing and crushing for desh, ostrum and calorite, as the brief specified.
+- **Rocket fuel:** `pack/kubejs/data/ad_astra/tags/fluid/fuel.json`, as the brief wrote it.
+
+### Deviations
+
+- **Copper scaffolding isn't repaired, and can't be.** `create_things_and_misc:copper_scaffolding_craft`
+  still fails after it went into the ignore list, now with `Unknown registry key ...
+  create_things_and_misc:deleted_mod_element`: the recipe's result is an item Create Misc and
+  Things 4.1.1 doesn't have (no model, no lang entry, nothing named scaffolding in the jar).
+  Almost Unified's report of it was a side effect. It stays in `ignored_recipe_ids`, since Almost
+  Unified stopped flagging it there, and in the baseline. So the baseline lost 20 lines, not 21,
+  and the acceptance item's "13 Almost Unified recipes" is 12.
+- **The step 3 recipe check went further than the brief asked.** Besides "no parse error", a
+  throwaway `ServerEvents.recipes` script confirmed each of the six recipes, and the repaired
+  ones (sampled: two Silent Gems crushing, dough block, placard), exist (`countRecipes` = 1). It
+  turned out that listener changes the error log (below), so the fuel check ran with a tag-only
+  script.
+
+### Defaults taken
+
+- **Overriding at the same ID:** the default worked. A JSON in `pack/kubejs/data/` beats the
+  mod's jar for recipes, and `"replace": true` beats Ad Astra's own tag file. No server script.
+- **Silent Gems crushing:** the ignore list alone fixed all 12. No overrides needed.
+
+### Found along the way
+
+- **A `ServerEvents.recipes` script shifts the baseline.** With one present, KubeJS parses every
+  recipe itself, logs failures as WARN in `logs/kubejs/server.log`, and 10 Silent Gear netherwood
+  recipe errors left `latest.log` (30 gone instead of 20). On the architecture page.
+- **Almost Unified didn't rewrite its config.** After a boot, `run/server/config/`'s copy matched
+  `pack/`'s byte for byte.
+- **packwiz synced the new files and deleted the removed one.** The KubeJS data and config arrived
+  on the server, and deleting the throwaway script from `pack/` removed it from the server at the
+  next sync.
+- **The fuel list before and after.** Before, `#ad_astra:fuel` held 28 fluids, including TFMG's
+  LPG, butane, propane, hydrogen, furnace gas, naphtha and creosote, and Create Crafts &
+  Additions' bioethanol. After, it's 14: `ad_astra:fuel`, `ad_astra:cryo_fuel`, and the diesel,
+  biodiesel, gasoline and kerosene of TFMG and Diesel Generators (still and flowing). Bioethanol
+  falling out wasn't named in the decision; it follows from dropping `#c:fuel`.
+
+### Acceptance
+
+- **Two passes in a row on the final pack:** both exit 0.
+  ```
+  == server check: PASS ==
+  NeoForge:  21.1.264 (Minecraft 1.21.1)
+  Mods:      297 loaded (incl. minecraft and neoforge), 269 jar(s) in mods/
+  Boot:      52s wall, server says Done (18.746s)!
+  Load errors: 313 known, 0 new, 0 gone
+  Warnings:  11 other ERROR line(s) in the log (not failing on them):
+    [main/ERROR] [net.neoforged.fml.common.asm.RuntimeDistCleaner/DISTXFORM]: Attempted to load class ... (7 distinct)
+    [Server thread/ERROR] [...FMLModContainer/]: ... smallships-server.toml
+    [Server thread/ERROR] [...ModContainer/LOADING]: ... dispatch for modid smallships
+    [Server thread/ERROR] [net.minecraft.server.MinecraftServer/]: Uncaught exception in server thread
+  ```
+  The second: the same, `Boot: 58s wall, server says Done (21.519s)!`.
+- **`Load errors: 313 known, 0 new, 0 gone`, no raw first-20:** pass.
+- **The baseline's diff from `47d6862`:** 20 lines removed, 0 added. The 12 Silent Gems crushing
+  recipes, the 7 `create_compressed` recipes and `createdeco:placard`. Not
+  `copper_scaffolding_craft` (Deviations).
+  ```
+  -recipe create:crushing/compat/silentgems/{deepslate_,end_,nether_,}{peridot,ruby,sapphire}_ore   (12 lines)
+  -recipe create_compressed:mixing/dough_block
+  -recipe create_compressed:sandpaper_polishing/polished_rose_quartz_block
+  -recipe create_compressed:splashing/crushed_raw_{copper,gold,iron,zinc}_pile                       (4 lines)
+  -recipe create_compressed:splashing/wheat_flour_pile
+  -recipe createdeco:placard
+  ```
+- **Step 3's recipes load:** no `Parsing error` line names `claude_modpack`, `logs/kubejs/server.log`
+  has 0 ERROR or WARN lines on the final pack, and each counted 1 in the throwaway check.
+- **The fuel tag:** exactly the six entries' fluids (list above). The throwaway script was
+  deleted before any commit and isn't in git.
+- **A fake new key:** a doctored baseline, with `advancement dungeons_arise:find_fishing_hut`
+  removed and `recipe claude_modpack:fake/doctored_key` added, gave `Load errors: 312 known, 1
+  new, 1 gone`, listed each, and exited 0. The real baseline was restored after. The 20+ overflow
+  line (`... and 10 more`) showed on the throwaway run. The missing-baseline message wasn't run.
+- **`git status --short`:** nothing under `run/` or `dist/`.
+- **`checklinks.py`:** 21 files, 0 broken.
+- `scripts/export.sh` wrote `dist/claude-modpack-0.1.0.mrpack`, with the config and all 15
+  KubeJS files under `overrides/`.
+
+### Size
+
+Sized M, this session M (21 active min, 21 wall, 0 compactions).
+
+### Spot checks for Logan
+
+Re-sync the Prism instance from `packwiz serve` first. These are the brief's, unchanged:
+
+- In JEI, a Silent Gems ruby ore shows a Create crushing recipe.
+- Desh, ostrum and calorite ingots show a pressing recipe, and their ores a crushing one.
+- Create Compressed's crushed iron pile shows a washing recipe. The placard dye recipe shows.
+- An Ad Astra fuel tank or rocket takes TFMG gasoline or kerosene, and refuses creosote.
+- Nothing you rely on vanished from JEI (Almost Unified's hiding is unchanged).
+
+### Docs updated
+
+- `docs/architecture/server-check.md`: sources, step 7, what counts as a failure, a section on
+  the baseline, Decisions.
+- `docs/architecture/pack-overrides.md`: new, with its row in `AGENTS.md`'s Areas table and
+  `.claude/rules/pack-overrides.md` (`pack/config/**`, `pack/kubejs/**`). `areas.py` also added
+  the baseline file to the server check's row and rule.
+- `docs/guide/mods.md`: Ad Astra's "Left behind" row, and the rocket fuel list in "Known rough
+  edges". The page doesn't name crushing anywhere, so no Silent Gems line.
+- `docs/briefs/FUTURE.md`: the Almost Unified, Ad Astra and Just Enough Breeding candidates and
+  the known-noise bullet are gone; both sections say what brief 07 built.
+
+### Follow-ups
+
+- Farmer's Delight's `integration/silentgear/cutting/netherwood` fails on its sound field (from
+  the brief, not touched). It's in the baseline.
+- Create Misc and Things' copper scaffolding recipe points at a deleted item: worth reporting
+  upstream, nothing to fix here.
+- `README.md`'s Not built still says no configs or KubeJS files ship; `wrap` should update it.
+- Whether packwiz-installer overwrites a config Logan changed in the instance is still unknown,
+  and matters before shipping client defaults (`FUTURE.md`, How defaults ship).

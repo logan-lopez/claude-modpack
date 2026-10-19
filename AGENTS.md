@@ -37,4 +37,5 @@ matching one by itself; this table is the same map for every agent).
 
 | Code | Read first |
 | --- | --- |
-| `scripts/server-check.sh` | [The server check](docs/architecture/server-check.md) |
+| `pack/config/**`, `pack/kubejs/**` | [Pack overrides](docs/architecture/pack-overrides.md) |
+| `scripts/server-check.sh`, `scripts/server-check.known-errors.txt` | [The server check](docs/architecture/server-check.md) |

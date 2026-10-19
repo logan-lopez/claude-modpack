@@ -1,0 +1,22 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "c:ores/calorite"
+    }
+  ],
+  "processing_time": 250,
+  "results": [
+    {
+      "id": "ad_astra:raw_calorite"
+    },
+    {
+      "chance": 0.75,
+      "id": "ad_astra:raw_calorite"
+    },
+    {
+      "chance": 0.75,
+      "id": "create:experience_nugget"
+    }
+  ]
+}

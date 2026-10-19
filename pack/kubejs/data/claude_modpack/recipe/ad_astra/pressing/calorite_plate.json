@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:ingots/calorite"
+    }
+  ],
+  "results": [
+    {
+      "id": "ad_astra:calorite_plate"
+    }
+  ]
+}

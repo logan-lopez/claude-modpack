@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:ingots/desh"
+    }
+  ],
+  "results": [
+    {
+      "id": "ad_astra:desh_plate"
+    }
+  ]
+}

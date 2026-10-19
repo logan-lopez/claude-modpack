@@ -1,6 +1,70 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/almostunified/unification/materials.json"
+hash = "fd52d588f0a2f9407c82362d47ee71b12fb5baacb113f7dc7de4282caf2f930d"
+
+[[files]]
+file = "kubejs/data/ad_astra/tags/fluid/fuel.json"
+hash = "52a51f084f0ef796180fa96beb403d32a7baa47dee11b5368d21050441676edc"
+
+[[files]]
+file = "kubejs/data/claude_modpack/recipe/ad_astra/crushing/calorite_ore.json"
+hash = "f5fdcb4eca55452381935af33eddf1f73a2b4702480f05071deadfe6f4032c2a"
+
+[[files]]
+file = "kubejs/data/claude_modpack/recipe/ad_astra/crushing/desh_ore.json"
+hash = "12aa57d5e6a7becb3e90ee11101876e62ac6307a162b7f4ebf55238fc256d7a1"
+
+[[files]]
+file = "kubejs/data/claude_modpack/recipe/ad_astra/crushing/ostrum_ore.json"
+hash = "296d8d43329b514dcad908b85258907632d62064d2f3ab438db70d97aa59c923"
+
+[[files]]
+file = "kubejs/data/claude_modpack/recipe/ad_astra/pressing/calorite_plate.json"
+hash = "db6762af2f0f44382300eaab3f9b987d20882ecb320e957277ca26460b29da33"
+
+[[files]]
+file = "kubejs/data/claude_modpack/recipe/ad_astra/pressing/desh_plate.json"
+hash = "38e2d465903dbd9df1a3fa199f755b7d47c6edbdd51916789b7ee6550b2721da"
+
+[[files]]
+file = "kubejs/data/claude_modpack/recipe/ad_astra/pressing/ostrum_plate.json"
+hash = "49724ed50b0722d38165e252bb9dcd5261992f872446f23e4225d3844dea9d8e"
+
+[[files]]
+file = "kubejs/data/create_compressed/recipe/mixing/dough_block.json"
+hash = "e62a9bcc380e599cbfdc8395969ea8c49e6171b2c47ad561e7203335fa382c4f"
+
+[[files]]
+file = "kubejs/data/create_compressed/recipe/sandpaper_polishing/polished_rose_quartz_block.json"
+hash = "3c2d5c835ddbb74dcb3995ae16fd42612bde2670b59af2ef566bfdc952be0eaa"
+
+[[files]]
+file = "kubejs/data/create_compressed/recipe/splashing/crushed_raw_copper_pile.json"
+hash = "bf1f75ac0aaa32f0ada053c475be0cf51845d3155b0df03c25c01edf0c452492"
+
+[[files]]
+file = "kubejs/data/create_compressed/recipe/splashing/crushed_raw_gold_pile.json"
+hash = "44c1458a94c17b4dc0e4b4cebea69a79d44841b2d4e9cb4a15b1017cbe3a0162"
+
+[[files]]
+file = "kubejs/data/create_compressed/recipe/splashing/crushed_raw_iron_pile.json"
+hash = "f7992bd6c74c5c2935d3243ef074ff13bf873b7e5c681f2e1631eb5768f42741"
+
+[[files]]
+file = "kubejs/data/create_compressed/recipe/splashing/crushed_raw_zinc_pile.json"
+hash = "87d7d006be8f1a695475329b4881075eb0807481ddd633f3a2578509f7dffcda"
+
+[[files]]
+file = "kubejs/data/create_compressed/recipe/splashing/wheat_flour_pile.json"
+hash = "5249b6cb8e76e8fe7c9ff2e0313552f08bdf6ef9c13030efe7eff11f6e6d2a3f"
+
+[[files]]
+file = "kubejs/data/createdeco/recipe/placard.json"
+hash = "ddc3d0dd56b604d914bedbf2f985a2f0b5f7374eac79aad668a8a2cfd7cc154c"
+
+[[files]]
 file = "mods/ad-astra-giselle-addon.pw.toml"
 hash = "76b0b436c7a47689c9a9eaf1b064dfb27b3a79347323839e4be0d78a3296d705"
 metafile = true

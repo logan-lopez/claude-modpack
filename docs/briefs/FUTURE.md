@@ -8,8 +8,9 @@ gains a line pointing at its brief.
 **Next.** Logan wanted it after the replacements (brief 03), and the main list is now frozen
 (brief 05), with Better Combat in on top (brief 06, 2026-10-19).
 
-**Scheduled, in part:** [brief 07](07-recipe-fixes-and-ad-astra-on-create.md) takes recipe
-repairs, Almost Unified's config, Ad Astra's metals through Create and rocket fuel (2026-10-19).
+**Partly built:** [brief 07](07-recipe-fixes-and-ad-astra-on-create.md) took recipe repairs,
+Almost Unified's config, Ad Astra's metals through Create and rocket fuel (2026-10-19). Just
+Enough Breeding's unparsed Alex's Mobs recipes are in the server check's baseline now.
 
 The pack is mods with their default configs. This brief makes them work together and sets
 defaults a new instance starts with.
@@ -17,9 +18,6 @@ defaults a new instance starts with.
 - **The question:** which cross-mod gaps are worth bridging, and which defaults a fresh instance
   should ship.
 - **Known candidates:**
-  - KubeJS recipes for Ad Astra's materials through Create (the Create Ad Astra mods have no
-    1.21.1 build; decisions table).
-  - Almost Unified's config, so the pack's many ore and ingot sources collapse to one item each.
   - Keybind conflicts: Logan hasn't been through Controlling's list yet. A default `options.txt`
     (or a keybind config mod) could ship the resolved set. Known so far: Combat Roll's roll
     defaults to R, which TaCZ (reload) and Iron's Spells also bind; Logan moved it to **X** in
@@ -29,8 +27,6 @@ defaults a new instance starts with.
     10, suits a world Logan means to keep; whether `commandsCheatsDisabled = true` is worth it,
     so a survival world without cheats can force a backup before something risky; and Chunky's
     `continueOnRestart = false`.
-  - Just Enough Breeding's six Alex's Mobs recipes don't parse (brief 03). A KubeJS removal would
-    quiet the log.
   - Better Combat's fallback gives Create Big Cannons' ram rod a wand moveset (its `rod`
     pattern). If that gets in the way of loading a cannon, set `blacklist_item_id_regex` to
     `pickaxe|ram_rod` in `config/bettercombat/fallback_compatibility.json` (brief 06).
@@ -47,7 +43,7 @@ defaults a new instance starts with.
 
 Two changes to `scripts/server-check.sh` from brief 02's report.
 
-**Scheduled, in part:** the known-noise half is a known-errors baseline in
+**Partly built:** the known-noise half is the known-errors baseline from
 [brief 07](07-recipe-fixes-and-ad-astra-on-create.md) (2026-10-19). Client-side rules stay here.
 
 - **Client-side rules.** Logan's first launch stopped on two dependency rules the server never
@@ -57,11 +53,6 @@ Two changes to `scripts/server-check.sh` from brief 02's report.
   every `neoforge.mods.toml` (nested jars too), and test each rule with the Maven range classes
   NeoForge uses. Folding that into the check changes what a pass means, so it's a brief, not a
   side change.
-- **Known-noise ERROR lines.** Every boot logs about 675 ERROR lines, nearly all loot tables and
-  recipes for absent compat mods (`railways` alone is 492, then `create_connected`,
-  `create_ironworks`). The summary prints the first 20, so a real error is buried. A filter for
-  known-noise sources would make the summary useful again. Apothic Category Compat's data map
-  errors (13 weapons from mods the pack doesn't have, logged twice) are a family brief 03 added.
 - **Also seen:** the resolver flags seven mods whose Minecraft range is `[1.21,1.21.1)` (JEI,
   Iris, Productive Bees, When Dungeons Arise, both compasses, Clean Swing), yet NeoForge loads
   them on 1.21.1. A check built on the resolver has to match NeoForge here, not the range as

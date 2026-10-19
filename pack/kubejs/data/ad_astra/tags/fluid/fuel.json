@@ -1,0 +1,11 @@
+{
+  "replace": true,
+  "values": [
+    "ad_astra:fuel",
+    "ad_astra:cryo_fuel",
+    { "id": "#c:diesel", "required": false },
+    { "id": "#c:biodiesel", "required": false },
+    { "id": "#c:gasoline", "required": false },
+    { "id": "#c:kerosene", "required": false }
+  ]
+}

@@ -33,7 +33,7 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
 
 ## Open
 
-1. [`07-recipe-fixes-and-ad-astra-on-create.md`](07-recipe-fixes-and-ad-astra-on-create.md) (M):
+1. [`07-recipe-fixes-and-ad-astra-on-create.md`](07-recipe-fixes-and-ad-astra-on-create.md) (M, done, awaiting review):
    a known-errors baseline in the server check, repairs for recipes that fail to load (Almost
    Unified's Silent Gems crushing, Create Compressed, Create Deco's placard), Create pressing and
    crushing for Ad Astra's desh, ostrum and calorite, and a shorter rocket fuel list.
