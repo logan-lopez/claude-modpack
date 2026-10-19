@@ -23,9 +23,9 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
 
 ## Open
 
-3. [`03-replacements-and-new-mods.md`](03-replacements-and-new-mods.md) (in progress): 1.21.1 stand-ins for
-   the old mods that didn't come over, the Sodium add-ons that fit Sodium 0.8.12, and eight
-   suggested mods, in four batches.
+3. [`03-replacements-and-new-mods.md`](03-replacements-and-new-mods.md) (done, awaiting
+   review): 1.21.1 stand-ins for the old mods that didn't come over, the Sodium add-ons that fit
+   Sodium 0.8.12, and eight suggested mods, in four batches.
 
 ## Done
 

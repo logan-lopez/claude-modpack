@@ -196,3 +196,144 @@ picks have to be dropped.
   Repurposed Structures variant generates.
 
 Then stop. Report, and leave merging to Logan.
+
+## Report
+
+### Built
+
+- **`pack/`:** 26 new entries in four batches, each passing the server check and committed on its
+  own: 23 picks and the three libraries the dry run predicted (CodxLib, Lionfish API, Cristel
+  Lib). Every slug resolved to the project and version in Shape; no existing `.pw.toml` changed,
+  and packwiz didn't pull Fabric API (it printed "Failed to get latest version of dependency
+  Fabric API" for LambDynamicLights and moved on). Sodium Extra 0.9.3 and Reese's 2.2.3 are
+  pinned. Nothing was dropped.
+- **The client-side rule check,** after batch 4: the client set (277 jars) synced with
+  packwiz-installer `-s client` into the scratchpad, every `neoforge.mods.toml` read, nested jars
+  included, and each rule tested. It flags exactly the seven known Minecraft ranges.
+- **Docs:** the mod list guide page, `FUTURE.md`, the root README's feature line.
+
+### Deviations
+
+- **The brief itself was uncommitted** (with its README and `FUTURE.md` edits) when the session
+  started. It went in first as its own commit, `Brief 03: replacements and new mods`, as brief
+  02's did, so the batches and this report sit on top of it.
+- **23 picks, not 21.** The Size line's count doesn't match the lists in Decisions and Shape,
+  which have 23 between them (12 replacements, 11 suggestions). Shape's 23 are all in, and 26
+  new entries is what the dry run predicted.
+- **Embeddium and Oculus** moved from Left behind into the new Replaced table, since they're a
+  replacement too.
+- **Create Armorer isn't in,** and Create: Immersive TaCZ Integration probably does nothing
+  without it. The mod's install steps call for that gun pack in `.minecraft/tacz/`; the server
+  log says `Create Armorer is not installed, please download it and place it in the /tacz
+  folder`. `packwiz curseforge add` on it, in a scratch copy of `pack/`, found no file for 1.21.1
+  NeoForge. Gun packs are their own section in `FUTURE.md`, so the mod stays in, the guide says
+  so under Known rough edges, and `FUTURE.md`'s gun pack section has the note.
+- **The rule-check script needed two fixes before its verdicts meant anything.** Its first run
+  flagged three more mods: New Age (`esl` missing), LambDynamicLights (its runtime missing) and
+  MmmMmmMmmMmm (Moonlight out of range). All three were the script's mistakes: nested jars sit in
+  `META-INF/jars/`, listed by `jarjar/metadata.json`, not in `jarjar/`; and Maven compares a `-`
+  before a number as a sublist, so `1.21.1-3.7.2` is above `1.21-3.2.3`. Fixed, it flags the
+  seven, and still catches both first-launch rules when fed JEI 19.57.0.1 (Petrolpark's
+  `[19.53.0.426,19.57.0.0)`) or Sodium 0.6.13 (Supplementaries' incompatible `[0,0.8.12-beta.1)`).
+  `FUTURE.md`'s server check section has both lessons for the brief that folds this in.
+
+### Defaults taken
+
+- **Memory:** nothing changed; the 8192 MB launch is in the spot checks.
+
+### Acceptance
+
+- **Server check, twice on the final pack:** both exit 0.
+
+  ```
+  == server check: PASS ==
+  NeoForge:  21.1.264 (Minecraft 1.21.1)
+  Mods:      283 loaded (incl. minecraft and neoforge), 254 jar(s) in mods/
+  Boot:      47s wall, server says Done (18.632s)!
+  Warnings:  675 ERROR line(s) in the log (not failing on them):
+
+  == server check: PASS ==
+  NeoForge:  21.1.264 (Minecraft 1.21.1)
+  Mods:      283 loaded (incl. minecraft and neoforge), 254 jar(s) in mods/
+  Boot:      47s wall, server says Done (17.679s)!
+  Warnings:  675 ERROR line(s) in the log (not failing on them):
+  ```
+
+  The batches: 1 passed at 679 ERROR lines (269 loaded), 2 at 674 (274), 3 at 675 (282), 4 at
+  675 (283; its five mods are client-only but for Lamb Lanterns).
+
+  **The ERROR count moved from 641 to 675,** +34, all accounted for:
+
+  | Change | Source | What |
+  | --- | --- | --- |
+  | −6 | `RecipeManager` | TFMG's own `tfmg:distillation/crude_oil*` recipes (3, logged twice), which failed until TFMG was in. TFMG's arrival cleared only these; the other compat recipes for absent mods remain. |
+  | +12 | `RecipeManager` | Just Enough Breeding's Alex's Mobs recipes (6, logged twice), which load now that Alex's Mobs is in: `No key tag in MapLike[{"meat":true}]`. In the guide's Known rough edges. |
+  | +26 | `DataMapLoader` | Apothic Category Compat's Apotheosis data map naming 13 weapons from mods the pack doesn't have (Lands of Icaria, Twilight Forest, Alex's Caves, Undergarden, Born in Chaos), logged twice. Noise. |
+  | +1 | `RuntimeDistCleaner` | One more mod touching `AbstractClientPlayer` on the server; logged and skipped, as the other six. |
+  | +1 | `CreateImmersiveTaCZ` | `Create Armorer is not installed` (Deviations). |
+
+  The recipe errors left are 52 recipes logged twice, all owned by brief 02's mods: Create's
+  Silent's Gems crushing compat (12), Silent Gear's netherwood (10), Misc and Things (6),
+  Ironworks (8), Compressed (7), JEB (6), and one each from Productive Bees, Farmer's Delight
+  and Deco.
+- **Every slug in Shape has a `.pw.toml`:** yes, all 23, plus the three libraries. None dropped.
+- **Duplicate filenames:** `grep -h '^filename' pack/mods/*.pw.toml | sort | uniq -d` prints
+  nothing. Duplicate Modrinth project IDs: none either.
+- **Pins:** `sodium-extra.pw.toml` names `sodium-extra-neoforge-0.9.3+mc1.21.1.jar` and
+  `reeses-sodium-options.pw.toml` `reeses-sodium-options-neoforge-2.2.3+mc1.21.1.jar`, both
+  `pin = true`. `git diff cb24480` on `sodium`, `iris` and `jei` is empty, and all three are still
+  pinned. No existing `.pw.toml` changed at all.
+- **No `fabric-api.pw.toml`:** none.
+- **The client-side rule check:** 956 rules over 340 mod entries, 7 flagged, all the known
+  `[1.21,1.21.1)` ranges (and Clean Swing's `[1.21,1.21z)`): When Dungeons Arise, both compasses,
+  Clean Swing, Iris, JEI, Productive Bees.
+- **`scripts/export.sh`:** wrote `dist/claude-modpack-0.1.0.mrpack` (18 MB).
+- **`checklinks.py`:** 13 files, 0 broken.
+
+### Size
+
+Sized S, this session M (18 active min, 18 wall, 0 compactions). The adds went as the dry run
+said; the time went on the rule-check script and on accounting for the ERROR lines.
+
+### Spot checks for Logan
+
+Re-sync the Prism instance from `packwiz serve` first (it's still up on 8080).
+
+- **Memory:** the client launches at 8192 MB. If it doesn't, try more and say what it took.
+- **Video Settings** show Reese's layout with Sodium Extra's pages, and a shader pack still loads
+  in Iris.
+- **Dynamic lights:** a held torch lights the ground as you move (LambDynamicLights). A lantern in
+  its Curios slot does the same (Lamb Lanterns).
+- **Spyglass:** in its Curios slot, it zooms on its key (DodoSpyglass). Check Controlling for the
+  key and any conflict.
+- **JEI** shows Cataclysm, Mowzie's, Alex's Mobs, TFMG and Dreams & Desires recipes. Immersive
+  TaCZ's likely won't show, for want of Create Armorer: say whether anything of it is there.
+- **New world:** a Naturalist or Alex's animal turns up, and a Towns and Towers village or a
+  Repurposed Structures variant generates.
+
+### Docs updated
+
+- `docs/guide/mods.md`: the counts (277 entries, 254 on the server, 23 client-only), a Mobs and
+  bosses group, the other picks in their groups, the three libraries, a Replaced table, Left
+  behind trimmed (the four with no replacement say so; the Sodium row is now Options API and Mod
+  Compat, with the Reese's incompatibility), Sodium Extra and Reese's under Held back, and two
+  Known rough edges (Immersive TaCZ without its gun pack, JEB's six Alex's Mobs entries).
+  Sodium Dynamic Lights went to Replaced (LambDynamicLights), not to the Left behind row the
+  brief named.
+- `docs/briefs/FUTURE.md`: the replacements and Sodium add-ons sections out; Integrations marked
+  next; the server check section's ERROR count updated and the rule-check lessons added; Create
+  Armorer under gun packs.
+- `README.md`: the mod list line.
+- No architecture page changed: `scripts/server-check.sh` wasn't touched.
+
+### Follow-ups
+
+- **Create Armorer**, or another way to make Immersive TaCZ Integration do something: it rides
+  on the gun packs question (`FUTURE.md`). If gun packs stay out for long, the mod is dead weight
+  and could come out.
+- **JEB's six Alex's Mobs recipes** fail to parse. Upstream's problem; a KubeJS removal would
+  quiet the log, in the integrations brief.
+- **Known-noise filter:** Apothic Category Compat's data map errors are a new family for it
+  (`FUTURE.md`, server check).
+- **Status page:** "Where things stand" in `docs/briefs/README.md` still says about 200 mods and
+  nothing in flight. `wrap` refreshes it.
