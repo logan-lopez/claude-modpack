@@ -1,0 +1,13 @@
+name = "[UNOFFICIAL] [TACZ] Fallout Gunpack"
+filename = "tacz_fallout-0.1.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/m6m1tv5d/versions/4DRs8Ugr/tacz_fallout-0.1.1.jar"
+hash-format = "sha512"
+hash = "141c98aac5544e24a3a6129a5850b3dc3b6485dfb6c1387e854c78097d6465d58fe9656a79e870e612c0f9a6dc284c54bc187d3deb563ffe989fb71a033edc53"
+
+[update]
+[update.modrinth]
+mod-id = "m6m1tv5d"
+version = "4DRs8Ugr"

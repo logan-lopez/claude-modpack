@@ -586,6 +586,11 @@ hash = "58a52192b85fb49a4b772cd54677f84515a2dfc26a14d54eb880ed01f1186c5a"
 metafile = true
 
 [[files]]
+file = "mods/elite-x-quality-guns.pw.toml"
+hash = "df5dc70a003c3ee6ff2ad2c42b2f32d5869030fb159f270ba1feabb5df7421aa"
+metafile = true
+
+[[files]]
 file = "mods/elytra-slot.pw.toml"
 hash = "9e2b351f3cabb1252259f5383e6f2fec3e3d90534dbecddef4ed183eba42f35a"
 metafile = true
@@ -1256,6 +1261,16 @@ hash = "71944dea59c3df21fd71d4ea2d75d3e34ab159c2c39f047269e14b203416afb5"
 metafile = true
 
 [[files]]
+file = "mods/tacz-mesh-loader.pw.toml"
+hash = "6eebeab112724c63adc3df3d24c9759ad949c2e10a0e1de1799118ecba5f65e3"
+metafile = true
+
+[[files]]
+file = "mods/tacz-pack-upgrader.pw.toml"
+hash = "4d4ce3197d8bd556afee26362180070066a6754c14da5ea1c400f7d588fef7e4"
+metafile = true
+
+[[files]]
 file = "mods/tacz-tweaks.pw.toml"
 hash = "be9b9c48135b317ed2311066eb2d280df4d6fb6f91d4e278cc7af65a9de0cc1a"
 metafile = true
@@ -1308,6 +1323,11 @@ metafile = true
 [[files]]
 file = "mods/trashslot.pw.toml"
 hash = "c1e0c805d5ccd49535a6820aa8a2461a516437f90312fcadd393f928e3ce7bf2"
+metafile = true
+
+[[files]]
+file = "mods/unofficial-tacz-fallout-gunpack.pw.toml"
+hash = "4b5936cf691e217d8d01f98ad303beac3f12574e03edac84822aac5da88a03b1"
 metafile = true
 
 [[files]]

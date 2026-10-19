@@ -1,0 +1,13 @@
+name = "TacZ Mesh Loader [TML]"
+filename = "tacz-mesh-loader-neoforge-1.21.1-0.1.8.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/SnuAzTh0/versions/vf3mu3IU/tacz-mesh-loader-neoforge-1.21.1-0.1.8.jar"
+hash-format = "sha512"
+hash = "769747646a132a6e20e1dad5d0ed706acfb67de88e109d1cf7f61108bd6b92d75d3f8ba7d4bdfb7fcff7b7df54b7b7c20321446a3a032029c52c9b55d0ef41d5"
+
+[update]
+[update.modrinth]
+mod-id = "SnuAzTh0"
+version = "vf3mu3IU"

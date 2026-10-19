@@ -1,0 +1,13 @@
+name = "Elite X Quality Guns (TACZ)"
+filename = "Elite x Quality Guns Neoforge v6.0 - 1.21.1Final.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/X4uLYuhT/versions/QL7LUYDv/Elite%20x%20Quality%20Guns%20Neoforge%20v6.0%20-%201.21.1Final.jar"
+hash-format = "sha512"
+hash = "b5b241f92c058684d54e8bee989db6f5e24a8617ea8ac414381ba4b061003f685e8681d93eee3ca1754ec0a4f21100592cb26e1b3a0b660a90c7ec4d334208e0"
+
+[update]
+[update.modrinth]
+mod-id = "X4uLYuhT"
+version = "QL7LUYDv"
