@@ -1,0 +1,13 @@
+name = "TACZ Turrets"
+filename = "tacz_turrets-neoforge-3.0.0-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/8k8SjeJB/versions/BRm0wwky/tacz_turrets-neoforge-3.0.0-1.21.1.jar"
+hash-format = "sha512"
+hash = "61d9e4d1bbab81102976e1f7db4cd11084b59b144912557b6e7c92e5a04e1bc67fd04a3924f5cf51473195d186cba8b00ffe4188bd8bf67e6df48f393a965198"
+
+[update]
+[update.modrinth]
+mod-id = "8k8SjeJB"
+version = "BRm0wwky"

@@ -1,0 +1,13 @@
+name = "TaCZ Structure Loot"
+filename = "tacz-structure-loot-2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/bgAsmJ0C/versions/ai3ivBdH/tacz-structure-loot-2.0.0.jar"
+hash-format = "sha512"
+hash = "00d5e4fc4615406a4456998f16af7ea9f94ace4cac524a9cc97b78ee48fc23e543e319b60b2980396eb58f31c953cab5e5c101c76c53f5f84f592fd503dfdc2f"
+
+[update]
+[update.modrinth]
+mod-id = "bgAsmJ0C"
+version = "ai3ivBdH"

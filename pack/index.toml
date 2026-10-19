@@ -541,6 +541,11 @@ hash = "e0b7b35b16b7bd9bd494a4e32c2b5058bb67fa4b0979e33551fe40247ea937ef"
 metafile = true
 
 [[files]]
+file = "mods/curios-for-ammo-box.pw.toml"
+hash = "3946004d275d35daff203a3feeb43c92448c235ac8aa7df9e0ebba7e0a09d4b7"
+metafile = true
+
+[[files]]
 file = "mods/curios.pw.toml"
 hash = "36debf7653e95a855b4fedacc19027cf2e01960fc0b6d55ef2ffbffbcb455690"
 metafile = true
@@ -1186,6 +1191,11 @@ hash = "921d02a072ec9644b1557eece1a090f0be59fae479e652b1ba9c5cd16afba8f7"
 metafile = true
 
 [[files]]
+file = "mods/smartbrainlib.pw.toml"
+hash = "6e7ce9c2aee5bb72d2698eb89035c9b2458d20daa0782e1a03cfba7a6647621e"
+metafile = true
+
+[[files]]
 file = "mods/sodium-extra.pw.toml"
 hash = "232e50bdbb4eb8026ae371868fa1459d59a863c9b0ebc12aa7c2b6bae48e3717"
 metafile = true
@@ -1261,6 +1271,16 @@ hash = "71944dea59c3df21fd71d4ea2d75d3e34ab159c2c39f047269e14b203416afb5"
 metafile = true
 
 [[files]]
+file = "mods/tacz-durability.pw.toml"
+hash = "c747fc5ffd31b29d5810d1811499c6e5820ef12473be430802d3493691530f8d"
+metafile = true
+
+[[files]]
+file = "mods/tacz-endless-ammo-refabricated.pw.toml"
+hash = "c7067f132bbd9354db8364b34153c43defcb584012243a4fe2f61113a623f7e4"
+metafile = true
+
+[[files]]
 file = "mods/tacz-mesh-loader.pw.toml"
 hash = "6eebeab112724c63adc3df3d24c9759ad949c2e10a0e1de1799118ecba5f65e3"
 metafile = true
@@ -1271,8 +1291,23 @@ hash = "4d4ce3197d8bd556afee26362180070066a6754c14da5ea1c400f7d588fef7e4"
 metafile = true
 
 [[files]]
+file = "mods/tacz-structure-loot.pw.toml"
+hash = "fd586934e07038b5425f4828981f459d7490536b16d0ce20053db6efbfe48cff"
+metafile = true
+
+[[files]]
+file = "mods/tacz-turrets.pw.toml"
+hash = "abd1d0933295b7ee04d2a7cd3931784a006ba0a76655144b2267844d016f205f"
+metafile = true
+
+[[files]]
 file = "mods/tacz-tweaks.pw.toml"
 hash = "be9b9c48135b317ed2311066eb2d280df4d6fb6f91d4e278cc7af65a9de0cc1a"
+metafile = true
+
+[[files]]
+file = "mods/taczaddon.pw.toml"
+hash = "3b5012002d2b9a4052a9aba687aa3dc001fa763c4b771e355f41057d614fe523"
 metafile = true
 
 [[files]]

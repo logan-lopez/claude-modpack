@@ -1,0 +1,13 @@
+name = "[TaCZ] Endless Ammo Refabricated"
+filename = "endlessammo-neoforge-2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/aJKvRaur/versions/o9IaUqdk/endlessammo-neoforge-2.0.0.jar"
+hash-format = "sha512"
+hash = "dd83060cdd7f99bf68696da647cd17e1d88bc1179e6fd9a57e1e2d698687333845b63e8ed3ae375584efc0987603d11034f559c6f8ff3d0ce79880a0ffb51339"
+
+[update]
+[update.modrinth]
+mod-id = "aJKvRaur"
+version = "o9IaUqdk"
