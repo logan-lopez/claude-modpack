@@ -196,6 +196,11 @@ hash = "e42363c32c9b6323eea977283c928cec373bfc415534ec92e9c3367ee8c54256"
 metafile = true
 
 [[files]]
+file = "mods/chefs-delight.pw.toml"
+hash = "114dcc3cdc8283320c4a22a586cb9f826490fc2332e0d7b1b88b78043fda5634"
+metafile = true
+
+[[files]]
 file = "mods/chipped.pw.toml"
 hash = "24c6c3fe917ffbcef04e788dec3e003d0ed03433bc00f9cf4f23fe9b85636aa7"
 metafile = true
@@ -233,6 +238,11 @@ metafile = true
 [[files]]
 file = "mods/connected-glass.pw.toml"
 hash = "376b22883dd4642dee7bf1e727440cb01d87d72293952a1ddf0c2f1c25fa7863"
+metafile = true
+
+[[files]]
+file = "mods/construction-wand-kots.pw.toml"
+hash = "8f88f0197bab619a5f15e69a9675d1de32e07dbe2664ff1e35e40b04bde01f33"
 metafile = true
 
 [[files]]
@@ -516,6 +526,11 @@ hash = "63d1560de24b53cad7052d19c1a44b4eab64ad9f696d01c9f2a72fccd5540557"
 metafile = true
 
 [[files]]
+file = "mods/cristel-lib.pw.toml"
+hash = "08a334ae5565e122d26b819cba16ce784776a10fe100ab2b22de72a5a2bac653"
+metafile = true
+
+[[files]]
 file = "mods/ctm.pw.toml"
 hash = "e0b7b35b16b7bd9bd494a4e32c2b5058bb67fa4b0979e33551fe40247ea937ef"
 metafile = true
@@ -538,6 +553,11 @@ metafile = true
 [[files]]
 file = "mods/deeperdarker.pw.toml"
 hash = "a9ecc4476d26e707189e9f988c19f22961c33dfd5e5b4db1dfd6f87c6a81c545"
+metafile = true
+
+[[files]]
+file = "mods/dodospyglass-spyglass-curios-compat.pw.toml"
+hash = "52fd0b6fe45ce3dd0fe2a95f19a0ff10c30a60c589b45b0994ae56c92917c676"
 metafile = true
 
 [[files]]
@@ -573,6 +593,11 @@ metafile = true
 [[files]]
 file = "mods/enderchests.pw.toml"
 hash = "823f7e038ff7a8a4f84a9b43c5955ba3cbd7e14e4f4b0681e28703919b6b05ca"
+metafile = true
+
+[[files]]
+file = "mods/ends-delight.pw.toml"
+hash = "03a2f273597c1d2bef87eaa60af9287d7d54ec68cc0a0d4b5b79e1497b16ad3e"
 metafile = true
 
 [[files]]
@@ -941,6 +966,11 @@ hash = "02aa4dcb8fa24cffcd2182c66683c2a476a95abf53002373f953a49737a587e3"
 metafile = true
 
 [[files]]
+file = "mods/my-nethers-delight.pw.toml"
+hash = "cf98a93ea429786de97d9d7b70c72468909e0b9d1799def65b7c29c419c8d362"
+metafile = true
+
+[[files]]
 file = "mods/naturalist.pw.toml"
 hash = "6ea52b0dccdc5110b48ac9d5528fc2accb1c970b1fbcae34120e16001ddf115f"
 metafile = true
@@ -1048,6 +1078,11 @@ metafile = true
 [[files]]
 file = "mods/reliquary-reincarnations.pw.toml"
 hash = "f770c0ca50c6c312bc8b564fb54e15fec6ef0fd2ca94dad27f5fcfbe7d1de4e7"
+metafile = true
+
+[[files]]
+file = "mods/repurposed-structures-forge.pw.toml"
+hash = "f1aab783c14673d62e516fe43887088d1647b125c92c9b9caabd3574169c8d2c"
 metafile = true
 
 [[files]]
@@ -1228,6 +1263,11 @@ metafile = true
 [[files]]
 file = "mods/torchmaster.pw.toml"
 hash = "08aa1a2574bde997cb575648a6ff67b630b68f3783849579b8399ffb3a3829dc"
+metafile = true
+
+[[files]]
+file = "mods/towns-and-towers.pw.toml"
+hash = "a9afe82b3d1b4975dd9f8b3272898450aeb29365678b3779059977301f88c101"
 metafile = true
 
 [[files]]

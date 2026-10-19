@@ -1,0 +1,13 @@
+name = "DodoSpyglass [Spyglass Curios Compat]"
+filename = "dodospyglass-2.0.0-neoforge+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/U2WwwIH3/versions/vfmS9atF/dodospyglass-2.0.0-neoforge%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "ce72c111351607ac32e5e33d7f431867b25306fbbceacbdf2832b8175073df6c5bdb6ee390d32b497047f862ea268a44cc7075f7982f8d33e659d4801aebb761"
+
+[update]
+[update.modrinth]
+mod-id = "U2WwwIH3"
+version = "vfmS9atF"
