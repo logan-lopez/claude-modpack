@@ -1,0 +1,13 @@
+name = "Apotheosis Modern Ragnarok: Zero"
+filename = "apotheosis_modern_ragnarok-neoforge-1.21.1-tacz1.1.8-7.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d10b6a6e0fa7b83be843993a5ccbbec64d144693"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8483829
+project-id = 966582
