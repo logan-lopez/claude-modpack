@@ -14,10 +14,11 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
   with Combat Roll (brief 06). The main mod list is frozen. A headless server check and a
   `.mrpack` export back it up. Logan plays it in Prism, synced from `packwiz serve`, and has
   checked every brief's hand checks so far.
-- In flight: nothing. No brief is open.
-- Next: integrations and default settings (keybinds, configs, KubeJS recipes), which needs a
-  brief; [`FUTURE.md`](FUTURE.md) has the candidates gathered so far. The melee parity pass waits
-  for Logan to play with Better Combat and guns, and may fold into it.
+- In flight: nothing yet. [Brief 07](07-recipe-fixes-and-ad-astra-on-create.md) is open: the
+  first part of integrations, and the first files the pack ships besides mods.
+- Next: brief 07. The rest of integrations and default settings stays in
+  [`FUTURE.md`](FUTURE.md); keybinds wait for Logan to find the conflicts in play. The melee
+  parity pass waits for Logan to play with Better Combat and guns, and may fold into it.
 - Loose ends waiting on Logan:
   - Shaders on a moving Create contraption, and Controlling's keybind conflicts, haven't been
     checked yet (the second feeds the integrations brief).
@@ -32,7 +33,10 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
 
 ## Open
 
-Nothing. The next brief is integrations and default settings ([`FUTURE.md`](FUTURE.md)).
+1. [`07-recipe-fixes-and-ad-astra-on-create.md`](07-recipe-fixes-and-ad-astra-on-create.md) (M):
+   a known-errors baseline in the server check, repairs for recipes that fail to load (Almost
+   Unified's Silent Gems crushing, Create Compressed, Create Deco's placard), Create pressing and
+   crushing for Ad Astra's desh, ostrum and calorite, and a shorter rocket fuel list.
 
 ## Done
 
@@ -98,6 +102,9 @@ Don't relitigate these. If one turns out to be wrong in practice, stop and say s
 | TaCZ addons | TaCZ Tweaks, Apotheosis Modern Ragnarok, Immersive TaCZ, TaCZ Durability, TaCZ Addon, TACZ Turrets, TaCZ Structure Loot, Curios for Ammo Box. Shod's Create and TacZ Bridge, ArcaneMag and Automagic TACZ Automation were turned down. Endless Ammo Refabricated came out at the 2026-10-19 wrap | Logan, 2026-10-19 (brief 04). Endless Ammo: no gun in the pack fires its calibers (Logan, 2026-10-19). |
 | CurseForge mods that block third-party downloads | Left out | packwiz-installer can't fetch them, so they break the server check and Prism's auto-sync (FTB Ultimine Addition, brief 02, 2026-10-19). |
 | How the server check fails | On NeoForge's mod-loading log lines, a crash report, an exit before Done, or a timeout. Never on the exit code, and not on ERROR lines after a pass | NeoForge 21.1.264 exits 0 after a mod-loading failure, and big packs log harmless errors. Evidence in [the server check page](../architecture/server-check.md#decisions) (2026-10-19). |
+| The server check's load errors | A committed baseline of known recipe, loot-table, data-file, data-map and advancement IDs; on a pass the summary lists new and gone ones. New ones never fail the check | Logan, 2026-10-19 (brief 07). A pass keeps meaning "it booted". |
+| Rocket fuel | `ad_astra:fuel` is Ad Astra's fuel and cryo fuel plus `#c:diesel`, `#c:biodiesel`, `#c:gasoline` and `#c:kerosene`. `#c:fuel` is out | Through `#c:fuel`, TFMG's byproduct gases and creosote filled rockets (Logan, 2026-10-19, brief 07). |
+| Integrations, first pass | Fix recipes that fail to load, then bridge Ad Astra's metals to Create. Keybinds wait for play | Logan, 2026-10-19 (ideate run, brief 07). |
 
 ## Not built
 
@@ -110,7 +117,7 @@ What's deliberately absent, so nobody flags it as missing. Point at `FUTURE.md` 
 - **More TaCZ gun packs.** The pack has the port's default, Elite X, Fallout and Create Armorer.
   Converted 1.20.1 packs other than Create Armorer stay out.
 - **Configs, recipes and default settings.** Every mod runs on its own defaults, and no KubeJS
-  scripts exist yet. See [`FUTURE.md`](FUTURE.md), Integrations.
+  scripts exist yet; brief 07 ships the first. See [`FUTURE.md`](FUTURE.md), Integrations.
 - **Quests.** No quest book, so FTB Quests is out ([`FUTURE.md`](FUTURE.md), Parked).
 
 ## Future direction new work must not block

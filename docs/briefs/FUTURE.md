@@ -8,6 +8,9 @@ gains a line pointing at its brief.
 **Next.** Logan wanted it after the replacements (brief 03), and the main list is now frozen
 (brief 05), with Better Combat in on top (brief 06, 2026-10-19).
 
+**Scheduled, in part:** [brief 07](07-recipe-fixes-and-ad-astra-on-create.md) takes recipe
+repairs, Almost Unified's config, Ad Astra's metals through Create and rocket fuel (2026-10-19).
+
 The pack is mods with their default configs. This brief makes them work together and sets
 defaults a new instance starts with.
 
@@ -43,6 +46,9 @@ defaults a new instance starts with.
 ## The server check: client-side rules and log noise
 
 Two changes to `scripts/server-check.sh` from brief 02's report.
+
+**Scheduled, in part:** the known-noise half is a known-errors baseline in
+[brief 07](07-recipe-fixes-and-ad-astra-on-create.md) (2026-10-19). Client-side rules stay here.
 
 - **Client-side rules.** Logan's first launch stopped on two dependency rules the server never
   evaluates: Petrolpark's `side = "CLIENT"` JEI range, and Supplementaries' incompatibility with
