@@ -434,3 +434,35 @@ Re-sync the Prism instance from `packwiz serve` (yours is already running on 808
   future brief shouldn't assume `packwiz add` pulls everything in.
 - **Ultimine Addition** could go in as a hand-placed jar if Logan wants it badly enough; packwiz
   can't manage it.
+
+### After Logan's first launch
+
+*2026-10-19.* The client stopped at the loading screen with two errors the server check can't
+see, because both rules live only in client-side or client-only mods:
+
+- `Mod petrolpark only supports jei 19.53.0.426 or above, and below 19.57.0.0. Currently, jei is
+  19.64.0.455`. Petrolpark's JEI dependency is `side = "CLIENT"`, so the server ignores it. No
+  Petrolpark build accepts JEI 19.57+. **Fix:** JEI pinned to `19.56.0.441` (`ZWGz5dZX`), the
+  newest inside the range.
+- `Mod supplementaries is incompatible with sodium 0 or above, and below 0.8.12-beta.1. Currently,
+  sodium is 0.6.13+mc1.21.1`. Every Supplementaries build since 3.7.4 (2026-06-21) declares it.
+  The brief's premise was wrong: Iris 1.8.14-beta.1 isn't unpaired, it's the Sodium 0.8 build
+  (changelog "Updates to Sodium 0.8"; its 1.21.1 branch compiles against
+  `sodium-neoforge-mod:0.8.12-beta.1` and has had no commits since 2026-06-13). **Fix, Logan's
+  call:** Sodium `0.8.12` (`S3DUMfBo`) + Iris `1.8.14-beta.1` (`KduFYu4t`), both pinned. The
+  decisions table's Renderer row is updated, with the old pair noted.
+
+**Checked before handing back:** the full client mod set, synced with packwiz-installer
+`-s client` into a scratch folder, run through a resolver that reads every `neoforge.mods.toml`
+(nested jars too) and tests each rule with the same Maven range classes NeoForge uses. Before the
+fix it reported exactly Logan's two errors; after, none. It also flags seven mods whose Minecraft
+range is `[1.21,1.21.1)` (JEI, Iris, Productive Bees, When Dungeons Arise, both compasses, Clean
+Swing). NeoForge loads those on 1.21.1 on both sides anyway, so it doesn't enforce that range as
+written; why, I don't know. Server check after the fix: PASS, 261 mods, Done in 18.6s.
+
+**Spot checks change:** the Video Settings check is now Sodium 0.8's menu, and shaders through
+Iris 1.8.14-beta.1, a beta.
+
+**Follow-up:** the resolver caught what the server check structurally can't. Folding it into
+`scripts/server-check.sh` (a client-side sync plus the rule check) would have caught both errors
+before Logan's launch. A brief, not a side change: it changes what the check means.

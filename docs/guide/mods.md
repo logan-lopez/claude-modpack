@@ -67,8 +67,8 @@ Professions, Breeding and Archaeology; Jade and Jade Addons; JourneyMap; Legenda
 Equipment Compare, Durability Tooltip, More Overlays Updated, Transmog, Visual Workbench,
 AmbientSounds, Freecam, No Chat Reports.
 
-**Performance.** Sodium and Iris for rendering and shaders, both held at the versions built
-together (Sodium 0.6.13, Iris 1.8.12), and ModernFix, FerriteCore, ImmediatelyFast, Entity
+**Performance.** Sodium and Iris for rendering and shaders, both held at fixed versions (Sodium
+0.8.12, Iris 1.8.14-beta.1, the Iris built for Sodium 0.8), and ModernFix, FerriteCore, ImmediatelyFast, Entity
 Culling, BadOptimizations, Noisium, FastFurnace, FastWorkbench, FastSuite, Clumps, ServerCore,
 spark.
 
@@ -103,6 +103,15 @@ From the old pack, checked 2026-10-19.
 | FTB Quests, FTB XMod Compat | Waiting for a quest book. A new pack has no quests yet, and XMod Compat is mostly Quests integration. |
 | TaCZ gun packs and addons: Fiber's, Elite X, Maxstuff, Gucci & Vuitton, Fallout, Endless Ammo, Gun Durability | Most are 1.20.1 only and need the old pack converter; they get their own look. |
 | Mods disabled in the old pack (`.jar.disabled`) | You had turned them off. |
+
+## Held back on purpose
+
+Pinned in packwiz, so `packwiz update` leaves them alone:
+
+- **Sodium 0.8.12 and Iris 1.8.14-beta.1.** Iris for 1.21.1 was built against Sodium
+  0.8.12-beta.1 and hasn't been rebuilt since, so Sodium stays on the release nearest it.
+- **JEI 19.56.** Petrolpark's Library (needed by Petrol's Parts) only accepts JEI below 19.57,
+  because it patches JEI's code. Newer JEI stops the game at the loading screen.
 
 ## Known rough edges
 
