@@ -16,7 +16,8 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
   checked every brief's hand checks so far.
 - In flight: nothing yet. [Brief 07](07-recipe-fixes-and-ad-astra-on-create.md) is open: the
   first part of integrations, and the first files the pack ships besides mods.
-- Next: brief 07. The rest of integrations and default settings stays in
+- Next: brief 07's review, then [brief 08](08-server-build.md), a server zip to keep a world on
+  or hand to a friend. It touches nothing brief 07 does. The rest of integrations and default settings stays in
   [`FUTURE.md`](FUTURE.md); keybinds wait for Logan to find the conflicts in play. The melee
   parity pass waits for Logan to play with Better Combat and guns, and may fold into it.
 - Loose ends waiting on Logan:
@@ -37,6 +38,9 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
    a known-errors baseline in the server check, repairs for recipes that fail to load (Almost
    Unified's Silent Gems crushing, Create Compressed, Create Deco's placard), Create pressing and
    crushing for Ad Astra's desh, ostrum and calorite, and a shorter rocket fuel list.
+2. [`08-server-build.md`](08-server-build.md): `scripts/server-pack.sh` writes a server zip that
+   starts on macOS or Windows with `start.sh` or `start.bat`, asks about the EULA, keeps its
+   settings across updates and restarts after a crash.
 
 ## Done
 
@@ -105,6 +109,7 @@ Don't relitigate these. If one turns out to be wrong in practice, stop and say s
 | The server check's load errors | A committed baseline of known recipe, loot-table, data-file, data-map and advancement IDs; on a pass the summary lists new and gone ones. New ones never fail the check | Logan, 2026-10-19 (brief 07). A pass keeps meaning "it booted". |
 | Rocket fuel | `ad_astra:fuel` is Ad Astra's fuel and cryo fuel plus `#c:diesel`, `#c:biodiesel`, `#c:gasoline` and `#c:kerosene`. `#c:fuel` is out | Through `#c:fuel`, TFMG's byproduct gases and creosote filled rockets (Logan, 2026-10-19, brief 07). |
 | Integrations, first pass | Fix recipes that fail to load, then bridge Ad Astra's metals to Create. Keybinds wait for play | Logan, 2026-10-19 (ideate run, brief 07). |
+| The server build | A self-contained zip from `scripts/server-pack.sh`: the server-side mods inside, NeoForge's installer run on first start, Java 21 required rather than bundled, the EULA asked on first start. Defaults a fresh server gets: `allow-flight=true`, `difficulty=hard`, `-Xmx12G`, and a restart after a crash | Logan, 2026-10-19 (brief 08). Mojang's server jar can't be shipped, and there's no hosted pack to sync from. |
 
 ## Not built
 
