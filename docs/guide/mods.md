@@ -4,15 +4,23 @@ The mods the pack ships, grouped by what they're for, the mods from the old 1.20
 didn't come over, with why, and what stands in for them. Compare it with the old list
 (`docs/briefs/assets/02/old-modlist.txt`) to decide what to add back.
 
-**Covers:** `pack/mods/`
+**Covers:** `pack/mods/`, `pack/tacz/`
 
-277 entries in `pack/mods/`: about 200 picked from the old pack, 23 added since as replacements
-and new picks, the rest libraries they need. The server loads 254 jars; the other 23 are
-client-only (Sodium, Iris and their add-ons, the tooltip and overlay mods, and the like).
+288 entries in `pack/mods/`: about 200 picked from the old pack, 23 added as replacements and new
+picks, 9 TaCZ gun packs and addons, the rest libraries they need. The server loads 264 jars; the
+other 24 are client-only (Sodium, Iris and their add-ons, the tooltip and overlay mods, TacZ Mesh
+Loader, and the like). `pack/tacz/` has one more entry, the Create Armorer gun pack.
 
 ## What's in
 
 **Create and the guns.** The core of the pack: Create, the TaCZ port and TaCZ Tweaks.
+
+**TaCZ gun packs and addons.** Where guns come from and what they do, in [their own
+page](guns.md): the Elite X Quality Guns and TaCZ Fallout gun packs, Create Armorer (a 1.20.1 gun
+pack in `pack/tacz/`, converted on load by TaCZ Pack Upgrader), TaCZ Addon (a better gunsmith
+table), Endless Ammo Refabricated, TaCZ Durability, TACZ Turrets, TaCZ Structure Loot (guns in
+structure chests), Curios for Ammo Box, Immersive TaCZ Integration (Create recipes for Create
+Armorer's guns), and Apotheosis Modern Ragnarok (below).
 
 **Apotheosis.** Affixes, gems, spawner and enchanting rework, and the gateways to farm them:
 Apotheosis with its Apothic Attributes, Enchanting and Spawners modules, Gateways to Eternity,
@@ -35,7 +43,7 @@ Confectionery, Stuff 'N Additions, Compressed, Deep Dark, Easy Structures, Facto
 Jetpack and its Curios slot, Kart, Let The Adventure Begin, Mechanical Extruder, Mechanical
 Spawner, Misc and Things, Ranged, Structures Arise, Ultimate Factory, Waystones Recipes, Winery,
 Wizardry, Addon Compatibility, Teleporters, Ultimine, Molten Vents, Dynamic Village, Recycled,
-Ars Creo (Ars Nouveau with Create), Immersive TaCZ Integration (see Known rough edges).
+Ars Creo (Ars Nouveau with Create).
 
 **Storage and tech.** Somewhere to put it all, and the scripting to change recipes later:
 Sophisticated Backpacks and Storage with their Create integrations, Tom's Simple Storage,
@@ -89,9 +97,9 @@ Cristel Lib, Curios, FTB Library, Fusion, Geckolib, GlitchCore, Gunsmith Lib, Ic
 Lib, JamLib, Kotlin for Forge, Lionfish API, Mechanicals Lib, MezzConfig, Moonlight, Patchouli,
 Petrolpark's Library, Placebo, playerAnimator, Prickle, Prism, Puzzles Lib, Ranged Weapon API,
 Resourceful Config and Lib, Rhino, Better Advanced Tooltips, Ritchie's Projectile Library,
-Searchables, ShatterLib, ShetiPhianCore, Silent Lib, Sophisticated Core, Spell Power Attributes,
-Structure Pool API, SuperMartijn642's Core and Config Lib, TerraBlender, Athena, YACL, YUNG's
-API.
+Searchables, ShatterLib, ShetiPhianCore, Silent Lib, SmartBrainLib, Sophisticated Core, Spell
+Power Attributes, Structure Pool API, SuperMartijn642's Core and Config Lib, TacZ Mesh Loader,
+TerraBlender, Athena, YACL, YUNG's API.
 
 ## Replaced
 
@@ -105,7 +113,9 @@ Old mods with no 1.21.1 build, and what does their job now. Checked 2026-10-19.
 | Construction Wand | Construction Wand - KOTS, a fork. |
 | Curious Lanterns | Lamb Lanterns, with LambDynamicLights for the light. |
 | Spyglass of Curios | DodoSpyglass. |
-| Create TaCZ Automation | Create: Immersive TaCZ Integration. It needs a gun pack the pack doesn't have yet (Known rough edges). |
+| Create TaCZ Automation | Create: Immersive TaCZ Integration, with the Create Armorer gun pack it works through. |
+| Endless Ammo | Endless Ammo Refabricated, a 1.21.1 rebuild of it. |
+| Gun Durability | TaCZ Durability 2.2.2, the same mod (`gundb`) under a new name. |
 | Create Recycle | Create: Recycled, a different mod for the same job. |
 | Embeddium, Oculus | Sodium and Iris. |
 | Sodium Extras (Embeddium Extras in the old pack) | Sodium Extra 0.9.3, with Reese's Sodium Options for its menus. |
@@ -128,7 +138,8 @@ From the old pack, checked 2026-10-19.
 | AllTheLeaks, Better FPS Distance, Better Compatibility Checker | 1.20.1 fixes, or only useful when publishing a pack. |
 | Sodium Options API, Sodium Options Mod Compat | Every Reese's Sodium Options 2.2.x declares Options API incompatible, and Reese's is in. Mod Compat needs Options API. |
 | FTB Quests, FTB XMod Compat | Waiting for a quest book. A new pack has no quests yet, and XMod Compat is mostly Quests integration. |
-| TaCZ gun packs and addons: Fiber's, Elite X, Maxstuff, Gucci & Vuitton, Fallout, Endless Ammo, Gun Durability | Most are 1.20.1 only and need the old pack converter; they get their own look. |
+| Fiber's Gunspack | Not on Modrinth, and packwiz's CurseForge search doesn't find it. |
+| Maxstuff, Gucci & Vuitton Attachments | 1.20.1 gun packs only. TaCZ Pack Upgrader could convert them; your call was to leave them out. Elite X and Fallout, the other two old gun packs, came back with 1.21.1 builds ([Where guns come from](guns.md)). |
 | Mods disabled in the old pack (`.jar.disabled`) | You had turned them off. |
 
 ## Held back on purpose
@@ -149,10 +160,9 @@ Pinned in packwiz, so `packwiz update` leaves them alone:
   world goes through cleanly.
 - **Apotheosis Modern Ragnarok's Brawler's gems** have gun bonuses whose categories overlap, and
   Apotheosis skips the ones that clash, so those gems may do less on guns than you'd expect.
-- **Create: Immersive TaCZ Integration probably does nothing yet.** Its install steps call for
-  the Create Armorer gun pack, a zip that goes in `.minecraft/tacz/`, and CurseForge has no
-  1.21.1 file of it that packwiz can fetch. The mod logs "Create Armorer is not installed" and
-  carries on. It waits for the gun packs work.
 - **Just Enough Breeding is likely missing six Alex's Mobs entries** (the rattlesnake, Tasmanian
   devil, triops, warped toad, straddler and warped mosco). It loads its Alex's Mobs recipes only
   when Alex's Mobs is in, and those six don't parse.
+- **Endless Ammo Refabricated's calibers have no guns yet.** It's an ammo library for gun packs,
+  and none of the four here use it, so its 52 ammo types and Ammo Bench are craftable but fire
+  from nothing.

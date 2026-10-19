@@ -240,3 +240,165 @@ have to be dropped.
 - Controlling shows no new keybind conflicts from the TaCZ addons.
 
 Then stop. Report, and leave merging to Logan.
+
+## Report
+
+### Built
+
+- **`pack/`:** 12 new entries in three batches, each passing the server check and committed on
+  its own: the 9 slugs in Shape, TacZ Mesh Loader (pulled by Elite X), SmartBrainLib (added by
+  hand for Turrets), and Create Armorer in `pack/tacz/`. Every slug resolved to the project and
+  version Already checked lists. No existing `.pw.toml` changed (`git diff b634f39 -- pack/`
+  shows only additions plus `index.toml` and `pack.toml`). Nothing was dropped.
+- **Create Armorer loads,** on the server, from `run/server/tacz/`:
+
+  ```
+  [main/INFO] [tacz/GunPackFinder]: Start scanning for gun packs in .../run/server/tacz
+  [main/INFO] [mod.chloeprime.gunsmithlib.GunsmithLib/]: Upgrading gunpack file at .../run/server/tacz/Create Armorer-v1.2.0.1-for117.zip
+  [main/INFO] [tacz/GunPackFinder]: - 479f0ac0…98b0ba.zip, Main namespace: create_armorer
+  [main/INFO] [tacz/GunPackFinder]: - elitex_quality_guns.zip, Main namespace: elitex
+  [main/INFO] [tacz/GunPackFinder]: - tacz_default_gun, Main namespace: tacz
+  [main/INFO] [tacz/GunPackFinder]: Found 3 possible gunpack(s) and added them to resource set.
+  ```
+
+  On the world load it logs `Found upgraded gunpack from cache` for the same zip. The first file
+  tried, 7598625, worked; 6849855 wasn't needed.
+- **Docs:** a new guide page, `docs/guide/guns.md`; the mod list, the guide index, the root
+  README's features, the server check page's step 4, and `FUTURE.md`.
+
+### Deviations
+
+- **The brief was uncommitted** with its README and `FUTURE.md` edits when the session started.
+  It went in first as `f79654b Brief 04: TaCZ gun packs, addons and Create Armorer`, as brief
+  03's did.
+- **TaCZ Pack Upgrader was already in the pack.** GunsmithLib (a TaCZ Tweaks dependency since
+  brief 02) nests `tacz-pack-upgrader-2.1.2-kff-dep-removed` in JarJar, and its log lines are
+  the ones above: the converter is GunsmithLib's copy of the Upgrader's code. The standalone
+  2.1.3 entry stays as Shape says; JarJar picks it over the nested 2.1.2 (`Attempted to select a
+  dependency jar for JarJar which was passed in as source: taczpackupgrader`). That's also why
+  the mod count rose by 2 in batch 1, not 3.
+- **Not every gun is at "the gunsmith table".** Elite X and Create Armorer bring their own tables
+  (the Elitebench and the Weapon Station) and each blacklists its namespace in TaCZ's
+  `tacz:default` recipe filter. TaCZ's `RecipeFilterManager` merges same-named filters across
+  packs (read from the port's bytecode), so TaCZ's Gun Smith Table shows the default pack and
+  Fallout, and the other two only at their own tables. The guide and the spot checks say so.
+- **Structure Loot replaces 56 vanilla tables and 2 Lost Cities ones,** not 62 and 2: 27 under
+  `chests/`, 13 under `chests/trial_chambers/`, 16 under `chests/village/`.
+- **Endless Ammo Refabricated exports its pack to `tacz/endlessammo`** on the server, like Elite
+  X. Fallout's pack stays inside its jar and doesn't appear in GunPackFinder's list; nothing on
+  the server logs its guns either way, so it's in the spot checks.
+
+### Defaults taken
+
+- **Structure Loot against other loot tables:** no clashes (The checks, below), so it stays.
+- **Endless Ammo Refabricated:** added. It is the old Endless Ammo's idea rebuilt with
+  permission from its author: an ammo library gun pack, namespace `ea`, with 53 ammo items (52
+  calibers plus one creative-only, per its page) and an Ammo Bench to make them. **No gun in the
+  pack fires any of them.** No `"ea:` reference exists in the default pack, Elite X, Fallout,
+  Create Armorer, or any TaCZ addon here. In the old pack it was likely there for Fiber's,
+  Maxstuff or Gucci & Vuitton, which are out. It's under Known rough edges in the mod list; keep
+  it or drop it is your call.
+
+### Acceptance
+
+- **Server check, twice on the final pack:** both exit 0.
+
+  ```
+  == server check: PASS ==
+  NeoForge:  21.1.264 (Minecraft 1.21.1)
+  Mods:      292 loaded (incl. minecraft and neoforge), 264 jar(s) in mods/
+  Boot:      65s wall, server says Done (22.698s)!
+  Warnings:  675 ERROR line(s) in the log (not failing on them):
+
+  == server check: PASS ==
+  NeoForge:  21.1.264 (Minecraft 1.21.1)
+  Mods:      292 loaded (incl. minecraft and neoforge), 264 jar(s) in mods/
+  Boot:      61s wall, server says Done (20.931s)!
+  Warnings:  675 ERROR line(s) in the log (not failing on them):
+  ```
+
+  The batches: 1 passed at 675 ERROR lines (285 loaded), 2 at 674 (285), 3 at 675 (292).
+
+  **The ERROR count is 675, as in brief 03,** net zero:
+
+  | Change | Source | What |
+  | --- | --- | --- |
+  | −1 | `CreateImmersiveTaCZ` | `Create Armorer is not installed`, gone in batch 2. |
+  | +1 | `RuntimeDistCleaner` | `Font$DisplayMode` loaded on the server by TaCZ Durability's `ClientGunTooltipMixin` (batch 3). Skipped, as the other seven are. |
+
+  Elite X logs one WARN, `Failed to read script file: elitex:sp_m1903_reload_logic_backup`, a
+  backup script left in its jar. Not an ERROR.
+- **`rg -c 'Create Armorer is not installed' run/server/logs/latest.log`:** nothing, on both
+  final runs.
+- **`ls run/server/tacz/`:** `Create Armorer-v1.2.0.1-for117.zip`, `elitex_quality_guns`,
+  `endlessammo`, `tacz_default_gun`. The log lines are under Built.
+- **Every slug in Shape has a `.pw.toml`:** all 9, SmartBrainLib, and
+  `pack/tacz/tacz-create-armorer-koei.pw.toml`.
+- **Duplicate filenames** (`grep … | sort | uniq -d`): nothing. Duplicate project IDs: none.
+- **No `tacz-1-21-1.pw.toml`, `timeless-and-classics-zero.pw.toml` or `fabric-api.pw.toml`:**
+  none under `pack/`.
+- **Sides:** `tacz-mesh-loader.pw.toml` has `side = "client"`, `tacz-pack-upgrader.pw.toml`
+  `side = "both"`. The five pins (Sodium, Iris, JEI, Sodium Extra, Reese's) are untouched.
+- **The client-side rule check:** the client set (288 jars) synced with packwiz-installer `-s
+  client` into the scratchpad, brief 03's script reused. 999 rules over 353 mod entries, 7
+  flagged, the known Minecraft ranges: When Dungeons Arise, both compasses, Clean Swing, Iris,
+  JEI, Productive Bees.
+- **Structure Loot clashes:** none. No server jar, nested jars included, ships any of its 58
+  table paths. Two things near it that aren't clashes: Lootr and Apotheosis add loot through
+  loot modifiers, on top of whichever table wins; and YUNG's structures still roll the vanilla
+  tables for their main chests (desert pyramid, dungeon, jungle temple, fortress, stronghold
+  chests), while the extra chests they add use YUNG's own tables, without guns.
+- **`scripts/export.sh`:** wrote `dist/claude-modpack-0.1.0.mrpack` (25 MB, up from 18). Create
+  Armorer isn't a Modrinth-hosted file, so packwiz puts the zip itself in
+  `overrides/tacz/`. Fine for your own instances; sharing the `.mrpack` publicly would mean
+  redistributing Koei's zip.
+- **`checklinks.py`:** 15 files, 0 broken.
+
+### Size
+
+Sized M, this session S (14 active min, 14 wall, 0 compactions). Every add went as the dry run
+said; the time went on the gun-table filters and checking Endless Ammo's calibers against the
+packs.
+
+### Spot checks for Logan
+
+Re-sync the Prism instance from `packwiz serve` first (it's still up on 8080), and check that
+`<instance>/tacz/` has `Create Armorer-v1.2.0.1-for117.zip`.
+
+- **Memory:** the client launches at 8192 MB. If it doesn't, try more and say what it took.
+- **Tables** (changed from the brief's wording, see Deviations): TaCZ's Gun Smith Table shows
+  the default pack's guns and Fallout's; the Elitebench shows Elite X's; the Weapon Station shows
+  Create Armorer's. With a gun in hand, a table shows only its attachments and ammo (TaCZ
+  Addon).
+- **Elite X** renders properly in first person (TacZ Mesh Loader).
+- **JEI** shows Immersive TaCZ's Create recipes for Create Armorer guns (barrel, trigger and
+  firing mechanism parts, mechanical crafting).
+- **Durability:** a gun loses durability as it fires, and inspecting it shows the count.
+- **Ammo box** goes in its Curios slot, and the gun reloads from it.
+- **Turret:** place one, give it a gun and ammo, and it fires at a hostile mob.
+- **Loot:** in a new world, a vanilla structure chest (a dungeon, a desert pyramid) can hold TaCZ
+  guns, ammo or attachments.
+- **Controlling:** no new keybind conflicts from the TaCZ addons. TaCZ Addon's gun cycling is
+  Tab + scroll, and Tab is also the player list: worth a look.
+- **Endless Ammo:** say whether to keep a caliber library nothing fires (Defaults taken).
+
+### Docs updated
+
+- `docs/guide/guns.md`, new: the four gun packs and which table makes each, TaCZ Addon at the
+  table, Create crafting, ammo, chest loot, turrets, durability, Apotheosis, and what isn't here.
+  Linked from `docs/guide/README.md` and the root README's features.
+- `docs/guide/mods.md`: the counts (288 entries, 264 on the server, 24 client-only, plus
+  `pack/tacz/`), a TaCZ gun packs and addons group pointing at the new page, Immersive TaCZ moved
+  into it, SmartBrainLib and TacZ Mesh Loader in the libraries, the Replaced rows, Left behind
+  split into Fiber's and Maxstuff with Gucci & Vuitton, the Immersive TaCZ rough edge out and an
+  Endless Ammo one in.
+- `docs/architecture/server-check.md`: step 4 says the sync installs `pack/tacz/` into
+  `run/server/tacz/` too.
+- `docs/briefs/FUTURE.md`: "TaCZ gun packs and addons" out.
+
+### Follow-ups
+
+- **Endless Ammo Refabricated:** keep or drop, after the spot check.
+- **TaCZ Addon's Tab binding** may need moving in the integrations brief's keybind pass.
+- **Status page:** "Where things stand" in `docs/briefs/README.md` still says about 200 mods
+  and names brief 04 as next. `wrap` refreshes it.

@@ -56,22 +56,6 @@ Two changes to `scripts/server-check.sh` from brief 02's report.
 - **Kill criteria:** if the resolver can't match NeoForge's verdicts on the current pack (no
   false failures), keep it as a separate script rather than part of the pass.
 
-## TaCZ gun packs and addons
-
-**Scheduled:** [brief 04](04-tacz-gun-packs-and-addons.md) (2026-10-19).
-
-The old pack had Fiber's Gunspack, Elite X Quality Guns, Maxstuff, Gucci & Vuitton Attachments,
-TaCZ Fallout, Endless Ammo, Gun Durability and Create TaCZ Automation. Most are built for 1.20.1,
-and the gun packs need the 1.20.1 pack converter. Of those, only Fallout has a 1.21.1 build, an
-unofficial port (Modrinth `unofficial-tacz-fallout-gunpack`, checked 2026-10-19).
-
-- **The question:** which gun packs convert cleanly to the port, and whether the converter is
-  something a session can run.
-- **Create Armorer** (CurseForge `tacz-create-armorer-koei`) is the gun pack that Create:
-  Immersive TaCZ Integration, in since brief 03, works through. packwiz finds no file for it on
-  1.21.1 NeoForge (2026-10-19), and without it the mod logs "Create Armorer is not installed".
-- **Kill criteria:** a pack that needs hand fixes after conversion stays out.
-
 ## Better Combat, and combat as a direction
 
 Logan turned Better Combat down for brief 03 but wants it noted as a possible direction to

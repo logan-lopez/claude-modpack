@@ -27,10 +27,10 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
 3. [`03-replacements-and-new-mods.md`](03-replacements-and-new-mods.md) (done, awaiting
    review): 1.21.1 stand-ins for the old mods that didn't come over, the Sodium add-ons that fit
    Sodium 0.8.12, and eight suggested mods, in four batches.
-4. [`04-tacz-gun-packs-and-addons.md`](04-tacz-gun-packs-and-addons.md): Elite X, Fallout,
-   Endless Ammo and Gun Durability back. Create Armorer goes in `pack/tacz/` through TaCZ Pack
-   Upgrader. Adds TaCZ Addon, Turrets, Structure Loot and Curios for Ammo Box, plus a guide page
-   on where guns come from.
+4. [`04-tacz-gun-packs-and-addons.md`](04-tacz-gun-packs-and-addons.md) (done, awaiting
+   review): Elite X, Fallout, Endless Ammo and Gun Durability back. Create Armorer goes in
+   `pack/tacz/` through TaCZ Pack Upgrader. Adds TaCZ Addon, Turrets, Structure Loot and Curios
+   for Ammo Box, plus a guide page on where guns come from.
 
 ## Done
 

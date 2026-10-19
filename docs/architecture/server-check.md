@@ -16,8 +16,10 @@ change to the mod set ends with it passing.
 3. Reads the NeoForge version from `pack/pack.toml`. If `run/server/` doesn't have that version's
    `libraries/net/neoforged/neoforge/<v>/unix_args.txt`, it wipes `run/server/` and runs the
    installer with `--installServer`. Installer and bootstrap jars are cached in `run/cache/`.
-4. Syncs the mods with packwiz-installer-bootstrap (`-g -s server`, from the served URL), which
-   also deletes jars it installed earlier that the pack no longer lists. Then it stops the serve.
+4. Syncs the pack with packwiz-installer-bootstrap (`-g -s server`, from the served URL): the
+   mods, and the gun packs in `pack/tacz/` into `run/server/tacz/`, where TaCZ reads them. It
+   also deletes files it installed earlier that the pack no longer lists. Then it stops the
+   serve.
 5. Deletes `world/`, `crash-reports/` and `logs/latest.log`, writes `eula.txt` and a
    `server.properties` with a fixed `level-seed`, and starts `./run.sh nogui` with stdin on a
    FIFO.
