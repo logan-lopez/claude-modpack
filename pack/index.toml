@@ -1,6 +1,11 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/almostunified.pw.toml"
+hash = "3805fe2877cffdae5e7bf74d85069a2535daa39a0f3ed766755be49294a07680"
+metafile = true
+
+[[files]]
 file = "mods/apotheosis.pw.toml"
 hash = "e154d7fb16dc7eb6ace7b88b3896955bb66f58c2daafe93c7ae3327ee418a509"
 metafile = true
@@ -31,6 +36,11 @@ hash = "f0edb6932d0c3f97338cf660763ff43bc5febdf0eb5edeca3a1927c20f14e296"
 metafile = true
 
 [[files]]
+file = "mods/balm.pw.toml"
+hash = "603cdc47142b5aa5729cbbf265a473574c9e2b55561de4318e9842d3d4b3b995"
+metafile = true
+
+[[files]]
 file = "mods/bellsandwhistles.pw.toml"
 hash = "e1f4a53e3e52b534add5dd018597fefd345d9bd6350b9c46ef0ec281fc62af8e"
 metafile = true
@@ -51,6 +61,21 @@ hash = "a0e9ff95570cd9af3374ca8b44aa095447baf94e565f46ae99819d52a9b48dc1"
 metafile = true
 
 [[files]]
+file = "mods/create-central-kitchen.pw.toml"
+hash = "3752b1dcdfebbb1e79c97c847095153155d64636576a9c0ac11ffa6506c62922"
+metafile = true
+
+[[files]]
+file = "mods/create-compressed.pw.toml"
+hash = "a946542ae4970e35a3f721b16872d2c66e62235778eb640c4102c1faaa008b3e"
+metafile = true
+
+[[files]]
+file = "mods/create-confectionery.pw.toml"
+hash = "33018abac3d5d96ba7774d9666a0f5d769974dd5c32487308f74744da3f1bcca"
+metafile = true
+
+[[files]]
 file = "mods/create-connected.pw.toml"
 hash = "6ac362d60bc8b13e03a5b6b9cdf9c7676f65d3e89e87c66f18514e7ee164cdb0"
 metafile = true
@@ -61,8 +86,18 @@ hash = "0eaabd71feeb13bb51455fc6528adf953639fe70b17d9bb90d54bacd8f6377a8"
 metafile = true
 
 [[files]]
+file = "mods/create-curios-jetpack.pw.toml"
+hash = "b8e662516d509fc3fcc6036955373de4760e3c43093f31117cef927fb7e4e619"
+metafile = true
+
+[[files]]
 file = "mods/create-deco.pw.toml"
 hash = "67a405e6307f900d168deaa954a4309c3b44a6025e4efd7b8e774b6f9d3a69cd"
+metafile = true
+
+[[files]]
+file = "mods/create-deep-dark.pw.toml"
+hash = "59ca697b09cd2339e6bbd524828fed73fa842083846e950a555aa081fedb6c63"
 metafile = true
 
 [[files]]
@@ -73,6 +108,11 @@ metafile = true
 [[files]]
 file = "mods/create-dragons-plus.pw.toml"
 hash = "dcbb37e828a2f915e64a2ef839a742761a553a2e3b923b000ffba95db7503ac3"
+metafile = true
+
+[[files]]
+file = "mods/create-easy-structures.pw.toml"
+hash = "1d91b46a5973bda84e2b314878693ef5df83475b95569a75b00de096edfe3df4"
 metafile = true
 
 [[files]]
@@ -91,6 +131,11 @@ hash = "bdaaa0b86e05f11ae01652a097cb827259a9f2e6a6b4d46f25081d3c78bd83d8"
 metafile = true
 
 [[files]]
+file = "mods/create-factory.pw.toml"
+hash = "24321b315a7cd5f164f65cf9b419629d1215cd7a081a98cde81e970a565785d5"
+metafile = true
+
+[[files]]
 file = "mods/create-filters-anywhere.pw.toml"
 hash = "6f22c0b764a60d0632145d101122f36d3687447e0801b92b8875b4a9cda8b5b1"
 metafile = true
@@ -103,6 +148,41 @@ metafile = true
 [[files]]
 file = "mods/create-goggles.pw.toml"
 hash = "5de2bbab0826b5241e16746b0b739ca5169b0a9df38181d58e8519e6ea7f535f"
+metafile = true
+
+[[files]]
+file = "mods/create-ironworks.pw.toml"
+hash = "6b4c8da8574d795f59a1602d243abfbb540867fd27ad51abaae4a5c26c291cc8"
+metafile = true
+
+[[files]]
+file = "mods/create-jetpack.pw.toml"
+hash = "157b009cd9b2a7f55f2b7d0abdc2f9f7d49eade208a786c71cc6d2f8430bba4a"
+metafile = true
+
+[[files]]
+file = "mods/create-let-the-adventure-begin.pw.toml"
+hash = "3a99e0babeb75872334ed2abd96949fb9e993690f27eb51dcb30ec376186c719"
+metafile = true
+
+[[files]]
+file = "mods/create-mechanical-extruder.pw.toml"
+hash = "6e064a3988937e06dfa307c8c395c73461819f9135197bc30563c6f13d1f1da4"
+metafile = true
+
+[[files]]
+file = "mods/create-mechanical-spawner.pw.toml"
+hash = "8d9f6438c0e03857f55b3b6fe2383fb8393c01c8d41012cf5032fdedd184575a"
+metafile = true
+
+[[files]]
+file = "mods/create-misc-and-things.pw.toml"
+hash = "055a23471c72576d1f79e2edcd6a20bcaa59ac70c84480fc10069c6469b3f528"
+metafile = true
+
+[[files]]
+file = "mods/create-molten-vents.pw.toml"
+hash = "198dc94a41237e61ad862bb803a6b5892781209a0f9890881f3f98cd6fce2792"
 metafile = true
 
 [[files]]
@@ -131,13 +211,53 @@ hash = "61892c3c7dd720662a6c21b0e8eec4dff8a5994868a3a2addb917dd3f99c47a9"
 metafile = true
 
 [[files]]
+file = "mods/create-ranged.pw.toml"
+hash = "d60a1f5dab3658ac74a957e02b60fac95db9a6f8ad79a214851b46abf05156e2"
+metafile = true
+
+[[files]]
 file = "mods/create-steam-n-rails-1.21.1.pw.toml"
 hash = "80332cead695f1e3c27e99133a48709767d1106f836792bb2fc4d594b88f1a68"
 metafile = true
 
 [[files]]
+file = "mods/create-structures-arise.pw.toml"
+hash = "d07e87a42a1f882ee71b9f68fc531b1b9dcf4637f69fcf0c80322e488cf79171"
+metafile = true
+
+[[files]]
+file = "mods/create-stuff-additions.pw.toml"
+hash = "2244c6c580c41f432e02bc82a6f78af0b1777de42400d1e5b702208376c56c6f"
+metafile = true
+
+[[files]]
+file = "mods/create-teleporters.pw.toml"
+hash = "3937f3e93d3117d33bc5d5144d5a983f5336100e6dc1b64dca338e2e725ea3ce"
+metafile = true
+
+[[files]]
 file = "mods/create-trading-floor.pw.toml"
 hash = "dd46758c8eb82deb6dcd56a9879dc5e583ff812245ebb357fd79053a60c58871"
+metafile = true
+
+[[files]]
+file = "mods/create-ultimate-factory.pw.toml"
+hash = "34d808989e71221b8e01a44bc8031f20af1c94981acb0cba4669e0e58be69629"
+metafile = true
+
+[[files]]
+file = "mods/create-waystones-recipes.pw.toml"
+hash = "009321bf662bf580a9858d97f0c81770dbd4d06df6df0811d2d870ab5bcce621"
+metafile = true
+
+[[files]]
+file = "mods/create-winery.pw.toml"
+hash = "0494165f772354b6796a0a5869f07afacf178519e888ab0450da3d4865d2a692"
+metafile = true
+
+[[files]]
+file = "mods/create-wizardry.pw.toml"
+hash = "0066bc1ea4d1d479319614685f6ee93f227a985183e067264272762bd90a8a7b"
 metafile = true
 
 [[files]]
@@ -151,6 +271,26 @@ hash = "e5052e0fcba9af1e3c6c0734829b441bc5a23012108bf203ca01825ca12ff6b1"
 metafile = true
 
 [[files]]
+file = "mods/createaddoncompatibility.pw.toml"
+hash = "046a80051e21c0bab042ad1b7e27d42a7456fd36cfabf0454e9110ec345078fd"
+metafile = true
+
+[[files]]
+file = "mods/createkart.pw.toml"
+hash = "a50e58ebadb9fdf5ee974436e257a915f861f7cd35280013e352c46cc31e0202"
+metafile = true
+
+[[files]]
+file = "mods/curios.pw.toml"
+hash = "36debf7653e95a855b4fedacc19027cf2e01960fc0b6d55ef2ffbffbcb455690"
+metafile = true
+
+[[files]]
+file = "mods/dynamic-village.pw.toml"
+hash = "2bcb5fbe083f3ace39698e890255eb0758116e395fb211d136c8a12369b529e0"
+metafile = true
+
+[[files]]
 file = "mods/enchantment-descriptions.pw.toml"
 hash = "88b9e727611f06350c407aeb4ccb41207b5058fef127abe0ff24c13505618aaf"
 metafile = true
@@ -161,8 +301,23 @@ hash = "677912b683eeda568c6e81d235c2411461c1d212608b5440a79d5abbd2c5fc1d"
 metafile = true
 
 [[files]]
+file = "mods/geckolib.pw.toml"
+hash = "35779b39ddc06059ec483b33de2ecfdc3adb95c0a49e69b6701fb0024827e2f5"
+metafile = true
+
+[[files]]
 file = "mods/interiors.pw.toml"
 hash = "e7e6b3effe3022cf1fdb900c857111fdcbfd6b385c2d5bd28c914efaed436ecb"
+metafile = true
+
+[[files]]
+file = "mods/irons-lib.pw.toml"
+hash = "93f7a09e0d9a05c31b55bb9725545c49dc68067556a98d470e4f405bdbf3b25c"
+metafile = true
+
+[[files]]
+file = "mods/irons-spells-n-spellbooks.pw.toml"
+hash = "4623bbc102dd3b7648a96569a1ab49b868774d46355b305ac40c4c79ad1c74e2"
 metafile = true
 
 [[files]]
@@ -173,6 +328,11 @@ metafile = true
 [[files]]
 file = "mods/max-health-fix.pw.toml"
 hash = "4001d2b92e816ec91524967e1a0dd83c59da461214edf7ad246084fb22c02bc9"
+metafile = true
+
+[[files]]
+file = "mods/mechanicals-lib.pw.toml"
+hash = "c9e181185e3177d43fc9bd8d919288ac1bc0ce6b85e7049890f3eb231f5be10d"
 metafile = true
 
 [[files]]
@@ -193,6 +353,11 @@ metafile = true
 [[files]]
 file = "mods/placebo.pw.toml"
 hash = "d94791108548d174758d587440c656f1a56884083fa3151bf90b515126482435"
+metafile = true
+
+[[files]]
+file = "mods/playeranimator.pw.toml"
+hash = "93284ca7f2f23f0bb76d42b797cabf2aea1914ee9825bec82bf6ffe4c60dda0d"
 metafile = true
 
 [[files]]
@@ -223,6 +388,11 @@ metafile = true
 [[files]]
 file = "mods/toms-storage.pw.toml"
 hash = "a303683e4c74640f419c31db329e9afc3ee8f388abc5c6a536dc6169c274b5c6"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+hash = "2dad5577c5ec5e73bb3d5cec8da606e3b72e384207c9291a25e1ae96fd20bb70"
 metafile = true
 
 [[files]]
