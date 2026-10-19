@@ -35,7 +35,7 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
 5. [`05-backups-pregen-and-sound.md`](05-backups-pregen-and-sound.md) (done, awaiting
    review): Simple Backups, Chunky and Sound Physics Remastered, the last mods before the main
    list freezes, and a guide section on looking after a world.
-6. [`06-better-combat-trial.md`](06-better-combat-trial.md): Better Combat, Combat Roll and
+6. [`06-better-combat-trial.md`](06-better-combat-trial.md) (done, awaiting review): Better Combat, Combat Roll and
    Apothic Combat on a `better-combat-trial` branch, with the hand checks that decide go or no-go.
 
 ## Done

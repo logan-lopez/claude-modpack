@@ -91,6 +91,12 @@ Apotheosis Modern Ragnarok gives TaCZ guns Apotheosis affixes, gems and rarities
 weapon. Some of Brawler's gem bonuses overlap and get skipped ([the mod
 list](mods.md#known-rough-edges)).
 
+## Melee
+
+Better Combat changes melee, not guns: no TaCZ item gets a moveset, so left-click still fires and
+right-click still aims. Combat Roll's dodge is on R by default, the same key as reload. [Fighting
+up close](combat.md) has both.
+
 ## Not here
 
 Fiber's Gunspack, Maxstuff and Gucci & Vuitton Attachments were in the old pack. Fiber's isn't on

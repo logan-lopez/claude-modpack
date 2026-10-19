@@ -23,6 +23,8 @@ It's built around Create and Timeless and Classics Zero (TaCZ).
   over, and what was left behind and why.
 - [Where guns come from](docs/guide/guns.md): three TaCZ gun packs on top of the port's own,
   crafting through Create, guns in structure chests, turrets and gun durability.
+- [Fighting up close](docs/guide/combat.md): melee with Better Combat's swings and combos, and a
+  dodge roll. A trial on the `better-combat-trial` branch.
 
 ## Requirements
 

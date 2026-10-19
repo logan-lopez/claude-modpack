@@ -6,11 +6,11 @@ didn't come over, with why, and what stands in for them. Compare it with the old
 
 **Covers:** `pack/mods/`, `pack/tacz/`
 
-291 entries in `pack/mods/`: about 200 picked from the old pack, 23 added as replacements and new
-picks, 9 TaCZ gun packs and addons, 3 for looking after a world (backups, pregeneration, sound),
-the rest libraries they need. The server loads 266 jars; the other 25 are client-only (Sodium,
-Iris and their add-ons, the tooltip and overlay mods, TacZ Mesh Loader, Sound Physics, and the
-like). `pack/tacz/` has one more entry, the Create Armorer gun pack.
+295 entries in `pack/mods/`: about 200 picked from the old pack, 23 added as replacements and new
+picks, 9 TaCZ gun packs and addons, 3 for looking after a world (backups, pregeneration, sound), 3
+for melee (the Better Combat trial), the rest libraries they need. The server loads 270 jars; the
+other 25 are client-only (Sodium, Iris and their add-ons, the tooltip and overlay mods, TacZ Mesh
+Loader, Sound Physics, and the like). `pack/tacz/` has one more entry, the Create Armorer gun pack.
 
 ## What's in
 
@@ -22,6 +22,10 @@ pack in `pack/tacz/`, converted on load by TaCZ Pack Upgrader), TaCZ Addon (a be
 table), Endless Ammo Refabricated, TaCZ Durability, TACZ Turrets, TaCZ Structure Loot (guns in
 structure chests), Curios for Ammo Box, Immersive TaCZ Integration (Create recipes for Create
 Armorer's guns), and Apotheosis Modern Ragnarok (below).
+
+**Combat, up close.** A trial, on the `better-combat-trial` branch until you decide: Better Combat
+(swing animations, combos and arcs), Combat Roll (a dodge on a key) and Apothic Combat (tidies
+Better Combat's tooltips). In [their own page](combat.md).
 
 **Apotheosis.** Affixes, gems, spawner and enchanting rework, and the gateways to farm them:
 Apotheosis with its Apothic Attributes, Enchanting and Spawners modules, Gateways to Eternity,
@@ -96,13 +100,13 @@ ImmediatelyFast, Entity Culling, BadOptimizations, Noisium, FastFurnace, FastWor
 FastSuite, Clumps, ServerCore, spark.
 
 **Libraries.** In because something above needs them, not picked by hand: Architectury, Balm,
-Bookshelf, Caelus, CodxLib, Collective, Common Storage Lib, Create: Dragons Plus, CreativeCore,
-Cristel Lib, Curios, FTB Library, Fusion, Geckolib, GlitchCore, Gunsmith Lib, Iceberg, Iron's
-Lib, JamLib, Kotlin for Forge, Lionfish API, Mechanicals Lib, MezzConfig, Moonlight, Patchouli,
-Petrolpark's Library, Placebo, playerAnimator, Prickle, Prism, Puzzles Lib, Ranged Weapon API,
-Resourceful Config and Lib, Rhino, Better Advanced Tooltips, Ritchie's Projectile Library,
-Searchables, ShatterLib, ShetiPhianCore, Silent Lib, SmartBrainLib, Sophisticated Core, Spell
-Power Attributes, Structure Pool API, SuperMartijn642's Core and Config Lib, TacZ Mesh Loader,
+Bookshelf, Caelus, Cloth Config, CodxLib, Collective, Common Storage Lib, Create: Dragons Plus,
+CreativeCore, Cristel Lib, Curios, FTB Library, Fusion, Geckolib, GlitchCore, Gunsmith Lib, Iceberg,
+Iron's Lib, JamLib, Kotlin for Forge, Lionfish API, Mechanicals Lib, MezzConfig, Moonlight,
+Patchouli, Petrolpark's Library, Placebo, playerAnimator, Prickle, Prism, Puzzles Lib, Ranged Weapon
+API, Resourceful Config and Lib, Rhino, Better Advanced Tooltips, Ritchie's Projectile Library,
+Searchables, ShatterLib, ShetiPhianCore, Silent Lib, SmartBrainLib, Sophisticated Core, Spell Power
+Attributes, Structure Pool API, SuperMartijn642's Core and Config Lib, TacZ Mesh Loader,
 TerraBlender, Athena, YACL, YUNG's API.
 
 ## Replaced
@@ -172,6 +176,3 @@ Pinned in packwiz, so `packwiz update` leaves them alone:
   from nothing.
 - **Sound Physics Remastered is an alpha build,** the only one for NeoForge 1.21.1. If it costs
   too much frame time, it comes out.
-- **Sound Physics has no settings screen,** because the Cloth Config it uses for one isn't in the
-  pack. Its settings are files in the instance's `minecraft/config/sound_physics_remastered/`,
-  the main one `soundphysics.properties`.
