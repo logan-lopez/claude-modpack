@@ -168,3 +168,144 @@ One batch, one commit: `Add backups, pregeneration and sound physics`.
   it comes out.
 
 Then stop. Report, and leave merging to Logan.
+
+## Report
+
+### Built
+
+- **The pack** (`828d2b2`, `Add backups, pregeneration and sound physics`): Simple Backups
+  1.21-4.0.30, Chunky 1.4.23 and Sound Physics Remastered neoforge-1.21.1-1.5.1, the versions
+  Already checked lists. packwiz printed the right project name for each and pulled no
+  dependencies. `sound-physics-remastered.pw.toml` is `side = "client"`; the other two are
+  `both`. `git status --short pack/` showed the three new files plus `index.toml` and
+  `pack.toml`, nothing else.
+- **Docs:** a "Looking after a world" section on the playing page (backups, restoring one,
+  pregenerating), the mod list's counts, groups and two rough edges, and the guide index and root
+  README lines.
+
+### Deviations
+
+- **The briefs were uncommitted** (05, 06, and their README and `FUTURE.md` edits) when the
+  session started. They went in first as their own commit, `341ee03` (`Briefs 05 and 06:
+  backups, pregeneration and sound; the Better Combat trial`), as brief 03 did, so the batch and
+  this report sit on top of them.
+- **Where backups go isn't "beside the world".** `outputPath = "simplebackups"` is resolved
+  against the game's working directory, and `createSubDirs = true` adds a folder per world. In
+  Prism that's the instance's `minecraft/simplebackups/<save folder>/`, next to `saves/`, not
+  inside it (read from `CommonConfig.getOutputPath` and `BackupThread` in the jar). The guide
+  says that.
+- **The restore steps move the old world out first,** rather than unzipping over it. The zip's
+  entries start with the save folder's name, so it unpacks into `saves/` under the old name.
+  Unzipping over a live folder would leave files written after the backup (newer region files,
+  say) mixed in with the restored ones.
+- **The guide names Sound Physics' config folder,** `config/sound_physics_remastered/` with
+  `soundphysics.properties`, read from the jar, since there's no settings screen to point at.
+
+### Defaults taken
+
+- **Sound Physics' side:** `client`, as the open question's default said. The scratch boot's
+  `SoundEngine for invalid dist DEDICATED_SERVER` line is gone with it: none in any of the three
+  runs below.
+
+### Simple Backups' defaults
+
+From `run/server/config/simplebackups-common.toml` and `simplebackups-server.toml`, as the real
+run generated them:
+
+- **Enabled,** `backupType = "FULL_BACKUPS"`: a full zip each time, with a save-all first.
+- **Interval:** `timer = 120` minutes, on the real clock (`useTickCounter = false`).
+- **Keeps** `backupsToKeep = 10`, and deletes the oldest past `maxDiskSize = "25 GB"`.
+- **Where:** `outputPath = "simplebackups"`, `createSubDirs = true` (see Deviations).
+- **Nobody online:** `noPlayerBackups = false`, so it skips backups while nobody's on. A
+  single-player world is never in that state while it's running.
+- **Messages:** `sendMessages = true`, to everyone (`messagesForEveryone = true`).
+- **Forcing one:** `/simplebackups backup start` (also `backup pause` and `backup unpause`).
+  `commandsCheatsDisabled = false`, so it needs permission level 2, which in single-player means
+  cheats on. Read from `EventListener` and `BackupCommand` in the jar.
+- The experimental incremental system is off (`simplebackups-common-experimental.toml`).
+
+### Acceptance
+
+- **`scripts/server-check.sh`, three passes** (`CHECK_PORT=8081`, since `packwiz serve` holds
+  8080). The first is step 1's; the other two are step 3's back-to-back runs on the final pack:
+
+  ```
+  == server check: PASS ==
+  NeoForge:  21.1.264 (Minecraft 1.21.1)
+  Mods:      294 loaded (incl. minecraft and neoforge), 266 jar(s) in mods/
+  Boot:      53s wall, server says Done (18.665s)!
+  Warnings:  675 ERROR line(s) in the log (not failing on them):
+
+  == server check: PASS ==
+  NeoForge:  21.1.264 (Minecraft 1.21.1)
+  Mods:      294 loaded (incl. minecraft and neoforge), 266 jar(s) in mods/
+  Boot:      50s wall, server says Done (17.675s)!
+  Warnings:  675 ERROR line(s) in the log (not failing on them):
+
+  == server check: PASS ==
+  NeoForge:  21.1.264 (Minecraft 1.21.1)
+  Mods:      294 loaded (incl. minecraft and neoforge), 266 jar(s) in mods/
+  Boot:      52s wall, server says Done (18.794s)!
+  Warnings:  675 ERROR line(s) in the log (not failing on them):
+  ```
+
+  **675 ERROR lines, the same as brief 04,** with two more jars and two more mods (264 → 266,
+  292 → 294). The scratch boot's three extra lines didn't come back: no `SoundEngine` dist error
+  (Sound Physics is off the server), and no Create Jetpack `Cannot send clientbound payloads`
+  pair on the real `run/server/`, which fits the brief's guess that a fresh server folder
+  writing its configs caused it.
+- **The three `.pw.toml` files** exist: `simple-backups` and `chunky` are `side = "both"`,
+  `sound-physics-remastered` is `side = "client"`.
+- **Duplicate filenames:** `grep -h '^filename' pack/mods/*.pw.toml pack/tacz/*.pw.toml | sort |
+  uniq -d` prints nothing.
+- **No `cloth-config.pw.toml`:** none.
+- **Simple Backups' defaults:** listed above.
+- **The client-side rule check:** the client set (291 jars) synced with packwiz-installer `-s
+  client` into the scratchpad, brief 03's script reused unchanged. 1007 rules over 356 mod
+  entries, 7 flagged, all the known Minecraft ranges: When Dungeons Arise, both compasses, Clean
+  Swing (`[1.21,1.21z)`), Iris, JEI, Productive Bees. Sound Physics' own `[1.21,1.21.1]`
+  includes 1.21.1.
+- **`scripts/export.sh`:** wrote `dist/claude-modpack-0.1.0.mrpack` (25 MB, unchanged: all three
+  mods are Modrinth downloads, so none is bundled).
+- **`checklinks.py`:** 17 files, 0 broken.
+
+### Size
+
+Sized S, this session S (10 active min, 10 wall, 0 compactions). Everything went as the dry run
+said; the reading time went on Simple Backups' bytecode, for the backup folder and the force
+command.
+
+### Spot checks for Logan
+
+Re-sync the Prism instance from `packwiz serve` first (it's up on 8080).
+
+- **Memory:** the client launches at 8192 MB.
+- **Chunky:** in a new world with cheats on, `/chunky radius 500` then `/chunky start` runs to
+  completion, and the world still plays while it runs.
+- **Simple Backups:** `/simplebackups backup start` (cheats on) says Backup started, then
+  completed, in chat, and a zip appears in the instance's `minecraft/simplebackups/<save
+  folder>/`. Opening it shows the world's folder at the top.
+- **Sound Physics:** fire a gun in a cave or mineshaft, then in the open: the cave shot echoes. A
+  sound behind a wall is muffled.
+- **Frame time** in a cave with a gunfight is no worse than without Sound Physics. If it is, say
+  so: it comes out.
+
+### Docs updated
+
+- `docs/guide/playing.md`: "Looking after a world", with Backups and Pregenerating.
+- `docs/guide/mods.md`: 291 entries, 266 server jars, 25 client-only; Simple Backups and Chunky
+  under Quality of life; "Seeing and hearing what's going on" with Sound Physics; two Known
+  rough edges (an alpha; no settings screen, and where its config files are).
+- `docs/guide/README.md` and the root `README.md`: the playing page's line.
+- No architecture page changed: `scripts/server-check.sh` wasn't touched.
+
+### Follow-ups
+
+- **The playing page says the `.mrpack` is about 18 MB.** It's been 25 MB since brief 04 (its
+  report says so). Not this brief's change, so left for `wrap`.
+- **Status page:** "Where things stand" in `docs/briefs/README.md` still says about 200 mods and
+  lists brief 05 as next. `wrap` refreshes it.
+- **For the integrations brief:** whether 120 minutes and 10 backups suit a world Logan means to
+  keep, and whether `commandsCheatsDisabled = true` is worth it so a survival world without
+  cheats can force a backup before something risky. Chunky's `continueOnRestart = false` is the
+  other default worth a look.

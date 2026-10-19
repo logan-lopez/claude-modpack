@@ -49,6 +49,43 @@ the file, because a `.mrpack` can only link to Modrinth downloads. That makes it
 sharing it hands those jars on directly rather than through CurseForge. Fine between friends;
 it's the reason the pack couldn't be uploaded to Modrinth as it stands.
 
+## Looking after a world
+
+### Backups
+
+Simple Backups zips the world every 120 minutes of play, as a full backup each time, and says so
+in chat when it starts and finishes. It keeps the newest 10, and deletes the oldest when there
+are more or when the folder passes 25 GB. They go in the instance's `minecraft/simplebackups/`,
+in a folder named after the world's save folder (the one under `minecraft/saves/`). The timer
+runs only while you're in the world.
+
+To force one, `/simplebackups backup start`. Like every command here, it needs cheats on.
+
+To restore one, with the game closed: move the world's folder out of `minecraft/saves/` somewhere
+safe, then unzip the backup into `minecraft/saves/`. The zip holds the world's folder, so it
+comes back under its old name. Open the world. If it's wrong, put the moved folder back. Moving
+the old folder out, rather than unzipping over it, matters: files written after the backup would
+otherwise stay mixed in with the restored ones.
+
+### Pregenerating
+
+Terralith, Biomes O' Plenty and the structure mods make new chunks slow to generate, so flying or
+riding a train into fresh ground stutters. Chunky generates them ahead of time.
+
+Its commands need cheats on: tick Allow Cheats when you create the world, or for a world without
+them, Open to LAN with Allow Cheats on (it lasts until you leave the world). A starting point:
+
+```
+/chunky radius 1000
+/chunky start
+```
+
+The radius is in blocks around the world's center (0, 0), so that's a 2000-by-2000 square of the
+dimension you're standing in. `/chunky spawn` centers it on the world spawn instead. It takes a
+while, and runs in the background while you play, with progress in chat. `/chunky pause` stops
+it, and `/chunky continue` picks it up again, including after you've left the world and come
+back: it doesn't resume on its own.
+
 ## When the instance won't launch
 
 - **The loading screen stalls or the game runs out of memory.** Check the instance's maximum

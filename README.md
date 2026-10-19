@@ -16,7 +16,8 @@ It's built around Create and Timeless and Classics Zero (TaCZ).
 ## Features
 
 - [Playing the pack](docs/guide/playing.md) in Prism Launcher, synced from the repo on each launch,
-  or imported from a `.mrpack`.
+  or imported from a `.mrpack`, and looking after a world: timed backups and pregenerating
+  terrain.
 - [What's in the pack](docs/guide/mods.md): about 200 mods from the old 1.20.1 pack and two
   dozen added since, grouped by what they're for, what replaced the old mods that didn't come
   over, and what was left behind and why.

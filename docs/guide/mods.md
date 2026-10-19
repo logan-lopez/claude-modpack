@@ -6,10 +6,11 @@ didn't come over, with why, and what stands in for them. Compare it with the old
 
 **Covers:** `pack/mods/`, `pack/tacz/`
 
-288 entries in `pack/mods/`: about 200 picked from the old pack, 23 added as replacements and new
-picks, 9 TaCZ gun packs and addons, the rest libraries they need. The server loads 264 jars; the
-other 24 are client-only (Sodium, Iris and their add-ons, the tooltip and overlay mods, TacZ Mesh
-Loader, and the like). `pack/tacz/` has one more entry, the Create Armorer gun pack.
+291 entries in `pack/mods/`: about 200 picked from the old pack, 23 added as replacements and new
+picks, 9 TaCZ gun packs and addons, 3 for looking after a world (backups, pregeneration, sound),
+the rest libraries they need. The server loads 266 jars; the other 25 are client-only (Sodium,
+Iris and their add-ons, the tooltip and overlay mods, TacZ Mesh Loader, Sound Physics, and the
+like). `pack/tacz/` has one more entry, the Create Armorer gun pack.
 
 ## What's in
 
@@ -77,13 +78,16 @@ Easy Villagers, Corail Tombstone, Inventory Essentials, Inventory Sorter, Crafti
 Tweaks, TrashSlot, Controlling, AppleSkin, Bridging Mod, Animal Feeding Trough, Anvil
 Restoration, Pylons, Elytra Slot, Lamb Lanterns (a Curios slot for a lantern), DodoSpyglass (a
 Curios slot for the spyglass), MmmMmmMmmMmm (target dummies), Rotten Flesh to Leather,
-Measurements, Pig Pen Cipher, Leaves Be Gone, Clean Swing Through Grass.
+Measurements, Pig Pen Cipher, Leaves Be Gone, Clean Swing Through Grass, Simple Backups (timed
+world backups) and Chunky (pregenerates terrain), both in [Looking after a
+world](playing.md#looking-after-a-world).
 
-**Seeing what's going on.** Recipes, tooltips and the map: JEI with Just Enough Resources,
-Professions, Breeding and Archaeology; Jade and Jade Addons; JourneyMap; Legendary Tooltips,
-Equipment Compare, Durability Tooltip, More Overlays Updated, Transmog, Visual Workbench,
-AmbientSounds, Freecam, No Chat Reports, LambDynamicLights (light from a held torch or a worn
-lantern).
+**Seeing and hearing what's going on.** Recipes, tooltips, the map and sound: JEI with Just
+Enough Resources, Professions, Breeding and Archaeology; Jade and Jade Addons; JourneyMap;
+Legendary Tooltips, Equipment Compare, Durability Tooltip, More Overlays Updated, Transmog,
+Visual Workbench, AmbientSounds, Sound Physics Remastered (echo and muffling from the space
+around a sound, gunshots included), Freecam, No Chat Reports, LambDynamicLights (light from a
+held torch or a worn lantern).
 
 **Performance.** Sodium and Iris for rendering and shaders, both held at fixed versions (Sodium
 0.8.12, Iris 1.8.14-beta.1, the Iris built for Sodium 0.8), with Sodium Extra, Reese's Sodium
@@ -166,3 +170,8 @@ Pinned in packwiz, so `packwiz update` leaves them alone:
 - **Endless Ammo Refabricated's calibers have no guns yet.** It's an ammo library for gun packs,
   and none of the four here use it, so its 52 ammo types and Ammo Bench are craftable but fire
   from nothing.
+- **Sound Physics Remastered is an alpha build,** the only one for NeoForge 1.21.1. If it costs
+  too much frame time, it comes out.
+- **Sound Physics has no settings screen,** because the Cloth Config it uses for one isn't in the
+  pack. Its settings are files in the instance's `minecraft/config/sound_physics_remastered/`,
+  the main one `soundphysics.properties`.

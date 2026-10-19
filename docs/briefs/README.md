@@ -32,9 +32,9 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
    review): Elite X, Fallout, Endless Ammo and Gun Durability back. Create Armorer goes in
    `pack/tacz/` through TaCZ Pack Upgrader. Adds TaCZ Addon, Turrets, Structure Loot and Curios
    for Ammo Box, plus a guide page on where guns come from.
-5. [`05-backups-pregen-and-sound.md`](05-backups-pregen-and-sound.md): Simple Backups, Chunky and
-   Sound Physics Remastered, the last mods before the main list freezes, and a guide section on
-   looking after a world.
+5. [`05-backups-pregen-and-sound.md`](05-backups-pregen-and-sound.md) (done, awaiting
+   review): Simple Backups, Chunky and Sound Physics Remastered, the last mods before the main
+   list freezes, and a guide section on looking after a world.
 6. [`06-better-combat-trial.md`](06-better-combat-trial.md): Better Combat, Combat Roll and
    Apothic Combat on a `better-combat-trial` branch, with the hand checks that decide go or no-go.
 
