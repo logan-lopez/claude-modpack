@@ -18,7 +18,7 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
 
 ### Other
 
-1. [`01-pack-skeleton-and-server-check.md`](01-pack-skeleton-and-server-check.md): a packwiz pack,
+1. [`01-pack-skeleton-and-server-check.md`](01-pack-skeleton-and-server-check.md) (done, awaiting review): a packwiz pack,
    a headless server check that fails on crashes and missing dependencies, and Create and the
    TaCZ port passing it.
 

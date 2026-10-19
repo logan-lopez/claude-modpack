@@ -221,3 +221,108 @@ same pack across runs. A flaky check is worse than none.
 The server check runs headless (`nogui`) and opens no windows, so it needs no warning.
 
 Then stop. Commit, report, and leave merging to Logan.
+
+## Report
+
+### Built
+
+- **Pack** (`pack/`): `packwiz init` with no prompts, NeoForge pinned at `21.1.264` (what
+  `--neoforge-latest` picked). `mods/create.pw.toml` is Create `6.0.10+mc1.21.1` and
+  `mods/tacz-1.21.1.pw.toml` is the TaCZ port `1.1.8-hotfix-r7`; both files are tagged
+  `neoforge` / `1.21.1` on Modrinth (checked by version ID through the v2 API). No dependencies
+  were offered for either.
+- **Server check** (`scripts/server-check.sh`): the steps in Shape, in order. Watches
+  `logs/latest.log` for Done or one of three real failure strings, `crash-reports/` for any file,
+  the process for an early exit, and a timeout. Kills by PID, `run.sh`'s java child first. Traps
+  `INT`/`TERM` so an interrupted run cleans up. Caches the installer, the bootstrap and
+  `packwiz-installer.jar` in `run/cache/`, with the serve, install and sync logs beside them.
+- **Export** (`scripts/export.sh`): slugs the pack name, refreshes, and writes
+  `dist/claude-modpack-0.1.0.mrpack`.
+- **Docs**: root `README.md`; `AGENTS.md` (Commands, Rules, Areas); `docs/guide/README.md` and
+  `docs/guide/playing.md`; `docs/architecture/server-check.md`; `.claude/rules/server-check.md`
+  from `areas.py`; `.gitignore`.
+
+### Deviations
+
+- **Failure strings.** The brief's examples were guesses, as it said. From the real failure:
+  `Missing or unsupported mandatory dependencies` (ERROR), `Error during pre-loading phase`
+  (FATAL) and `Failed to start the minecraft server`. "Mod loading has failed" appears only in the
+  crash report, never in `latest.log`, so it isn't a pattern.
+- **The server exits 0 after a mod-loading failure.** Found by running the broken server
+  unwatched: crash report at 5 s, exit code 0 at 7 s. The check never reads the exit code.
+- **No `set -m`.** The first version killed process groups via job control. On the TaCZ run,
+  bash 3.2 printed `child setpgid (…): Operation not permitted`: a lost race, which would aim the
+  kill at a process group that doesn't exist and could orphan `packwiz serve` on 8080, making the
+  next run fail. Nothing leaked that time, but the check now kills by PID instead.
+- **Prism pre-launch.** Prism's wiki says pre-launch commands run "in the launcher's working
+  folder". Its source (`launcher/minecraft/MinecraftInstance.cpp`, `setWorkingDirectory(gameRoot())`
+  on the Pre-Launch step) runs them in the instance's Minecraft folder, so packwiz's bare-path
+  command works. The guide uses `"$INST_MC_DIR/packwiz-installer-bootstrap.jar"` anyway, which
+  works under either reading. New instances call that folder `minecraft/`, not `.minecraft/`
+  (`gameRoot()` uses `.minecraft` only when it already exists), so the guide names both.
+- **Mod count** in the summary is the server's `Mod List:` table: 7 on the final pack (Create,
+  Flywheel, Ponder, SimpleBedrockModel, TaCZ, Minecraft, NeoForge), since jar-in-jar mods count.
+  The summary prints the jar count in `mods/` beside it (2).
+- **`areas.py`** needs an `### Areas` heading in `AGENTS.md`; added one with parley's wording.
+
+### Defaults taken
+
+- **EULA:** the script writes `eula=true` into `run/server/`, and the root README says running
+  the check accepts the EULA.
+- **Pack name and author:** `Claude Modpack`, `Logan Lopez`, `0.1.0`.
+
+### Acceptance
+
+- **Two passes in a row on the final pack: pass.** Both exit 0. `NeoForge: 21.1.264 (Minecraft
+  1.21.1)`, `Mods: 7 loaded`, `2 jar(s) in mods/`, boot 17 s and 15 s wall (`Done (5.602s)!`,
+  `Done (4.453s)!`). No ERROR lines in either log. Nothing left running afterwards.
+- **The failure run (build order step 3): recorded.** With `create-enchantment-industry` added
+  and its two required dependencies declined: `scripts/server-check.sh`, exit 1, after 2 s.
+  Matched line:
+  `[main/ERROR] [net.neoforged.fml.loading.ModSorter/LOADING]: Missing or unsupported mandatory dependencies:`
+  followed by `Mod ID: 'create', Requested by: 'create_enchantment_industry', Expected range: '[6.0.10,)', Actual version: '[MISSING]'`
+  and the same for `create_dragons_plus`. With the log patterns blanked, it failed on the crash
+  report at 5 s and printed both `Failure message:` lines. The addon was removed with
+  `packwiz remove`, and the next sync deleted its jar.
+  - Also exercised: `CHECK_TIMEOUT=4` fails with `no Done after 4s` and leaves no java running;
+    `SIGTERM` mid-boot leaves nothing running and removes the FIFO.
+- **`pack/mods/` holds `create.pw.toml` and `tacz-1.21.1.pw.toml`, both 1.21.1 NeoForge files:
+  pass.**
+- **`scripts/export.sh` writes `dist/claude-modpack-0.1.0.mrpack`: pass.** Its index lists both
+  mods from `cdn.modrinth.com` and depends on `minecraft 1.21.1`, `neoforge 21.1.264`.
+- **`checklinks.py`: pass,** 10 files, 0 broken.
+- **`git status` shows nothing under `run/` or `dist/`: pass.** Both are ignored.
+- **Not run:** shellcheck (not installed).
+
+### Size
+
+Sized L, this session S (9 active min, 9 wall, 0 compactions).
+
+### Spot checks for Logan
+
+- Install Prism and follow `docs/guide/playing.md` for the auto-sync instance, with
+  `cd pack && packwiz serve` running. In a creative world: Create blocks place and a shaft turns;
+  a TaCZ gun is in the creative tab and fires. Also confirm the guide's description of the
+  packwiz-installer window matches what you see.
+- Import `dist/claude-modpack-0.1.0.mrpack` (run `scripts/export.sh` first) into a second
+  instance and confirm it launches.
+- Read the server check's summary on one run yourself: `scripts/server-check.sh`.
+
+### Docs updated
+
+- New: root `README.md`, `docs/architecture/server-check.md`, `docs/guide/README.md`,
+  `docs/guide/playing.md`, `.claude/rules/server-check.md`.
+- `AGENTS.md`: the project paragraph no longer says nothing is built; Commands, Rules, and the
+  Areas table.
+
+### Follow-ups
+
+- **packwiz warns about both mods:** "Modrinth versions … inconsistent between latest version
+  number and newest release date" (Create `mc1.21.1-6.0.9` vs `6.0.10+mc1.21.1`; TaCZ `1.1.8-r3`
+  vs `1.1.8-hotfix-r7`). It picked the newest both times. Check what `packwiz update` does with
+  them before relying on it.
+- **The server check binds Minecraft's default port 25565.** A local server already on it would
+  fail to bind. Not seen; worth a `server-port` override if it happens.
+- **shellcheck** isn't installed; worth a pass over both scripts when it is.
+- **Machine facts** (Java 17 default, `~/go/bin` not on `PATH`, `/bin/bash` 3.2) written to
+  `~/Dev/dotfiles/.claude/CLAUDE.md` under a new `## This machine` section, uncommitted.
