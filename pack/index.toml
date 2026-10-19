@@ -1,6 +1,21 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/ad-astra-giselle-addon.pw.toml"
+hash = "76b0b436c7a47689c9a9eaf1b064dfb27b3a79347323839e4be0d78a3296d705"
+metafile = true
+
+[[files]]
+file = "mods/ad-astra.pw.toml"
+hash = "5386763a89493ea2c4ab581e66ace9317641e4c6c5f094769b13e83b1f6be7aa"
+metafile = true
+
+[[files]]
+file = "mods/akashic-tome.pw.toml"
+hash = "18a5b572a9afdb84b24f5c58c4a53022158f8db746dde95531b780d4713f3fc8"
+metafile = true
+
+[[files]]
 file = "mods/almostunified.pw.toml"
 hash = "3805fe2877cffdae5e7bf74d85069a2535daa39a0f3ed766755be49294a07680"
 metafile = true
@@ -26,8 +41,23 @@ hash = "e3cf8a1207e85580723e384bf59688be26b80373b49c1d64972528cdc0dcac6d"
 metafile = true
 
 [[files]]
+file = "mods/aquaculture.pw.toml"
+hash = "6b26155807b2f3825db22e5be51a9ab330c8a70500a702740726053cb4678349"
+metafile = true
+
+[[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "187eafde5974beee1263538b462b7b8fe2fc8948c5d413980d9796d55928580b"
+metafile = true
+
+[[files]]
+file = "mods/ars-nouveau.pw.toml"
+hash = "9645a2d42361e38b0747c43f5e82a7f74cd4f06940cad02d6591e7c81835f733"
+metafile = true
+
+[[files]]
+file = "mods/artifacts.pw.toml"
+hash = "416b7f130791397fb2ceb9e89ce3fd0e870f207c8e40b759c069cb58b7544314"
 metafile = true
 
 [[files]]
@@ -58,6 +88,16 @@ metafile = true
 [[files]]
 file = "mods/cc-tweaked.pw.toml"
 hash = "e42363c32c9b6323eea977283c928cec373bfc415534ec92e9c3367ee8c54256"
+metafile = true
+
+[[files]]
+file = "mods/comforts.pw.toml"
+hash = "36f2f6e74b7dbeccb504572d47006582207544fa234a095093b97adfc7ecd5ac"
+metafile = true
+
+[[files]]
+file = "mods/common-storage-lib.pw.toml"
+hash = "973d189eb0bb8a514bebc50e78bdbcc5f9e7b3d4869b3a9718ca63ca3afff215"
 metafile = true
 
 [[files]]
@@ -296,6 +336,11 @@ hash = "36debf7653e95a855b4fedacc19027cf2e01960fc0b6d55ef2ffbffbcb455690"
 metafile = true
 
 [[files]]
+file = "mods/dark-utilities.pw.toml"
+hash = "654c9f414bbfc234b174ed91976f630e6b3026a0484a277f0fe319ab15612417"
+metafile = true
+
+[[files]]
 file = "mods/dynamic-village.pw.toml"
 hash = "2bcb5fbe083f3ace39698e890255eb0758116e395fb211d136c8a12369b529e0"
 metafile = true
@@ -326,6 +371,11 @@ hash = "e7e6b3effe3022cf1fdb900c857111fdcbfd6b385c2d5bd28c914efaed436ecb"
 metafile = true
 
 [[files]]
+file = "mods/iron-furnaces.pw.toml"
+hash = "cd73757a8c093f490d5c7673ad17f4404622a485234b79dc43efa0e67788d66e"
+metafile = true
+
+[[files]]
 file = "mods/irons-lib.pw.toml"
 hash = "93f7a09e0d9a05c31b55bb9725545c49dc68067556a98d470e4f405bdbf3b25c"
 metafile = true
@@ -333,6 +383,11 @@ metafile = true
 [[files]]
 file = "mods/irons-spells-n-spellbooks.pw.toml"
 hash = "4623bbc102dd3b7648a96569a1ab49b868774d46355b305ac40c4c79ad1c74e2"
+metafile = true
+
+[[files]]
+file = "mods/jewelry.pw.toml"
+hash = "720e12b39f4689c6d05fd6bf4661b8e54f7b80f6316bf9db5f3c54f8faf58484"
 metafile = true
 
 [[files]]
@@ -353,6 +408,11 @@ metafile = true
 [[files]]
 file = "mods/mechanicals-lib.pw.toml"
 hash = "c9e181185e3177d43fc9bd8d919288ac1bc0ce6b85e7049890f3eb231f5be10d"
+metafile = true
+
+[[files]]
+file = "mods/morph-o-tool.pw.toml"
+hash = "68073ca9ee14800d4f2087aec95a819743afb46b099e600ef2a4d91b78f87ed2"
 metafile = true
 
 [[files]]
@@ -386,6 +446,36 @@ hash = "c99c5bac469e8d6ece5aae80f08635e3bbb8367f0c586b6288573c725faefe69"
 metafile = true
 
 [[files]]
+file = "mods/productivebees.pw.toml"
+hash = "7aa8bf129e51bda25386e18ebcd0db7eae278e95227406e8101a320cacf2f9b6"
+metafile = true
+
+[[files]]
+file = "mods/ranged-weapon-api.pw.toml"
+hash = "0a7c847cf1bacf6b9756f348a05271c6ff57fad00d1f9d2991ea302f8453340b"
+metafile = true
+
+[[files]]
+file = "mods/relics-mod.pw.toml"
+hash = "69f7f6957a351617507c9961d98e2bbfcbd3f7dd48a47c7abf57447a1cbc2571"
+metafile = true
+
+[[files]]
+file = "mods/reliquary-reincarnations.pw.toml"
+hash = "f770c0ca50c6c312bc8b564fb54e15fec6ef0fd2ca94dad27f5fcfbe7d1de4e7"
+metafile = true
+
+[[files]]
+file = "mods/resourceful-config.pw.toml"
+hash = "27721caca5a03b743bf25888e1d984142948069dace31453f103f94f7f24d2ce"
+metafile = true
+
+[[files]]
+file = "mods/resourceful-lib.pw.toml"
+hash = "c0b066684294c33972d562e0cb08ea17b2d31bcf86cd1d6c63b8e968f0eac7a2"
+metafile = true
+
+[[files]]
 file = "mods/rhino.pw.toml"
 hash = "e55ca32b338a0e0540f4fec5170675d860566255ae0f45692a00cb4ebf2eb535"
 metafile = true
@@ -396,13 +486,38 @@ hash = "7815e5a589de0c02a62ae83590e1f75f4d0c269e48f2435ce2ac448976ddf49f"
 metafile = true
 
 [[files]]
+file = "mods/shatterbyte-lib.pw.toml"
+hash = "3f552bbdc42f07fd7d5695ced1d27d774af63cff5460be45817939e5f8e4f9de"
+metafile = true
+
+[[files]]
 file = "mods/shetiphiancore.pw.toml"
 hash = "51c7fbbf6e1d09a29ad010ae0a9f11e966030b013e6d543965e74b7f5f78b339"
 metafile = true
 
 [[files]]
+file = "mods/silent-gear.pw.toml"
+hash = "087ba9ed2ea4bfbf8e8ec6fafae467f4b4e8d262f46f8066e3f84dc5e231ec21"
+metafile = true
+
+[[files]]
+file = "mods/silent-lib.pw.toml"
+hash = "d692170020a2e8b1dd1d0af610a14c25553bae66bb3f7372123115b5c7bc6157"
+metafile = true
+
+[[files]]
+file = "mods/silents-gems.pw.toml"
+hash = "88409b83fd1a3c90a52ded3e8de9951573c147113772cb40ecf2d4f5af1e874a"
+metafile = true
+
+[[files]]
 file = "mods/slice-and-dice.pw.toml"
 hash = "3c24accda8011a6a5e04c49c40e39617bb04ab3a549d8f2e8180d3246fddac39"
+metafile = true
+
+[[files]]
+file = "mods/small-ships.pw.toml"
+hash = "921d02a072ec9644b1557eece1a090f0be59fae479e652b1ba9c5cd16afba8f7"
 metafile = true
 
 [[files]]
@@ -431,6 +546,16 @@ hash = "9f50efe25b9ab10d111c215989b60adcfd2cc7d7caa9d9cc5d4c1e525125fea6"
 metafile = true
 
 [[files]]
+file = "mods/spell-power.pw.toml"
+hash = "cc1491f8817a246d40d0222999788e8b3b442474e2c862637e1ef654997f3826"
+metafile = true
+
+[[files]]
+file = "mods/structure-pool-api.pw.toml"
+hash = "b43fd8343ee66b129ea22bcd7ba47ad392e7edc33cb24be0ed604b2225ed0229"
+metafile = true
+
+[[files]]
 file = "mods/supermartijn642s-config-lib.pw.toml"
 hash = "62bd7012826fdcccf17a089055be67f87fb7335c88e73efc52bc9e51a1bf3188"
 metafile = true
@@ -448,6 +573,11 @@ metafile = true
 [[files]]
 file = "mods/tacz-tweaks.pw.toml"
 hash = "be9b9c48135b317ed2311066eb2d280df4d6fb6f91d4e278cc7af65a9de0cc1a"
+metafile = true
+
+[[files]]
+file = "mods/time-in-a-bottle-universal.pw.toml"
+hash = "43cea4e91fd4876056230db108e8228bc24aa52c4986a235fb9656fc6383dd53"
 metafile = true
 
 [[files]]

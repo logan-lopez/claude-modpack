@@ -1,0 +1,13 @@
+name = "Reliquary Reincarnations"
+filename = "reliquary-1.21.1-2.0.81.1579.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/fQO83PId/versions/QDOtwDcC/reliquary-1.21.1-2.0.81.1579.jar"
+hash-format = "sha512"
+hash = "bccf4ca89223e34f08ef584520d845175a33c4acedb36d89e94ac5f728cd0f8d6eabc03af8f6158e25f779639a80524157c4bc9af8519cd38f7abdd24eeced01"
+
+[update]
+[update.modrinth]
+mod-id = "fQO83PId"
+version = "QDOtwDcC"
