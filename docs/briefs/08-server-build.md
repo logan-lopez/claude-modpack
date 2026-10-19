@@ -261,3 +261,141 @@ Paste the build's output and the boot summaries into the report.
   on a Create contraption without being kicked, and the difficulty is Hard.
 
 Then stop. Report, and leave merging to Logan.
+
+## Report
+
+### Built
+
+- **Templates, `server/`:** `start.sh`, `start.bat` (CRLF), `README.txt`, and
+  `defaults/server.properties` (`allow-flight=true`, `difficulty=hard`, `motd=@MOTD@`) and
+  `defaults/user_jvm_args.txt` (`-Xmx12G` under a two-line comment). `.gitattributes` makes
+  `*.bat` CRLF and `*.sh` LF on checkout.
+- **The build, `scripts/server-pack.sh`:** the check's steps 1 to 5 duplicated (Java 21, packwiz,
+  serve on `SERVE_PORT`, cached installer and bootstrap, a server sync into a wiped
+  `run/server-pack/<name>-<version>-server/`), then the installer and templates copied in,
+  placeholders substituted and checked for, `start.bat` converted to CRLF again, and
+  `zip -qrX` into `dist/`. `scripts/server-check.sh` is untouched.
+- **The start scripts** follow the brief's six steps. `start.sh` tells "this run" with a stamp
+  file touched before each start (`latest.log` and a crash report must both be newer).
+  `start.bat` counts files in `crash-reports\` and compares `latest.log`'s time and size, since
+  `cmd` can't compare file times. Both run Java directly and pass extra arguments through.
+
+### Deviations
+
+- **NeoForge is installed when `.../<version>/unix_args.txt` (`win_args.txt`) is missing,**
+  not when the version's folder is. An installer that fails partway can leave the folder behind
+  without the args file, and the next start would then skip the install and fail to launch.
+- **"Unzip the new zip over the folder" doesn't work for a real update.** The pinned top folder is
+  `<name>-<version>-server/`, so a new version's zip unzips beside the old server, not over it.
+  `README.txt` and the guide say to unzip it elsewhere and copy its contents in. Acceptance 4
+  unzipped the same version over itself, which does land in place. Follow-ups has the option.
+- **`-Xmx` isn't in the log.** Neither `latest.log` nor `debug.log` records JVM arguments, so
+  Acceptance 3 and 4 read the running JVM's with `jcmd <pid> VM.command_line`.
+- **"`start.bat` committed with CRLF":** with `text eol=crlf`, git stores it LF in the index and
+  checks it out CRLF (`git ls-files --eol`: `i/lf w/crlf`), which is what keeps it CRLF on every
+  checkout. The build converts it again, so the zip's copy is CRLF whatever the checkout did.
+- **`SERVE_PORT=8081` for every build here:** Logan's `packwiz serve` held 8080. The first,
+  default-port run refused with the port message, as designed.
+
+### Defaults taken
+
+- **No cap on restarts:** 10 seconds each, Ctrl+C to quit, and a failed load never restarts.
+- **The MOTD:** `motd=Claude Modpack 0.1.0`, the pack's name and version filled in at build time.
+- **Java newer than 21 isn't accepted;** the message says 21 installs alongside it.
+
+### Acceptance
+
+1. **Build: pass.** Exit 0, 34 s wall for the full sync:
+
+   ```
+   [server-pack] syncing the server side of the pack from http://localhost:8081/pack.toml
+
+   == server pack: 625M ==
+   NeoForge:  21.1.264 (installed on first start)
+   Mods:      269 jar(s) in mods/
+   /Users/logan/Code/personal/minecraft/claude-modpack/dist/claude-modpack-0.1.0-server.zip
+   ```
+
+   A second run exited 0 and replaced the zip (17:50:51 → 18:12:17, same 647,932,045 bytes), and
+   left nothing on port 8081.
+2. **Contents: pass.** One top-level folder `claude-modpack-0.1.0-server/`; `start.sh`
+   `-rwxr-xr-x`; `start.bat`, `README.txt`, `neoforge-21.1.264-installer.jar`, `defaults/` with
+   both files; 269 jars in `mods/` (the check's `run/server/mods/` has 269); none of the pack's 25
+   `side = "client"` filenames and nothing matching Sodium or Iris; no `eula.txt`,
+   `server.properties`, `user_jvm_args.txt`, `libraries/` or `packwiz.json` at the top. `unzip -p
+   ... start.bat | file -`: `DOS batch file text, ASCII text, with CRLF line terminators`. No
+   placeholder left.
+3. **First start: pass.** `./start.sh </dev/null` copied both defaults, installed NeoForge (about
+   20 s) and exited 1 at the EULA with `No terminal to ask in...`. With `eula=true` and stdin on a
+   FIFO it reached Done in 51 s; `server.properties` then had 63 lines including
+   `allow-flight=true`, `difficulty=hard` and `motd=Claude Modpack 0.1.0`. `stop`: the script
+   printed `The server stopped (exit code 0).` and exited 0, no restart. The running JVM showed
+   `-Xmx12G` (checked in the Acceptance 5 boot, the first one with `jcmd`).
+4. **Second start keeps settings: pass.** With `-Xmx10G` and `motd=Edited by hand`, the zip
+   unzipped over the folder with `unzip -o`: no install, no EULA question, Done in 37 s, the JVM
+   on `-Xmx10G`, and both edits still in the files after `stop` (exit 0).
+5. **Restart rule: pass.**
+   - A file added to `crash-reports/` and java killed with `-9` after Done: the restart line
+     within a second, Done again 52 s later. The same again, then SIGINT to the script in the
+     countdown: it exited 130 within a second, and no java was running 12 s later.
+   - Ctrl+C as a terminal sends it (SIGINT to script and java, 20 s after Done): the script
+     exited 130 two seconds later without restarting, and the world saved (`level.dat` and the
+     region files rewritten at the second of the signal; the log doesn't show it, see the page).
+   - `create-1.21.1-6.0.10.jar` removed: `Missing or unsupported mandatory dependencies`, a crash
+     report `crash-2026-10-19_18.09.54-fml.txt`, and the script exited 0 after 8 s without
+     restarting.
+   - A java killed without a crash report (`-TERM`, cleaning up a test) exited the script with
+     143, no restart.
+   - The first try at the countdown SIGINT failed: the harness started `start.sh` in the
+     background from a non-interactive shell, which starts it with SIGINT ignored, and an ignored
+     signal can't be trapped. The script restarted. Rerun under a wrapper that resets SIGINT to
+     default, as a terminal would have it, it passed. Written into the page's Signals rule.
+6. **Java check: pass.** `JAVA_HOME` at Zulu 17: `start.sh` ran Temurin 21.0.7 from
+   `java_home`. With `java_home` swapped out (as on Linux) and only Java 17 around, it exited 1
+   with `JAVA_HOME: Java 17.0.6 (...)`, `java on PATH: Java 17.0.6 (...)` and the Temurin link.
+   `start.bat` read against `start.sh` step by step: the same order and outcomes. Its differences
+   are no `java_home` step, no no-terminal check (a double-click always has a console), the
+   `pause`s, and the "this run" test above.
+7. **Docs: pass.** `checklinks.py`: 25 files, 0 broken. `drift.py` after the commit: 8 pages, the
+   two new ones clean; `server-check.md` is flagged for brief 07's commit (`8cbe8da`), not this
+   work.
+
+Not run: `start.bat` (no Windows here), and anything with a client.
+
+### Size
+
+Sized M, this session M (17 active min, 27 wall, 0 compactions).
+
+### Spot checks for Logan
+
+- **`start.bat` on Windows with Java 21:** double-click; the first start installs NeoForge and
+  asks about the EULA; the server reaches Done; `stop` exits and the window waits on `pause`.
+  Then with no Java 21 (rename `JAVA_HOME`'s folder or try a machine without it): the message
+  and link show and the window stays open.
+- **A client joins the zip's server:** the `.mrpack` of 0.1.0 (or the auto-sync instance), then
+  fly on a Create contraption without being kicked, and `/difficulty` says Hard.
+- Optional, because the tests here drove it with signals: `./start.sh` in a real Terminal, press
+  Ctrl+C once the server is up, and check the script exits instead of restarting.
+
+The tested server is in the scratchpad and can be thrown away; `dist/claude-modpack-0.1.0-server.zip`
+is the build to try.
+
+### Docs updated
+
+- New page `docs/architecture/server-pack.md`, its row in `AGENTS.md`'s Areas table and
+  `.claude/rules/server-pack.md` (from `areas.py`).
+- `AGENTS.md`'s Commands table: `scripts/server-pack.sh`.
+- New guide page `docs/guide/server.md`, its line in `docs/guide/README.md`.
+- Root `README.md`: a Features line and the command under Running it.
+
+### Follow-ups
+
+- **The versioned top folder makes updates a copy, not an unzip.** Naming it
+  `<name>-server/` would let a new zip unzip straight over the old server. It's pinned by this
+  brief, so it's Logan's call; `README.txt` and the guide would lose their copy step.
+- **The JVM lingers about 55 s after `stop`.** The save finishes in under a second, then
+  `smallships` throws `Cannot call getFullPath() on non-file config null at path
+  smallships-server.toml` during config unloading, and the process exits about a minute later.
+  The server check hides it by killing after 60 s. Worth a look in the integrations work; a host
+  sees a console that hangs after `stop`.
+- **Shellcheck** still isn't installed, so neither new script has had a pass.

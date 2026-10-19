@@ -38,9 +38,10 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
    a known-errors baseline in the server check, repairs for recipes that fail to load (Almost
    Unified's Silent Gems crushing, Create Compressed, Create Deco's placard), Create pressing and
    crushing for Ad Astra's desh, ostrum and calorite, and a shorter rocket fuel list.
-2. [`08-server-build.md`](08-server-build.md): `scripts/server-pack.sh` writes a server zip that
-   starts on macOS or Windows with `start.sh` or `start.bat`, asks about the EULA, keeps its
-   settings across updates and restarts after a crash.
+2. [`08-server-build.md`](08-server-build.md) (M, done, awaiting review):
+   `scripts/server-pack.sh` writes a server zip that starts on macOS or Windows with `start.sh`
+   or `start.bat`, asks about the EULA, keeps its settings across updates and restarts after a
+   crash.
 
 ## Done
 

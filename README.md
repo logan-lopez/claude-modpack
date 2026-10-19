@@ -18,6 +18,8 @@ It's built around Create and Timeless and Classics Zero (TaCZ).
 - [Playing the pack](docs/guide/playing.md) in Prism Launcher, synced from the repo on each launch,
   or imported from a `.mrpack`, and looking after a world: timed backups and pregenerating
   terrain.
+- [Running a server](docs/guide/server.md) from a zip that starts on macOS, Linux or Windows,
+  keeps its settings through updates and restarts after a crash.
 - [What's in the pack](docs/guide/mods.md): about 200 mods from the old 1.20.1 pack and
   nearly forty added since, grouped by what they're for, what replaced the old mods that didn't come
   over, and what was left behind and why.
@@ -40,6 +42,7 @@ It's built around Create and Timeless and Classics Zero (TaCZ).
 ```sh
 scripts/server-check.sh   # boot a headless server from pack/; exit 0 means it reached Done
 scripts/export.sh         # write dist/claude-modpack-<version>.mrpack
+scripts/server-pack.sh    # write dist/claude-modpack-<version>-server.zip, a server to keep
 cd pack && packwiz modrinth add <slug>   # add a mod, then run the server check
 ```
 

@@ -16,6 +16,7 @@ and finished ones move to `archive/`. The decisions not to relitigate are the ta
 | --- | --- | --- |
 | `scripts/server-check.sh` | the repo root | Boots a headless NeoForge server from `pack/`. Exit 0 means it reached Done with no mod-loading failure. |
 | `scripts/export.sh` | the repo root | Writes `dist/<name>-<version>.mrpack`. |
+| `scripts/server-pack.sh` | the repo root | Writes `dist/<name>-<version>-server.zip`, a server that starts with `start.sh` or `start.bat`. `SERVE_PORT` (default 8080) when a `packwiz serve` holds 8080. |
 | `packwiz modrinth add <slug>` | `pack/` | Adds a mod. Modrinth first; `packwiz curseforge add` only when a mod isn't on Modrinth. |
 
 packwiz may not be on `PATH`: it's in `$(go env GOPATH)/bin`, where the scripts look for it.
@@ -39,3 +40,4 @@ matching one by itself; this table is the same map for every agent).
 | --- | --- |
 | `pack/config/**`, `pack/kubejs/**` | [Pack overrides](docs/architecture/pack-overrides.md) |
 | `scripts/server-check.sh`, `scripts/server-check.known-errors.txt` | [The server check](docs/architecture/server-check.md) |
+| `scripts/server-pack.sh`, `server/**` | [The server build](docs/architecture/server-pack.md) |

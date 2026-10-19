@@ -1,0 +1,3 @@
+# The server's memory. To change it, change the number on the -Xmx line: 12G is 12 GB.
+# The machine needs more than that free, for itself and anything else running.
+-Xmx12G
