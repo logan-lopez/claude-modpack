@@ -282,3 +282,155 @@ in his request (Apotheosis, the big Create addons) won't load.
 - Compare `docs/guide/mods.md` against the old list and say what to add back or drop.
 
 Then stop. Report, and leave merging to Logan.
+
+## Report
+
+*2026-10-19.*
+
+### Built
+
+- **`pack/`:** 251 entries in `pack/mods/` (from 2): every mod in Shape's batches except FTB
+  Ultimine Addition, plus the libraries they pulled in. The server loads 261 mods from 232 jars;
+  19 entries are client-only. 234 come from Modrinth, 17 from CurseForge (Shape's 15 kept, plus
+  Gunsmith Lib and FTB Library, which aren't on Modrinth). Sodium 0.6.13 (`Pb3OXVqC`) and Iris
+  1.8.12 (`t3ruzodq`) are pinned.
+- **Commits,** one per batch, each after a passing server check: `af2a251` (1), `fc9fb02` (2),
+  `6a4da89` (3), `7d9854e` (4), `f25c017` (5), `eb568d8` (6), `f7d2066` (7), `93c244f` (8),
+  `033286f` (9), `020a648` (10). The brief itself went in first as `4adb90e`, since it was
+  untracked when the session started.
+
+Per batch, the server check's mod count and boot:
+
+| Batch | Mods loaded | Done | Wall | Fixes |
+| --- | --- | --- | --- | --- |
+| 1 Apotheosis | 22 | 4.7s | 16s | none |
+| 2 Create, big | 55 | 5.2s | 25s | Petrolpark's Library added: `Mod ID: 'petrolpark', Requested by: 'petrolsparts', Expected range: '[1.5.5,1.6.0)', Actual version: '[MISSING]'` |
+| 3 Create, rest | 91 | 5.9s | 26s | Balm, Iron's Spells (from batch 5), Iron's Lib, playerAnimator added: Waystones and Create Wizardry need them and Modrinth doesn't list them. Create Ultimine moved to batch 10: `Mod ID: 'ftbultimine', Requested by: 'createultimine'` |
+| 4 Storage | 105 | 6.2s | 28s | none |
+| 5 Magic | 142 | 6.9s | 35s | none |
+| 6 Worldgen | 161 | 14.9s | 47s | none; default timeout was enough |
+| 7 Food | 166 | 15.7s | 45s | none |
+| 8 Building | 189 | 16.5s | 111s | none |
+| 9 QoL | 239 | 15.3s | 41s | none |
+| 10 CurseForge | 261 | 15.9s | 43s | see below |
+
+**Batch 10,** as the brief predicted: Apotheosis Modern Ragnarok overwrote six Modrinth entries
+(`apotheosis`, `apothic-attributes`, `-enchanting`, `-spawners`, `patchouli`, `placebo`) and
+added `tacz-1-21-1.pw.toml`; Ars Elemental overwrote `ars-nouveau`; FTB Chunks overwrote
+`architectury-api`. All restored with `git checkout`, the duplicate TaCZ removed, Gunsmith Lib
+kept. FTB Library and CoolCatLib came in new; neither is on Modrinth.
+
+### Deviations
+
+- **FTB Ultimine Addition dropped,** with CoolCatLib. Both are excluded from the CurseForge API,
+  so packwiz-installer can't download them, for the server or for Prism's auto-sync. The sync log:
+  `CoolCatLib: java.lang.Exception: This mod is excluded from the CurseForge API and must be
+  downloaded manually.` and the same for `FTB Ultimine Addition`. A different version wouldn't
+  help: the exclusion is per project. It's in the guide's Left behind table. One of 16 in the
+  batch, under the brief's stop-and-ask line.
+- **Create Ultimine** moved from batch 3 to batch 10, since it needs FTB Ultimine (CurseForge).
+- **Iron's Spells** went in with batch 3 rather than 5, as the brief allowed.
+- **Sodium and Iris pin syntax.** `packwiz modrinth add sodium --version-id Pb3OXVqC` fails with
+  "--version-id cannot be used with a separately specified URL/slug/search term". The working
+  form is `packwiz -y modrinth add --project-id sodium --version-id Pb3OXVqC`.
+- **`CHECK_PORT=8091` for every run.** Logan's `packwiz serve` for Prism held 8080 (PID 60767),
+  and the check refuses a busy port. It was left running.
+- **`pack/pack.toml` missed from batches 2–9.** Its index hash wasn't staged until the batch 10
+  commit, so those intermediate commits need a `packwiz refresh` if checked out. HEAD is
+  consistent.
+- **The playing guide** gained a paragraph the brief didn't name: the `.mrpack` now carries the
+  CurseForge jars inside it (see Docs updated).
+
+### Defaults taken
+
+- **FTB Quests and FTB XMod Compat:** left out until there's a quest brief. In the Left behind
+  table.
+- **Sodium add-ons and Chloride:** left out, in the Left behind table, and a new `FUTURE.md`
+  section.
+
+### Acceptance
+
+- **Server check twice in a row on the final pack:** both PASS.
+
+  ```
+  == server check: PASS ==
+  NeoForge:  21.1.264 (Minecraft 1.21.1)
+  Mods:      261 loaded (incl. minecraft and neoforge), 232 jar(s) in mods/
+  Boot:      41s wall, server says Done (15.711s)!
+  Warnings:  641 ERROR line(s) in the log (not failing on them):
+
+  == server check: PASS ==
+  NeoForge:  21.1.264 (Minecraft 1.21.1)
+  Mods:      261 loaded (incl. minecraft and neoforge), 232 jar(s) in mods/
+  Boot:      41s wall, server says Done (15.647s)!
+  Warnings:  641 ERROR line(s) in the log (not failing on them):
+  ```
+
+  The 641 ERROR lines from the second run, grouped (the summary prints only the first 20, all
+  `RuntimeDistCleaner` and loot tables):
+
+  | Count | Source | What |
+  | --- | --- | --- |
+  | 526 | `LootDataType` | Loot tables for blocks of absent compat mods: 492 `railways` (tracks for BYG, TFC, Quark …), 32 `create_connected`, 2 `createdieselgenerators` |
+  | 98 | `RecipeManager` | Compat recipes for absent mods (`create_ironworks`, `create_things_and_misc`, `tfmg`, `createdeco:placard` …) |
+  | 6 | `RuntimeDistCleaner` | A mod touching a client class on the server; logged and skipped |
+  | 4 | `SimpleJsonResourceReloadListener` | `create_ironworks` compat data for Create: Dreams & Desires |
+  | 2 | `DataMapLoader` | `reliquary:xp_juice_still` in a fluid data map |
+  | 2 | `AdvancementTree` | `dungeons_arise` advancements |
+  | 3 | Small Ships | At shutdown, after `Stopping server`: `Cannot call getFullPath() on non-file config null at path smallships-server.toml`, ending in `Uncaught exception in server thread` |
+
+  Also, as WARN: Apotheosis Modern Ragnarok's `brawlers` gem bonuses overlap
+  (`Gem Bonus for class apotheosis_modern_ragnarok.all_gun conflicts with existing bonus …`).
+- **No duplicates:** `grep -h '^filename' pack/mods/*.pw.toml | sort | uniq -d` prints nothing.
+- **TaCZ:** `tacz-1.21.1.pw.toml` has `[update.modrinth]`; no `tacz-1-21-1.pw.toml`.
+- **Sodium and Iris:** `sodium-neoforge-0.6.13+mc1.21.1.jar` (version `mc1.21.1-0.6.13`) and
+  `iris-neoforge-1.8.12+mc1.21.1.jar`, both `pin = true`.
+- **Every Shape mod in the pack or Left behind:** 198 slugs in Shape; 197 have a `.pw.toml`,
+  and `ultimine-addition` is in the Left behind table.
+- **`scripts/export.sh`:** wrote `dist/claude-modpack-0.1.0.mrpack`, 18 MB, the CurseForge jars
+  inside it.
+- **`checklinks.py`:** 12 files, 0 broken.
+
+### Size
+
+Sized L, this session M (22 active min, 22 wall, 0 compactions). The outside tools behaved as
+the brief's checked facts said, and only two batches failed, each on a missing dependency the log
+named.
+
+### Spot checks for Logan
+
+Re-sync the Prism instance from `packwiz serve` (yours is already running on 8080 and serves
+`pack/` as it is now), then:
+
+- The client launches, and the main menu shows the mod count.
+- Video Settings show Sodium's menu, and a shader pack loads in Iris. A Create contraption (a
+  moving bearing or a train) renders with and without shaders.
+- In a new survival world: an Apotheosis affix item shows its tooltip; a gun from TaCZ fires; a
+  Waystone works; JEI, Jade and JourneyMap show up.
+- **Save and Quit to Title** from that world. Small Ships throws on config unload when the server
+  stops; on a client that's this moment. If it crashes, Small Ships is the suspect.
+- Controls: no keybind conflicts you care about (Controlling shows them).
+- Compare `docs/guide/mods.md` against the old list and say what to add back or drop.
+
+### Docs updated
+
+- `docs/guide/mods.md` (new): the pack by group, the Left behind table with Ultimine Addition
+  added, and the two rough edges above.
+- `docs/guide/README.md` and the root `README.md`: a line for it.
+- `docs/guide/playing.md`: the `.mrpack` bundles the CurseForge jars.
+- `docs/briefs/FUTURE.md`: a Sodium add-ons section.
+- `docs/briefs/README.md`: retagged, and a decision on CurseForge-excluded mods.
+- The server check page: unchanged, the script didn't change.
+
+### Follow-ups
+
+- **Small Ships' shutdown exception.** If Save and Quit is fine, it's noise; if not, try an older
+  Small Ships build or drop it.
+- **`create_ironworks` and `railways` log hundreds of compat errors** on every boot. Harmless, but
+  they bury real ERROR lines in the check's summary. A filter in the check for known-noise
+  sources would make its warnings useful again.
+- **Modrinth's dependency lists are incomplete.** Petrol's Parts, Waystones and Create Wizardry all
+  need mods Modrinth doesn't declare. The server check catches it, so no change needed, but a
+  future brief shouldn't assume `packwiz add` pulls everything in.
+- **Ultimine Addition** could go in as a hand-placed jar if Logan wants it badly enough; packwiz
+  can't manage it.

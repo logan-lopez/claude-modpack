@@ -25,4 +25,20 @@ Logan wants Create's addons, plus more along the lines of TaCZ (2026-10-19).
   `unofficial-tacz-fallout-gunpack`, checked 2026-10-19).
 - **Kill criteria:** none. This is the pack itself.
 
+## Sodium add-ons
+
+Left out of brief 02 until Logan's first launch on plain Sodium 0.6.13 + Iris 1.8.12 works
+(2026-10-19). The old pack had Sodium Extras (as Embeddium Extras), Sodium Options API, Sodium
+Dynamic Lights, Sodium Options Mod Compat and Chloride.
+
+- **The question:** which builds of these run with Sodium 0.6.13, and whether Options API's
+  undeclared dependency on Reese's Sodium Options has a build that does too.
+- **What's known:** each add-on's last 1.21.1 NeoForge build is from early 2025, against Sodium
+  0.6. Options API's `neoforge.mods.toml` requires `reeses_sodium_options`, which Modrinth doesn't
+  list as a dependency; Reese's newest 1.21.1 build is from 2026-09, likely against Sodium 0.8.
+- **Likely shape:** add them one at a time with pinned version IDs. The server check never loads
+  them (client-only), so each one needs a client launch by Logan.
+- **Kill criteria:** if no Reese's build runs on Sodium 0.6, drop Options API and Options Mod
+  Compat and keep the rest.
+
 ## Parked
