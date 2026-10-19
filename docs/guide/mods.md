@@ -99,7 +99,7 @@ From the old pack, checked 2026-10-19.
 | LesRaisinsAddon, Create Planetary Tweaks | Built for other modpacks. |
 | Embeddium, Oculus | Replaced by Sodium and Iris. |
 | AllTheLeaks, Better FPS Distance, Better Compatibility Checker | 1.20.1 fixes, or only useful when publishing a pack. |
-| Sodium Extras, Sodium Options API, Sodium Dynamic Lights, Sodium Options Mod Compat, Chloride | Waiting until the pack runs on plain Sodium and Iris. Their 1.21.1 builds predate the Sodium they'd run with, and Options API needs Reese's Sodium Options, whose current build likely targets a newer Sodium. |
+| Sodium Extras, Sodium Options API, Sodium Dynamic Lights, Sodium Options Mod Compat, Chloride | Not tried yet. Their 1.21.1 builds predate the Sodium 0.8 the pack runs, and Options API needs Reese's Sodium Options too; each needs a client launch to test. |
 | FTB Quests, FTB XMod Compat | Waiting for a quest book. A new pack has no quests yet, and XMod Compat is mostly Quests integration. |
 | TaCZ gun packs and addons: Fiber's, Elite X, Maxstuff, Gucci & Vuitton, Fallout, Endless Ammo, Gun Durability | Most are 1.20.1 only and need the old pack converter; they get their own look. |
 | Mods disabled in the old pack (`.jar.disabled`) | You had turned them off. |
@@ -115,8 +115,8 @@ Pinned in packwiz, so `packwiz update` leaves them alone:
 
 ## Known rough edges
 
-- **Small Ships throws an error when the server stops,** while unloading its server config. A
-  dedicated server has already saved by then. On a single-player world the same unload happens
-  at Save and Quit, so if leaving a world crashes, Small Ships is the first suspect.
+- **Small Ships logs an error when the server stops,** while unloading its server config. It's
+  noise: a dedicated server has already saved by then, and Save and Quit from a single-player
+  world goes through cleanly.
 - **Apotheosis Modern Ragnarok's Brawler's gems** have gun bonuses whose categories overlap, and
   Apotheosis skips the ones that clash, so those gems may do less on guns than you'd expect.

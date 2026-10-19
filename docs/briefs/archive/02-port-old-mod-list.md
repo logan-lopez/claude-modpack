@@ -3,14 +3,14 @@
 **Size:** L. Around 200 mods from two sources, added in batches, each batch ending in a server
 check, with addon conflicts nobody here has run yet.
 
-Read `CLAUDE.md`, [`README.md`](README.md), [the server check page](../architecture/server-check.md)
-and [`FUTURE.md`](FUTURE.md)'s "Create addons and the rest of the mod list" first. Brief 01 must
+Read `CLAUDE.md`, [`README.md`](../README.md), [the server check page](../../architecture/server-check.md)
+and [`FUTURE.md`](../FUTURE.md)'s "Create addons and the rest of the mod list" first. Brief 01 must
 have landed (it has: `9a5e553`).
 
 ## Goal
 
 Logan's last pack was a 1.20.1 Forge Create pack. Its mod list is in
-[`assets/02/old-modlist.txt`](assets/02/old-modlist.txt). This pack is a fresh start, not a port:
+[`assets/02/old-modlist.txt`](../assets/02/old-modlist.txt). This pack is a fresh start, not a port:
 no worlds come over. But it should match the old one in the main things: Apotheosis, the Create
 addons, the storage, magic, worldgen, building and quality-of-life mods he played with.
 
@@ -204,7 +204,7 @@ For the guide page. Checked 2026-10-19.
 | AllTheLeaks, Better FPS Distance, Better Compatibility Checker | 1.20.1 fixes, or only useful when publishing a pack. |
 | Sodium Extras, Options API, Dynamic Lights, Options Mod Compat, Chloride | Deferred (Open questions). |
 | FTB Quests, FTB XMod Compat | Deferred until there's a quest book (Open questions). |
-| TaCZ gun packs and addons: Fiber's, Elite X, Maxstuff, Gucci & Vuitton, Fallout, Endless Ammo, Gun Durability | Their own brief ([`FUTURE.md`](FUTURE.md)). |
+| TaCZ gun packs and addons: Fiber's, Elite X, Maxstuff, Gucci & Vuitton, Fallout, Endless Ammo, Gun Durability | Their own brief ([`FUTURE.md`](../FUTURE.md)). |
 | Mods disabled in the old pack (`.jar.disabled`) | Logan had turned them off. |
 
 ### Docs

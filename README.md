@@ -26,7 +26,8 @@ It's built around Create and Timeless and Classics Zero (TaCZ).
   default `java`.
 - Go 1.24+ for packwiz: `go install github.com/packwiz/packwiz@latest`. The scripts also look in
   `$(go env GOPATH)/bin`, so it doesn't have to be on `PATH`.
-- [Prism Launcher](https://prismlauncher.org/) to play.
+- [Prism Launcher](https://prismlauncher.org/) to play, with at least 8 GB of memory given to the
+  instance.
 
 ## Running it
 

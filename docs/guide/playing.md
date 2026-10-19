@@ -25,6 +25,9 @@ Once:
    ```
    "$INST_JAVA" -jar "$INST_MC_DIR/packwiz-installer-bootstrap.jar" http://localhost:8080/pack.toml
    ```
+5. In the same Settings, on the Java tab, override the memory and set the maximum to at least
+   8192 MB. With less, the game doesn't get past loading. The pack can't set this for you: it's
+   the instance's setting, and an imported `.mrpack` needs it too.
 
 Each time you play:
 
@@ -48,6 +51,8 @@ it's the reason the pack couldn't be uploaded to Modrinth as it stands.
 
 ## When the instance won't launch
 
+- **The loading screen stalls or the game runs out of memory.** Check the instance's maximum
+  memory is at least 8192 MB (step 5 above).
 - **packwiz-installer shows an error, or the launch stops at the pre-launch step.** It couldn't
   reach the pack. Check `packwiz serve` is running in `pack/` and on port 8080, then launch
   again.
