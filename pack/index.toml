@@ -1404,3 +1404,8 @@ metafile = true
 file = "mods/yungs-extras.pw.toml"
 hash = "cfb7ce4c2b00cedd2e61f7d345b824d6bcc1471021668d2319ee2e4079108639"
 metafile = true
+
+[[files]]
+file = "tacz/tacz-create-armorer-koei.pw.toml"
+hash = "e2c1388b12038aa3de9319d7443af7539736331731552f2ef92177764321123d"
+metafile = true
