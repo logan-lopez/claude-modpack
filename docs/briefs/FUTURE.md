@@ -12,6 +12,11 @@ yet. The brief starts by getting one from Logan.
 - **Likely shape:** add them in batches with `packwiz modrinth add`, running the server check
   after each batch so a failure has few suspects. Each addon that fails gets one line in the
   report: why, and whether it's dropped or waiting on a fix.
+- **packwiz's version picking.** Adding Create and TaCZ, packwiz warned that each one's
+  "latest version number and newest release date" disagree on Modrinth (Create
+  `mc1.21.1-6.0.9` vs `6.0.10+mc1.21.1`). `add` took the newest both times. Check what
+  `packwiz update` does with them before using it, and check each added file's loader and game
+  version (brief 01's report did it through the Modrinth v2 API by version ID).
 - **TaCZ addons and gun packs** need a separate look. Most are built for 1.20.1, and the gun
   packs need the 1.20.1 pack converter.
 - **Kill criteria:** none. This is the pack itself.

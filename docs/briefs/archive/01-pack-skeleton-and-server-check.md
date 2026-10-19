@@ -3,7 +3,7 @@
 **Size:** L. Live runs against outside tools nobody here has run yet: packwiz, packwiz-installer
 and a NeoForge server.
 
-Read `CLAUDE.md` and [`README.md`](README.md) first. No prerequisites: this is the first brief.
+Read `CLAUDE.md` and [`README.md`](../README.md) first. No prerequisites: this is the first brief.
 
 ## Goal
 
@@ -177,7 +177,7 @@ current pre-launch variable names against its docs (Context7 or the web) before 
 ## Out of scope
 
 - Create addons, other mods, configs, KubeJS, and quests. Those are later briefs (see
-  [`FUTURE.md`](FUTURE.md)).
+  [`FUTURE.md`](../FUTURE.md)).
 - TaCZ gun packs and the 1.20.1 pack converter.
 - Installing Prism or launching any GUI app.
 - Publishing the pack anywhere.
