@@ -58,18 +58,43 @@ Two changes to `scripts/server-check.sh` from brief 02's report.
 
 ## Better Combat, and combat as a direction
 
+**Scheduled:** [brief 06](06-better-combat-trial.md), a trial on its own branch with Combat Roll
+and Apothic Combat, ending in Logan's go or no-go (2026-10-19).
+
 Logan turned Better Combat down for brief 03 but wants it noted as a possible direction to
 explore (2026-10-19).
 
 - **The question:** whether melee in this pack should change, given guns (TaCZ), spells (Iron's,
   Ars) and Apotheosis gear are already the main ways to fight.
-- **What's known:** Better Combat `2.4.0+1.21.1-neoforge` (Modrinth `better-combat`) needs Cloth
-  Config and playerAnimator, both already in. Apothic Combat (`apothic-combat`) bridges it with
-  Apotheosis; its last 1.21.1 build is 2025-01-19. How it behaves alongside TaCZ isn't known: a
-  mod called "Don't Punch My TACZ" exists to fix punch-animation conflicts around TaCZ, which
-  hints that the area is fiddly.
+- **What's known:** Better Combat `2.4.0+1.21.1-neoforge` (Modrinth `better-combat`) needs
+  playerAnimator, already in, and Cloth Config, which isn't (this section said both were in until
+  2026-10-19). Apothic Combat (`apothic-combat`) bridges it with Apotheosis; its last 1.21.1 build
+  is 2025-01-19. How it behaves alongside TaCZ isn't known. "Don't Punch My TACZ" was once read
+  here as a hint that the area is fiddly. It fixes TaCZ's clashes with Punchy, a different
+  animation mod that isn't in the pack, so it says nothing about Better Combat.
 - **Likely shape:** an ideate run on combat first, then a small brief with a world to try it in.
+  The ideate run happened on 2026-10-19 and produced brief 06.
 - **Kill criteria:** if it fights TaCZ's aiming or firing, it stays out.
+
+## Melee parity
+
+After brief 06's go or no-go, and after Logan has played with guns in a real world. Logan wants it
+as a pass of its own, after the trial (2026-10-19).
+
+- **The question:** once melee feels better (or doesn't), is it worth using next to guns? A TaCZ
+  rifle hits from 60 blocks and a sword reaches 3, and that's a numbers problem that Better Combat
+  doesn't touch.
+- **Likely shape:** config and datapacks, not mods:
+  - TaCZ's server-side damage settings, and TaCZ Tweaks if it has the knobs.
+  - Apotheosis' boss and invader spawn rates, so more fights happen up close.
+  - Better Combat weapon attribute data for the modded weapons the fallback patterns miss
+    (Cataclysm, Mowzie's, Alex's), if the trial went.
+  - Combat Roll's server config (cooldown, invulnerability frames, which are off by default).
+- **Input it needs:** Logan's verdict from brief 06's last hand check, and a few hours of play.
+  Balancing before that is guessing.
+- **Overlaps** with Integrations and default settings: it can be a section of that brief rather
+  than one of its own.
+- **Kill criteria:** if melee already feels like a real choice after the trial, skip it.
 
 ## `packwiz update`
 
