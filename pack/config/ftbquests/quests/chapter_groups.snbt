@@ -2,5 +2,6 @@
 	chapter_groups: [
 		{ icon: { id: "minecraft:crafting_table" }, id: "72644D66BC292029" }
 		{ icon: { id: "create:cogwheel" }, id: "7DF81F61BC6148EF" }
+		{ icon: { id: "createaddition:electric_motor" }, id: "002607DF1C0C507C" }
 	]
 }

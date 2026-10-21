@@ -1,0 +1,275 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_electricity"
+	group: "002607DF1C0C507C"
+	icon: {
+		id: "createaddition:modular_accumulator"
+	}
+	id: "286B46263DF4DF8F"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["18CA23C9694BB7C3"]
+			id: "40D889BD937BEF25"
+			rewards: [{
+				id: "6ACA8AFEF74B724E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 8L
+				id: "70ADB2AA4D940E10"
+				item: { count: 1, id: "tfmg:copper_wire" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40D889BD937BEF25"]
+			id: "2247B1FE82C858BD"
+			rewards: [{
+				id: "4FE3F08E0B4FF579"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "407A504611432D96"
+				item: { count: 1, id: "createaddition:rolling_mill" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2247B1FE82C858BD"]
+			id: "2990DCDA19CB83CF"
+			rewards: [{
+				id: "194BAB4552D92D29"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "210D80FABC795DCC"
+				item: { count: 1, id: "createaddition:iron_rod" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2990DCDA19CB83CF"]
+			id: "52E43BB62D3E15DF"
+			rewards: [{
+				id: "61FD59C555BAEFB1"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 8L
+				id: "573F1EE8F1BD964B"
+				item: { count: 1, id: "createaddition:spool" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["52E43BB62D3E15DF"]
+			id: "00E324586607DBE5"
+			rewards: [{
+				id: "5B99CAC5326B2E82"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "49F3719D8C89FD55"
+				item: { count: 1, id: "createaddition:copper_spool" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40D889BD937BEF25"]
+			id: "79DFF370FD992E55"
+			rewards: [{
+				id: "02FF23B867B5370A"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 2L
+				id: "63B9D93A42695BD8"
+				item: { count: 1, id: "createaddition:capacitor" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["00E324586607DBE5"]
+			id: "06C4D3858B6FE6B7"
+			rewards: [{
+				id: "4054DD849C46CC1A"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "2968A2E4082F38C2"
+				item: { count: 1, id: "createaddition:connector" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["06C4D3858B6FE6B7"]
+			id: "35E14EC36F495943"
+			rewards: [{
+				id: "2D4FF180675CD2A3"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 2L
+				id: "2CD657F2293BD913"
+				item: { count: 1, id: "createaddition:large_connector" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["00E324586607DBE5"]
+			id: "0BE5752A6DDD6DB9"
+			rewards: [{
+				id: "4FADD1E0EB92B1D2"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "0897088444E0F690"
+				item: { count: 1, id: "createaddition:alternator" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"00E324586607DBE5"
+				"79DFF370FD992E55"
+			]
+			id: "4581013F8819B460"
+			rewards: [
+				{
+					id: "4B10F1DC577EC938"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "3C1520DFBADCB8A3"
+					item: {
+						count: 1
+						id: "createaddition:copper_spool"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "71E043FFDF71BD38"
+				item: { count: 1, id: "createaddition:electric_motor" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["00E324586607DBE5"]
+			id: "7C9E0FB4D14D144E"
+			rewards: [{
+				id: "2C6A20BFF3F58B2A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "3391E83C39D3F450"
+				item: { count: 1, id: "createaddition:portable_energy_interface" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0BE5752A6DDD6DB9"
+				"79DFF370FD992E55"
+			]
+			id: "5FF5EB5DE0DF9AFF"
+			rewards: [
+				{
+					id: "4757673F4A398F33"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "6A92A1611C6E0C57"
+					item: {
+						count: 1
+						id: "minecraft:gold_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "20B8F0D79E8E04E9"
+				item: { count: 1, id: "createaddition:tesla_coil" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FF5EB5DE0DF9AFF"]
+			id: "276EBEB807DD35E5"
+			rewards: [{
+				id: "6DE63ED0145FDC61"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "68609F08C9C5D88A"
+				item: { count: 1, id: "createaddition:electrum_wire" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["276EBEB807DD35E5"]
+			id: "1FD34643773C8684"
+			rewards: [{
+				id: "6F152A6F7B69BC15"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "05CC3857CC726318"
+				item: { count: 1, id: "createaddition:modular_accumulator" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 0.0d
+		}
+	]
+}

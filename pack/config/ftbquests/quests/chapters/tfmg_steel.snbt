@@ -1,0 +1,246 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tfmg_steel"
+	group: "002607DF1C0C507C"
+	icon: {
+		id: "tfmg:steel_ingot"
+	}
+	id: "0FB4652418B4DA84"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7BCEF8F5B514BAB1"]
+			id: "6E69A8B32CAE0154"
+			rewards: [{
+				id: "415D489364426371"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 16L
+				id: "0F638FE535A3BC41"
+				item: { count: 1, id: "tfmg:fireproof_bricks" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E69A8B32CAE0154"]
+			id: "178AF8F67536B6AC"
+			rewards: [{
+				id: "7240DAC765DAD6F6"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				count: 2L
+				id: "02FA3AE9CAC5B6C5"
+				item: { count: 1, id: "tfmg:coke_oven" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["178AF8F67536B6AC"]
+			id: "6EDFD65CE85B2DEF"
+			rewards: [{
+				id: "6ABD65720586761C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 16L
+				id: "63B1D69F1E158BE6"
+				item: { count: 1, id: "tfmg:coal_coke" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6EDFD65CE85B2DEF"]
+			id: "13601A7E258F0591"
+			rewards: [{
+				id: "1ABBBF2D4ED2A284"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 16L
+				id: "12149BB6865EBCBF"
+				item: { count: 1, id: "tfmg:coal_coke_dust" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6E69A8B32CAE0154"]
+			id: "1E12D7A55B984B9C"
+			rewards: [{
+				id: "71D1F47CEAA38AD8"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0E6093FA9CB43D3C"
+				item: { count: 1, id: "tfmg:blast_furnace_output" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E12D7A55B984B9C"]
+			id: "4E566D1A38D22D74"
+			rewards: [{
+				id: "7FC1A6580BC0A717"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 2L
+				id: "4D8AC37AC3566FE8"
+				item: { count: 1, id: "tfmg:blast_furnace_hatch" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E12D7A55B984B9C"]
+			id: "5DFBD39E0512825D"
+			rewards: [{
+				id: "3EC2FB2ECF956465"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 16L
+				id: "73E761FF33AABB52"
+				item: { count: 1, id: "tfmg:limesand" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1E12D7A55B984B9C"]
+			id: "21F6889484056B47"
+			rewards: [{
+				id: "418968813C202308"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				count: 6L
+				id: "043829B786317CB6"
+				item: { count: 1, id: "tfmg:steel_ingot" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["21F6889484056B47"]
+			id: "6CB1318822EB2542"
+			rewards: [{
+				id: "15F933A130AF8E40"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				count: 4L
+				id: "0678BFDB8DFF1996"
+				item: { count: 1, id: "tfmg:blast_furnace_reinforcement" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4E566D1A38D22D74"]
+			id: "04197D14DDEDA5C1"
+			rewards: [{
+				id: "1849BBD8113F489E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "4064EA72054A989B"
+				item: { count: 1, id: "tfmg:air_intake" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04197D14DDEDA5C1"]
+			id: "2000BB1C480F77C9"
+			rewards: [{
+				id: "6961A425DD964109"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "4051FE694D88E6DE"
+				item: { count: 1, id: "tfmg:blast_stove" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CB1318822EB2542"]
+			id: "55DAAAE2F82BB588"
+			rewards: [{
+				id: "33D4C142A628A02B"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "57605118F484CAE8"
+				item: { count: 1, id: "tfmg:casting_basin" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"55DAAAE2F82BB588"
+				"2000BB1C480F77C9"
+			]
+			id: "2C8DFC520679DCAC"
+			rewards: [
+				{
+					id: "31D674C0706B73C9"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "541CB07EE617DDCF"
+					item: {
+						count: 1
+						id: "tfmg:heavy_plate"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 32L
+				id: "6F8A04C7A037D5A1"
+				item: { count: 1, id: "tfmg:steel_ingot" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+}

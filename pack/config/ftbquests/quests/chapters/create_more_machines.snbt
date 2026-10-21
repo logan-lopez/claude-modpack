@@ -1,0 +1,226 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_more_machines"
+	group: "002607DF1C0C507C"
+	icon: {
+		id: "createoreexcavation:drilling_machine"
+	}
+	id: "00011E84ED5EA39A"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["18CA23C9694BB7C3"]
+			id: "4FF888A38D24CA23"
+			rewards: [{
+				id: "3154C4A197B833A2"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "17CE5E74E591238D"
+				item: { count: 1, id: "create_connected:kinetic_battery" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4FF888A38D24CA23"]
+			id: "680A7675FC6D91EF"
+			rewards: [{
+				id: "3E1C6588AF0913E7"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "59893E0818EC8DD3"
+				item: { count: 1, id: "createoreexcavation:drill" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["680A7675FC6D91EF"]
+			id: "799FFB79754D33F8"
+			rewards: [{
+				id: "72EB7A7CF0C104A1"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1ED118C41D848B7B"
+				item: { count: 1, id: "createoreexcavation:vein_finder" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["799FFB79754D33F8"]
+			id: "0D43965368217D48"
+			rewards: [{
+				id: "584555B7684AEEB4"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2D7476F2C9EF7388"
+				item: { count: 1, id: "createoreexcavation:drilling_machine" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D43965368217D48"]
+			id: "021E838B1362DA17"
+			rewards: [{
+				id: "40BDA1AF36ED223A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "228D223AFE6DA5B0"
+				item: { count: 1, id: "createoreexcavation:extractor" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4FF888A38D24CA23"]
+			id: "5A2404D93E4218BD"
+			rewards: [{
+				id: "5EA285D0C7E2B6D4"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "68DAABBABC37AA24"
+				item: { count: 1, id: "dndesires:industrial_casing" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5A2404D93E4218BD"]
+			id: "43440F667B05C3A8"
+			rewards: [{
+				id: "76F4EA61B6A79B02"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "50216E3C9D1E8E88"
+				item: { count: 1, id: "dndesires:industrial_fan" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["43440F667B05C3A8"]
+			id: "00D287ECAAB91B15"
+			rewards: [{
+				id: "5049315287632156"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "5E19686F602C32F9"
+				item: { count: 1, id: "dndesires:blasting_sail" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5A2404D93E4218BD"]
+			id: "55D93DE64B5FA0BA"
+			rewards: [{
+				id: "33E73A3392A72ABA"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "2EE23ED6DD54A7A6"
+				item: { count: 1, id: "dndesires:hydraulic_press" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4FF888A38D24CA23"]
+			id: "163798828170E009"
+			rewards: [{
+				id: "520C6EA15AAA9453"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "28094B1D1ED8F57E"
+				item: { count: 1, id: "petrolsparts:differential" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["163798828170E009"]
+			id: "218A96191183E169"
+			rewards: [{
+				id: "24749C4123622EB1"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "17EDDC39E0FD6214"
+				item: { count: 1, id: "petrolsparts:planetary_gearset" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["163798828170E009"]
+			id: "3DC3E416CB6F686D"
+			rewards: [{
+				id: "1859CF1A72B08A29"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "30C9129498151ABE"
+				item: { count: 1, id: "petrolsparts:colossal_cogwheel" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["163798828170E009"]
+			id: "1E92E5A75E5CC566"
+			rewards: [{
+				id: "212F22F19F6183CB"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				count: 8L
+				id: "00D0341E03159B1D"
+				item: { count: 1, id: "petrolsparts:pneumatic_tube" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.5d
+		}
+	]
+}

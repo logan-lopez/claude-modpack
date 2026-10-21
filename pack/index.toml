@@ -6,7 +6,7 @@ hash = "fd52d588f0a2f9407c82362d47ee71b12fb5baacb113f7dc7de4282caf2f930d"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "0bfae4d99ed55b683dec5bf8524bcfd80d89f7ca70dd538a14c8cbc6f30d4dd8"
+hash = "d222645bb7589d2bc8bf97a8b19cf6947c25857802d1d42d935260201667aa9e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_basics.snbt"
@@ -21,12 +21,24 @@ file = "config/ftbquests/quests/chapters/create_crafting.snbt"
 hash = "daf6bc71aa35ee2afe19490b7334c2a819973b734b0f74c946145394b97e0e4e"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/create_electricity.snbt"
+hash = "78fae4203ac9119bbcc49e602a134b1a63a0aaa35f03d5e3d31ed9f1e14828f1"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/create_enchantment_industry.snbt"
+hash = "edebc0fe86b58be711205478130ac7c5cdf4cf86a2c2582f49b7fa182aa0e0c7"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/create_fluids.snbt"
 hash = "053069d2f6f36971b364080f57001e2c01e469d1289a889069efc92ffd632e9b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_logistics.snbt"
 hash = "7e73e49efffecd614b710c929d09a8ca11a7b77ee0f5042830dd163be2313fe1"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/create_more_machines.snbt"
+hash = "b5b7bdafdad2e4c88eb618f17fd1639156c987959704206881e0c6db876bd456"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_trains.snbt"
@@ -37,12 +49,16 @@ file = "config/ftbquests/quests/chapters/getting_started.snbt"
 hash = "9648e02b577b93c9da718d1f2460a3d68a607c32d6d2cf39783688d03fa7d684"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/tfmg_steel.snbt"
+hash = "165dd55afd5b3dd5fd19e734b033fa96e55d631196150f9f4d7b51e7046d3b05"
+
+[[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "da77e416b557850f5cb1ab68d71de78f9fbc3cf3845e50cdb4dba3a8164f6e7f"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "5ec59d9ca485c6807359358047cf2d6588f75f4d7c51a2429048bae6f9a0eae7"
+hash = "392923b3604b08bf3d5daf214220dba80aebc02baed8d7547d11ad1548b92f42"
 
 [[files]]
 file = "kubejs/data/ad_astra/tags/fluid/fuel.json"

@@ -49,6 +49,23 @@ Four more Create chapters follow, each locked until a quest in the first two:
   (the train coupler and the fuel tank). All Aboard, ticked once a train runs its schedule, ends
   it.
 
+**Industry**, the third group, holds Create's big addons:
+
+- **Create: Electricity**, 14 quests, after the mechanical crafters: Crafts & Additions' copper
+  wire and rolling mill, spools and connectors, the alternator and electric motor, the tesla coil
+  that charges gold into electrum, and the accumulator that stores power.
+- **Create: More Machines**, 13 quests, after the mechanical crafters: Create Connected's kinetic
+  battery, then Create Ore Excavation's drill, vein finder, drilling machine and fluid well
+  extractor, Dreams and Desires' industrial fan, catalyst sails and hydraulic press, and Petrol's
+  Parts' differential, gearsets, colossal cogwheel and pneumatic tube.
+- **Steel and Alloys**, 13 quests, after the mechanical pump: The Factory Must Grow's fireproof
+  bricks and coke ovens, the blast furnace with its hatches, flux, reinforcements and blast stove,
+  a first batch of steel mixed in a heated basin, and the casting basin. Steel Ingot, the last
+  quest, opens the chapters built on steel.
+- **Create: Enchantment Industry**, 8 quests, after the spout: the experience lantern, the
+  mechanical grindstone that turns experience into a liquid, the experience hatch, printer and
+  infuser, and the blaze forger and blaze enchanter with enchanting templates.
+
 The rest of the book is planned in minecraft-mcp's
 [outline](../../../minecraft-mcp/docs/design/quest-book.md): its groups, chapters and the order
 they're drafted in.

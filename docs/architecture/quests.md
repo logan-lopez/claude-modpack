@@ -24,8 +24,8 @@ pack/config/ftbquests/quests/
   lang/en_us.snbt            every title and description, keyed by object ID
 ```
 
-It holds seven chapters in two groups, Getting Started and Create, and nothing in the default
-group. `chapters/getting_started.snbt` is the sample, alone in Getting Started:
+It holds eleven chapters in three groups, Getting Started, Create and Industry, and nothing in
+the default group. `chapters/getting_started.snbt` is the sample, alone in Getting Started:
 three quests in a chain (a crafting table, Create's andesite alloy, a Create shaft), one item task
 each, a dependency on the one before, laid out left to right at `x` 0, 2 and 4, and a 100 XP
 reward on the last. It's the format reference, not content. `chapters/create_basics.snbt`
@@ -36,8 +36,11 @@ Mechanical Crafting", `order_index` 1) follows it with 11 quests, and its first 
 follow in Create, `order_index` 2 to 5: `create_contraptions` (16 quests) and `create_logistics`
 (17), entered from `create_basics`' andesite casing, `create_fluids` (12), from its mechanical
 press, and `create_trains` (12), from `create_crafting`'s crushing wheels. Each first quest
-depends on that one quest in another chapter, and no other quest leaves its chapter. All six were
-drafted and written by minecraft-mcp, which is where real chapters come from, against its
+depends on that one quest in another chapter, and no other quest leaves its chapter. Industry
+holds four, `order_index` 0 to 3: `create_electricity` (14 quests) and `create_more_machines`
+(13), entered from `create_crafting`'s mechanical crafters, `tfmg_steel` (13), from
+`create_fluids`' mechanical pump, and `create_enchantment_industry` (8), from its spout; the same
+rule holds. Every chapter but the sample was drafted and written by minecraft-mcp, which is where real chapters come from, against its
 [outline of the whole book](../../../minecraft-mcp/docs/design/quest-book.md).
 
 `data.snbt` is the file FTB Quests wrote itself for a book with no `data.snbt`, so it holds its
