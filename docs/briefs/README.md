@@ -6,7 +6,7 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
 
 ## Where things stand
 
-*Updated 2026-10-19.*
+*Updated 2026-10-20.*
 
 - Built: the packwiz pack in `pack/` on NeoForge 21.1.264, 294 entries: about 200 mods from
   Logan's old 1.20.1 pack, 1.21.1 stand-ins and new picks (brief 03), four TaCZ gun packs with
@@ -16,8 +16,9 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
   checked every brief's hand checks so far.
 - In flight: nothing yet. [Brief 07](07-recipe-fixes-and-ad-astra-on-create.md) is open: the
   first part of integrations, and the first files the pack ships besides mods.
-- Next: brief 07's review, then [brief 08](08-server-build.md), a server zip to keep a world on
-  or hand to a friend. It touches nothing brief 07 does. The rest of integrations and default settings stays in
+- Next: the reviews of briefs 07 and 08, then [brief 09](09-ftb-quests.md): FTB Quests, a
+  sample chapter, and a server check that fails on a broken quest file, so minecraft-mcp can
+  write quests into `pack/` next. The rest of integrations and default settings stays in
   [`FUTURE.md`](FUTURE.md); keybinds wait for Logan to find the conflicts in play. The melee
   parity pass waits for Logan to play with Better Combat and guns, and may fold into it.
 - Loose ends waiting on Logan:
@@ -42,6 +43,10 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
    `scripts/server-pack.sh` writes a server zip that starts on macOS or Windows with `start.sh`
    or `start.bat`, asks about the EULA, keeps its settings across updates and restarts after a
    crash.
+3. [`09-ftb-quests.md`](09-ftb-quests.md): FTB Quests and XMod Compat, a hand-written sample
+   chapter in `pack/config/ftbquests/quests/`, the server check failing on quest files that don't
+   load as written, `scripts/pull-quests.sh` for in-game edits, and the quests page that
+   minecraft-mcp generates against.
 
 ## Done
 
@@ -110,6 +115,9 @@ Don't relitigate these. If one turns out to be wrong in practice, stop and say s
 | The server check's load errors | A committed baseline of known recipe, loot-table, data-file, data-map and advancement IDs; on a pass the summary lists new and gone ones. New ones never fail the check | Logan, 2026-10-19 (brief 07). A pass keeps meaning "it booted". |
 | Rocket fuel | `ad_astra:fuel` is Ad Astra's fuel and cryo fuel plus `#c:diesel`, `#c:biodiesel`, `#c:gasoline` and `#c:kerosene`. `#c:fuel` is out | Through `#c:fuel`, TFMG's byproduct gases and creosote filled rockets (Logan, 2026-10-19, brief 07). |
 | Integrations, first pass | Fix recipes that fail to load, then bridge Ad Astra's metals to Create. Keybinds wait for play | Logan, 2026-10-19 (ideate run, brief 07). |
+| Quests | FTB Quests and FTB XMod Compat, from CurseForge (neither is on Modrinth). Was parked until there was a quest brief | Logan, 2026-10-20 (brief 09). minecraft-mcp drafts the chapters. |
+| Who owns the quest book | `pack/config/ftbquests/quests/` is the source of truth. In-game editor changes come back through `scripts/pull-quests.sh` and a commit | Logan, 2026-10-20 (brief 09). A generator writes there, and the editor is still the easy way to lay quests out. |
+| Quest files in the server check | A quest file that doesn't load as written fails the check. The known-errors baseline still only reports | Logan, 2026-10-20 (brief 09). Quest files are the pack's own, and FTB Quests skips a broken chapter and still reaches Done. |
 | The server build | A self-contained zip from `scripts/server-pack.sh`: the server-side mods inside, NeoForge's installer run on first start, Java 21 required rather than bundled, the EULA asked on first start. Defaults a fresh server gets: `allow-flight=true`, `difficulty=hard`, `-Xmx12G`, and a restart after a crash | Logan, 2026-10-19 (brief 08). Mojang's server jar can't be shipped, and there's no hosted pack to sync from. |
 
 ## Not built
@@ -124,7 +132,8 @@ What's deliberately absent, so nobody flags it as missing. Point at `FUTURE.md` 
   Converted 1.20.1 packs other than Create Armorer stay out.
 - **Configs, recipes and default settings.** Every mod runs on its own defaults, and no KubeJS
   scripts exist yet; brief 07 ships the first. See [`FUTURE.md`](FUTURE.md), Integrations.
-- **Quests.** No quest book, so FTB Quests is out ([`FUTURE.md`](FUTURE.md), Parked).
+- **Quests.** No quest book yet. [Brief 09](09-ftb-quests.md) adds FTB Quests and a sample
+  chapter; real chapters are minecraft-mcp's next plan.
 
 ## Future direction new work must not block
 

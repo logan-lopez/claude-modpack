@@ -110,4 +110,4 @@ version ID). Sodium, Iris and JEI are pinned, so it leaves them alone.
 - **FTB Ultimine Addition as a hand-placed jar.** Its author excludes it from the CurseForge API,
   so packwiz can't manage it. Back if Logan wants it enough to keep a jar in the instance by hand.
 - **FTB Quests and FTB XMod Compat.** A new pack has no quest book. Back when there's a quest
-  brief.
+  brief. Scheduled: [brief 09](09-ftb-quests.md) (2026-10-20).
