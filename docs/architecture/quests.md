@@ -24,10 +24,13 @@ pack/config/ftbquests/quests/
   lang/en_us.snbt            every title and description, keyed by object ID
 ```
 
-Today it holds one sample chapter, `chapters/getting_started.snbt`: three quests in a chain
-(a crafting table, Create's andesite alloy, a Create shaft), one item task each, a dependency on
-the one before, laid out left to right at `x` 0, 2 and 4, and a 100 XP reward on the last. It's
-the format reference, not content: real chapters are minecraft-mcp's.
+It holds two chapters, both in the default group. `chapters/getting_started.snbt` is the sample:
+three quests in a chain (a crafting table, Create's andesite alloy, a Create shaft), one item task
+each, a dependency on the one before, laid out left to right at `x` 0, 2 and 4, and a 100 XP
+reward on the last. It's the format reference, not content. `chapters/create_basics.snbt`
+("Create: Andesite to Precision", `order_index` 1) is the first real chapter: 19 quests from
+andesite alloy to the precision mechanism, drafted and written by minecraft-mcp, which is where
+real chapters come from.
 
 `data.snbt` and `chapter_groups.snbt` are the files FTB Quests wrote itself for a book with no
 `data.snbt`, so they hold its defaults (linear progression, circle quests, `grid_scale: 0.5d`).
@@ -52,7 +55,7 @@ differs from `pack/` (below), so a file must be byte for byte what the writer wo
   `quests: [` on its own line, each `{` ... `}` indented a level, and `]`.
 - An empty list or compound is `[ ]` or `{ }`. Strings are double-quoted. Doubles carry `d`
   (`0.0d`); ints and booleans are bare. An item task's `count` above 1 is a long, which SNBT
-  marks with `L`; no run has written one yet.
+  marks with `L`: `count: 8L` in the Create chapter.
 - Item stacks are one line, as Minecraft 1.21.1 saves them: `{ count: 1, id: "create:shaft" }`.
 - Only the keys the writer writes. It leaves out defaults (`count` on an item task when it's 1,
   `size` when it's 0, `optional_task` when false), so writing one in counts as a rewrite.

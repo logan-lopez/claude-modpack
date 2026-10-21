@@ -1,7 +1,7 @@
 # The quest book
 
-FTB Quests' quest book, which the pack ships and keeps in the repo. Today it has one short sample
-chapter; real chapters come later, drafted by minecraft-mcp.
+FTB Quests' quest book, which the pack ships and keeps in the repo. It has a short sample chapter
+and one real one, on Create, drafted by minecraft-mcp.
 
 **Covers:** [The quest book](../architecture/quests.md)
 
@@ -20,6 +20,12 @@ first).
 3. **A Shaft:** a Create shaft, with 100 XP to claim. Locked until the second is done.
 
 It's there to show the format works end to end, and will be replaced.
+
+**Create: Andesite to Precision**, beside it: Create's early game in 19 quests. It starts at
+andesite alloy and shafts, builds the water wheel and the mechanical press for iron sheets, then
+the mixer, basin and blaze burner for brass, and ends at the deployer and the precision mechanism
+it assembles. Zinc and polished rose quartz are side branches you can start at any time. Each
+quest says how to make its item, and gives 25 to 100 XP.
 
 ## Editing in the game
 
@@ -56,6 +62,6 @@ A chapter the pack dropped stays on an updated server until you delete it from i
 
 ## What it doesn't do yet
 
-- No real chapters, and no rewards beyond the sample's XP.
+- One real chapter so far, and no rewards beyond XP.
 - Nothing pulls edits from a server back into the repo; `scripts/pull-quests.sh` reads a Prism
   instance's folder, though any folder shaped like one works.
