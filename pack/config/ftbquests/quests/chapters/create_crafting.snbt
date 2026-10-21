@@ -2,10 +2,13 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "create_crafting"
-	group: ""
+	group: "7DF81F61BC6148EF"
+	icon: {
+		id: "create:crushing_wheel"
+	}
 	id: "06B890659D1F1750"
 	images: [ ]
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{

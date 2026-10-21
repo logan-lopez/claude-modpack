@@ -2,7 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "getting_started"
-	group: ""
+	group: "72644D66BC292029"
+	icon: {
+		id: "minecraft:crafting_table"
+	}
 	id: "2A372F82EF67248E"
 	images: [ ]
 	order_index: 0

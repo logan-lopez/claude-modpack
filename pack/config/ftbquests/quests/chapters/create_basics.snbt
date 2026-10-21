@@ -2,10 +2,13 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "create_basics"
-	group: ""
+	group: "7DF81F61BC6148EF"
+	icon: {
+		id: "create:precision_mechanism"
+	}
 	id: "16948E1D867242E0"
 	images: [ ]
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

@@ -6,19 +6,19 @@ hash = "fd52d588f0a2f9407c82362d47ee71b12fb5baacb113f7dc7de4282caf2f930d"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+hash = "0bfae4d99ed55b683dec5bf8524bcfd80d89f7ca70dd538a14c8cbc6f30d4dd8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_basics.snbt"
-hash = "d54ccd3d675e169f5aa91e669c105e8852031a071e93a85c9ce29fbd90b56e6a"
+hash = "06f0a18638b765d42dc4b7e88552514ee7163ae351b995fc428e77d9d727aecf"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_crafting.snbt"
-hash = "9e4d5cdbba147775f558d37883a49ff4c93f597e6093edc506839a24a837a139"
+hash = "daf6bc71aa35ee2afe19490b7334c2a819973b734b0f74c946145394b97e0e4e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/getting_started.snbt"
-hash = "0108d9e6f7260ba9d0bf832a6207b55ffa91d1cdcc5f642f933390795dd9acb5"
+hash = "9648e02b577b93c9da718d1f2460a3d68a607c32d6d2cf39783688d03fa7d684"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -26,7 +26,7 @@ hash = "da77e416b557850f5cb1ab68d71de78f9fbc3cf3845e50cdb4dba3a8164f6e7f"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "1ce42751b5d14d9b455ed8cf7a0e7bcadc0c66c00a4e576663bf75bd92ab6f7a"
+hash = "241f2b73693ab9cc7fc8b09ea0afa2aaeb90995705b511b07938c69fe715ac8f"
 
 [[files]]
 file = "kubejs/data/ad_astra/tags/fluid/fuel.json"

@@ -18,26 +18,28 @@ build reads none of that.
 ```
 pack/config/ftbquests/quests/
   data.snbt                  the book's settings, and version: 13
-  chapter_groups.snbt        chapter groups; chapter_groups: [ ] when there are none
+  chapter_groups.snbt        chapter groups in display order; chapter_groups: [ ] when there are none
   chapters/<filename>.snbt   one per chapter
   reward_tables/<name>.snbt  one per reward table (none yet)
   lang/en_us.snbt            every title and description, keyed by object ID
 ```
 
-It holds three chapters, all in the default group. `chapters/getting_started.snbt` is the sample:
+It holds three chapters in two groups, Getting Started and Create, and nothing in the default
+group. `chapters/getting_started.snbt` is the sample, alone in Getting Started:
 three quests in a chain (a crafting table, Create's andesite alloy, a Create shaft), one item task
 each, a dependency on the one before, laid out left to right at `x` 0, 2 and 4, and a 100 XP
 reward on the last. It's the format reference, not content. `chapters/create_basics.snbt`
-("Create: Andesite to Precision", `order_index` 1) is the first real chapter: 19 quests from
-andesite alloy to the precision mechanism. `chapters/create_crafting.snbt` ("Create: Mechanical
-Crafting", `order_index` 2) follows it with 11 quests, and its first quest depends on
+("Create: Andesite to Precision", `order_index` 0 in Create) is the first real chapter: 19 quests
+from andesite alloy to the precision mechanism. `chapters/create_crafting.snbt` ("Create:
+Mechanical Crafting", `order_index` 1) follows it with 11 quests, and its first quest depends on
 `create_basics`' precision mechanism: the book's first dependency across chapters. Both were
 drafted and written by minecraft-mcp, which is where real chapters come from, against its
 [outline of the whole book](../../../minecraft-mcp/docs/design/quest-book.md).
 
-`data.snbt` and `chapter_groups.snbt` are the files FTB Quests wrote itself for a book with no
-`data.snbt`, so they hold its defaults (linear progression, circle quests, `grid_scale: 0.5d`).
-The pack doesn't tune them yet.
+`data.snbt` is the file FTB Quests wrote itself for a book with no `data.snbt`, so it holds its
+defaults (linear progression, circle quests, `grid_scale: 0.5d`). The pack doesn't tune it yet.
+`chapter_groups.snbt` started the same way, empty; minecraft-mcp appends a group to it when a
+chapter names one the book lacks.
 
 packwiz gives these files no side, so they reach the server check, the server zip and Prism
 instances alike ([pack overrides](pack-overrides.md#what-lives-where)).
@@ -88,8 +90,15 @@ A chapter file has `default_hide_dependency_lines`, `default_quest_shape` (`""` 
 default), `filename` (its file name without `.snbt`), `group` (`""` for the default group, or a
 group's ID), `id`, `images`, `order_index` (its place in the group, from 0), `quest_links` and
 `quests`. Task and reward `type`s from FTB Quests itself are bare (`item`, `xp`); other mods'
-are full IDs. The `writeData` methods of `Chapter`, `Quest`, `task/ItemTask` and `reward/XPReward`
-at the tag list every key.
+are full IDs. The `writeData` methods of `Chapter`, `Quest`, `task/ItemTask`, `reward/XPReward`
+and `reward/ItemReward` at the tag list every key.
+
+`chapter_groups.snbt` lists every group but the default one, in display order, each on one line:
+`{ icon: { id: "create:cogwheel" }, id: "7DF81F61BC6148EF" }` (`icon` only when set). A group's
+title is the lang key `chapter_group.<ID>.title`. A chapter's `icon` is the same `{ id: ... }`
+compound, on several lines. An item reward's stack is on several lines too (`count: 1`, `id`),
+unlike an item task's single-line one, with the reward's own `count` only above 1. FTB Quests
+saves `order_index` as 0..n-1 in each group, so a gap is rewritten on the next save.
 
 ### IDs
 
@@ -207,8 +216,9 @@ quest's `x` and `y` is Logan's hand check.
 
 What a generator such as minecraft-mcp writes, into `pack/config/ftbquests/quests/`:
 
-- One `chapters/<filename>.snbt` per chapter, lowercase, with `filename` matching, a unique
-  `order_index` in its group, and `group: ""` or a group from `chapter_groups.snbt`.
+- One `chapters/<filename>.snbt` per chapter, lowercase, with `filename` matching, its
+  `order_index` in its group (0..n-1, no gaps), and `group: ""` or a group from
+  `chapter_groups.snbt`.
 - New IDs by the rule above, unique across every file in the book, including the ones it didn't
   write. Dependencies by ID, to quests that exist.
 - Titles and descriptions in `lang/en_us.snbt`, keys sorted with the rest of the file.
@@ -218,7 +228,9 @@ What a generator such as minecraft-mcp writes, into `pack/config/ftbquests/quest
 
 Then `scripts/server-check.sh`. A pass means FTB Quests loaded every file and would write it back
 unchanged. A fail names the problem: the ERROR lines, the counts, or the diff of what FTB Quests
-rewrote. Don't hand-edit `data.snbt` or `chapter_groups.snbt` from a generator without Logan.
+rewrote. A generator may append a group to `chapter_groups.snbt`, never delete, rename or reorder
+one (minecraft-mcp's call, Logan, 2026-10-21); groups are ordered by dragging them in the editor.
+Don't hand-edit `data.snbt` from a generator without Logan.
 
 The server zip carries the book. A newer zip unzipped over an old server replaces chapters but
 doesn't delete one the pack dropped ([the server build](server-pack.md#the-zip)).
