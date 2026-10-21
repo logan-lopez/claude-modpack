@@ -1,7 +1,7 @@
 # The quest book
 
 FTB Quests' quest book, which the pack ships and keeps in the repo. It has a short sample chapter
-and thirty-four real ones, drafted by minecraft-mcp.
+and thirty-eight real ones, drafted by minecraft-mcp.
 
 **Covers:** [The quest book](../architecture/quests.md)
 
@@ -154,6 +154,11 @@ Four more Create chapters follow, each locked until a quest in the first two:
 - **Enchanting**, 12 quests, open from the start: the enchanting table, hellshelves and seashelves
   and their infused versions, the enchantment library, the deepshelf, the endshelf line to the
   draconic endshelf, and the tomes of scrapping and extraction.
+- **Iron's Spells: Ancient Knowledge**, 13 quests, after the apprentice's spell book: the wayward
+  compass to the catacombs and the Dead King, his Necronomicon and Blood Staff, the phylactery
+  that raises him again and the Bone Key to his vaults; ancient knowledge fragments, a ruined
+  book and the Ancient Codex; and a furled map to the Lost Citadel in the Nether, Echo of Tyros
+  and the Decrepit Key.
 
 **Storage and Travel**, the eighth group:
 
@@ -185,8 +190,21 @@ somewhere or killing something rather than handing items in:
   echo shard and warden armour; the Otherside (the heart opens its portal), an ancient temple,
   soul crystals, sculk bones and the sonorous staff; and Create: Deep Dark's echo ingot and echo
   armour.
+- **Dungeons and Structures**, 16 quests, open from the start: the Explorer's Compass, with the
+  Nature's Compass beside it; a Better Dungeons dungeon (and all four kinds), a mineshaft, a
+  village, YUNG's desert and jungle temples, witch hut and ocean monument (vanilla's are turned
+  off), and a first and 25th Lootr chest; then When Dungeons Arise's illager fort, foundry and
+  plague asylum, ending at a Heavenly Conqueror airship.
+- **Mowzie's Mobs**, 12 quests, open from the start, one branch per boss: the Ferrous
+  Wroughtnaut and its axe and helm, the Frostmaw and its ice crystal, the Sculptor's challenge
+  and the earthrend gauntlet, sneaking into an Umvuthana grove and Umvuthi for the Sol Visage;
+  and a Naga's fang for a blowgun and darts.
+- **L_Ender's Cataclysm**, 21 quests, after killing the Wither: a box to tick that opens eight
+  branches, each an eye that leads to an arena and the boss inside: Ignis (and its ignitium for
+  the Incinerator), the Netherite Monstrosity, the Harbinger (its witherite for the mechanical
+  fusion anvil), the Ender Guardian, the Leviathan, the Ancient Remnant, Maledictus and Scylla.
 
-The rest of the book is planned in minecraft-mcp's
+Every chapter but Getting Started's rewrite is in. The book is planned in minecraft-mcp's
 [outline](../../../minecraft-mcp/docs/design/quest-book.md): its groups, chapters and the order
 they're drafted in.
 

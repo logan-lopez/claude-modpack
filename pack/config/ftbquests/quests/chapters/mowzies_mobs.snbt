@@ -1,0 +1,245 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mowzies_mobs"
+	group: "6C84DBAA332BC60C"
+	icon: {
+		id: "mowziesmobs:sol_visage"
+	}
+	id: "2933A5916F0E7153"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "06155381A5859B00"
+			rewards: [
+				{
+					id: "11132D2109B0EFC5"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "0EF073BE33B1607D"
+					item: {
+						count: 1
+						id: "minecraft:iron_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "mowziesmobs:ferrous_wroughtnaut"
+				id: "7714A4BDF9CB796A"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["06155381A5859B00"]
+			id: "646C67DF694D9F01"
+			rewards: [{
+				id: "5ED53E47E65F31CD"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					id: "20417BC0F8A71AD5"
+					item: { count: 1, id: "mowziesmobs:wrought_axe" }
+					type: "item"
+				}
+				{
+					id: "256A596E3143DC68"
+					item: { count: 1, id: "mowziesmobs:wrought_helmet" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			id: "5AA5378E5E546B45"
+			rewards: [{
+				id: "30285AD31B705373"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				entity: "mowziesmobs:frostmaw"
+				id: "6F60EBF8FB1FBBFD"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5AA5378E5E546B45"]
+			id: "7A4B53E9A5219118"
+			rewards: [{
+				id: "005C0DBFFCF9092B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "731745F8FD8D07CD"
+				item: { count: 1, id: "mowziesmobs:ice_crystal" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			id: "5185A9DE4E946DB0"
+			rewards: [{
+				id: "2F11A7F0296FB243"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "mowziesmobs:sculptor_challenge"
+				criterion: ""
+				id: "3342F42A39961E14"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5185A9DE4E946DB0"]
+			id: "41CB4E66D45B5992"
+			rewards: [{
+				id: "07F187557AFA1A3B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "49EA3F9D50FBCBAC"
+				item: { count: 1, id: "mowziesmobs:earthrend_gauntlet" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			id: "1720D9E45E902D58"
+			rewards: [{
+				id: "0FEA4C34ABF8A9BC"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				advancement: "mowziesmobs:sneak_grove"
+				criterion: ""
+				id: "2C4F44DEE00A9F84"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1720D9E45E902D58"]
+			id: "7BC441E3A756D832"
+			rewards: [
+				{
+					id: "7E4C360881621C69"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "684C49F566B3E6F9"
+					item: {
+						count: 1
+						id: "minecraft:gold_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "mowziesmobs:umvuthi"
+				id: "30B49CC88CE383EC"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7BC441E3A756D832"]
+			id: "1106E88FD7324D53"
+			rewards: [{
+				id: "246BB63CF1CE291B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6511DB948DF424DA"
+				item: { count: 1, id: "mowziesmobs:sol_visage" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "3CC436CC7D960F6C"
+			rewards: [{
+				id: "4CDED18B3F824629"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				entity: "mowziesmobs:naga"
+				id: "715ABFDB30E2E586"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3CC436CC7D960F6C"]
+			id: "75505BBEF534CCCC"
+			rewards: [{
+				id: "4B8D593AF7107903"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "269ECBC4A08AC3F6"
+				item: { count: 1, id: "mowziesmobs:naga_fang" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["75505BBEF534CCCC"]
+			id: "5EDDE2030DE9BC29"
+			rewards: [{
+				id: "7739346680B9611F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					id: "04CBCC12232B129C"
+					item: { count: 1, id: "mowziesmobs:blowgun" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "53C3E818827B0813"
+					item: { count: 1, id: "mowziesmobs:dart" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 1.5d
+		}
+	]
+}

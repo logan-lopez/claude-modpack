@@ -24,7 +24,7 @@ pack/config/ftbquests/quests/
   lang/en_us.snbt            every title and description, keyed by object ID
 ```
 
-It holds thirty-five chapters in nine groups, Getting Started, Create, Industry, Space, Combat
+It holds thirty-nine chapters in nine groups, Getting Started, Create, Industry, Space, Combat
 and Gear, Food and Farming, Magic, Storage and Travel and Exploration and Bosses, and nothing in the default group. `chapters/getting_started.snbt` is the sample, alone in Getting Started:
 three quests in a chain (a crafting table, Create's andesite alloy, a Create shaft), one item task
 each, a dependency on the one before, laid out left to right at `x` 0, 2 and 4, and a 100 XP
@@ -50,16 +50,18 @@ chapters with TaCZ variant tasks (a gun, ammo or attachment matched on its recip
 `apotheosis` its first with advancement tasks. Food and Farming holds five,
 `order_index` 0 to 4: `farmers_delight` (18 quests), `aquaculture` (13) and `productive_bees`
 (12), open from the start, `more_delights` (14), from `farmers_delight`'s cooking pot, and
-`create_kitchen` (13), from `create_basics`' mechanical mixer. Magic holds five, `order_index` 0
-to 4: `ars_nouveau_source` (11 quests), `irons_spellbooks` (11) and `enchanting` (12), open from
-the start, `ars_nouveau_rituals` (11), from `ars_nouveau_source`'s enchanting apparatus, and
-`create_wizardry` (7), from `irons_spellbooks`' arcane essence. Storage and Travel holds two:
+`create_kitchen` (13), from `create_basics`' mechanical mixer. Magic holds six, `order_index` 0
+to 5: `ars_nouveau_source` (11 quests), `irons_spellbooks` (11) and `enchanting` (12), open from
+the start, `ars_nouveau_rituals` (11), from `ars_nouveau_source`'s enchanting apparatus,
+`create_wizardry` (7), from `irons_spellbooks`' arcane essence, and `irons_ancient` (13), from
+its apprentice's spell book. Storage and Travel holds two:
 `storage` (18 quests), open from the start, and `getting_around` (16), from `create_crafting`'s
-mechanical crafters. Exploration and Bosses holds three, `order_index` 0 to 2: `the_nether` (18
-quests), open from the start, `the_end` (12), from its blaze rods, and `deep_dark` (14), from its
-netherite ingot; they're the book's first chapters with kill, dimension and structure tasks. The
-same rule holds; the chapters with no entry, Rituals and Getting Around
-have more than one quest with no dependencies. Every chapter but the sample was drafted and written by minecraft-mcp, which is where real chapters come from, against its
+mechanical crafters. Exploration and Bosses holds six, `order_index` 0 to 5: `the_nether` (18
+quests), open from the start, `the_end` (12), from its blaze rods, `deep_dark` (14), from its
+netherite ingot, `dungeons` (16) and `mowzies_mobs` (12), open from the start, and `cataclysm`
+(21), from `the_nether`'s Wither; the first three are the book's first chapters with kill,
+dimension and structure tasks. The same rule holds; the chapters with no entry, Rituals, Getting
+Around, Dungeons and Mowzie's Mobs have more than one quest with no dependencies. Every chapter but the sample was drafted and written by minecraft-mcp, which is where real chapters come from, against its
 [outline of the whole book](../../../minecraft-mcp/docs/design/quest-book.md).
 
 `data.snbt` is the file FTB Quests wrote itself for a book with no `data.snbt`, so it holds its

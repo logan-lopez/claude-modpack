@@ -3,6 +3,8 @@
 	chapter.00011E84ED5EA39A.title: "Create: More Machines"
 	chapter.006FC04EC31ACFE7.chapter_subtitle: ["Tools built from parts, each part from any material you like, and the Nether and End metals that make the best of them."]
 	chapter.006FC04EC31ACFE7.title: "Silent Gear"
+	chapter.0464D27111AFF6C4.chapter_subtitle: ["Eight arenas, eight eyes to find them, and the bosses inside."]
+	chapter.0464D27111AFF6C4.title: "L_Ender's Cataclysm"
 	chapter.06B890659D1F1750.chapter_subtitle: ["From brass casing to the mechanical crafter, crushing wheels and the tools it builds."]
 	chapter.06B890659D1F1750.title: "Create: Mechanical Crafting"
 	chapter.084B69E7170F741E.chapter_subtitle: ["Find oil, pump it up, split it into fuels in a distillation tower, and burn the diesel in an engine."]
@@ -29,9 +31,13 @@
 	chapter.24DBC722ADF457B6.title: "Create: Fluids and Steam"
 	chapter.286B46263DF4DF8F.chapter_subtitle: ["Crafts & Additions: wire, spools and motors, from rotation to power and back."]
 	chapter.286B46263DF4DF8F.title: "Create: Electricity"
+	chapter.2933A5916F0E7153.chapter_subtitle: ["Four bosses in their own lairs, and the powers they leave behind."]
+	chapter.2933A5916F0E7153.title: "Mowzie's Mobs"
 	chapter.298422B399CAA56B.chapter_subtitle: ["Farmer's Delight's addons: the Nether, the ocean, Aquaculture's fish, Alex's Mobs and the End, all cooked in the same pot."]
 	chapter.298422B399CAA56B.title: "More Delights"
 	chapter.2A372F82EF67248E.title: "Getting Started"
+	chapter.2A6DBECD42B4A097.chapter_subtitle: ["The catacombs, the Lost Citadel, their bosses, and the Ancient Codex."]
+	chapter.2A6DBECD42B4A097.title: "Iron's Spells: Ancient Knowledge"
 	chapter.3066A77B8648DDDD.chapter_subtitle: ["From the Moon to Glacio: each planet's metal builds the rocket to the next."]
 	chapter.3066A77B8648DDDD.title: "Ad Astra: The Planets"
 	chapter.313600851FEF544A.chapter_subtitle: ["Knives and a cutting board, new crops and rich soil, then the stove, the cooking pot and a feast."]
@@ -46,6 +52,8 @@
 	chapter.48F05D1F663C727E.title: "Enchanting"
 	chapter.4A7B7A7FB61DEF2E.chapter_subtitle: ["Experience as a fluid: grind it, store it, and enchant and forge with it by machine."]
 	chapter.4A7B7A7FB61DEF2E.title: "Create: Enchantment Industry"
+	chapter.4E4B9E708974464B.chapter_subtitle: ["Find the pack's dungeons, temples and ruins, and loot them."]
+	chapter.4E4B9E708974464B.title: "Dungeons and Structures"
 	chapter.67EBEAD7AC2E98DD.chapter_subtitle: ["From track and train casing to stations, signals and a train that runs itself."]
 	chapter.67EBEAD7AC2E98DD.title: "Create: Trains"
 	chapter.6C61F52EEAE10A87.chapter_subtitle: ["Generator coils and magnets, energised materials, motors, heat, and a nuclear reactor."]
@@ -121,12 +129,16 @@
 	quest.05C5C1EBFC129506.title: "Template Boards"
 	quest.05CEA6A594FB5030.quest_desc: ["A block of lapis and an arcane ingot, which is an ingot crafted with eight arcane essence. Casing for the machines that handle mana."]
 	quest.05CEA6A594FB5030.title: "Arcane Casing"
+	quest.06155381A5859B00.quest_desc: ["An armored knight waiting in a Wrought Chamber underground; the Explorer's Compass finds one. Dodge its axe, then strike while it's stuck."]
+	quest.06155381A5859B00.title: "The Ferrous Wroughtnaut"
 	quest.061574C47752DC99.quest_desc: ["A gold ingot and four blaze powder at a crafting table. The alloy forge makes it with half the powder."]
 	quest.061574C47752DC99.title: "Blaze Gold"
 	quest.06C2565AE6241A65.quest_desc: ["A nether star, three obsidian and five glass. On a pyramid of iron, gold, emerald, diamond or netherite blocks it gives speed, haste or strength to everyone nearby."]
 	quest.06C2565AE6241A65.title: "Beacon"
 	quest.06C4D3858B6FE6B7.quest_desc: ["A copper rod, andesite alloy and a slimeball make three. Place one on each machine and join them with a spool to carry power."]
 	quest.06C4D3858B6FE6B7.title: "Small Connector"
+	quest.073E1DB35CD58FAA.quest_desc: ["Open 25 Lootr containers."]
+	quest.073E1DB35CD58FAA.title: "Close Quarters"
 	quest.075DE9AB03FE7CD7.quest_desc: ["Sugar and cinder flour, crushed from netherrack, mix into gingerdough; bake it in a furnace."]
 	quest.075DE9AB03FE7CD7.title: "Gingerbread"
 	quest.07EAB6E6813B93C7.quest_desc: ["Smelted from the raw ostrum mined on Mars."]
@@ -145,6 +157,8 @@
 	quest.08E38215D89F6B6B.title: "NASA Workbench"
 	quest.092518A48FED1029.quest_desc: ["Mix four sugar cane, or other plant matter, with water in a basin to make pulp, and press the pulp into cardboard. Four cardboard make a block of cardboard."]
 	quest.092518A48FED1029.title: "Cardboard"
+	quest.096EBCCD33ED0070.quest_desc: ["The Harbinger drops a Block of Witherite; craft it into ingots."]
+	quest.096EBCCD33ED0070.title: "Witherite Ingot"
 	quest.097147F0F717DEC3.quest_desc: ["The apparatus (gold, sourcestone and a diamond) sits on an Arcane Core. Fill the pedestals around it, use the middle item on the apparatus, and it crafts with Source from the jars nearby: charms, rings, the dominion wand and more."]
 	quest.097147F0F717DEC3.title: "Enchanting Apparatus"
 	quest.0990FE1228ECB728.quest_desc: ["Three iron, four bricks and a campfire. It cooks food on top like a campfire, and heats a cooking pot or skillet set on it."]
@@ -191,6 +205,8 @@
 	quest.0DD19F9CDE23C62E.title: "Chassis"
 	quest.0E159A03043B17B5.quest_desc: ["Strong all round and fire-resistant. The first ones are crafted, one at a time, from four crimson iron, two blaze rods and a magma cream; the alloy forge needs four."]
 	quest.0E159A03043B17B5.title: "Crimson Steel"
+	quest.0E5AE61E136758A1.quest_desc: ["Five paper, two ancient knowledge fragments and two cinder essence. Unfurl it to find the Lost Citadel."]
+	quest.0E5AE61E136758A1.title: "Ancient Furled Map"
 	quest.0F0B646A315F54D1.quest_desc: ["A train casing and a wooden pressure plate make two train observers. On a track, one gives a redstone signal while a train passes over it."]
 	quest.0F0B646A315F54D1.title: "Train Observer"
 	quest.0F0D4205866FF14D.quest_desc: ["Three nether bricks, four polished blackstone bricks and a campfire: a stove from the Nether's stone. Made with a soul campfire, it's the soul version."]
@@ -207,6 +223,8 @@
 	quest.10C6F926AD096040.title: "Ostrum Tank"
 	quest.11035283280C5B16.quest_desc: ["A diesel engine with brass sheets and andesite alloy. They stack, and give more stress capacity the more you stack."]
 	quest.11035283280C5B16.title: "Modular Diesel Engine"
+	quest.1106E88FD7324D53.quest_desc: ["Umvuthi's mask. Wear it to call down the sun's power on your enemies."]
+	quest.1106E88FD7324D53.title: "Sol Visage"
 	quest.112EAAE8696F55A8.quest_desc: ["Atlantic halibut, an egg and an onion in the cooking pot. A neptunium knife, from Aquaculture's best metal, cuts more fillets from each fish."]
 	quest.112EAAE8696F55A8.title: "Halibut with Tartar Sauce"
 	quest.11A8AD497C02A95E.quest_desc: ["A mechanical saw cuts one brass sheet into 32. Each round has its own casing, cut the same way: rimmed blunt AP, SLAP, 40mm HE, grenade and 12 gauge."]
@@ -237,6 +255,8 @@
 	quest.16DF58934349AC94.title: "Oxygen Loader"
 	quest.17025CEF04B29ED2.quest_desc: ["Sand, dirt and clay. A cannon mould, sawn from a log with a mechanical saw, is built into a cast layer of casting sand; fill the cast with molten metal, let it set, then break it open."]
 	quest.17025CEF04B29ED2.title: "Casting Sand"
+	quest.1720D9E45E902D58.quest_desc: ["The Umvuthana live in groves in the savanna, around their leader. Wear one of their masks and they'll take you for one of their own."]
+	quest.1720D9E45E902D58.title: "Birds of a Feather"
 	quest.1753C678A121947A.quest_desc: ["Uses gem dust and rarity materials to raise a gem's purity. Socket a gem into gear at a smithing table, item on the left and gem on the right; taking it out again is costly."]
 	quest.1753C678A121947A.title: "Gem Cutting Table"
 	quest.175B536816261262.quest_desc: [
@@ -269,6 +289,8 @@
 	quest.1958706F267D3E8E.title: "Powered Centrifuge"
 	quest.195874A714B642A9.quest_desc: ["Crushing mined thorium gives radioactive thorium one time in ten; pressed onto an iron sheet in sequenced assembly, it becomes fuel."]
 	quest.195874A714B642A9.title: "Nuclear Fuel"
+	quest.196C9514BEC4708C.quest_desc: ["Summon Ignis at the Burning Arena's Altar of Fire, and put it out."]
+	quest.196C9514BEC4708C.title: "Ignis"
 	quest.19A08F6D0AEA692F.quest_desc: ["A book and an iron shovel, pickaxe, axe and sword. It casts spells built from glyphs, and a novice book reaches the first tier of them."]
 	quest.19A08F6D0AEA692F.title: "Novice Spell Book"
 	quest.19B3FA80432C8F74.quest_desc: ["Five ostrum plates, a fan and the desh engine."]
@@ -287,6 +309,8 @@
 	quest.1ADA3CAD19577BDE.title: "Desh Ingot"
 	quest.1B0FF5899D1C50F4.quest_desc: ["Helmet, suit, pants and boots, mostly heavy plates and wool; the suit holds two gas tanks and oxygen gear. Wear all four to breathe and survive the cold outside the Overworld."]
 	quest.1B0FF5899D1C50F4.title: "Space Suit"
+	quest.1B3437B64F242678.quest_desc: ["Four cobwebs, four cracked stone bricks and a compass. Right-click it to pick a structure from every mod in the pack, and it points at the nearest one."]
+	quest.1B3437B64F242678.title: "Explorer's Compass"
 	quest.1B51D5E70031131E.quest_desc: ["Connects every inventory touching it into one network, Tom's Simple Storage's start. Cable reaches inventories further away, attached with inventory cable connectors."]
 	quest.1B51D5E70031131E.title: "Inventory Connector"
 	quest.1B96D49C911CE19A.quest_desc: ["A pump shotgun from the gun smith table: 25 iron and 12 logs."]
@@ -311,6 +335,8 @@
 	quest.1DB6886BCDD1ABF3.title: "Storage Terminal"
 	quest.1DB6C6F5F33038E7.quest_desc: ["A hellshelf infused at a table with at least 45 eterna and 30 quanta. Infused shelves give more, and Blazing and Glowing Hellshelves are crafted from them."]
 	quest.1DB6C6F5F33038E7.title: "Infused Hellshelf"
+	quest.1DEBFB469A7B8AB6.quest_desc: ["The Storm Empress, in the Acropolis."]
+	quest.1DEBFB469A7B8AB6.title: "Scylla"
 	quest.1E12D7A55B984B9C.quest_desc: ["Fireproof bricks, cast iron pipes and a block of cast iron. It's the base of the blast furnace: build a cylinder of fireproof bricks around it and feed iron, flux and fuel in through the hole at the top."]
 	quest.1E12D7A55B984B9C.title: "Blast Furnace Output"
 	quest.1E92E5A75E5CC566.quest_desc: ["Dried kelp, a precision mechanism, a propeller, iron sheets and a cogwheel make eight. Join two ends with more tube and turn either end, and it moves a stack at a time between inventories, filtered at the input."]
@@ -335,6 +361,10 @@
 	quest.2000BB1C480F77C9.title: "Blast Stove"
 	quest.20BB7C3765A01A32.quest_desc: ["Kill a pig or hoglin with a knife for ham, then cook it in a smoker."]
 	quest.20BB7C3765A01A32.title: "Smoked Ham"
+	quest.20C5F21C2FC0D60F.quest_desc: ["Brush the suspicious sand inside the Cursed Pyramid to wake it, then knock it down."]
+	quest.20C5F21C2FC0D60F.title: "The Ancient Remnant"
+	quest.20DB94C11C7DF100.quest_desc: ["Prismarine, diamonds, a lightning rod and a water bucket around an eye of ender. It leads to the Acropolis, in the sky over a warm ocean."]
+	quest.20DB94C11C7DF100.title: "Eye of Storm"
 	quest.20F951B43742FDBD.quest_desc: ["Rare ore buried low in the Nether, most of it around y 15. It survives explosions, so beds and TNT uncover it; mine it with a diamond pickaxe."]
 	quest.20F951B43742FDBD.title: "Ancient Debris"
 	quest.21190C0C2AEF7EAB.quest_desc: ["Use a brass ingot on a stripped log, by hand or with a deployer, to make brass casing. Mechanical crafters take one each, so make a few."]
@@ -385,6 +415,8 @@
 	quest.25FE4152DE215902.title: "Squid Rings"
 	quest.2617388B88D71E1F.quest_desc: ["Zinc ore and deepslate zinc ore generate in the world. Smelt or blast the ore, or the raw zinc it drops, into zinc ingots."]
 	quest.2617388B88D71E1F.title: "Zinc"
+	quest.262266C88EFE0478.quest_desc: ["Set foot in all four of Better Dungeons' dungeons: a monster room, a skeleton dungeon, a spider cave and a zombie catacomb."]
+	quest.262266C88EFE0478.title: "Professional Dungeoneer"
 	quest.268E21E25F235E78.quest_desc: ["An iron sheet, a redstone dust and a train casing make a train coupler, from Steam 'n' Rails. Placed on a track, it couples and uncouples the carriages of a train that stops on it."]
 	quest.268E21E25F235E78.title: "Train Coupler"
 	quest.26BC5EE9D20A5747.quest_desc: ["Two brass sheets, a precision mechanism and a lever, on the mechanical crafters."]
@@ -401,6 +433,8 @@
 	quest.276EBEB807DD35E5.title: "Electrum Wire"
 	quest.27EAE20228BADC68.quest_desc: ["A button, an andesite casing and an electron tube make contraption controls. Riding on a contraption, they switch its drills, saws and harvesters on and off."]
 	quest.27EAE20228BADC68.title: "Contraption Controls"
+	quest.28D5964A1BDAC16D.quest_desc: ["It unlocks the Citadel's vaults."]
+	quest.28D5964A1BDAC16D.title: "Decrepit Key"
 	quest.297847E6A402C283.quest_desc: ["Use the heart on the reinforced deepslate frame at an ancient city's centre, and it's spent opening a portal. Through it is the Otherside, a dimension of sculk below the bedrock."]
 	quest.297847E6A402C283.title: "The Otherside"
 	quest.2990DCDA19CB83CF.quest_desc: ["The rolling mill makes two iron rods from an iron ingot. Copper and gold rods are rolled the same way."]
@@ -417,6 +451,8 @@
 	quest.29D7F6CADBDA8508.title: "Stirling Engine"
 	quest.29F2892F2A225F74.quest_desc: ["Organic compost slowly decays into rich soil, which gives crops planted on it a chance of a bone meal boost. Mushroom colonies need it too."]
 	quest.29F2892F2A225F74.title: "Rich Soil"
+	quest.2A5B9C95BF5399D0.quest_desc: ["The same for biomes: four saplings, four logs and a compass. Handy when a structure only generates in one kind of biome."]
+	quest.2A5B9C95BF5399D0.title: "Nature's Compass"
 	quest.2A79497B1BEC7A8A.quest_desc: ["Smelt a book. Cooking for Blockheads I shows the food you can make right now from what you carry."]
 	quest.2A79497B1BEC7A8A.title: "Cooking for Blockheads"
 	quest.2A994F9F5FE41D1A.quest_desc: ["Place it below a pipe and it sprinkles the fluid over what's beneath. Water keeps farmland wet, and other fluids affect mobs differently."]
@@ -431,10 +467,16 @@
 	quest.2B4A4B050D0ABEF5.title: "Dark Chocolate"
 	quest.2B5899321CCD9012.quest_desc: ["A block of experience, a sponge and a copper casing. It soaks up experience from nearby players and orbs, glowing brighter the more it holds, and works on a contraption too."]
 	quest.2B5899321CCD9012.title: "Experience Lantern"
+	quest.2B705A65E88D98CC.quest_desc: ["Eight phylactery shards and a soul lantern. Use it on the Dead King's soul to raise him for another fight."]
+	quest.2B705A65E88D98CC.title: "Dead King Phylactery"
 	quest.2BA0D84C6A29B165.quest_desc: ["Six dried kelp make a mechanical belt. Use it on two shafts in a line and it joins them with a belt that carries items, and anything standing on it, as the shafts turn."]
 	quest.2BA0D84C6A29B165.title: "Mechanical Belt"
 	quest.2BEA4829F7D07D10.quest_desc: ["A netherite space suit with calorite plates, two calorite tanks, a calorite engine and two etrionic capacitors. It works like the netherite suit, with jets that throw you forward."]
 	quest.2BEA4829F7D07D10.title: "Jet Suit"
+	quest.2C616CFA17688B7E.quest_desc: ["Cataclysm's bosses each wait in an arena of their own. Craft the arena's eye from an eye of ender and what the place is made of, and throw it to find the way. Tick the box when you're ready."]
+	quest.2C616CFA17688B7E.title: "L_Ender's Cataclysm"
+	quest.2C877FE642C7AB4C.quest_desc: ["Gold, phantom membranes, a bone and rotten flesh around an eye of ender. It leads to the Frosted Prison, in snowy plains."]
+	quest.2C877FE642C7AB4C.title: "Eye of Curse"
 	quest.2C8DFC520679DCAC.quest_desc: ["Pump the blast furnace's molten steel into the casting basin: 144 mB casts one ingot. Steel is what the oil rigs, engines and rockets after this are built from."]
 	quest.2C8DFC520679DCAC.title: "Steel Ingot"
 	quest.2DA6D02307D9BB90.quest_desc: ["Sugar and a slimeball in a heated basin make eight marshmallows."]
@@ -456,6 +498,8 @@
 	quest.2EC24750F1A6E051.title: "Cooking Pot"
 	quest.2EF693E8E64154B9.quest_desc: ["Mechanically crafted from diamonds, overcharged diamonds, iron sheets, a brass casing and a block of redstone. The strongest motor."]
 	quest.2EF693E8E64154B9.title: "Reinforced Motor"
+	quest.2F578ABDDEC5FC50.quest_desc: ["YUNG's Better Jungle Temples replaces the vanilla one with a bigger temple. Look in a jungle."]
+	quest.2F578ABDDEC5FC50.title: "A Jungle Temple"
 	quest.2F73106C6AD0BDD4.quest_desc: ["Make one from gold ingots, four arcane essence and two hogskin, which hoglins drop: a gold-bound book with room for more spells than the tome."]
 	quest.2F73106C6AD0BDD4.title: "Apprentice's Spell Book"
 	quest.2F7E1B53608FC57B.quest_desc: ["Cut chorus fruit on the board for four grains. Chorus grows on the End's outer islands."]
@@ -466,6 +510,10 @@
 	quest.2FB357D1CB1E49B9.title: "Chutes"
 	quest.2FB85C3CBDDB9066.quest_desc: ["Give it a gun and ammo and it fires at what comes near, on FE power. Set it to save ammo or fire as fast as the gun allows, and whether it shoots players."]
 	quest.2FB85C3CBDDB9066.title: "Turret"
+	quest.3000B59F6C0D5ED1.quest_desc: ["Ignis drops it. At a smithing table, with an ignitium upgrade template, it turns netherite armor into ignitium."]
+	quest.3000B59F6C0D5ED1.title: "Ignitium Ingot"
+	quest.300B62A053112DE3.quest_desc: ["YUNG's Better Dungeons rebuilds the old monster room and adds skeleton, spider and zombie dungeons underground. Find any of them."]
+	quest.300B62A053112DE3.title: "A Dungeon"
 	quest.3026A843F2423034.quest_desc: ["An andesite casing and a lightning rod. Given electricity and rotation, it energises items on a depot or belt under it."]
 	quest.3026A843F2423034.title: "Basic Energiser"
 	quest.3153A87E7D07CA8E.quest_desc: ["Prismarine bricks, a potion, a bookshelf and a pufferfish. The ocean's shelf."]
@@ -478,6 +526,8 @@
 	quest.319BAB19D9033039.title: "Market"
 	quest.31ADBA74FD5E78BD.quest_desc: ["Ender chests, four infused shelves and an enchanting table. It stores enchanted books as points per enchantment and hands back any level it has the points for."]
 	quest.31ADBA74FD5E78BD.title: "Enchantment Library"
+	quest.320288D9DAF71E39.quest_desc: ["Purpur, shulker shells and end stone bricks around an eye of ender. It leads to the Ruined Citadel, on the End's outer islands."]
+	quest.320288D9DAF71E39.title: "Eye of Void"
 	quest.32259CD68BAF70F0.quest_desc: ["Five red grapes press into red grape pomace, in a basin or by hand; the cellar matures it into Bordeaux. White grape pomace makes the white wines, and both make rosé."]
 	quest.32259CD68BAF70F0.title: "Bordeaux"
 	quest.32B6F81B4DFB5527.quest_desc: ["Six crying obsidian (from ruined portals, fortress chests and piglin bartering) and three glowstone. Charged with glowstone it sets your spawn in the Nether; anywhere else it explodes."]
@@ -494,12 +544,16 @@
 	quest.33A61C13CFCF2BC5.title: "Crushing Wheels"
 	quest.34190BDBA66CAA2E.quest_desc: ["Blaze powder and an ender pearl. Thrown, an eye flies toward the nearest stronghold and sometimes shatters; the portal needs up to twelve."]
 	quest.34190BDBA66CAA2E.title: "Eyes of Ender"
+	quest.3429657A59646011.quest_desc: ["Found in ancient city chests and on the Citadel's bookshelves. Create's sequenced assembly can also restore one from an enchanted book, about one time in three."]
+	quest.3429657A59646011.title: "Ruined Book"
 	quest.3435FF74088244E2.quest_desc: ["Makes the backpack pick up items straight into itself, with a filter for which."]
 	quest.3435FF74088244E2.title: "Pickup Upgrade"
 	quest.344FEF9CBCB92AE7.quest_desc: ["An andesite casing, a wool and an iron sheet make a rope pulley. It lowers the blocks below it on a rope, and raises them again when it turns the other way."]
 	quest.344FEF9CBCB92AE7.title: "Rope Pulley"
 	quest.351BD674E58C2F69.quest_desc: ["Improves a material's grade, and with it the stats of the parts made from it, using a catalyst: glowing dust is the first tier. Its recipe takes blaze gold and an advanced upgrade base."]
 	quest.351BD674E58C2F69.title: "Material Grader"
+	quest.35BDE5862EFF104E.quest_desc: ["YUNG's Better Mineshafts replaces the vanilla ones with a mineshaft for each biome. Any of them counts."]
+	quest.35BDE5862EFF104E.title: "A Mineshaft"
 	quest.35D4B710992C8F85.quest_desc: ["An electron tube, an andesite casing and a brass hand make a deployer. It's the machine that assembles the precision mechanism."]
 	quest.35D4B710992C8F85.title: "Deployer"
 	quest.35E14EC36F495943.quest_desc: ["The same with a gold rod: it carries more power, over longer wires."]
@@ -518,6 +572,8 @@
 	quest.374C4049CF5E16C7.title: "Just a Few Tweaks..."
 	quest.3770784E5E24E8F3.quest_desc: ["A packager turns into a re-packager on a crafting table. It unpacks packages and packs their contents again, so orders split across several packages arrive as one."]
 	quest.3770784E5E24E8F3.title: "Re-Packager"
+	quest.38965C68E66CDFC8.quest_desc: ["Obsidian and crying obsidian around an eye of ender. It leads to the Sunken City, at the bottom of a deep ocean."]
+	quest.38965C68E66CDFC8.title: "Eye of Abyss"
 	quest.3A0A747DDB701D9B.quest_desc: ["A deployer, a rotation speed controller, a large and a small cogwheel and a flint and steel, on the mechanical crafters. The dearest part of a gun."]
 	quest.3A0A747DDB701D9B.title: "Firing Mechanism"
 	quest.3A1CC98B34459587.quest_desc: ["A guardian, an onion, two eggs and two tomatoes in the cooking pot. Guardians drop the guardian itself; ocean monuments are where they live."]
@@ -528,12 +584,16 @@
 	quest.3A81744ED309674B.title: "Warp Plate"
 	quest.3AA6E08BCA344734.quest_desc: ["A wooden door and a train casing make a train door. It opens on its own when the train stops at a station."]
 	quest.3AA6E08BCA344734.title: "Train Door"
+	quest.3B0C16BFF281F0F2.quest_desc: ["Gold, chiseled sandstone, an emerald, a cactus, a dead bush, a bone and rotten flesh around an eye of ender. It leads to the Cursed Pyramid, in the desert."]
+	quest.3B0C16BFF281F0F2.title: "Eye of Desert"
 	quest.3B1BA94AAFFA37A6.quest_desc: ["A deployer line builds it on the chassis, adding four wheels, the seat, the bumper, four exhausts and the motor. It comes out red, and dye makes it any other color."]
 	quest.3B1BA94AAFFA37A6.title: "Red Kart"
 	quest.3B7CF31CCE0DB47E.quest_desc: ["Built around a steam engine, and connects to a shaft like one. Give it fuel and it turns."]
 	quest.3B7CF31CCE0DB47E.title: "Huge Diesel Engine"
 	quest.3B8FDE5B8CB91501.quest_desc: ["The mechanical crafters make a wand of symmetry from glass, an ender pearl, a precision mechanism, a brass ingot and obsidian. Every block you place or break is mirrored across the plane you set."]
 	quest.3B8FDE5B8CB91501.title: "Wand of Symmetry"
+	quest.3CC436CC7D960F6C.quest_desc: ["A flying sea serpent that spits poison, near the coast. Not a boss, but it fights like one."]
+	quest.3CC436CC7D960F6C.title: "A Naga"
 	quest.3CD3E7BFB55DAB51.quest_desc: ["Packed gunpowder, pressed from three gunpowder, in an empty charge of string and wool. A cast iron cannon needs one charge per barrel to fire the shot clear, and bursts on more than two."]
 	quest.3CD3E7BFB55DAB51.title: "Powder Charge"
 	quest.3CF5162DCCD738D4.quest_desc: ["Beat every wave of the Gateway of the First Frontier."]
@@ -556,6 +616,8 @@
 	quest.3E71F44F12261E16.title: "Cannon Loader"
 	quest.3EB331B0CEEFE6AA.quest_desc: ["Heavy plates and steel rods. Place the rocket on it to launch; a redstone signal launches a placed rocket by itself."]
 	quest.3EB331B0CEEFE6AA.title: "Launch Pad"
+	quest.3ECA3305E628F895.quest_desc: ["When Dungeons Arise's largest airship, flying over forests, jungles, plains, savannas and deserts, and over the End's outer islands. Find one and climb aboard."]
+	quest.3ECA3305E628F895.title: "A Heavenly Conqueror"
 	quest.3EE94B64D98641DD.quest_desc: ["Rebar and a brass ingot. Deployers hold it to drive screws when they assemble steel mechanisms."]
 	quest.3EE94B64D98641DD.title: "Screwdriver"
 	quest.3F08DFF434222848.quest_desc: [
@@ -571,6 +633,8 @@
 	quest.3F787EC852D554C7.title: "M1911"
 	quest.3F9CAA1304C43B82.quest_desc: ["Paper and blue dye make four sheets. Three boards and two sticks make a template, which works once; blueprint paper makes blueprints, which work every time."]
 	quest.3F9CAA1304C43B82.title: "Blueprint Paper"
+	quest.3FBD33D45FF5E7C9.quest_desc: ["The Dead King drops his Necronomicon, a spell book of his own, and The Blood Staff."]
+	quest.3FBD33D45FF5E7C9.title: "The Dead King's Tome and Scepter"
 	quest.3FF8CB1F92B4357D.quest_desc: ["Refines crude oil into rocket fuel. It runs on power: Ad Astra's coal generator burns anything a furnace does, or use Crafts & Additions' alternator. A tier 1 rocket also burns diesel, gasoline or kerosene straight from the distillation tower."]
 	quest.3FF8CB1F92B4357D.title: "Fuel Refinery"
 	quest.4068689FCBA54738.quest_desc: ["Mined from crimson iron ore in the Nether, in netherrack and blackstone, and smelted like iron."]
@@ -579,10 +643,14 @@
 	quest.4084D55FDBE51583.title: "Retro 3x Scope"
 	quest.40D889BD937BEF25.quest_desc: ["Electricity starts with copper wire: a stonecutter makes two from a copper ingot, and the rolling mill makes it from copper sheets."]
 	quest.40D889BD937BEF25.title: "Copper Wire"
+	quest.419C229B9F3E776C.quest_desc: ["When Dungeons Arise's Plague Asylum, in forests and mountains."]
+	quest.419C229B9F3E776C.title: "A Plague Asylum"
 	quest.41C1C91A6AC7DA47.quest_desc: ["Single-use teleports from the mechanical crafter, three at a time: a warp scroll goes to a waystone you choose, a return scroll back to the last one you used."]
 	quest.41C1C91A6AC7DA47.title: "Warp Scrolls"
 	quest.41C839ED1B4A4F67.quest_desc: ["An andesite alloy on an andesite casing makes a depot. It holds one stack for a press, a spout or a deployer to work on, and a funnel or an arm can take it off again."]
 	quest.41C839ED1B4A4F67.title: "Depot"
+	quest.41CB4E66D45B5992.quest_desc: ["The Sculptor's reward for passing his challenge."]
+	quest.41CB4E66D45B5992.title: "Earthrend Gauntlet"
 	quest.42D18ECB404AA162.quest_desc: ["A shaft and a plank make a cogwheel, and a shaft and two planks make a large cogwheel. The precision mechanism at the end of this chapter takes five of each."]
 	quest.42D18ECB404AA162.title: "Cogwheels"
 	quest.42FAC795FA7878AD.quest_desc: ["A wooden slab, an andesite casing and a shaft make a mechanical bearing. Power it with a redstone signal or a turn of rotation and it spins whatever is attached to its face, as one moving contraption."]
@@ -617,6 +685,8 @@
 	quest.4632BB1D627937A7.title: "Item Vault"
 	quest.46B090983E584A01.quest_desc: ["Two andesite alloy, a slimeball, two cobblestone and a redstone dust make a sticker. On a redstone signal it grabs the block in front of it, or lets it go."]
 	quest.46B090983E584A01.title: "Sticker"
+	quest.46D04B131B7C6F45.quest_desc: ["Towns and Towers adds a village and a pillager outpost for most biomes. Find any village."]
+	quest.46D04B131B7C6F45.title: "A Village"
 	quest.46D1AA4DDCAA8301.quest_desc: ["Fill the portal frame's twelve slots with eyes (some may already hold one) and jump in. The only ways home are dying or beating the dragon."]
 	quest.46D1AA4DDCAA8301.title: "The End"
 	quest.46D53EF8DA9CDA57.quest_desc: ["A gas tank in five heavy plates with a steel rod: the rocket's fuel tanks. It takes two."]
@@ -678,12 +748,16 @@
 	quest.504D351FBD9ED049.quest_desc: ["Blow crushed raw iron through water with an encased fan, and each one washes into nine iron nuggets, often with a redstone dust beside them. That's more iron per ore than smelting."]
 	quest.504D351FBD9ED049.quest_subtitle: "Tick this once you've washed some"
 	quest.504D351FBD9ED049.title: "Bulk Washing"
+	quest.50830DC011F1AAC9.quest_desc: ["Found in chests: the catacombs' vaults and walls, the Citadel, and ancient and end cities."]
+	quest.50830DC011F1AAC9.title: "Ancient Knowledge Fragment"
 	quest.50945047535E98D1.quest_desc: ["Netherite armour (the Nether chapter's netherite) plated with ostrum, the suit with large gas tanks and an oxygen gear too. It keeps out extreme heat as well as cold."]
 	quest.50945047535E98D1.title: "Netherite Space Suit"
 	quest.510A1692BF039F8D.quest_desc: ["Kitchen blocks placed side by side form one kitchen. The cooking table, made with Cooking for Blockheads II, crafts food from what the counters and fridge hold."]
 	quest.510A1692BF039F8D.title: "A Kitchen"
 	quest.514BD1F485694ACB.quest_desc: ["A marshmallow glazed with chocolate from a spout."]
 	quest.514BD1F485694ACB.title: "Chocolate Glazed Marshmallow"
+	quest.5185A9DE4E946DB0.quest_desc: ["Tongbi, the Sculptor, waits in his monastery. He isn't fought: he raises a pillar, and you climb it to the top while he tries to knock you off. Don't fall."]
+	quest.5185A9DE4E946DB0.title: "The Sculptor's Challenge"
 	quest.518D3A98728FCC32.quest_desc: ["A sequenced assembly on a sturdy sheet: an advanced component, then telejuice from a spout. Telejuice is mixed in a heated basin, and redstone pearls are ender pearls mixed with rose quartz."]
 	quest.518D3A98728FCC32.title: "Quantum Mechanism"
 	quest.51CE3697587C7ED6.quest_desc: ["A frozen planet around Proxima Centauri, and the only one where you can breathe without a suit."]
@@ -730,6 +804,8 @@
 	quest.55ECCA33AF4870E4.title: "Scribe's Table"
 	quest.567122518A92E9A3.quest_desc: ["A pickup upgrade with ender pearls: it pulls items and experience in from around you as well."]
 	quest.567122518A92E9A3.title: "Magnet Upgrade"
+	quest.56B3521E1D816920.quest_desc: ["Four arcane essence, four iron ingots and a soul lantern. The trapped soul inside points toward its home: the catacombs."]
+	quest.56B3521E1D816920.title: "Wayward Compass"
 	quest.575E0DE6849C913D.quest_desc: ["Two andesite alloy make eight shafts on a crafting table. Shafts go into over a hundred recipes, the cogwheels, the water wheel and the mechanical press among them."]
 	quest.575E0DE6849C913D.title: "Shafts"
 	quest.57CD989ECD4DE9D1.quest_desc: ["Blazes swarm the fortress's spawners and drop rods when slain. Ground to powder they fuel a brewing stand and, with ender pearls, make the eyes of ender that lead to the End."]
@@ -744,18 +820,28 @@
 	quest.5906D50189533688.title: "Soup by the Batch"
 	quest.594F415ECB2C331F.quest_desc: ["Builds Small Ships' ships, in nearby water deep enough for them, from the materials you bring, and installs their upgrades."]
 	quest.594F415ECB2C331F.title: "Dockyard"
+	quest.595FBD8B750C00AC.quest_desc: ["When Dungeons Arise adds forty structures, from wells to airships, most with their own mobs and loot. Its Illager Fort stands in snowy plains and taigas."]
+	quest.595FBD8B750C00AC.title: "An Illager Fort"
 	quest.5993625E2D28292A.quest_desc: ["A honeycomb and a honey bottle. It calms an angry bee, and coaxes a bee out of a nest."]
 	quest.5993625E2D28292A.title: "Honey Treat"
 	quest.59A7A2DB52B40D40.quest_desc: ["Iron, a smooth stone slab and glass. It fills glass bottles with honey."]
 	quest.59A7A2DB52B40D40.title: "Bottler"
 	quest.5A2404D93E4218BD.quest_desc: ["Dreams and Desires' casing: a zinc ingot used on copper casing, by hand or with a deployer."]
 	quest.5A2404D93E4218BD.title: "Industrial Casing"
+	quest.5AA5378E5E546B45.quest_desc: ["A giant asleep in snowy biomes, holding an ice crystal. Wake it and kill it; the Rude Awakening advancement goes with it."]
+	quest.5AA5378E5E546B45.title: "The Frostmaw"
 	quest.5ABDBFA399613C68.quest_desc: ["Flint and a stick. A knife harvests straw from grass, wheat and rice, takes ham from pigs, and is the tool most cutting board recipes ask for."]
 	quest.5ABDBFA399613C68.title: "Flint Knife"
+	quest.5AE7A9EC5DCA3C66.quest_desc: ["The broken Nether's war machine, at the heart of the Soul Forge."]
+	quest.5AE7A9EC5DCA3C66.title: "The Netherite Monstrosity"
 	quest.5B3530A48FEC0381.quest_desc: ["Mined from nether quartz ore all through the netherrack. Comparators and observers take it, and Create's rose quartz is quartz and eight redstone."]
 	quest.5B3530A48FEC0381.title: "Nether Quartz"
 	quest.5B5EB3B40A697889.quest_desc: ["Sequenced assembly: a deployer puts a primer in each casing and a spout adds 25 mB of gunpowder fluid. It feeds the \"Stress\" Auto Pistol and the \"Crank\" SMG."]
 	quest.5B5EB3B40A697889.title: "Pneumatic Pistol Ammo"
+	quest.5B7BA1CAC13066F5.quest_desc: ["Summon it in the Sunken City and defeat it underwater. Bring water breathing."]
+	quest.5B7BA1CAC13066F5.title: "The Leviathan"
+	quest.5B8B794A1B455A31.quest_desc: ["Four blocks of redstone and four iron ingots around an eye of ender. It leads to the Ancient Factory, underground."]
+	quest.5B8B794A1B455A31.title: "Eye of Mech"
 	quest.5BFF747D1F3BF8BE.quest_desc: ["Engine pistons, a block of brass, a fluid tank and flint and steel: a compact source of rotation that runs on the tower's diesel or gasoline. Stop it with a redstone signal."]
 	quest.5BFF747D1F3BF8BE.title: "Diesel Engine"
 	quest.5C32E948EEE03D98.quest_desc: ["Sugar, a slimeball and a mundane potion in a heated basin make four. Candy cane blocks and a full set of candy cane tools come from it."]
@@ -764,6 +850,8 @@
 	quest.5C6F2099C2B0C35B.title: "Tier 3 Rocket"
 	quest.5CA0C8BF926F4137.quest_desc: ["Ars Elemental's lesser focuses of fire, water, earth and air are imbued from an amethyst shard, three of the element's essence and gold, and strengthen that school's spells. A Mark of Mastery, imbued from a Wilden Tribute and essences, makes a lesser focus a full one."]
 	quest.5CA0C8BF926F4137.title: "Elemental Focus"
+	quest.5CAA36B8331B66BF.quest_desc: ["Blaze powder, netherite scrap and soul sand around an eye of ender. It leads to the Burning Arena in the Nether Wastes."]
+	quest.5CAA36B8331B66BF.title: "Eye of Flame"
 	quest.5CF785860DBB1437.quest_desc: ["A brass sheet, a spout and a block of iron. Set what to print in its filter, pipe in the fluid it needs, and it copies written books or changes a package's pattern."]
 	quest.5CF785860DBB1437.title: "Printer"
 	quest.5D034C394DBF179E.quest_desc: ["Seven iron and a grindstone. It spins combs into honey, wax and whatever the bee gathers: a metal bee's comb gives its metal."]
@@ -776,6 +864,8 @@
 	quest.5D4B88B2653139AE.title: "Ship Cannon"
 	quest.5D9C9B3B0612CDBF.quest_desc: ["Pressed from arcane ingots, or an iron sheet filled with mana by a spout."]
 	quest.5D9C9B3B0612CDBF.title: "Arcane Sheets"
+	quest.5DCC607997AE4285.quest_desc: ["Restore the Ruined Book with four arcane cloth, a netherite ingot, two blood vials and a bottle o' lightning to make the Ancient Codex."]
+	quest.5DCC607997AE4285.title: "Ancient Codex"
 	quest.5DE5F3F44D5367EF.quest_desc: ["An electron tube, a brass ingot and a dried kelp make two brass funnels, and an electron tube, two brass ingots and two dried kelp two brass tunnels. Brass ones take a filter, and a brass tunnel can share items out in turn, or send them to whichever side has room."]
 	quest.5DE5F3F44D5367EF.title: "Brass Funnels and Tunnels"
 	quest.5DFB616106F47811.quest_desc: ["Vexing archwood, blank parchment, an ender pearl and source gems. Performed near a creature that can be a familiar, it turns the creature into a Bound Script."]
@@ -788,6 +878,8 @@
 	quest.5EB171AF3BA1CCBD.title: "Echo Shards"
 	quest.5ED1A52EEDA6C9B7.quest_desc: ["Heavy plates around an engine frame (eight steel rods and a plate) and a fan (four plates and a rod)."]
 	quest.5ED1A52EEDA6C9B7.title: "Steel Engine"
+	quest.5EDDE2030DE9BC29.quest_desc: ["Three bamboo and two string make a blowgun, and it fires the fang's poison darts."]
+	quest.5EDDE2030DE9BC29.title: "Blowgun and Darts"
 	quest.5F136CC8B55C4B0F.quest_desc: ["Train track is made by sequenced assembly: a deployer puts two iron nuggets on a stone slab, and a press fixes them down. Lay it with curves and slopes by clicking from one end to the other."]
 	quest.5F136CC8B55C4B0F.title: "Train Track"
 	quest.5F14EA76D92060B2.quest_desc: ["Harvest grass, wheat or rice with a knife to collect straw."]
@@ -804,6 +896,8 @@
 	quest.6019B70E00801379.title: "Source Jar"
 	quest.60733F566282395B.quest_desc: ["Nether bricks, a blaze rod, a bookshelf and a potion. A shelf of the Nether, stronger than a bookshelf."]
 	quest.60733F566282395B.title: "Hellshelf"
+	quest.60750D1B8480CCC2.quest_desc: ["YUNG's Better Witch Huts replaces the vanilla hut. Look in a swamp."]
+	quest.60750D1B8480CCC2.title: "A Witch Hut"
 	quest.6087A2FF321B51BF.quest_desc: ["Eight wool and an ender pearl. Stand on one and jump to go up to the next elevator above, or sneak to go down; it can be camouflaged as another block."]
 	quest.6087A2FF321B51BF.title: "Elevator"
 	quest.616073B5456244D7.quest_desc: ["Place an item on it, then use it with the recipe's tool in hand to break the item down: a knife for food, an axe to strip a log."]
@@ -838,6 +932,8 @@
 	quest.644F74B4BB9B121C.title: "Basin Foundry Lid"
 	quest.64659CB5708254BD.quest_desc: ["Mine a mob spawner with Silk Touch and it drops as an item you can place again."]
 	quest.64659CB5708254BD.title: "Apothic Spawners"
+	quest.646C67DF694D9F01.quest_desc: ["The Wroughtnaut drops its axe and its Wrought Helm."]
+	quest.646C67DF694D9F01.title: "Axe of a Thousand Metals"
 	quest.6478374EE8A9E3E0.quest_desc: ["Something to shoot at that isn't a mob: five iron, redstone and a plank."]
 	quest.6478374EE8A9E3E0.title: "Humanoid Target"
 	quest.64C6C25FA1692890.quest_desc: ["Two fluid pipes and a glass pane on the mechanical crafters. Create Armorer's grips, magazines, sights and refits are made there too."]
@@ -848,6 +944,8 @@
 	quest.655BC8086489F3E3.title: "Oxygen Can"
 	quest.65EE303CD8DB8105.quest_desc: ["Breaks affix items down into their rarity's material: common gear into Mysterious Scrap Metal, then Timeworn Fabric, Luminous Crystal Shards, Arcane Sands and Godforged Pearls as the rarity climbs."]
 	quest.65EE303CD8DB8105.title: "Salvaging Table"
+	quest.676B2B7878E3BCAC.quest_desc: ["Six witherite ingots, two blocks of redstone and an anvil. It fuses a boss's weapon or armor with another piece into something stronger: the Void Forge, the Immolator and the Ignitium Elytra Chestplate among them."]
+	quest.676B2B7878E3BCAC.title: "Mechanical Fusion Anvil"
 	quest.679B8A23F2DEA1E3.quest_desc: ["Apply a steel ingot to hardened planks for a steel casing, then a heavy plate to that. Every oil machine has one inside."]
 	quest.679B8A23F2DEA1E3.title: "Heavy Machinery Casing"
 	quest.67C2B4683080812F.quest_desc: ["A block of experience, pressed. The blaze enchanter writes enchantments onto blank templates, and the blaze forger applies them to items."]
@@ -892,16 +990,24 @@
 	quest.6CE71C021C3D004E.title: "Compressor"
 	quest.6CEF21A6E88DE0B4.quest_desc: ["Five addons cook in the cooking pot and cut on the board: My Nether's Delight, Ocean's Delight, Aquaculture Delight, Alex's Mobs Delight and End's Delight. Each branch here is one of them, and most need a trip somewhere for the ingredients."]
 	quest.6CEF21A6E88DE0B4.title: "A Wider Menu"
+	quest.6CFBFE1F970705BE.quest_desc: ["When Dungeons Arise's Foundry, in forests, jungles, plains, savannas and deserts."]
+	quest.6CFBFE1F970705BE.title: "A Foundry"
 	quest.6CFE2B1AE014B9CF.quest_desc: ["A brass sheet, a chute and an electron tube make a smart chute. Give it a filter and it lets only that item through."]
 	quest.6CFE2B1AE014B9CF.title: "Smart Chute"
 	quest.6D1264D66FCC8066.quest_desc: ["Some cities have an end ship moored beside them, with an elytra in an item frame inside and a dragon head on its bow. Jump from height to glide, and use firework rockets to climb."]
 	quest.6D1264D66FCC8066.title: "Elytra"
+	quest.6D6829E0422C467B.quest_desc: ["Two ignitium ingots, four blaze rods and a netherite sword. Hold right-click for three seconds to charge it, and let go to send a flame strike where you're facing."]
+	quest.6D6829E0422C467B.title: "The Incinerator"
+	quest.6E1F568EE28426C1.quest_desc: ["It unlocks the catacombs' vaults."]
+	quest.6E1F568EE28426C1.title: "Bone Key"
 	quest.6E3D0D2EA1E2CA79.quest_desc: ["The cutting board, automated: right-click it with a knife or another valid tool, and it cuts items below it, in a basin too. Create: Central Kitchen also lets a deployer holding a knife cut on a cutting board, and a mechanical saw cut ingredients."]
 	quest.6E3D0D2EA1E2CA79.title: "Slicer"
 	quest.6E69A8B32CAE0154.quest_desc: ["Fireclay is mined like clay. Smelt its balls into fireproof bricks, and four bricks make a block. The steelworks is built of them."]
 	quest.6E69A8B32CAE0154.title: "Fireproof Bricks"
 	quest.6E998CBF6EC851AB.quest_desc: ["Four fans, a large gas tank, an oxygen loader and desh plates. It fills a sealed room with air at a livable temperature: how a base on the Moon breathes."]
 	quest.6E998CBF6EC851AB.title: "Oxygen Distributor"
+	quest.6EBE4E7B0CD98ED3.quest_desc: ["Follow the compass down into the catacombs."]
+	quest.6EBE4E7B0CD98ED3.title: "The Catacombs"
 	quest.6ED955A757045B19.quest_desc: ["A precision mechanism is built up on a golden sheet by sequenced assembly: a deployer adds a cogwheel, a large cogwheel and an iron nugget, five times over. Four times in five it comes out a mechanism; otherwise it gives back a part, such as a cogwheel or a golden sheet."]
 	quest.6ED955A757045B19.title: "Precision Mechanism"
 	quest.6EDFD65CE85B2DEF.quest_desc: ["Coal goes in from any side, and coal coke drops out after a while. Carbon dioxide comes out of the top and creosote from the other sides."]
@@ -914,6 +1020,8 @@
 	quest.6F7969F9EBB25C6A.title: "Mechanical Press"
 	quest.7005D32BEDEA332C.quest_desc: ["A golden sheet, an andesite alloy and a block of copper make a steam engine. Put it on the side of a fluid tank with blaze burners under the tank and water pumped in, and the tank becomes a boiler; the engine turns a shaft in front of it. More tanks, more heat and more engines make more power."]
 	quest.7005D32BEDEA332C.title: "Steam Engine"
+	quest.7072A92CCC02FE94.quest_desc: ["In the Nether, behind a magical ward; an Enchanted Ward Amulet protects you against it."]
+	quest.7072A92CCC02FE94.title: "The Lost Citadel"
 	quest.708DE29A1933F201.quest_desc: ["Source gems, gold ingots and a lava bucket. It burns fuel for Source, more for archwood logs, and fills the jars around it. The other sourcelinks feed on crop growth, food, mob deaths or potions."]
 	quest.708DE29A1933F201.title: "Volcanic Sourcelink"
 	quest.70ED7703EED1BB0F.quest_desc: ["A card in a node's face says what it does there: extract, insert, stock or sense, on a channel, with a filter."]
@@ -929,6 +1037,8 @@
 	quest.7170F64CBB68B2BD.title: "World Tier: Haven"
 	quest.72439FD2BE61D913.quest_desc: ["Voids what goes into it, with a filter for up to nine items. Fluid and energy trash cans do the same for those."]
 	quest.72439FD2BE61D913.title: "Item Trash Can"
+	quest.7359F1AE9E2B0712.quest_desc: ["The catacombs' master. Defeat him, and he leaves a Bone Key for each player who fought him."]
+	quest.7359F1AE9E2B0712.title: "The Dead King"
 	quest.73E001A7DEEAC194.quest_desc: ["Four iron ingots, a block of cardboard and two redstone dust make a packager. It boxes the contents of the inventory behind it into packages, each addressed to where it should go."]
 	quest.73E001A7DEEAC194.title: "Packager"
 	quest.73FA39500FA10D30.quest_desc: ["The mechanical press makes copper sheets from copper ingots. Pipes and tanks are made of them."]
@@ -947,6 +1057,8 @@
 	quest.750A1A964F418DF1.title: "Ironbound Tome"
 	quest.751CEC361333C578.quest_desc: ["A spout fills andesite alloy with 50 mB of gunpowder fluid. Mix gunpowder in a basin for the fluid; nitropowder fluid makes primer too. Every round takes one."]
 	quest.751CEC361333C578.title: "Primer"
+	quest.75505BBEF534CCCC.quest_desc: ["A Naga's drop: eight darts with a stick, or a Naga Fang Dagger."]
+	quest.75505BBEF534CCCC.title: "Naga Fang"
 	quest.75C52F7F20D35941.quest_desc: ["Two iron, two string and a stick. Aquaculture's rods hold a hook, bait, a fishing line and a bobber, and each one changes how the rod fishes."]
 	quest.75C52F7F20D35941.title: "Iron Fishing Rod"
 	quest.75DCDBE0EEA2031A.quest_desc: ["The blueprint and three of one material at a crafting table. Almost anything counts, from iron to Silent Gems' gems and TFMG's aluminum, and each material gives the head its own stats and traits."]
@@ -959,6 +1071,8 @@
 	quest.76D956DABC6F3D3F.title: "Backpack"
 	quest.76F6310F407E471C.quest_desc: ["Four andesite alloy, two iron sheets and an andesite casing make a mechanical harvester, and three iron sheets, three andesite alloy and an andesite casing a mechanical plough. Moving over a field, one reaps ripe crops and replants them, and the other tills the ground."]
 	quest.76F6310F407E471C.title: "Harvester and Plough"
+	quest.7720B04895F075F0.quest_desc: ["YUNG's Better Desert Temples replaces the vanilla pyramid with a temple of traps and puzzles. Look in a desert."]
+	quest.7720B04895F075F0.title: "A Desert Temple"
 	quest.7771507DB80B111D.quest_desc: ["With the dragon dead, a gateway opens at the island's edge; throw an ender pearl into it to reach the outer islands. Purpur towers stand there, guarded by shulkers."]
 	quest.7771507DB80B111D.title: "An End City"
 	quest.77BC20BC33378845.quest_desc: ["A blaze burner assembled with a shriving stone, an arcane ingot, an arcane rune and mana. Give it a scroll and superheat it, and it casts the scroll's spell on its own, paying in mana."]
@@ -967,6 +1081,8 @@
 	quest.77C919C0D8A0972C.title: "Chain Conveyor"
 	quest.780CAE0E4D843A83.quest_desc: ["The mechanical crafters make a potato cannon from fluid pipes, copper, an andesite alloy and a precision mechanism. It fires crops, and a few of them do more than bounce."]
 	quest.780CAE0E4D843A83.title: "Potato Cannon"
+	quest.7892FC3D7C0849DD.quest_desc: ["The guardian of the Ruined Citadel."]
+	quest.7892FC3D7C0849DD.title: "The Ender Guardian"
 	quest.78C74461D601B49E.quest_desc: ["Wear a full set of rare gear and kill the Wither, which is summoned in the Nether chapter."]
 	quest.78C74461D601B49E.title: "World Tier: Summit"
 	quest.78CD2CEEFD9D500F.quest_desc: ["The simple table rebuilt with netherite, Arcane Sands and nether bricks. It reforges epic and mythic gear as well, fuelled by Sigils of Rebirth."]
@@ -991,8 +1107,16 @@
 	quest.7A08E657D5CA98F7.title: "Iron Hook"
 	quest.7A3A4183959CDCA9.quest_desc: ["Joins the chests and barrels touching it into one multiblock, so you can deposit into all of them, and pipe to and from them, through the controller."]
 	quest.7A3A4183959CDCA9.title: "Storage Controller"
+	quest.7A4B53E9A5219118.quest_desc: ["The Frostmaw drops it, or you can steal it from a sleeping one (Big Brain™ Time). Hold it to breathe frost."]
+	quest.7A4B53E9A5219118.title: "Ice Crystal"
 	quest.7AA8B342AA4E93C7.quest_desc: ["A brass sheet, a fluid pipe and an electron tube make a smart fluid pipe. Give it a filter and only that fluid passes."]
 	quest.7AA8B342AA4E93C7.title: "Smart Fluid Pipe"
+	quest.7B41B0F759B19F94.quest_desc: ["The Citadel's boss. Defeat him for a Decrepit Key for each player who fought him."]
+	quest.7B41B0F759B19F94.title: "Echo of Tyros, First Flamebearer"
+	quest.7B6041B3674F60B0.quest_desc: ["Summon Maledictus in the Frosted Prison and defeat it."]
+	quest.7B6041B3674F60B0.title: "Maledictus"
+	quest.7BC441E3A756D832.quest_desc: ["The Umvuthana's leader, at the heart of the grove."]
+	quest.7BC441E3A756D832.title: "Umvuthi, the Sunbird"
 	quest.7BCEF8F5B514BAB1.quest_desc: ["A cogwheel and a fluid pipe make a mechanical pump. Turned, it pushes fluid through the pipes it sits in, in the direction it faces; reverse the rotation to pull the other way."]
 	quest.7BCEF8F5B514BAB1.title: "Mechanical Pump"
 	quest.7C4CDB9926801D3F.quest_desc: ["The M1911's rounds: ten copper and two gunpowder make 30 at the Ammo Assembly Table."]
@@ -1004,6 +1128,8 @@
 	quest.7C6BD54FBD8CED44.title: "Rocket Fins"
 	quest.7C9E0FB4D14D144E.quest_desc: ["A brass casing, a chute and a copper spool. It charges or drains a moving contraption that stops beside it."]
 	quest.7C9E0FB4D14D144E.title: "Portable Energy Interface"
+	quest.7CE486B704B55818.quest_desc: ["A machine of an ancient civilization, asleep in the Ancient Factory. Wake it, and defeat it."]
+	quest.7CE486B704B55818.title: "The Harbinger"
 	quest.7D5679FCDA22F007.quest_desc: ["A warp stone, andesite casing, stone bricks and ender pearls make two. Activate one and you can teleport to it from any other; villages often have one already."]
 	quest.7D5679FCDA22F007.title: "Waystone"
 	quest.7D74F1B14F9AE7C4.quest_desc: ["Fallout's guns have no bench of their own: they're made at the gun smith table. The 10mm Pistol takes 14 iron, 4 iron nuggets and 2 leather, and its 10mm rounds come from the Ammo Assembly Table."]
@@ -1020,10 +1146,16 @@
 	quest.7E8D002E58D5A9FF.title: "Gantry"
 	quest.7ECB07A077FF51C9.quest_desc: ["Runs on steam from water and fuel, with a steam engine inside. Create Jetpack's jetpack, from a copper backtank and an elytra, is the other one in the pack."]
 	quest.7ECB07A077FF51C9.title: "Brass Jetpack"
+	quest.7EE307D28A5AD7D0.quest_desc: ["Lava buckets, netherite scrap and blackstone around an eye of ender. It leads to the Soul Forge, in the Nether."]
+	quest.7EE307D28A5AD7D0.title: "Eye of Monstrous"
 	quest.7EF51364E83D93C2.quest_desc: ["Arcane sheets and an arcane ingot make four. Mana leaks quickly out of any pipe that isn't insulated with arcane material, so mana goes through these."]
 	quest.7EF51364E83D93C2.title: "Arcane Pipes"
+	quest.7F0DA09A21E7476B.quest_desc: ["Open a chest in a structure. Lootr gives every player their own loot from each chest, barrel and cart, so nobody takes it all before you get there."]
+	quest.7F0DA09A21E7476B.title: "'X' Marks the Spot"
 	quest.7F1F8499DE5CFD3B.quest_desc: ["It appears on the exit portal after the first kill only. Touching it teleports it away, so push it with a piston or drop it onto a torch to pick it up."]
 	quest.7F1F8499DE5CFD3B.title: "Dragon Egg"
+	quest.7F3E71ED98A6A670.quest_desc: ["YUNG's Better Ocean Monuments rebuilds the monument, guardians and elder guardians included. Bring water breathing."]
+	quest.7F3E71ED98A6A670.title: "An Ocean Monument"
 	quest.7FC823D7C99801FE.quest_desc: ["Iron, a chest and a block of iron. It holds a rod with its hooks, bait, lines and bobbers."]
 	quest.7FC823D7C99801FE.title: "Tackle Box"
 	quest.7FF6115E1818DE66.quest_desc: ["Makes Silent Gear's metal alloys for less than the crafting table: three crimson steel from a block of crimson iron, two blaze rods and a magma cream. Crimson steel, azure electrum, crushed shulker shell and netherite scrap make tyrian steel, its strongest metal, only here."]

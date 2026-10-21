@@ -33,6 +33,10 @@ file = "config/ftbquests/quests/chapters/ars_nouveau_source.snbt"
 hash = "dc572618ebbaa8f3717d4683fc1e3b3a01b55bf9dc7e37753d3883297e0dd36a"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/cataclysm.snbt"
+hash = "1e71a005b74ab22d59d7c087c35a65a93165e987be315391864f884ac797acb6"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/create_armorer.snbt"
 hash = "79d68f5018166ccd1947f83a62f402351b4428519fad144def953eaeb3f7641c"
 
@@ -93,6 +97,10 @@ file = "config/ftbquests/quests/chapters/deep_dark.snbt"
 hash = "611a3c9ab0bdef4bc078255926d21dce07f12c24ea1add2147b5ddeff550c69b"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/dungeons.snbt"
+hash = "499c869a7ca3601a75050e8ed994a743504165902159586cc2bc023c0fbb2f0e"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/enchanting.snbt"
 hash = "a9b1085869fc661e8bba9c237a12502a3b46252e5c16729b6b0287d0f92bc153"
 
@@ -109,12 +117,20 @@ file = "config/ftbquests/quests/chapters/getting_started.snbt"
 hash = "9648e02b577b93c9da718d1f2460a3d68a607c32d6d2cf39783688d03fa7d684"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/irons_ancient.snbt"
+hash = "2fc95959810fe2e4b7aff3282c1838d3cced705c40eb303ccf5fefb20696b254"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/irons_spellbooks.snbt"
 hash = "2fc0ff1188930ee63f0e7fcffd251a2a90170f2f5af372f1237e77e27f5e3982"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/more_delights.snbt"
 hash = "88b96e717eb85cefc2d6bf671881ee26d47ab0476f9cd11e438af32c711b891b"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/mowzies_mobs.snbt"
+hash = "aa274ff16c711e3de5ec146f79542d88eade15f11c1f4ddd616118664e2d68d1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/productive_bees.snbt"
@@ -154,7 +170,7 @@ hash = "da77e416b557850f5cb1ab68d71de78f9fbc3cf3845e50cdb4dba3a8164f6e7f"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "b3498b372a8a6f062d5fded00c2c6642c61a5842c710b3de10641efa95701e99"
+hash = "e604ff4fa44d2d82e7e6490911b176641522b1c17333a15e3b14b9eaa06d34c6"
 
 [[files]]
 file = "kubejs/data/ad_astra/tags/fluid/fuel.json"

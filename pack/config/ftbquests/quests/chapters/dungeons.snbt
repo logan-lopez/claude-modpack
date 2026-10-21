@@ -1,0 +1,272 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "dungeons"
+	group: "6C84DBAA332BC60C"
+	icon: {
+		id: "explorerscompass:explorerscompass"
+	}
+	id: "4E4B9E708974464B"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1B3437B64F242678"
+			rewards: [{
+				id: "790E15A88ED6CC80"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "4AFABBD793D01942"
+				item: { count: 1, id: "explorerscompass:explorerscompass" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "2A5B9C95BF5399D0"
+			rewards: [{
+				id: "7DB791AA32C74C2A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "503833D2371CFACF"
+				item: { count: 1, id: "naturescompass:naturescompass" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1B3437B64F242678"]
+			id: "300B62A053112DE3"
+			rewards: [{
+				id: "6F1B944DE16EA0DA"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "5930ABC61A9EC08B"
+				structure: "#betterdungeons:better_dungeons"
+				type: "structure"
+			}]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["300B62A053112DE3"]
+			id: "262266C88EFE0478"
+			rewards: [{
+				id: "142C863704A01492"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				advancement: "betterdungeons:all_dungeons"
+				criterion: ""
+				id: "461A56D8A221B572"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1B3437B64F242678"]
+			id: "35BDE5862EFF104E"
+			rewards: [{
+				id: "20BF0DA6B2E33E98"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "641FB0D18E719CFC"
+				structure: "#minecraft:mineshaft"
+				type: "structure"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1B3437B64F242678"]
+			id: "7F0DA09A21E7476B"
+			rewards: [{
+				id: "4F7A9D5DABA993D8"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				advancement: "lootr:1chest"
+				criterion: ""
+				id: "24B933C81334552C"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7F0DA09A21E7476B"]
+			id: "073E1DB35CD58FAA"
+			rewards: [{
+				id: "3A894DA50D9F1507"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				advancement: "lootr:25loot"
+				criterion: ""
+				id: "3B991D48599EEB2E"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1B3437B64F242678"]
+			id: "46D04B131B7C6F45"
+			rewards: [{
+				id: "1E88E7A622A2DB0E"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "2D743CE9E385655F"
+				structure: "#minecraft:village"
+				type: "structure"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1B3437B64F242678"]
+			id: "7720B04895F075F0"
+			rewards: [{
+				id: "43D76F482D121309"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "67B80A8DBB21C711"
+				structure: "betterdeserttemples:desert_temple"
+				type: "structure"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B3437B64F242678"]
+			id: "2F578ABDDEC5FC50"
+			rewards: [{
+				id: "1FBCEACD7D49502B"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "442B4433340DAA94"
+				structure: "betterjungletemples:jungle_temple"
+				type: "structure"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1B3437B64F242678"]
+			id: "60750D1B8480CCC2"
+			rewards: [{
+				id: "3D8379FDC87570E2"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "77D16D07EE55A802"
+				structure: "betterwitchhuts:witch_hut"
+				type: "structure"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1B3437B64F242678"]
+			id: "7F3E71ED98A6A670"
+			rewards: [{
+				id: "16611E426C3FB6F2"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "62B454D87D05C30E"
+				structure: "betteroceanmonuments:ocean_monument"
+				type: "structure"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1B3437B64F242678"]
+			id: "595FBD8B750C00AC"
+			rewards: [{
+				id: "4E280B147320416D"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "0D3014B3E19DAD9C"
+				structure: "dungeons_arise:illager_fort"
+				type: "structure"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["595FBD8B750C00AC"]
+			id: "6CFBFE1F970705BE"
+			rewards: [{
+				id: "52C2AF85A49229A1"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "6B3F6D3D7DDD8900"
+				structure: "dungeons_arise:foundry"
+				type: "structure"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CFBFE1F970705BE"]
+			id: "419C229B9F3E776C"
+			rewards: [{
+				id: "6D1DF6730631ED06"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "1F8AC50CEA7D6E01"
+				structure: "dungeons_arise:plague_asylum"
+				type: "structure"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["419C229B9F3E776C"]
+			id: "3ECA3305E628F895"
+			rewards: [{
+				id: "74E9FDFAF64DEFED"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0A28476DCF9FE5C8"
+				structure: "dungeons_arise:heavenly_conqueror"
+				type: "structure"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+}
