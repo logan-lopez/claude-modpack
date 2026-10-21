@@ -13,8 +13,24 @@ file = "config/ftbquests/quests/chapters/create_basics.snbt"
 hash = "06f0a18638b765d42dc4b7e88552514ee7163ae351b995fc428e77d9d727aecf"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/create_contraptions.snbt"
+hash = "8eb72042637b3ea49b70a8f0a3553163a53e90c98a9d519fb791edbb95d7f72b"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/create_crafting.snbt"
 hash = "daf6bc71aa35ee2afe19490b7334c2a819973b734b0f74c946145394b97e0e4e"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/create_fluids.snbt"
+hash = "053069d2f6f36971b364080f57001e2c01e469d1289a889069efc92ffd632e9b"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/create_logistics.snbt"
+hash = "7e73e49efffecd614b710c929d09a8ca11a7b77ee0f5042830dd163be2313fe1"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/create_trains.snbt"
+hash = "bf65acb5078583e4ae94c91c9c6748af0e2f1d4f9db5edcad1d9ff3c8ed78866"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/getting_started.snbt"
@@ -26,7 +42,7 @@ hash = "da77e416b557850f5cb1ab68d71de78f9fbc3cf3845e50cdb4dba3a8164f6e7f"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "241f2b73693ab9cc7fc8b09ea0afa2aaeb90995705b511b07938c69fe715ac8f"
+hash = "5ec59d9ca485c6807359358047cf2d6588f75f4d7c51a2429048bae6f9a0eae7"
 
 [[files]]
 file = "kubejs/data/ad_astra/tags/fluid/fuel.json"

@@ -1,0 +1,229 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_fluids"
+	group: "7DF81F61BC6148EF"
+	icon: {
+		id: "create:steam_engine"
+	}
+	id: "24DBC722ADF457B6"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6F7969F9EBB25C6A"]
+			id: "73FA39500FA10D30"
+			rewards: [{
+				id: "371B87FE4AEE2F9B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 8L
+				id: "7AC942B1B94CCEB7"
+				item: { count: 1, id: "create:copper_sheet" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["73FA39500FA10D30"]
+			id: "61B69BCA480AD122"
+			rewards: [{
+				id: "0BDF9A6C473A4826"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 8L
+				id: "6EF9D786018297E7"
+				item: { count: 1, id: "create:fluid_pipe" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["61B69BCA480AD122"]
+			id: "7BCEF8F5B514BAB1"
+			rewards: [
+				{
+					id: "0C2B8EFE5E390875"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "19D647D03FE7D27D"
+					item: {
+						count: 1
+						id: "create:fluid_pipe"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6CB05BF4B171E792"
+				item: { count: 1, id: "create:mechanical_pump" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["61B69BCA480AD122"]
+			id: "221C682830211660"
+			rewards: [{
+				id: "6EBE9DAF3C65933C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "60F436B94AC1249E"
+				item: { count: 1, id: "create:fluid_valve" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["61B69BCA480AD122"]
+			id: "7AA8B342AA4E93C7"
+			rewards: [{
+				id: "26E3A1AB2CE5C099"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "73B6B076C89B9038"
+				item: { count: 1, id: "create:smart_fluid_pipe" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["73FA39500FA10D30"]
+			id: "430BC91B211B5870"
+			rewards: [{
+				id: "56E061EE952ABCE4"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "48B0D60CF05B8286"
+				item: { count: 1, id: "create:fluid_tank" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			id: "014CF98096B18E91"
+			rewards: [{
+				id: "422579F563B76F57"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "0F6780256AFDA04A"
+				item: { count: 1, id: "create:copper_casing" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["014CF98096B18E91"]
+			id: "215A3AF9A52B9BA0"
+			rewards: [{
+				id: "75D3E672859E2188"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "0B46B67D7A415A4C"
+				item: { count: 1, id: "create:item_drain" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"014CF98096B18E91"
+				"7BCEF8F5B514BAB1"
+			]
+			id: "139623F0052D535E"
+			rewards: [{
+				id: "36678C8EDEDCFFAF"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "79705FFC52A8AA94"
+				item: { count: 1, id: "create:spout" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"014CF98096B18E91"
+				"7BCEF8F5B514BAB1"
+			]
+			id: "7634101950E16F0B"
+			rewards: [{
+				id: "24DAC4F50E547CEB"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "7D3F3D4B0C1815FB"
+				item: { count: 1, id: "create:hose_pulley" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["430BC91B211B5870"]
+			id: "26E56C8A7F2ADC32"
+			rewards: [{
+				id: "38D660226CDACA5B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "14446541162D2608"
+				item: { count: 1, id: "create:steam_whistle" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"430BC91B211B5870"
+				"7BCEF8F5B514BAB1"
+			]
+			id: "7005D32BEDEA332C"
+			rewards: [{
+				id: "0CFD28578906BCD9"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "559A397DCD4C2C6F"
+				item: { count: 1, id: "create:steam_engine" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+	]
+}

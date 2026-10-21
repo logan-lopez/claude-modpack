@@ -33,6 +33,22 @@ iron, washed with an encased fan, gives more iron per ore. The mechanical arm, t
 controller and the crafters' tools (the extendo grip, the potato cannon and the wand of symmetry)
 branch off on the way. Bulk Washing is a box to tick rather than items to hand in.
 
+Four more Create chapters follow, each locked until a quest in the first two:
+
+- **Create: Contraptions**, 16 quests, after the andesite casing: the mechanical bearing, then
+  windmills, glue and chassis, pistons, gantries and pulleys, and the drill, saw, harvester and
+  plough that work on the move. It ends at the clockwork bearing and the elevator pulley.
+- **Create: Fluids and Steam**, 12 quests, after the mechanical press: copper sheets and pipes,
+  the mechanical pump, valves, the fluid tank, the spout, item drain and hose pulley, and the
+  steam engine that turns a heated tank into a boiler.
+- **Create: Logistics**, 17 quests, after the andesite casing: depots, belts, chutes and
+  funnels, then the brass funnels and tunnels, and packages: cardboard, the packager, chain
+  conveyors and frogports, stock links and the factory gauge, ending at the stock ticker.
+- **Create: Trains**, 12 quests, after the crushing wheels: track, sturdy sheets and train
+  casing, then the station, controls, schedule and signals, and two pieces from Steam 'n' Rails
+  (the train coupler and the fuel tank). All Aboard, ticked once a train runs its schedule, ends
+  it.
+
 The rest of the book is planned in minecraft-mcp's
 [outline](../../../minecraft-mcp/docs/design/quest-book.md): its groups, chapters and the order
 they're drafted in.

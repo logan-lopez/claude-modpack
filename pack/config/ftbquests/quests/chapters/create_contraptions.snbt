@@ -1,0 +1,312 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_contraptions"
+	group: "7DF81F61BC6148EF"
+	icon: {
+		id: "create:elevator_pulley"
+	}
+	id: "4657BE0574DA7DA4"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7DEAB55B3B9AAC5C"]
+			id: "42FAC795FA7878AD"
+			rewards: [{
+				id: "23BBF0084AD37A22"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "621A1F598EF94999"
+				item: { count: 1, id: "create:mechanical_bearing" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42FAC795FA7878AD"]
+			id: "17C1B624BF095E81"
+			rewards: [{
+				id: "59282B552883AFC9"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "4ADE92F640E0A5EB"
+					item: { count: 1, id: "create:windmill_bearing" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "79E87CD38D96A8AE"
+					item: { count: 1, id: "create:white_sail" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["42FAC795FA7878AD"]
+			id: "3E2C7E69DB501D03"
+			rewards: [{
+				id: "01241AAC05106106"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "765C1EA135508646"
+				item: { count: 1, id: "create:super_glue" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["42FAC795FA7878AD"]
+			id: "0DD19F9CDE23C62E"
+			rewards: [{
+				id: "0A0E65A3484CD10F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					id: "3E716899032FFF5B"
+					item: { count: 1, id: "create:linear_chassis" }
+					type: "item"
+				}
+				{
+					id: "6DDF8729519CC1E3"
+					item: { count: 1, id: "create:radial_chassis" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["42FAC795FA7878AD"]
+			id: "5FCCE99426A7102C"
+			rewards: [{
+				id: "60D35861F0DCDDD2"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "4CCE5FAC733C775A"
+					item: { count: 1, id: "create:mechanical_piston" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "75FCF7A05795B910"
+					item: { count: 1, id: "create:piston_extension_pole" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FCCE99426A7102C"]
+			id: "299214CE85FAF453"
+			rewards: [{
+				id: "23AE5508D5CF2FC7"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3F3D1187EEE53524"
+				item: { count: 1, id: "create:sticky_mechanical_piston" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["299214CE85FAF453"]
+			id: "46B090983E584A01"
+			rewards: [{
+				id: "44EC2FD1D9883B6C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2BC058A778475A8F"
+				item: { count: 1, id: "create:sticker" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FCCE99426A7102C"]
+			id: "7E8D002E58D5A9FF"
+			rewards: [{
+				id: "44FFB9B561BB8E8D"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "7E920141412A718E"
+					item: { count: 1, id: "create:gantry_carriage" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6DA9CCC39E7F40B0"
+					item: { count: 1, id: "create:gantry_shaft" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5FCCE99426A7102C"]
+			id: "344FEF9CBCB92AE7"
+			rewards: [{
+				id: "763560B41FC09CAC"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "7E8E3509FDF552FC"
+				item: { count: 1, id: "create:rope_pulley" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["42FAC795FA7878AD"]
+			id: "0F0F05F18F1352C3"
+			rewards: [{
+				id: "15B863BEE825DFF1"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "06B92F3F0EB5A8DE"
+				item: { count: 1, id: "create:mechanical_drill" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F0F05F18F1352C3"]
+			id: "544FAEE2C9689280"
+			rewards: [{
+				id: "6A1C31BA53846315"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "4ABBB7CE1D759224"
+				item: { count: 1, id: "create:mechanical_saw" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F0F05F18F1352C3"]
+			id: "76F6310F407E471C"
+			rewards: [{
+				id: "354D9A22E0E1F005"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "2B12164E629CFB74"
+					item: { count: 1, id: "create:mechanical_harvester" }
+					type: "item"
+				}
+				{
+					id: "2EC23040E2C2F381"
+					item: { count: 1, id: "create:mechanical_plough" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"76F6310F407E471C"
+				"544FAEE2C9689280"
+			]
+			id: "27EAE20228BADC68"
+			rewards: [{
+				id: "602433D6E59F93F5"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "173497A51E25F119"
+				item: { count: 1, id: "create:contraption_controls" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["42FAC795FA7878AD"]
+			id: "009D677DBA7F597A"
+			rewards: [{
+				id: "0957107003ACB02C"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "2B781C0B667F4751"
+				item: { count: 1, id: "create:cart_assembler" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["17C1B624BF095E81"]
+			id: "4E9989ABF7317C57"
+			rewards: [{
+				id: "6AB689E26D0E8252"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "6FD9701856F572BB"
+				item: { count: 1, id: "create:clockwork_bearing" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["344FEF9CBCB92AE7"]
+			id: "76C1818AB31349DC"
+			rewards: [{
+				id: "742A38B5EEDB972E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "40433BB564B2A8BE"
+				item: { count: 1, id: "create:elevator_pulley" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+	]
+}

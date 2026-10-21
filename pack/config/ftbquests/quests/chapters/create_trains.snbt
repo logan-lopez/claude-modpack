@@ -1,0 +1,224 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_trains"
+	group: "7DF81F61BC6148EF"
+	icon: {
+		id: "create:controls"
+	}
+	id: "67EBEAD7AC2E98DD"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["33A61C13CFCF2BC5"]
+			id: "5F136CC8B55C4B0F"
+			rewards: [{
+				id: "6BA5566B98845842"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 16L
+				id: "52C063BEE5C2BBC5"
+				item: { count: 1, id: "create:track" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F136CC8B55C4B0F"]
+			id: "3F523886DD1C4542"
+			rewards: [{
+				id: "165C228674822FBB"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "5EA04788CB3E7B1C"
+				item: { count: 1, id: "create:sturdy_sheet" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F523886DD1C4542"]
+			id: "479C0B4F3E9AC3CA"
+			rewards: [{
+				id: "37F037E54CBC235B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "13912C6359F15200"
+				item: { count: 1, id: "create:railway_casing" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["479C0B4F3E9AC3CA"]
+			id: "6B44A722F756302F"
+			rewards: [{
+				id: "7D020CE2A6887123"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "0E963FFC79343FEB"
+				item: { count: 1, id: "create:track_station" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["479C0B4F3E9AC3CA"]
+			id: "13DC25BF054B85E8"
+			rewards: [
+				{
+					id: "457DF000113EE8A9"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 16
+					id: "5B67A31C9CD53905"
+					item: {
+						count: 1
+						id: "create:track"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "60FEC49326FBCE89"
+				item: { count: 1, id: "create:controls" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["479C0B4F3E9AC3CA"]
+			id: "3AA6E08BCA344734"
+			rewards: [{
+				id: "1E8DA561E3312209"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "591A2342CEE5E469"
+				item: { count: 1, id: "create:train_door" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6B44A722F756302F"]
+			id: "6F16E7B4BD7E8FD8"
+			rewards: [{
+				id: "2FE329DCA34AE353"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "664611DF0376F724"
+				item: { count: 1, id: "create:schedule" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B44A722F756302F"]
+			id: "1A0A422F73E1F49E"
+			rewards: [{
+				id: "2029E74D17268B26"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				count: 4L
+				id: "46998A3F28ECD1F3"
+				item: { count: 1, id: "create:track_signal" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A0A422F73E1F49E"]
+			id: "0F0B646A315F54D1"
+			rewards: [{
+				id: "4E89C0E7AE698DD6"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "20ADE153F2D8E614"
+				item: { count: 1, id: "create:track_observer" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13DC25BF054B85E8"]
+			id: "268E21E25F235E78"
+			rewards: [{
+				id: "2AB2E73597A073B5"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "3FF3C648F68F8D9C"
+				item: { count: 1, id: "railways:track_coupler" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["13DC25BF054B85E8"]
+			id: "276DE76595C1E945"
+			rewards: [{
+				id: "3A17269875C512E3"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "1945AB4949E802A1"
+				item: { count: 1, id: "railways:fuel_tank" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"13DC25BF054B85E8"
+				"6F16E7B4BD7E8FD8"
+			]
+			id: "7C6AC7DC1AE63700"
+			rewards: [{
+				id: "752C3FF4E91C30F1"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7E666956940CC836"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+	]
+}
