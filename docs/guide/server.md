@@ -11,7 +11,8 @@ macOS, Linux or Windows, with the pack's mods inside.
 scripts/server-pack.sh
 ```
 
-It writes `dist/claude-modpack-<version>-server.zip`, about 625 MB, in under a minute. Like the
+Run it from the repo in a terminal: Terminal on macOS or Linux, Git Bash on Windows. It writes
+`dist/claude-modpack-<version>-server.zip`, about 625 MB, in under a minute. Like the
 server check it uses port 8080 for a moment; if `packwiz serve` is running for Prism, build with
 `SERVE_PORT=8081 scripts/server-pack.sh`.
 

@@ -67,9 +67,18 @@ list_some() {
   return 0
 }
 
-# 1. Java 21. The default java here may be older, and run.sh calls whatever is on PATH.
-JAVA_HOME=$(/usr/libexec/java_home -v 21 2>/dev/null) || die "no Java 21 found (/usr/libexec/java_home -v 21)"
-export JAVA_HOME PATH="$JAVA_HOME/bin:$PATH"
+# 1. Java 21: JAVA_HOME, then on macOS java_home, then java on PATH. The default java may be older.
+java_version() { "$1" -version 2>&1 | sed -nE 's/.*version "([^"]+)".*/\1/p' | head -n1; }
+JAVA=''
+for j in "${JAVA_HOME:+$JAVA_HOME/bin/java}" \
+  "$([[ -x /usr/libexec/java_home ]] && /usr/libexec/java_home -v 21 2>/dev/null)/bin/java" \
+  "$(command -v java || true)"; do
+  [[ -n $j && -x $j ]] || continue
+  case $(java_version "$j") in 21|21.*) JAVA=$j; break ;; esac
+done
+[[ -n $JAVA ]] || die "no Java 21 found (JAVA_HOME, /usr/libexec/java_home -v 21, java on PATH)"
+# NeoForge's installer writes the JVM arguments for each system; Git Bash on Windows needs win_args.
+case $(uname -s) in MINGW*|MSYS*|CYGWIN*) ARGS_TXT=win_args.txt ;; *) ARGS_TXT=unix_args.txt ;; esac
 
 PACKWIZ=$(command -v packwiz || true)
 [[ -z $PACKWIZ && -x "$(go env GOPATH 2>/dev/null)/bin/packwiz" ]] && PACKWIZ="$(go env GOPATH)/bin/packwiz"
@@ -80,15 +89,17 @@ NEOFORGE=$(toml_value neoforge)
 [[ -n $NEOFORGE ]] || die "no neoforge version in pack/pack.toml"
 
 # No job control (set -m): its setpgid races here ("child setpgid ... Operation not permitted"),
-# and a lost race would aim the kill at a process group that doesn't exist. Kill by PID instead. run.sh doesn't exec java, so kill its
-# children first.
+# and a lost race would aim the kill at a process group that doesn't exist. Kill by PID instead.
+# Both PIDs are the program itself (exec, and java run directly), so there are no children to kill.
 SERVE_PID='' SERVER_PID=''
-kill_tree() { pkill -P "$1" 2>/dev/null || true; kill "$1" 2>/dev/null || true; wait "$1" 2>/dev/null || true; }
+kill_pid() { kill "$1" 2>/dev/null || true; wait "$1" 2>/dev/null || true; }
+# `wait` on the server waits for its whole pipeline, and the stdin loop in it ends only once
+# stop-requested exists, so every stop creates it first, a fail too. Without it, a fail hangs.
+stop_server() { touch "$SERVER/stop-requested"; kill_pid "$SERVER_PID"; SERVER_PID=''; }
+# Returns 0 itself: under set -e, a false test in an EXIT trap becomes the script's exit code.
 cleanup() {
-  exec 3>&- 2>/dev/null || true
-  [[ -n $SERVER_PID ]] && kill_tree "$SERVER_PID"
-  [[ -n $SERVE_PID ]] && kill_tree "$SERVE_PID"
-  rm -f "$SERVER/stdin.fifo"
+  if [[ -n $SERVER_PID ]]; then stop_server; fi
+  if [[ -n $SERVE_PID ]]; then kill_pid "$SERVE_PID"; fi
 }
 trap cleanup EXIT
 trap 'exit 130' INT TERM
@@ -97,8 +108,12 @@ trap '' PIPE
 # 2. Refresh the index.
 (cd "$PACK" && "$PACKWIZ" refresh >/dev/null) || die "packwiz refresh failed"
 
-# 3. Serve the pack.
-if lsof -nP -iTCP:"$PORT" -sTCP:LISTEN >/dev/null 2>&1; then
+# 3. Serve the pack. Git Bash on Windows has netstat but no lsof.
+port_in_use() {
+  if command -v lsof >/dev/null; then lsof -nP -iTCP:"$1" -sTCP:LISTEN >/dev/null 2>&1
+  else netstat -an 2>/dev/null | grep -Eq "[:.]$1[[:space:]].*LISTEN"; fi
+}
+if port_in_use "$PORT"; then
   die "port $PORT is in use (a packwiz serve for Prism?). Stop it or set CHECK_PORT."
 fi
 mkdir -p "$CACHE"
@@ -113,12 +128,13 @@ curl -fsS "http://localhost:$PORT/pack.toml" >/dev/null || die "packwiz serve no
 
 # 4. Install the NeoForge server if the installed one doesn't match the pack.
 fetch() { [[ -s $CACHE/$2 ]] || curl -fsSL -o "$CACHE/$2" "$1" || die "download failed: $1"; }
-if [[ ! -f "$SERVER/libraries/net/neoforged/neoforge/$NEOFORGE/unix_args.txt" ]]; then
+ARGS="libraries/net/neoforged/neoforge/$NEOFORGE/$ARGS_TXT"
+if [[ ! -f "$SERVER/$ARGS" ]]; then
   say "installing NeoForge $NEOFORGE server"
   fetch "https://maven.neoforged.net/releases/net/neoforged/neoforge/$NEOFORGE/neoforge-$NEOFORGE-installer.jar" \
     "neoforge-$NEOFORGE-installer.jar"
   rm -rf "$SERVER" && mkdir -p "$SERVER"
-  (cd "$SERVER" && java -jar "$CACHE/neoforge-$NEOFORGE-installer.jar" --installServer . >"$CACHE/install.log" 2>&1) ||
+  (cd "$SERVER" && "$JAVA" -jar "$CACHE/neoforge-$NEOFORGE-installer.jar" --installServer . >"$CACHE/install.log" 2>&1) ||
     die "NeoForge installer failed, see run/cache/install.log"
 fi
 
@@ -128,28 +144,31 @@ fetch https://github.com/packwiz/packwiz-installer-bootstrap/releases/download/v
   packwiz-installer-bootstrap.jar
 rm -rf "$SERVER_QUESTS"
 say "syncing mods from http://localhost:$PORT/pack.toml"
-(cd "$SERVER" && java -jar "$CACHE/packwiz-installer-bootstrap.jar" --bootstrap-main-jar "$CACHE/packwiz-installer.jar" \
+(cd "$SERVER" && "$JAVA" -jar "$CACHE/packwiz-installer-bootstrap.jar" --bootstrap-main-jar "$CACHE/packwiz-installer.jar" \
   -g -s server "http://localhost:$PORT/pack.toml" >"$CACHE/sync.log" 2>&1) ||
   die "packwiz-installer failed: $(tail -n10 "$CACHE/sync.log")"
-kill_tree "$SERVE_PID"
+kill_pid "$SERVE_PID"
 SERVE_PID=''
 if [[ -d $QUESTS ]] && ! DIFF=$(diff -rq "$QUESTS" "$SERVER_QUESTS" 2>&1); then
   die "the sync didn't install pack/config/ftbquests/quests as it is: $DIFF"
 fi
 
 cd "$SERVER"
-rm -rf world crash-reports logs/latest.log
+rm -rf world crash-reports logs/latest.log stop-requested
 echo 'eula=true' >eula.txt
 printf 'level-seed=%s\n' "$SEED" >server.properties
 JARS=$( (find mods -maxdepth 1 -name '*.jar' 2>/dev/null || true) | wc -l | tr -d ' ')
 
-# 6. Start the server, stdin on a FIFO so we can send `stop`.
-rm -f stdin.fifo && mkfifo stdin.fifo
+# 6. Start the server: java run directly, as run.sh and run.bat do. Its stdin is a pipe from a loop
+# that sends `stop` once the file stop-requested exists, and gives up when this script is gone.
+# A pipe rather than a FIFO, because Git Bash's FIFOs don't reach a Windows program.
 say "starting NeoForge $NEOFORGE with $JARS mod jar(s), timeout ${TIMEOUT}s"
 START=$SECONDS
-./run.sh nogui <stdin.fifo >console.log 2>&1 &
+{
+  until [[ -e stop-requested ]]; do kill -0 $$ 2>/dev/null || exit 0; sleep 1; done
+  echo stop
+} | "$JAVA" @user_jvm_args.txt "@$ARGS" nogui >console.log 2>&1 &
 SERVER_PID=$!
-exec 3>stdin.fifo
 
 # 7. Watch the log.
 LOG=logs/latest.log
@@ -174,22 +193,26 @@ if [[ $RESULT == pass ]]; then
   if [[ -d $QUESTS ]]; then
     for _ in {1..10}; do grep -qE "$QUEST_LOADED" "$LOG" && break; sleep 1; done
   fi
-  echo stop >&3 2>/dev/null || true
+  touch stop-requested
   for _ in {1..60}; do kill -0 "$SERVER_PID" 2>/dev/null || break; sleep 1; done
 fi
-exec 3>&-
-kill_tree "$SERVER_PID"
-SERVER_PID=''
+stop_server
+
+# Log4j ends lines with CRLF on Windows, so read the log through tr.
+[[ -f $LOG ]] || LOG=console.log
+TEXT=$CACHE/check.log
+tr -d '\r' <"$LOG" >"$TEXT"
 
 # The quest book loaded as written: no ERROR line during the load, every chapter and reward table
 # in pack/ counted, and nothing rewritten when the server saved it on stop. FTB Quests skips a
 # chapter it can't parse, and quietly renumbers a bad or duplicate ID and writes the book back.
+# On Windows it writes CRLF, so the comparison ignores carriage returns.
 QUEST_LOAD='' QUEST_ERRORS='' QUEST_WRITES=''
 if [[ $RESULT == pass && -d $QUESTS ]]; then
-  QUEST_LOAD=$(grep -oE "$QUEST_LOADED" "$LOG" | tail -n1 | sed -E 's/.*Loaded //')
+  QUEST_LOAD=$(grep -oE "$QUEST_LOADED" "$TEXT" | tail -n1 | sed -E 's/.*Loaded //')
   QUEST_ERRORS=$(awk -v from="$QUEST_LOADING" 'index($0, from) {on=1; next} on && /\[FTB Quests\/\]: Loaded / {exit}
-    on && /^\[[^]]+\] \[Server thread\/ERROR\]/' "$LOG" | sed -E 's/^\[[^]]+\] //')
-  QUEST_WRITES=$(diff -rq "$QUESTS" "$SERVER_QUESTS" 2>&1 | sed -e "s|$QUESTS/*|pack: |g" -e "s|$SERVER_QUESTS/*|server: |g" || true)
+    on && /^\[[^]]+\] \[Server thread\/ERROR\]/' "$TEXT" | sed -E 's/^\[[^]]+\] //')
+  QUEST_WRITES=$(diff -rq --strip-trailing-cr "$QUESTS" "$SERVER_QUESTS" 2>&1 | sed -e "s|$QUESTS/*|pack: |g" -e "s|$SERVER_QUESTS/*|server: |g" || true)
   have=$( (find "$QUESTS/chapters" -maxdepth 1 -name '*.snbt' 2>/dev/null || true) | wc -l | tr -d ' ')
   tables=$( (find "$QUESTS/reward_tables" -maxdepth 1 -name '*.snbt' 2>/dev/null || true) | wc -l | tr -d ' ')
   problems=()
@@ -209,11 +232,10 @@ if [[ $RESULT == pass && -d $QUESTS ]]; then
 fi
 
 # 8. Summary.
-[[ -f $LOG ]] || LOG=console.log
 # The mod table: "Mod List:", a header, then one "\t\tName Version (modid)" row per mod.
-LOADED=$(awk '/Mod List:/ {on=1; next} on && /^\[/ {exit} on && /^\t\t.* \([^)]+\)$/ && !/\(Mod Id\)$/ {n++} END {if (on) print n}' "$LOG")
-RUNNING=$(sed -nE 's/.*--fml\.neoForgeVersion, ([^,]+),.*/\1/p' "$LOG" | head -n1)
-DONE_LINE=$(grep -oE 'Done \([0-9.]+s\)!' "$LOG" | head -n1 || true)
+LOADED=$(awk '/Mod List:/ {on=1; next} on && /^\[/ {exit} on && /^\t\t.* \([^)]+\)$/ && !/\(Mod Id\)$/ {n++} END {if (on) print n}' "$TEXT")
+RUNNING=$(sed -nE 's/.*--fml\.neoForgeVersion, ([^,]+),.*/\1/p' "$TEXT" | head -n1)
+DONE_LINE=$(grep -oE 'Done \([0-9.]+s\)!' "$TEXT" | head -n1 || true)
 echo
 echo "== server check: $(tr '[:lower:]' '[:upper:]' <<<"$RESULT") =="
 echo "NeoForge:  ${RUNNING:-$NEOFORGE (from pack.toml, not seen in the log)} (Minecraft $(toml_value minecraft))"
@@ -222,10 +244,10 @@ echo "Boot:      ${ELAPSED}s wall${DONE_LINE:+, server says $DONE_LINE}"
 if [[ $RESULT == pass ]]; then
   [[ -n $QUEST_LOAD ]] && echo "Quests:    $QUEST_LOAD"
   # Load errors against the baseline. New ones are reported, never failed on.
-  KEYS=$(load_error_keys "$LOG")
+  KEYS=$(load_error_keys "$TEXT")
   count() { [[ -n $1 ]] && wc -l <<<"$1" | tr -d ' ' || echo 0; }
   if [[ -f $BASELINE ]]; then
-    KNOWN=$(LC_ALL=C sort -u "$BASELINE")
+    KNOWN=$(tr -d '\r' <"$BASELINE" | LC_ALL=C sort -u)
     NEW=$(LC_ALL=C comm -13 <(echo "$KNOWN") <(echo "$KEYS") | sed '/^$/d')
     GONE=$(LC_ALL=C comm -23 <(echo "$KNOWN") <(echo "$KEYS") | sed '/^$/d')
     STILL=$(LC_ALL=C comm -12 <(echo "$KNOWN") <(echo "$KEYS") | sed '/^$/d')
@@ -236,7 +258,7 @@ if [[ $RESULT == pass ]]; then
     echo "Load errors: $(count "$KEYS") keys, no baseline (CHECK_UPDATE_BASELINE=1 writes ${BASELINE#"$ROOT"/})"
   fi
   # ERROR lines of no known kind, without their timestamps, so repeats collapse.
-  OTHER=$(grep -E "$ERROR_LINE" "$LOG" | grep -vE "$KEYED" | sed -E 's/^\[[^]]+\] //' || true)
+  OTHER=$(grep -E "$ERROR_LINE" "$TEXT" | grep -vE "$KEYED" | sed -E 's/^\[[^]]+\] //' || true)
   if [[ -n $OTHER ]]; then
     echo "Warnings:  $(count "$OTHER") other ERROR line(s) in the log (not failing on them):"
     awk '!seen[$0]++' <<<"$OTHER" | head -n20 | sed 's/^/  /'
@@ -256,11 +278,11 @@ case $REASON in
     if [[ -n $QUEST_WRITES ]]; then
       echo "Rewritten: (pack: is pack/config/ftbquests/quests, server: is what FTB Quests saved)"
       sed 's/^/  /' <<<"$QUEST_WRITES"
-      diff -r "$QUESTS" "$SERVER_QUESTS" | sed -e "s|$QUESTS/*|pack: |g" -e "s|$SERVER_QUESTS/*|server: |g" |
+      diff -r --strip-trailing-cr "$QUESTS" "$SERVER_QUESTS" 2>/dev/null | sed -e "s|$QUESTS/*|pack: |g" -e "s|$SERVER_QUESTS/*|server: |g" |
         head -n30 | sed 's/^/  /' || true
     fi ;;
   log:*)
-    grep -nF -A12 "${REASON#log: }" "$LOG" | head -n30 | sed 's/^/  /' ;;
+    grep -nF -A12 "${REASON#log: }" "$TEXT" | head -n30 | sed 's/^/  /' ;;
   crash*)
     f=$(ls crash-reports/* | head -n1)
     echo "Crash:     run/server/$f"
@@ -268,6 +290,6 @@ case $REASON in
     grep -E '^Description:|^[[:alnum:]_.$]+(Exception|Error)[:[:space:]]|^-- Mod loading issue|Failure message:' "$f" |
       head -n20 | sed 's/^[[:space:]]*/  /' || true ;;
   *)
-    tail -n25 "$LOG" | sed 's/^/  /' ;;
+    tail -n25 "$TEXT" | sed 's/^/  /' ;;
 esac
 exit 1

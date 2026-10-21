@@ -31,7 +31,8 @@ Once:
 
 Each time you play:
 
-1. In a terminal, `cd pack && packwiz serve`. Leave it running.
+1. In a terminal (Git Bash on Windows), `cd pack && packwiz serve`. Leave it running. If
+   `packwiz` isn't found, it's in `$(go env GOPATH)/bin`.
 2. Launch the instance. A small window shows packwiz-installer downloading mods, then the game
    starts.
 
@@ -40,7 +41,7 @@ Each time you play:
 
 ## Import a `.mrpack` instead
 
-`scripts/export.sh` writes `dist/claude-modpack-<version>.mrpack`. In Prism: Add Instance, Import,
+`scripts/export.sh` (from Git Bash on Windows) writes `dist/claude-modpack-<version>.mrpack`. In Prism: Add Instance, Import,
 and pick the file. It's a snapshot: it doesn't update when the pack does, so export and import
 again for a new build. This is also the file to share.
 

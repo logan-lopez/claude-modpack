@@ -22,6 +22,10 @@ and finished ones move to `archive/`. The decisions not to relitigate are the ta
 
 packwiz may not be on `PATH`: it's in `$(go env GOPATH)/bin`, where the scripts look for it.
 
+The scripts are bash and run on macOS, Linux and Windows. On Windows, run them through Git Bash
+(the Bash tool), never PowerShell. The checkout is LF everywhere but `*.bat` (`.gitattributes`):
+packwiz hashes `pack/`'s files, so CRLF would rewrite `pack/index.toml` on every refresh.
+
 ## Rules
 
 - **Every change to the mod set ends with a passing `scripts/server-check.sh`.** Adding, removing
@@ -42,4 +46,4 @@ matching one by itself; this table is the same map for every agent).
 | `pack/config/**`, `pack/kubejs/**` | [Pack overrides](docs/architecture/pack-overrides.md) |
 | `pack/config/ftbquests/**`, `scripts/pull-quests.sh` | [The quest book](docs/architecture/quests.md) |
 | `scripts/server-check.sh`, `scripts/server-check.known-errors.txt` | [The server check](docs/architecture/server-check.md) |
-| `scripts/server-pack.sh`, `server/**` | [The server build](docs/architecture/server-pack.md) |
+| `scripts/server-pack.sh`, `scripts/zip-folder.pl`, `server/**` | [The server build](docs/architecture/server-pack.md) |

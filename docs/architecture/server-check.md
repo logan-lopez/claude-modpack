@@ -8,14 +8,16 @@ session can verify about the pack on its own, so every change to the mod set end
 
 ## How it works
 
-1. Finds Java 21 with `/usr/libexec/java_home -v 21` and puts it first on `PATH`. The default
-   `java` here is 17, and the run script NeoForge writes calls whatever `java` is on `PATH`.
+1. Finds Java 21: `JAVA_HOME`, then macOS's `/usr/libexec/java_home -v 21`, then `java` on
+   `PATH`, the first whose `-version` says 21. The default `java` on the Mac is 17. Every
+   `java` the script starts is this one.
 2. Runs `packwiz refresh` in `pack/`, then `packwiz serve` on `CHECK_PORT` (default 8080). It
-   refuses to start if something already listens there, which is usually a `packwiz serve` left
-   up for Prism.
+   refuses to start if something already listens there (`lsof`, or `netstat` where there's no
+   `lsof`), which is usually a `packwiz serve` left up for Prism.
 3. Reads the NeoForge version from `pack/pack.toml`. If `run/server/` doesn't have that version's
-   `libraries/net/neoforged/neoforge/<v>/unix_args.txt`, it wipes `run/server/` and runs the
-   installer with `--installServer`. Installer and bootstrap jars are cached in `run/cache/`.
+   `libraries/net/neoforged/neoforge/<v>/unix_args.txt` (`win_args.txt` in Git Bash on
+   Windows), it wipes `run/server/` and runs the installer with `--installServer`. Installer and
+   bootstrap jars are cached in `run/cache/`.
 4. Syncs the pack with packwiz-installer-bootstrap (`-g -s server`, from the served URL): the
    mods, and the gun packs in `pack/tacz/` into `run/server/tacz/`, where TaCZ reads them. It
    also deletes files it installed earlier that the pack no longer lists. Then it stops the
@@ -23,12 +25,17 @@ session can verify about the pack on its own, so every change to the mod set end
    exactly `pack/`'s quest book; the sync puts back a file it installed that's missing on disk,
    and the script dies before the boot if the synced book differs from `pack/`'s.
 5. Deletes `world/`, `crash-reports/` and `logs/latest.log`, writes `eula.txt` and a
-   `server.properties` with a fixed `level-seed`, and starts `./run.sh nogui` with stdin on a
-   FIFO.
-6. Polls `logs/latest.log` once a second until one of the outcomes below, then sends `stop` on a
-   pass, or kills the server on a fail. With a quest book in `pack/`, a pass first waits up to
-   10 seconds for FTB Quests' `Loaded` line, which comes just after Done, and the quest checks
-   run once the server has exited.
+   `server.properties` with a fixed `level-seed`, and starts Java the way NeoForge's `run.sh`
+   and `run.bat` would, `java @user_jvm_args.txt @libraries/.../<unix|win>_args.txt nogui`. Its
+   stdin is a pipe from a loop that sends `stop` once `run/server/stop-requested` exists, and
+   ends when the script does.
+6. Polls `logs/latest.log` once a second until one of the outcomes below, then on a pass creates
+   `stop-requested` and waits up to 60 seconds for the server to stop. On a fail, or after the
+   wait, it creates `stop-requested` too and kills the server: `wait` on the server's PID waits
+   for its whole pipeline, so a stdin loop still running would hang the check (it did, on a
+   fail, 2026-10-21). With a quest book in `pack/`, a pass first waits up to 10 seconds
+   for FTB Quests' `Loaded` line, which comes just after Done, and the quest checks run once the
+   server has exited.
 7. Prints a summary: the NeoForge version the server actually ran (from `--fml.neoForgeVersion`
    in the log), the mod count from the log's `Mod List:` table, the boot time, the quest book's
    counts (`Quests:`, only when `pack/` has a book), and on a fail the reason with the log,
@@ -38,7 +45,9 @@ session can verify about the pack on its own, so every change to the mod set end
    `CHECK_UPDATE_BASELINE=1` then rewrites the baseline from this run.
 
 Logs from the steps around the boot are in `run/cache/`: `serve.log`, `install.log`, `sync.log`.
-The server's own output is `run/server/console.log`.
+The server's own output is `run/server/console.log`. The quest checks and the summary read
+`run/cache/check.log`, a copy of `latest.log` without carriage returns, because Log4j ends lines
+with CRLF on Windows.
 
 ## What counts as a failure
 
@@ -104,13 +113,22 @@ written only after a pass. Read the diff first: a fix should only remove lines.
   failure and copy the line.
 - **No job control.** An earlier version used `set -m` to kill whole process groups. On macOS's
   bash 3.2 that printed `child setpgid ... Operation not permitted` once, and a lost race would
-  leave the kill aimed at a group that doesn't exist. The script kills by PID, and `run.sh`'s
-  children first, because `run.sh` runs java without `exec`.
-- **`/bin/bash` is 3.2 here.** Nothing newer: no associative arrays, `mapfile` or `${var,,}`.
+  leave the kill aimed at a group that doesn't exist. The script kills by PID. Both PIDs are the
+  programs themselves: `packwiz serve` is `exec`ed, and Java runs directly rather than under
+  `run.sh`, which doesn't `exec` it.
+- **A pipe for stdin, not a FIFO.** An earlier version held a FIFO open on fd 3 and wrote `stop`
+  to it. Git Bash's FIFOs are Cygwin's and don't reach Windows programs (`findstr`
+  read nothing from one, 2026-10-20); an ordinary pipe works on every system, and `kill` from Git
+  Bash stops a Windows process too.
+- **`/bin/bash` is 3.2 on macOS.** Nothing newer: no associative arrays, `mapfile`, `coproc` or
+  `${var,,}`. Git Bash on Windows is bash 5 but lacks `lsof`; check that a tool exists on both
+  before using it.
 - **A fresh world every run,** so a world saved by an earlier mod set can't hide or cause a
   failure. Configs in `run/server/config/` do persist between runs, except the quest book.
 - **Quest files are compared by content, not time.** FTB Quests writes the whole book back on
-  every stop, clean or not; a clean book comes back byte for byte.
+  every stop, clean or not; a clean book comes back byte for byte, except that on Windows it
+  writes CRLF, so the comparison uses `diff --strip-trailing-cr` (GNU diff and macOS's both
+  have it). Without that, every file counted as rewritten on Windows (2026-10-21).
 
 ## What it can't catch
 

@@ -4,16 +4,19 @@
 unzips on macOS, Linux or Windows and starts with `start.sh` or `start.bat`. The launch scripts
 and the files around them are templates in `server/`.
 
-**Sources:** `scripts/server-pack.sh`, `server/`
+**Sources:** `scripts/server-pack.sh`, `scripts/zip-folder.pl`, `server/`
 
 ## How the build works
 
-It reuses `scripts/server-check.sh`'s first steps, duplicated rather than shared:
+It runs on macOS, Linux and Git Bash on Windows, and reuses `scripts/server-check.sh`'s first
+steps, duplicated rather than shared:
 
-1. Finds Java 21 with `/usr/libexec/java_home -v 21`, finds packwiz as the other scripts do, and
-   runs `packwiz refresh`. `<name>` and `<version>` come from `pack/pack.toml` the way
+1. Finds Java 21 as the server check does (`JAVA_HOME`, then macOS's `java_home -v 21`, then
+   `java` on `PATH`, the first that says 21), finds packwiz as the other scripts do, and runs
+   `packwiz refresh`. `<name>` and `<version>` come from `pack/pack.toml` the way
    `scripts/export.sh` derives them, so the zip sits beside the `.mrpack` of the same build.
-2. Runs `packwiz serve` on `SERVE_PORT` (default 8080), refusing if the port is taken.
+2. Runs `packwiz serve` on `SERVE_PORT` (default 8080), refusing if the port is taken (`lsof`,
+   or `netstat` where there's no `lsof`).
 3. Fetches the NeoForge installer and packwiz-installer-bootstrap into `run/cache/` if they
    aren't there.
 4. Wipes `run/server-pack/` and syncs the pack into `run/server-pack/<name>-<version>-server/` with
@@ -21,10 +24,12 @@ It reuses `scripts/server-check.sh`'s first steps, duplicated rather than shared
    `config/`, `kubejs/` and `tacz/`. It stops the serve and deletes `packwiz.json`. The sync log
    is `run/cache/server-pack-sync.log`. A full sync downloads about 670 MB and took 34 seconds.
 5. Copies in the installer jar and `server/`'s files, substitutes `@NEOFORGE_VERSION@` (both
-   start scripts) and `@MOTD@` (`defaults/server.properties`, as `<pack name> <version>`), fails
-   if a placeholder is left, converts `start.bat` to CRLF and makes `start.sh` executable.
+   start scripts) and `@MOTD@` (`defaults/server.properties`, as `<pack name> <version>`) with
+   `perl -pi`, fails if a placeholder is left, converts `start.bat` to CRLF and `start.sh` to LF,
+   and makes `start.sh` executable.
 6. Deletes an old zip of the same name and zips the folder from `run/server-pack/` with
-   `zip -qrX`. Prints the size, the jar count and the zip's path.
+   `scripts/zip-folder.pl`. Prints the size, the jar count and the zip's path. A first build on Windows,
+   with nothing in `run/`, took 26 seconds.
 
 ### The zip
 
@@ -100,11 +105,17 @@ it mustn't replace them.
   by another non-interactive shell has `SIGINT` ignored, and that can't be trapped: test it from
   a wrapper that resets `SIGINT` to default.
 - **`/bin/bash` is 3.2 on macOS,** and both scripts stay within it.
+- **The build uses only what macOS and Git Bash both have.** Git Bash has no `zip` or `lsof`,
+  and its `sed -i` is GNU's where macOS's is BSD's, so substitutions use `perl -pi` and the zip is
+  `scripts/zip-folder.pl` (IO::Compress::Zip, which ships with Perl). Windows has no file modes
+  to read, so `zip-folder.pl` sets them: `*.sh` 755, other files 644, folders 755, recorded as
+  Unix so `unzip` and macOS apply them.
 
 ## Decisions
 
 The decisions table in [the briefs README](../briefs/README.md) has the choices (Java required
 not bundled, the EULA asked, the defaults, `-Xmx12G`, a self-contained zip).
 
-The `.bat` has never been run by a session: there's no Windows here. It was read against
-`start.sh` step by step.
+The `.bat` has never been run by a session. It was read against `start.sh` step by step. The
+build itself has run on Windows (2026-10-20): the zip opened in `unzip`, Windows' `tar` and
+.NET's `ZipFile`, with `start.sh` at 755 and LF, and `start.bat` CRLF.

@@ -1,6 +1,7 @@
 ---
 paths:
   - "scripts/server-pack.sh"
+  - "scripts/zip-folder.pl"
   - "server/**"
 ---
 

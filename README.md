@@ -32,8 +32,10 @@ It's built around Create and Timeless and Classics Zero (TaCZ).
 
 ## Requirements
 
-- Java 21. The scripts find it with `/usr/libexec/java_home -v 21`, so it doesn't have to be the
-  default `java`.
+- macOS, Linux, or Windows with Git Bash (it comes with [Git for Windows](https://git-scm.com/)).
+  The scripts are bash: on Windows, run them from Git Bash, not PowerShell or `cmd`.
+- Java 21. The scripts take `JAVA_HOME` if it's 21, then on macOS `/usr/libexec/java_home -v 21`,
+  then `java` on `PATH`, so it doesn't have to be the default `java` on a Mac.
 - Go 1.24+ for packwiz: `go install github.com/packwiz/packwiz@latest`. The scripts also look in
   `$(go env GOPATH)/bin`, so it doesn't have to be on `PATH`.
 - [Prism Launcher](https://prismlauncher.org/) to play, with at least 8 GB of memory given to the

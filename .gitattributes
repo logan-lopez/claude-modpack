@@ -1,3 +1,5 @@
+# LF everywhere, whatever core.autocrlf says: packwiz hashes the files in pack/, so a CRLF checkout
+# on Windows changes every hash, and the scripts compare text files line by line.
+* text=auto eol=lf
 # cmd.exe misreads labels and goto in a .bat with LF line endings.
 *.bat text eol=crlf
-*.sh text eol=lf

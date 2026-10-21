@@ -85,7 +85,8 @@ writer's layout. minecraft-mcp generates against them; changing one needs Logan.
 ### SNBT, as FTB Library writes it
 
 FTB Quests reads and writes FTB Library's SNBT, and the check fails when what it writes back
-differs from `pack/` (below), so a file must be byte for byte what the writer would produce:
+differs from `pack/` (below), so a file must be byte for byte what the writer would produce
+(line endings aside: on Windows it writes CRLF, and the check ignores carriage returns):
 
 - A tab per level, one key per line, no commas between keys, keys sorted (the writer sorts them
   "since questbook data is commonly stored under version control"), and a newline at the end.

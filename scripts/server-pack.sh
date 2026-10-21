@@ -16,9 +16,17 @@ PORT=${SERVE_PORT:-8080}
 say() { printf '[server-pack] %s\n' "$*"; }
 die() { printf '[server-pack] FAIL: %s\n' "$*" >&2; exit 1; }
 
-# 1. Java 21, packwiz, and the pack's name and versions.
-JAVA_HOME=$(/usr/libexec/java_home -v 21 2>/dev/null) || die "no Java 21 found (/usr/libexec/java_home -v 21)"
-export JAVA_HOME PATH="$JAVA_HOME/bin:$PATH"
+# 1. Java 21 (JAVA_HOME, then on macOS java_home, then java on PATH), packwiz, and the pack's name
+# and versions.
+java_version() { "$1" -version 2>&1 | sed -nE 's/.*version "([^"]+)".*/\1/p' | head -n1; }
+JAVA=''
+for j in "${JAVA_HOME:+$JAVA_HOME/bin/java}" \
+  "$([[ -x /usr/libexec/java_home ]] && /usr/libexec/java_home -v 21 2>/dev/null)/bin/java" \
+  "$(command -v java || true)"; do
+  [[ -n $j && -x $j ]] || continue
+  case $(java_version "$j") in 21|21.*) JAVA=$j; break ;; esac
+done
+[[ -n $JAVA ]] || die "no Java 21 found (JAVA_HOME, /usr/libexec/java_home -v 21, java on PATH)"
 
 PACKWIZ=$(command -v packwiz || true)
 [[ -z $PACKWIZ && -x "$(go env GOPATH 2>/dev/null)/bin/packwiz" ]] && PACKWIZ="$(go env GOPATH)/bin/packwiz"
@@ -41,8 +49,12 @@ trap 'exit 130' INT TERM
 
 (cd "$PACK" && "$PACKWIZ" refresh >/dev/null) || die "packwiz refresh failed"
 
-# 2. Serve the pack.
-if lsof -nP -iTCP:"$PORT" -sTCP:LISTEN >/dev/null 2>&1; then
+# 2. Serve the pack. Git Bash on Windows has netstat but no lsof.
+port_in_use() {
+  if command -v lsof >/dev/null; then lsof -nP -iTCP:"$1" -sTCP:LISTEN >/dev/null 2>&1
+  else netstat -an 2>/dev/null | grep -Eq "[:.]$1[[:space:]].*LISTEN"; fi
+}
+if port_in_use "$PORT"; then
   die "port $PORT is in use (a packwiz serve for Prism?). Stop it or set SERVE_PORT."
 fi
 mkdir -p "$CACHE"
@@ -65,7 +77,7 @@ fetch https://github.com/packwiz/packwiz-installer-bootstrap/releases/download/v
 # 4. Sync the server side of the pack into a fresh staging folder.
 rm -rf "$STAGE" && mkdir -p "$STAGE/$DIR"
 say "syncing the server side of the pack from http://localhost:$PORT/pack.toml"
-(cd "$STAGE/$DIR" && java -jar "$CACHE/packwiz-installer-bootstrap.jar" --bootstrap-main-jar "$CACHE/packwiz-installer.jar" \
+(cd "$STAGE/$DIR" && "$JAVA" -jar "$CACHE/packwiz-installer-bootstrap.jar" --bootstrap-main-jar "$CACHE/packwiz-installer.jar" \
   -g -s server "http://localhost:$PORT/pack.toml" >"$CACHE/server-pack-sync.log" 2>&1) ||
   die "packwiz-installer failed: $(tail -n10 "$CACHE/server-pack-sync.log")"
 kill_serve
@@ -76,21 +88,22 @@ cd "$STAGE/$DIR"
 cp "$CACHE/$INSTALLER" .
 cp "$ROOT/server/start.sh" "$ROOT/server/start.bat" "$ROOT/server/README.txt" .
 cp -R "$ROOT/server/defaults" .
-for f in start.sh start.bat defaults/server.properties; do
-  sed -i '' -e "s/@NEOFORGE_VERSION@/$NEOFORGE/g" -e "s/@MOTD@/$TITLE $VERSION/g" "$f"
-done
-# CRLF whatever the checkout did: cmd.exe misreads labels and goto in a .bat with LF endings.
+NEOFORGE=$NEOFORGE MOTD="$TITLE $VERSION" perl -pi -e 's/\@NEOFORGE_VERSION\@/$ENV{NEOFORGE}/g; s/\@MOTD\@/$ENV{MOTD}/g' \
+  start.sh start.bat defaults/server.properties
+# CRLF whatever the checkout did: cmd.exe misreads labels and goto in a .bat with LF endings. And
+# LF for start.sh, which bash can't run with CRLF endings.
 perl -pi -e 's/\r?\n/\r\n/' start.bat
+perl -pi -e 's/\r\n/\n/' start.sh
 chmod 755 start.sh
 if grep -rlE '@(NEOFORGE_VERSION|MOTD)@' start.sh start.bat README.txt defaults; then
   die "a placeholder is left in the files above"
 fi
 JARS=$(find mods -maxdepth 1 -name '*.jar' | wc -l | tr -d ' ')
 
-# 6. Zip it. zip -r would add to an old zip of the same name, so replace it.
+# 6. Zip it, replacing an old zip of the same name. zip-folder.pl sets start.sh's mode itself.
 mkdir -p "$ROOT/dist"
 rm -f "$OUT"
-(cd "$STAGE" && zip -qrX "$OUT" "$DIR")
+(cd "$STAGE" && perl "$ROOT/scripts/zip-folder.pl" "$OUT" "$DIR") || die "zipping failed"
 echo
 echo "== server pack: $(du -h "$OUT" | cut -f1 | tr -d ' ') =="
 echo "NeoForge:  $NEOFORGE (installed on first start)"
