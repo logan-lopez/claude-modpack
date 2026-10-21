@@ -1,4 +1,6 @@
 {
+	chapter.06B890659D1F1750.chapter_subtitle: ["From brass casing to the mechanical crafter, crushing wheels and the tools it builds."]
+	chapter.06B890659D1F1750.title: "Create: Mechanical Crafting"
 	chapter.16948E1D867242E0.chapter_subtitle: ["From andesite alloy through brass to the precision mechanism."]
 	chapter.16948E1D867242E0.title: "Create: Andesite to Precision"
 	chapter.2A372F82EF67248E.title: "Getting Started"
@@ -10,12 +12,26 @@
 	quest.0BFEE4151EC8C9CB.title: "Polished Rose Quartz"
 	quest.0CBB8076D40781EC.quest_desc: ["The mechanical press makes golden sheets from gold ingots."]
 	quest.0CBB8076D40781EC.title: "Golden Sheet"
+	quest.18BAC74E365D3EF6.quest_desc: ["Crushing wheels turn iron ore into crushed raw iron, often with extra, and raw iron into one each. Smelt it, or wash it for more."]
+	quest.18BAC74E365D3EF6.title: "Crushed Iron"
+	quest.18CA23C9694BB7C3.quest_desc: ["A brass casing, an electron tube and a crafting table make three mechanical crafters. Set them side by side in a grid, facing the same way, to craft recipes too big for a crafting table; a crushing wheel takes twenty-one of them."]
+	quest.18CA23C9694BB7C3.title: "Mechanical Crafters"
 	quest.1ECAD497C0AD8335.quest_desc: ["Four planks of any wood make a crafting table."]
 	quest.1ECAD497C0AD8335.title: "A Crafting Table"
+	quest.21190C0C2AEF7EAB.quest_desc: ["Use a brass ingot on a stripped log, by hand or with a deployer, to make brass casing. Mechanical crafters take one each, so make a few."]
+	quest.21190C0C2AEF7EAB.title: "Brass Casing"
+	quest.243789BED85BE7B2.quest_desc: ["A precision mechanism in a brass casing makes a rotation speed controller. It sets the speed of the cogwheel above it, whatever is turning it."]
+	quest.243789BED85BE7B2.title: "Rotation Speed Controller"
 	quest.2617388B88D71E1F.quest_desc: ["Zinc ore and deepslate zinc ore generate in the world. Smelt or blast the ore, or the raw zinc it drops, into zinc ingots."]
 	quest.2617388B88D71E1F.title: "Zinc"
+	quest.33A61C13CFCF2BC5.quest_desc: ["Sixteen andesite alloy, four planks and a stone make two crushing wheels on the mechanical crafters. Set the pair side by side and spin them toward each other, and whatever drops between them is crushed."]
+	quest.33A61C13CFCF2BC5.title: "Crushing Wheels"
 	quest.35D4B710992C8F85.quest_desc: ["An electron tube, an andesite casing and a brass hand make a deployer. It's the machine that assembles the precision mechanism."]
 	quest.35D4B710992C8F85.title: "Deployer"
+	quest.3663F8649F2050C9.quest_desc: ["The mechanical crafters make an extendo grip from a brass hand, a precision mechanism, a brass ingot and sticks. Held in the off hand, it lets you reach blocks much further away."]
+	quest.3663F8649F2050C9.title: "Extendo Grip"
+	quest.3B8FDE5B8CB91501.quest_desc: ["The mechanical crafters make a wand of symmetry from glass, an ender pearl, a precision mechanism, a brass ingot and obsidian. Every block you place or break is mirrored across the plane you set."]
+	quest.3B8FDE5B8CB91501.title: "Wand of Symmetry"
 	quest.42D18ECB404AA162.quest_desc: ["A shaft and a plank make a cogwheel, and a shaft and two planks make a large cogwheel. The precision mechanism at the end of this chapter takes five of each."]
 	quest.42D18ECB404AA162.title: "Cogwheels"
 	quest.4344E26953141519.quest_desc: ["A cogwheel, an andesite casing and a whisk make a mechanical mixer. The whisk is two andesite alloy and five iron sheets."]
@@ -26,6 +42,9 @@
 	quest.4E03C2567F5E822B.title: "Iron Sheets"
 	quest.4F87995FA90727E9.quest_desc: ["A shaft carries rotation from one Create machine to the next. Make one from andesite alloy."]
 	quest.4F87995FA90727E9.title: "A Shaft"
+	quest.504D351FBD9ED049.quest_desc: ["Blow crushed raw iron through water with an encased fan, and each one washes into nine iron nuggets, often with a redstone dust beside them. That's more iron per ore than smelting."]
+	quest.504D351FBD9ED049.quest_subtitle: "Tick this once you've washed some"
+	quest.504D351FBD9ED049.title: "Bulk Washing"
 	quest.5244761B280AD1DA.quest_desc: ["Eight planks around a shaft make a water wheel."]
 	quest.5244761B280AD1DA.title: "Water Wheel"
 	quest.575E0DE6849C913D.quest_desc: ["Two andesite alloy make eight shafts on a crafting table. Shafts go into over a hundred recipes, the cogwheels, the water wheel and the mechanical press among them."]
@@ -34,12 +53,18 @@
 	quest.5832952C9BEE4718.title: "Basin"
 	quest.62816651A924C812.quest_desc: ["Set the basin on the blaze burner and a powered mechanical mixer above the basin. Drop in a copper ingot and a zinc ingot, and the heated mix makes a brass ingot."]
 	quest.62816651A924C812.title: "Brass"
+	quest.63CEA192232460B3.quest_desc: ["Three brass sheets, an andesite alloy, a precision mechanism and a brass casing make a mechanical arm. It picks items up from one place and puts them down in another, within reach of where it stands."]
+	quest.63CEA192232460B3.title: "Mechanical Arm"
 	quest.6C0E47B4AD488F7D.quest_desc: ["Polished rose quartz and an iron sheet make an electron tube."]
 	quest.6C0E47B4AD488F7D.title: "Electron Tube"
 	quest.6ED955A757045B19.quest_desc: ["A precision mechanism is built up on a golden sheet by sequenced assembly: a deployer adds a cogwheel, a large cogwheel and an iron nugget, five times over. Four times in five it comes out a mechanism; otherwise it gives back a part, such as a cogwheel or a golden sheet."]
 	quest.6ED955A757045B19.title: "Precision Mechanism"
 	quest.6F7969F9EBB25C6A.quest_desc: ["A shaft, an andesite casing and a block of iron make a mechanical press. It presses ingots into sheets."]
 	quest.6F7969F9EBB25C6A.title: "Mechanical Press"
+	quest.74D431E29A0341A9.quest_desc: ["A shaft, an andesite casing and a propeller make an encased fan. The propeller is four iron sheets around an andesite alloy. Items the fan blows through water are washed, through lava smelted, and through fire smoked."]
+	quest.74D431E29A0341A9.title: "Encased Fan"
+	quest.780CAE0E4D843A83.quest_desc: ["The mechanical crafters make a potato cannon from fluid pipes, copper, an andesite alloy and a precision mechanism. It fires crops, and a few of them do more than bounce."]
+	quest.780CAE0E4D843A83.title: "Potato Cannon"
 	quest.7D7AF1F19903D0DF.quest_desc: ["Andesite alloy is what most of Create is made of. Two andesite and two iron nuggets make one on a crafting table, and zinc nuggets work in place of the iron."]
 	quest.7D7AF1F19903D0DF.title: "Andesite Alloy"
 	quest.7DEAB55B3B9AAC5C.quest_desc: ["Strip a log with an axe, then use andesite alloy on it, by hand or with a deployer, to make andesite casing. The mechanical press, the mixer and the deployer are all built around one."]

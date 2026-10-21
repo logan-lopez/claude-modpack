@@ -1,0 +1,193 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_crafting"
+	group: ""
+	id: "06B890659D1F1750"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6ED955A757045B19"]
+			id: "21190C0C2AEF7EAB"
+			rewards: [{
+				id: "5527771CB16C5CC1"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 8L
+				id: "7C812D74612BED82"
+				item: { count: 1, id: "create:brass_casing" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21190C0C2AEF7EAB"]
+			id: "18CA23C9694BB7C3"
+			rewards: [{
+				id: "0D3A5C6794CB4EB0"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				count: 21L
+				id: "7394BF83413838B3"
+				item: { count: 1, id: "create:mechanical_crafter" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18CA23C9694BB7C3"]
+			id: "33A61C13CFCF2BC5"
+			rewards: [{
+				id: "11965E4635A03C18"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				count: 2L
+				id: "1C4A08969069FBE5"
+				item: { count: 1, id: "create:crushing_wheel" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33A61C13CFCF2BC5"]
+			id: "18BAC74E365D3EF6"
+			rewards: [{
+				id: "1FF467C82F6AB301"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 8L
+				id: "61FE2BD909CA86CF"
+				item: { count: 1, id: "create:crushed_raw_iron" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			id: "74D431E29A0341A9"
+			rewards: [{
+				id: "7F84D2CE91B5874F"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "0C2D6FBC874FC8A2"
+				item: { count: 1, id: "create:encased_fan" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"18BAC74E365D3EF6"
+				"74D431E29A0341A9"
+			]
+			id: "504D351FBD9ED049"
+			rewards: [{
+				id: "52E65B91D9ECCB54"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0D4AF3DE7B08F22C"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21190C0C2AEF7EAB"]
+			id: "63CEA192232460B3"
+			rewards: [{
+				id: "1E9A64EFB1F8E265"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "4A94C6F0EB40DC27"
+				item: { count: 1, id: "create:mechanical_arm" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["21190C0C2AEF7EAB"]
+			id: "243789BED85BE7B2"
+			rewards: [{
+				id: "317FD48CC1F7CA5B"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "7B03203157788F81"
+				item: { count: 1, id: "create:rotation_speed_controller" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["18CA23C9694BB7C3"]
+			id: "3663F8649F2050C9"
+			rewards: [{
+				id: "2DCD9C1CE262FCF7"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "3DA20EDA12328A00"
+				item: { count: 1, id: "create:extendo_grip" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["18CA23C9694BB7C3"]
+			id: "780CAE0E4D843A83"
+			rewards: [{
+				id: "0BCAB7063B279B93"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "52A361354575784A"
+				item: { count: 1, id: "create:potato_cannon" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["18CA23C9694BB7C3"]
+			id: "3B8FDE5B8CB91501"
+			rewards: [{
+				id: "7E29B488CBC95D20"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "05FF4834DCB3FC87"
+				item: { count: 1, id: "create:wand_of_symmetry" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+	]
+}

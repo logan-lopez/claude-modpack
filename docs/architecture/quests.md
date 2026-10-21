@@ -24,13 +24,16 @@ pack/config/ftbquests/quests/
   lang/en_us.snbt            every title and description, keyed by object ID
 ```
 
-It holds two chapters, both in the default group. `chapters/getting_started.snbt` is the sample:
+It holds three chapters, all in the default group. `chapters/getting_started.snbt` is the sample:
 three quests in a chain (a crafting table, Create's andesite alloy, a Create shaft), one item task
 each, a dependency on the one before, laid out left to right at `x` 0, 2 and 4, and a 100 XP
 reward on the last. It's the format reference, not content. `chapters/create_basics.snbt`
 ("Create: Andesite to Precision", `order_index` 1) is the first real chapter: 19 quests from
-andesite alloy to the precision mechanism, drafted and written by minecraft-mcp, which is where
-real chapters come from.
+andesite alloy to the precision mechanism. `chapters/create_crafting.snbt` ("Create: Mechanical
+Crafting", `order_index` 2) follows it with 11 quests, and its first quest depends on
+`create_basics`' precision mechanism: the book's first dependency across chapters. Both were
+drafted and written by minecraft-mcp, which is where real chapters come from, against its
+[outline of the whole book](../../../minecraft-mcp/docs/design/quest-book.md).
 
 `data.snbt` and `chapter_groups.snbt` are the files FTB Quests wrote itself for a book with no
 `data.snbt`, so they hold its defaults (linear progression, circle quests, `grid_scale: 0.5d`).

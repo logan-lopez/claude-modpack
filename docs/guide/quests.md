@@ -1,7 +1,7 @@
 # The quest book
 
 FTB Quests' quest book, which the pack ships and keeps in the repo. It has a short sample chapter
-and one real one, on Create, drafted by minecraft-mcp.
+and two real ones, on Create, drafted by minecraft-mcp.
 
 **Covers:** [The quest book](../architecture/quests.md)
 
@@ -26,6 +26,16 @@ andesite alloy and shafts, builds the water wheel and the mechanical press for i
 the mixer, basin and blaze burner for brass, and ends at the deployer and the precision mechanism
 it assembles. Zinc and polished rose quartz are side branches you can start at any time. Each
 quest says how to make its item, and gives 25 to 100 XP.
+
+**Create: Mechanical Crafting**, after it: 11 quests, locked until the precision mechanism is
+done. Brass casing makes mechanical crafters, 21 of which build a pair of crushing wheels; crushed
+iron, washed with an encased fan, gives more iron per ore. The mechanical arm, the rotation speed
+controller and the crafters' tools (the extendo grip, the potato cannon and the wand of symmetry)
+branch off on the way. Bulk Washing is a box to tick rather than items to hand in.
+
+The rest of the book is planned in minecraft-mcp's
+[outline](../../../minecraft-mcp/docs/design/quest-book.md): its groups, chapters and the order
+they're drafted in.
 
 ## Editing in the game
 
