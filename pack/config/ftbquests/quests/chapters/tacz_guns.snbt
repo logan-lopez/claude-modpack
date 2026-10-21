@@ -1,0 +1,286 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tacz_guns"
+	group: "38141FC7E950B458"
+	icon: {
+		id: "tacz:gun_smith_table"
+	}
+	id: "1F17920B0F860117"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "13D33346F36B1390"
+			rewards: [{
+				id: "1C22087E3F45943A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "02633B1DFADF5BE8"
+				item: { count: 1, id: "tacz:gun_smith_table" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13D33346F36B1390"]
+			id: "3F787EC852D554C7"
+			rewards: [{
+				id: "306C546FFD230A68"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "2580397CF85F7C4E"
+				item: { components: { "minecraft:custom_data": { GunCurrentAmmoCount: 0, GunFireMode: "SEMI", GunId: "tacz:m1911", HasBulletInBarrel: 0b } }, count: 1, id: "tacz:modern_kinetic_gun" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13D33346F36B1390"]
+			id: "5485D0AFB9E2DB70"
+			rewards: [{
+				id: "7F1FC39F486B3522"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2F3B3C5E54FB393A"
+				item: { count: 1, id: "tacz:ammo_box" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5485D0AFB9E2DB70"]
+			id: "69473B34BD76FDAB"
+			rewards: [{
+				id: "55AC51AF81517D6A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "597A74AFE70C3B79"
+				item: { count: 1, id: "tacz:workbench_a" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3F787EC852D554C7"
+				"69473B34BD76FDAB"
+			]
+			id: "7C4CDB9926801D3F"
+			rewards: [{
+				id: "7EA27AC71DFBD2BF"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 30L
+				id: "16AE53D51D562E24"
+				item: { components: { "minecraft:custom_data": { AmmoId: "tacz:45acp" }, "minecraft:max_stack_size": 60 }, count: 1, id: "tacz:ammo" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3F787EC852D554C7"]
+			id: "51F8C05DDB6B2E5F"
+			rewards: [
+				{
+					id: "7EFE3FB9C4963AB8"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 16
+					id: "0756A0B7E41C5BAA"
+					item: {
+						count: 1
+						id: "minecraft:copper_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0E7325CFA596A193"
+				item: { components: { "minecraft:custom_data": { GunCurrentAmmoCount: 0, GunFireMode: "BURST", GunId: "tacz:m16a4", HasBulletInBarrel: 0b } }, count: 1, id: "tacz:modern_kinetic_gun" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"51F8C05DDB6B2E5F"
+				"69473B34BD76FDAB"
+			]
+			id: "6A64B6AB96169AD1"
+			rewards: [{
+				id: "4142349AB2EDF63E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 45L
+				id: "07A0FFFE3C71D0BE"
+				item: { components: { "minecraft:custom_data": { AmmoId: "tacz:556x45" }, "minecraft:max_stack_size": 60 }, count: 1, id: "tacz:ammo" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["51F8C05DDB6B2E5F"]
+			id: "3D53C8374D66F693"
+			rewards: [{
+				id: "4455B48CD7BA013D"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "3608F338A420A856"
+				item: { count: 1, id: "tacz:workbench_c" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D53C8374D66F693"]
+			id: "4084D55FDBE51583"
+			rewards: [{
+				id: "3653987C8F572DF7"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "4AAE623A7A3655EF"
+				item: { components: { "minecraft:custom_data": { AttachmentId: "tacz:scope_retro_2x" } }, count: 1, id: "tacz:attachment" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F787EC852D554C7"]
+			id: "1B96D49C911CE19A"
+			rewards: [{
+				id: "1274CB6F1C8AA105"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "48C785BF52EF5310"
+				item: { components: { "minecraft:custom_data": { GunCurrentAmmoCount: 0, GunFireMode: "SEMI", GunId: "tacz:m870", HasBulletInBarrel: 0b } }, count: 1, id: "tacz:modern_kinetic_gun" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1B96D49C911CE19A"
+				"69473B34BD76FDAB"
+			]
+			id: "24BEEC0B2D63AB40"
+			rewards: [{
+				id: "54706C85F80D5EE4"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 18L
+				id: "36396C37F7E35755"
+				item: { components: { "minecraft:custom_data": { AmmoId: "tacz:12g" }, "minecraft:max_stack_size": 36 }, count: 1, id: "tacz:ammo" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["51F8C05DDB6B2E5F"]
+			id: "6170660BBC43FE0F"
+			rewards: [{
+				id: "71298948C4C935D9"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2EC6C1E997783591"
+				item: { components: { "minecraft:custom_data": { GunCurrentAmmoCount: 0, GunFireMode: "SEMI", GunId: "elitex:m1_garand", HasBulletInBarrel: 0b } }, count: 1, id: "tacz:modern_kinetic_gun" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3F787EC852D554C7"]
+			id: "7D74F1B14F9AE7C4"
+			rewards: [{
+				id: "162625AB52A0B758"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6BD8D6F1A71923A4"
+				item: { components: { "minecraft:custom_data": { GunCurrentAmmoCount: 0, GunFireMode: "SEMI", GunId: "tacz_fallout:10mm_pistol", HasBulletInBarrel: 0b } }, count: 1, id: "tacz:modern_kinetic_gun" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["13D33346F36B1390"]
+			id: "2FB85C3CBDDB9066"
+			rewards: [{
+				id: "050B344005503C15"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "481AB361302BD403"
+				item: { count: 1, id: "tacz_turrets:turret" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["13D33346F36B1390"]
+			id: "6478374EE8A9E3E0"
+			rewards: [{
+				id: "2575ECCD36E97AD9"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "393F358AFECF9DDF"
+				item: { count: 1, id: "tacz:target" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+	]
+}

@@ -1,7 +1,7 @@
 # The quest book
 
 FTB Quests' quest book, which the pack ships and keeps in the repo. It has a short sample chapter
-and two real ones, on Create, drafted by minecraft-mcp.
+and thirty-four real ones, drafted by minecraft-mcp.
 
 **Covers:** [The quest book](../architecture/quests.md)
 
@@ -94,6 +94,22 @@ Four more Create chapters follow, each locked until a quest in the first two:
   crude knife, blueprint paper and a pickaxe blueprint, a pickaxe head and a pickaxe, then blaze
   gold and the material grader, crimson iron (mined in the Nether) with the salvager, crimson
   steel and the alloy forge, and azure silver (mined in the End) for azure electrum.
+- **Guns**, 15 quests, open from the start: TaCZ's gun smith table and an M1911, the ammo box
+  and the ammo assembly table for its .45 ACP, the M16A4 and its 5.56 rounds, the attachment
+  table and a scope, the M870 and its shells, and a gun from each of the other packs: Elite x
+  Quality's M1 Garand (made at the Elitebench) and Fallout's 10mm Pistol. A turret and a
+  target branch off the first quest. A gun quest takes a gun as it comes off the bench, so make
+  a fresh one rather than handing in one you've loaded.
+- **Create Armorer**, 8 quests, after the mechanical crafters: the gun barrel, trigger
+  mechanism and firing mechanism made on the crafters, pneumatic pistol casings cut by a saw, the
+  primer and pneumatic pistol ammo by sequenced assembly, the fluid pipe scope, and a gun off the
+  crafters. That last one is a box to tick: a gun from the crafters isn't saved with the same data
+  as one from the Weapon Station, so a hand-in quest wouldn't take it.
+- **Apotheosis**, 15 quests, open from the start: the five world tiers, Haven to Pinnacle, each
+  a quest you complete by earning its advancement, with gem dust, the salvaging table and
+  mysterious scrap metal, the simple reforging table, the gem cutting table and a sigil of
+  socketing, a gate pearl and the Frontier's gateway, and the reforging table on the way. Apothic
+  Spawners' silk-touched spawner and a spawner modifier are a branch of their own.
 
 **Food and Farming**, the sixth group:
 
@@ -132,9 +148,7 @@ Four more Create chapters follow, each locked until a quest in the first two:
   ritual of summon wilden to the archmage spell book.
 - **Iron's Spells: Scrolls and Spellbooks**, 11 quests, open from the start: the inscription
   table, the flimsy journal and ironbound tome, arcane and cinder essence, the alchemist cauldron,
-  common and uncommon ink, the scroll forge and arcane anvil, and the apprentice's spell book. The
-  three spell books are boxes to tick: FTB Quests saves a spell book's stack with its spell slots,
-  which minecraft-mcp can't write yet.
+  common and uncommon ink, the scroll forge and arcane anvil, and the apprentice's spell book.
 - **Create: Wizardry**, 7 quests, after Iron's arcane essence: arcane casing, sheets, pipes and
   pump, the mana siphon, the blaze caster and the channeler.
 - **Enchanting**, 12 quests, open from the start: the enchanting table, hellshelves and seashelves

@@ -7,6 +7,8 @@
 	chapter.06B890659D1F1750.title: "Create: Mechanical Crafting"
 	chapter.084B69E7170F741E.chapter_subtitle: ["Find oil, pump it up, split it into fuels in a distillation tower, and burn the diesel in an engine."]
 	chapter.084B69E7170F741E.title: "Oil and Engines"
+	chapter.0D461919B1C82D38.chapter_subtitle: ["Guns and bullets off the mechanical crafters and the belt."]
+	chapter.0D461919B1C82D38.title: "Create Armorer"
 	chapter.0FB4652418B4DA84.chapter_subtitle: ["The Factory Must Grow's steelworks: coke ovens, the blast furnace and casting steel by the stack."]
 	chapter.0FB4652418B4DA84.title: "Steel and Alloys"
 	chapter.136CA92B220A5C4D.chapter_subtitle: ["Spell books with more slots, the essences and inks that go into scrolls, and the forge and anvil that make and improve them."]
@@ -17,6 +19,10 @@
 	chapter.17A01C422718A63A.title: "The Nether"
 	chapter.183DE125B39604C0.chapter_subtitle: ["Better rods, hooks, bait and lines, fillets from the catch, and neptunium from Neptune's Bounty."]
 	chapter.183DE125B39604C0.title: "Aquaculture"
+	chapter.1BDCA3F39794A2CF.chapter_subtitle: ["Affix gear, gems and the five world tiers."]
+	chapter.1BDCA3F39794A2CF.title: "Apotheosis"
+	chapter.1F17920B0F860117.chapter_subtitle: ["Three gun packs, three benches, and the ammo to feed them."]
+	chapter.1F17920B0F860117.title: "Guns"
 	chapter.20E8D0B024C2412D.chapter_subtitle: ["Eyes of ender to a stronghold, the dragon, and the cities beyond it."]
 	chapter.20E8D0B024C2412D.title: "The End"
 	chapter.24DBC722ADF457B6.chapter_subtitle: ["From copper pipes to pumps, spouts, tanks and the steam engine."]
@@ -175,6 +181,8 @@
 	quest.0D43965368217D48.title: "Drilling Machine"
 	quest.0D4B096E0D561E37.quest_desc: ["An amethyst shard or a lapis lazuli in the Imbuement Chamber becomes a Source Gem, the material nearly everything else here is made from."]
 	quest.0D4B096E0D561E37.title: "Source Gems"
+	quest.0D771262CD70BB56.quest_desc: ["Wear a full set of epic gear and kill the Ender Dragon. The top tier, with the strongest mobs and the best loot."]
+	quest.0D771262CD70BB56.title: "World Tier: Pinnacle"
 	quest.0D8DEB4793B0CD2D.quest_desc: ["Amethyst, emeralds and ender pearls in a mechanical crafter. Use it to teleport to any waystone you've activated; every waystone is built around one."]
 	quest.0D8DEB4793B0CD2D.title: "Warp Stone"
 	quest.0DB3CEDF139BC729.quest_desc: ["A double hook can catch two things at once, a redstone hook gives you longer to reel a fish in, and a note hook plays an alert when a fish approaches. Light and heavy hooks cast further or shorter."]
@@ -201,6 +209,8 @@
 	quest.11035283280C5B16.title: "Modular Diesel Engine"
 	quest.112EAAE8696F55A8.quest_desc: ["Atlantic halibut, an egg and an onion in the cooking pot. A neptunium knife, from Aquaculture's best metal, cuts more fillets from each fish."]
 	quest.112EAAE8696F55A8.title: "Halibut with Tartar Sauce"
+	quest.11A8AD497C02A95E.quest_desc: ["A mechanical saw cuts one brass sheet into 32. Each round has its own casing, cut the same way: rimmed blunt AP, SLAP, 40mm HE, grenade and 12 gauge."]
+	quest.11A8AD497C02A95E.title: "Pneumatic Pistol Casings"
 	quest.122511CBDDC7CE41.quest_desc: ["Break the end crystals on the obsidian pillars first, or they heal it. YUNG's Better End Island gives the island a new spawn platform, a central tower and new gateways, and a bell tolls before the dragon is summoned."]
 	quest.122511CBDDC7CE41.title: "The Ender Dragon"
 	quest.12A824E9981DF29F.quest_desc: ["Smelt the debris into netherite scrap, then craft four scrap with four gold ingots. Netherite gear outlasts diamond and won't burn in lava."]
@@ -211,6 +221,8 @@
 	quest.13601A7E258F0591.title: "Coal Coke Dust"
 	quest.139623F0052D535E.quest_desc: ["A copper casing and dried kelp make a spout. Fed by a pipe, it fills the item below it on a depot or a belt: a bucket, a bottle, or anything a recipe fills with fluid."]
 	quest.139623F0052D535E.title: "Spout"
+	quest.13D33346F36B1390.quest_desc: ["Every gun in the default pack and Fallout's is made here, from iron, logs and a block of iron. Guns also turn up in structure chests, but making one is the way to complete a quest."]
+	quest.13D33346F36B1390.title: "TaCZ Gun Smith Table"
 	quest.13DC25BF054B85E8.quest_desc: ["A lever, a train casing and a precision mechanism make train controls. A train needs one to be driven: build it on bogeys at a station, glue it together, and assemble it from the station."]
 	quest.13DC25BF054B85E8.title: "Train Controls"
 	quest.142EA203BB462043.quest_desc: ["Two diamonds, two string and a stick: the strongest rod you can craft."]
@@ -225,6 +237,8 @@
 	quest.16DF58934349AC94.title: "Oxygen Loader"
 	quest.17025CEF04B29ED2.quest_desc: ["Sand, dirt and clay. A cannon mould, sawn from a log with a mechanical saw, is built into a cast layer of casting sand; fill the cast with molten metal, let it set, then break it open."]
 	quest.17025CEF04B29ED2.title: "Casting Sand"
+	quest.1753C678A121947A.quest_desc: ["Uses gem dust and rarity materials to raise a gem's purity. Socket a gem into gear at a smithing table, item on the left and gem on the right; taking it out again is costly."]
+	quest.1753C678A121947A.title: "Gem Cutting Table"
 	quest.175B536816261262.quest_desc: [
 		"A book, diamonds and obsidian. The shelves around it set its Eterna (the highest level it can enchant at), Quanta (how random the result is) and Arcana (rarer enchantments, and more of them)."
 		""
@@ -275,6 +289,8 @@
 	quest.1B0FF5899D1C50F4.title: "Space Suit"
 	quest.1B51D5E70031131E.quest_desc: ["Connects every inventory touching it into one network, Tom's Simple Storage's start. Cable reaches inventories further away, attached with inventory cable connectors."]
 	quest.1B51D5E70031131E.title: "Inventory Connector"
+	quest.1B96D49C911CE19A.quest_desc: ["A pump shotgun from the gun smith table: 25 iron and 12 logs."]
+	quest.1B96D49C911CE19A.title: "M870"
 	quest.1BD3448C6EBB129A.quest_desc: ["Dirt, straw, rotten flesh and bone meal, or tree bark in place of the flesh. Placed down, it composts better with sun, water and mushrooms nearby."]
 	quest.1BD3448C6EBB129A.title: "Organic Compost"
 	quest.1C148461904D16AC.quest_desc: ["The Shattered of the Deeplands and Echoing Forest drop them, and temple chests hold them."]
@@ -359,6 +375,10 @@
 	quest.243789BED85BE7B2.title: "Rotation Speed Controller"
 	quest.24974C509DC442F4.quest_desc: ["Projectile (a fletching table and an arrow) and Touch (a button) say how a spell is cast; Break (an iron pickaxe) is what it does. Throw the codex's items onto the table and it scribes the glyph."]
 	quest.24974C509DC442F4.title: "First Glyphs"
+	quest.24BEEC0B2D63AB40.quest_desc: ["The shotgun's shells: copper, gunpowder and iron nuggets make 18 at the Ammo Assembly Table. Create Armorer fills them with a spout as well."]
+	quest.24BEEC0B2D63AB40.title: "12 Gauge Shells"
+	quest.24EBF74646BCD91D.quest_desc: ["Wear a full set of uncommon gear and kill an Apothic Invader, then switch to Ascent."]
+	quest.24EBF74646BCD91D.title: "World Tier: Ascent"
 	quest.25D3EE9E6CC40E70.quest_desc: ["Shulkers hide in the cities' walls as purpur boxes, and their bullets make you float. They sometimes drop their shell."]
 	quest.25D3EE9E6CC40E70.title: "Shulker Shells"
 	quest.25FE4152DE215902.quest_desc: ["Cut tentacles and dough in the cooking pot."]
@@ -367,6 +387,8 @@
 	quest.2617388B88D71E1F.title: "Zinc"
 	quest.268E21E25F235E78.quest_desc: ["An iron sheet, a redstone dust and a train casing make a train coupler, from Steam 'n' Rails. Placed on a track, it couples and uncouples the carriages of a train that stops on it."]
 	quest.268E21E25F235E78.title: "Train Coupler"
+	quest.26BC5EE9D20A5747.quest_desc: ["Two brass sheets, a precision mechanism and a lever, on the mechanical crafters."]
+	quest.26BC5EE9D20A5747.title: "Trigger Mechanism"
 	quest.26E56C8A7F2ADC32.quest_desc: ["A golden sheet and a copper ingot make a steam whistle. On a boiler's tank, it sounds on a redstone signal, its pitch set by how many you stack."]
 	quest.26E56C8A7F2ADC32.title: "Steam Whistle"
 	quest.271C58BD203F0D96.quest_desc: ["Three popped chorus fruit, four end stone bricks and a campfire: a stove for the chef of the End."]
@@ -425,6 +447,11 @@
 	quest.2E205DF4A005B094.title: "Package Frogport"
 	quest.2E2B5001B725B899.quest_desc: ["Set the base on top of the pipe from the deposit, the hammer holder behind it, the connector and head above, joined by hammer parts and super glued. A machine input under the crank takes the rotation that drives it, and crude oil comes out of the base."]
 	quest.2E2B5001B725B899.title: "Pumpjack"
+	quest.2EAE369A1FB4E030.quest_desc: [
+		"Put a barrel, a trigger and a firing mechanism on the mechanical crafters with the rest of a gun's recipe: the \"Stress\" Auto Pistol adds a block of brass and a plank. The \"Crank\" SMG, the \"Bearing\" Shotgun and the \"Crane\" Assult Rifle are made the same way."
+		"Tick this once one comes off the crafters. A gun from the Weapon Station doesn't count."
+	]
+	quest.2EAE369A1FB4E030.title: "A Mechanically Crafted Gun"
 	quest.2EC24750F1A6E051.quest_desc: ["Two bricks, a wooden shovel, five iron and a water bucket. Set it on a stove, campfire or fire and cook meals of several ingredients, served in a bowl."]
 	quest.2EC24750F1A6E051.title: "Cooking Pot"
 	quest.2EF693E8E64154B9.quest_desc: ["Mechanically crafted from diamonds, overcharged diamonds, iron sheets, a brass casing and a block of redstone. The strongest motor."]
@@ -437,6 +464,8 @@
 	quest.2F7EA6158CFA5B5D.title: "Skillet"
 	quest.2FB357D1CB1E49B9.quest_desc: ["Two iron sheets and an iron ingot make four chutes. Items fall down a chute, and an encased fan blows them up one."]
 	quest.2FB357D1CB1E49B9.title: "Chutes"
+	quest.2FB85C3CBDDB9066.quest_desc: ["Give it a gun and ammo and it fires at what comes near, on FE power. Set it to save ammo or fire as fast as the gun allows, and whether it shoots players."]
+	quest.2FB85C3CBDDB9066.title: "Turret"
 	quest.3026A843F2423034.quest_desc: ["An andesite casing and a lightning rod. Given electricity and rotation, it energises items on a depot or belt under it."]
 	quest.3026A843F2423034.title: "Basic Energiser"
 	quest.3153A87E7D07CA8E.quest_desc: ["Prismarine bricks, a potion, a bookshelf and a pufferfish. The ocean's shelf."]
@@ -455,8 +484,12 @@
 	quest.32B6F81B4DFB5527.title: "Respawn Anchor"
 	quest.32FDA4F6A3426DED.quest_desc: ["The Wither drops it, and it won't burn or blow up."]
 	quest.32FDA4F6A3426DED.title: "Nether Star"
+	quest.3317C91466835DB7.quest_desc: ["Wear a full set of affix items: helmet, chestplate, leggings, boots and something in hand. Then switch to Frontier with Ctrl+T. Each tier up makes mobs and loot stronger."]
+	quest.3317C91466835DB7.title: "World Tier: Frontier"
 	quest.3360689BF4EA0CBE.quest_desc: ["An andesite alloy and a dried kelp make two andesite funnels, and twice that two andesite tunnels. A funnel puts items onto a belt or takes them off into a chest; a tunnel on a belt splits what passes under it between the belts beside it."]
 	quest.3360689BF4EA0CBE.title: "Andesite Funnels and Tunnels"
+	quest.33A3CB901281922B.quest_desc: ["Rerolls an item's affixes, common to rare, for levels and its rarity's material. From uncommon up it takes Sigils of Rebirth too."]
+	quest.33A3CB901281922B.title: "Simple Reforging Table"
 	quest.33A61C13CFCF2BC5.quest_desc: ["Sixteen andesite alloy, four planks and a stone make two crushing wheels on the mechanical crafters. Set the pair side by side and spin them toward each other, and whatever drops between them is crushed."]
 	quest.33A61C13CFCF2BC5.title: "Crushing Wheels"
 	quest.34190BDBA66CAA2E.quest_desc: ["Blaze powder and an ender pearl. Thrown, an eye flies toward the nearest stronghold and sometimes shatters; the portal needs up to twelve."]
@@ -481,8 +514,12 @@
 	quest.36D48965C918D447.title: "Blaze Enchanter"
 	quest.36D546DE6DC7ACE0.quest_desc: ["Four new crops grow wild across many climates: cabbages, tomatoes, onions and wild rice. Cut wild rice on the board for grains of rice, and plant them in a shallow puddle of water."]
 	quest.36D546DE6DC7ACE0.title: "Wild Crops"
+	quest.374C4049CF5E16C7.quest_desc: ["Use an item on a placed spawner to change it: sugar shortens its delay, a fermented spider eye spawns more, a comparator gives it a redstone switch, a soul lantern lets it work in any light."]
+	quest.374C4049CF5E16C7.title: "Just a Few Tweaks..."
 	quest.3770784E5E24E8F3.quest_desc: ["A packager turns into a re-packager on a crafting table. It unpacks packages and packs their contents again, so orders split across several packages arrive as one."]
 	quest.3770784E5E24E8F3.title: "Re-Packager"
+	quest.3A0A747DDB701D9B.quest_desc: ["A deployer, a rotation speed controller, a large and a small cogwheel and a flint and steel, on the mechanical crafters. The dearest part of a gun."]
+	quest.3A0A747DDB701D9B.title: "Firing Mechanism"
 	quest.3A1CC98B34459587.quest_desc: ["A guardian, an onion, two eggs and two tomatoes in the cooking pot. Guardians drop the guardian itself; ocean monuments are where they live."]
 	quest.3A1CC98B34459587.title: "Guardian Soup"
 	quest.3A50BA47D130CDD3.quest_desc: ["Found in fortress chests. It grows only on soul sand, and nearly every potion starts from it."]
@@ -499,8 +536,12 @@
 	quest.3B8FDE5B8CB91501.title: "Wand of Symmetry"
 	quest.3CD3E7BFB55DAB51.quest_desc: ["Packed gunpowder, pressed from three gunpowder, in an empty charge of string and wool. A cast iron cannon needs one charge per barrel to fire the shot clear, and bursts on more than two."]
 	quest.3CD3E7BFB55DAB51.title: "Powder Charge"
+	quest.3CF5162DCCD738D4.quest_desc: ["Beat every wave of the Gateway of the First Frontier."]
+	quest.3CF5162DCCD738D4.title: "Leave the Frontier"
 	quest.3D1BB170E12701C3.quest_desc: ["An endshelf, ender pearls and the dragon's head. The strongest shelf there is."]
 	quest.3D1BB170E12701C3.title: "Draconic Endshelf"
+	quest.3D53C8374D66F693.quest_desc: ["Makes scopes, sights, muzzles, stocks, grips, lasers and extended magazines. Fit them to a gun in its inventory screen; each gun takes only some."]
+	quest.3D53C8374D66F693.title: "TaCZ Attachment Table"
 	quest.3D913DD0246529D6.quest_desc: ["Used on farmland: red fertilizer speeds up growth, green increases crop output, and yellow prevents trampling."]
 	quest.3D913DD0246529D6.title: "Fertilizer"
 	quest.3DB4704C88B0A42B.quest_desc: ["A brass sheet, a spout and three nixie tubes. Over a basin and among bookshelves, it does an enchanting table's infusion recipes with liquid experience."]
@@ -517,16 +558,25 @@
 	quest.3EB331B0CEEFE6AA.title: "Launch Pad"
 	quest.3EE94B64D98641DD.quest_desc: ["Rebar and a brass ingot. Deployers hold it to drive screws when they assemble steel mechanisms."]
 	quest.3EE94B64D98641DD.title: "Screwdriver"
+	quest.3F08DFF434222848.quest_desc: [
+		"Eight iron on the mechanical crafters. Every Create Armorer gun on the crafters takes a barrel, a trigger and a firing mechanism."
+		"The same guns can also be made at the Weapon Station, Create Armorer's TaCZ bench, but this chapter makes them with Create."
+	]
+	quest.3F08DFF434222848.title: "Gun Barrel"
 	quest.3F33CD73F5C47DCF.quest_desc: ["An energized core, iron and copper sheets, a hopper and a bottle o' lightning on a mechanical crafter. It catches lightning bolts as liquid lightning. The first bottle comes from a charged creeper or a magic chest."]
 	quest.3F33CD73F5C47DCF.title: "Channeler"
 	quest.3F523886DD1C4542.quest_desc: ["Crush obsidian into powdered obsidian, then build a sturdy sheet on it by sequenced assembly: a spout pours on lava and a press flattens it. It's the toughest sheet Create makes."]
 	quest.3F523886DD1C4542.title: "Sturdy Sheet"
+	quest.3F787EC852D554C7.quest_desc: ["The cheapest pistol at the gun smith table: 16 iron and 5 logs. Make a fresh one for this quest; a gun that's been loaded or fired no longer counts. Guns wear as they fire and can jam once worn."]
+	quest.3F787EC852D554C7.title: "M1911"
 	quest.3F9CAA1304C43B82.quest_desc: ["Paper and blue dye make four sheets. Three boards and two sticks make a template, which works once; blueprint paper makes blueprints, which work every time."]
 	quest.3F9CAA1304C43B82.title: "Blueprint Paper"
 	quest.3FF8CB1F92B4357D.quest_desc: ["Refines crude oil into rocket fuel. It runs on power: Ad Astra's coal generator burns anything a furnace does, or use Crafts & Additions' alternator. A tier 1 rocket also burns diesel, gasoline or kerosene straight from the distillation tower."]
 	quest.3FF8CB1F92B4357D.title: "Fuel Refinery"
 	quest.4068689FCBA54738.quest_desc: ["Mined from crimson iron ore in the Nether, in netherrack and blackstone, and smelted like iron."]
 	quest.4068689FCBA54738.title: "Crimson Iron"
+	quest.4084D55FDBE51583.quest_desc: ["The cheapest scope, eight iron and an amethyst shard, and the M16A4 takes it."]
+	quest.4084D55FDBE51583.title: "Retro 3x Scope"
 	quest.40D889BD937BEF25.quest_desc: ["Electricity starts with copper wire: a stonecutter makes two from a copper ingot, and the rolling mill makes it from copper sheets."]
 	quest.40D889BD937BEF25.title: "Copper Wire"
 	quest.41C1C91A6AC7DA47.quest_desc: ["Single-use teleports from the mechanical crafter, three at a time: a warp scroll goes to a waystone you choose, a return scroll back to the last one you used."]
@@ -545,12 +595,16 @@
 	quest.43440F667B05C3A8.title: "Industrial Fan"
 	quest.4344E26953141519.quest_desc: ["A cogwheel, an andesite casing and a whisk make a mechanical mixer. The whisk is two andesite alloy and five iron sheets."]
 	quest.4344E26953141519.title: "Mechanical Mixer"
+	quest.43A2BB7AF820DFAF.quest_desc: ["Gems drop alongside affix items. Your first gem dust comes from dropping a gem on the ground and letting an anvil fall on it; after that, the Salvaging Table breaks gems down."]
+	quest.43A2BB7AF820DFAF.title: "Gem Dust"
 	quest.44184E8CBC0338B8.quest_desc: ["An echo shard wrapped in four warden carapaces and four phantom membranes. Carapaces come from the Warden and, now and then, ancient city chests."]
 	quest.44184E8CBC0338B8.title: "Reinforced Echo Shard"
 	quest.4440B711812F947F.quest_desc: ["A lightning rod on four heavy plates."]
 	quest.4440B711812F947F.title: "Rocket Nose Cone"
 	quest.44638097D1B5911E.quest_desc: ["The mechanical press makes brass sheets from brass ingots. Four of them and an andesite alloy make the brass hand a deployer needs."]
 	quest.44638097D1B5911E.title: "Brass Sheets"
+	quest.4548E26475C7303D.quest_desc: ["Adds one socket to an item, for one more gem. Gem dust, gem-fused slate, gunpowder and an amethyst shard make three."]
+	quest.4548E26475C7303D.title: "Sigil of Socketing"
 	quest.4581013F8819B460.quest_desc: ["Mechanically crafted from three copper spools, brass sheets, a capacitor, an iron rod and andesite alloy. It turns power back into rotation, at a speed you set."]
 	quest.4581013F8819B460.title: "Electric Motor"
 	quest.45FF46A2E52E9A59.quest_desc: ["Catch the dragon's purple breath in glass bottles while it lingers. Brewed into a splash potion it makes lingering potions."]
@@ -617,6 +671,8 @@
 	quest.4F87995FA90727E9.title: "A Shaft"
 	quest.4FF888A38D24CA23.quest_desc: ["A precision mechanism, a brass casing, iron sheets and redstone make eight. Unpowered, it charges from the rotation in front of it; given a redstone signal, it gives that stress back to the network."]
 	quest.4FF888A38D24CA23.title: "Kinetic Battery"
+	quest.50050FE8336BC82F.quest_desc: ["Use a gate pearl to open a gateway: waves of mobs to beat for loot. Each world tier has its own, and the Gateway of the First Frontier is crafted from spider eyes, iron, bones, an ender pearl and rotten flesh. Gateways' own pearls, for blazes, endermen or slimes, count too."]
+	quest.50050FE8336BC82F.title: "A Gate Pearl"
 	quest.5017F477DFE6690A.quest_desc: ["Two shells around a chest: a box that keeps everything in it when it's broken and carried."]
 	quest.5017F477DFE6690A.title: "Shulker Box"
 	quest.504D351FBD9ED049.quest_desc: ["Blow crushed raw iron through water with an encased fan, and each one washes into nine iron nuggets, often with a redstone dust beside them. That's more iron per ore than smelting."]
@@ -632,6 +688,8 @@
 	quest.518D3A98728FCC32.title: "Quantum Mechanism"
 	quest.51CE3697587C7ED6.quest_desc: ["A frozen planet around Proxima Centauri, and the only one where you can breathe without a suit."]
 	quest.51CE3697587C7ED6.title: "Glacio"
+	quest.51F8C05DDB6B2E5F.quest_desc: ["A rifle from the gun smith table: 36 iron, 8 lapis and 6 logs. Make a fresh one for this quest."]
+	quest.51F8C05DDB6B2E5F.title: "M16A4 Service Rifle"
 	quest.521803A908C4BFE3.quest_desc: ["Planks, two honeycombs, a beehive, a campfire and shears. It houses Productive Bees' bees, which bring back combs of their own kind; bees come from nests found across the world, and more are bred."]
 	quest.521803A908C4BFE3.title: "Advanced Beehive"
 	quest.5244761B280AD1DA.quest_desc: ["Eight planks around a shaft make a water wheel."]
@@ -656,6 +714,8 @@
 	quest.5443668589EE1D52.title: "Layered Magnet"
 	quest.544FAEE2C9689280.quest_desc: ["Three iron sheets, an iron ingot and an andesite casing make a mechanical saw. On a contraption it fells whole trees; set flat, it cuts logs into planks."]
 	quest.544FAEE2C9689280.title: "Mechanical Saw"
+	quest.5485D0AFB9E2DB70.quest_desc: ["Holds a stack of one kind of ammo, and a gun reloads from it. Iron, gold and diamond boxes hold more each. It fits a Curios slot, and Shift and right-click gathers loose ammo into it."]
+	quest.5485D0AFB9E2DB70.title: "Ammo Box"
 	quest.551B1E5C05CFEE78.quest_desc: ["Ancient cities lie in the deep dark, far below y 0 under sculk. Move sneaking: shriekers that hear you too often summon the Warden."]
 	quest.551B1E5C05CFEE78.title: "An Ancient City"
 	quest.552E28CF59007490.quest_desc: ["Five desh plates, a fan and a steel engine. Each engine is built around the one before."]
@@ -694,6 +754,8 @@
 	quest.5ABDBFA399613C68.title: "Flint Knife"
 	quest.5B3530A48FEC0381.quest_desc: ["Mined from nether quartz ore all through the netherrack. Comparators and observers take it, and Create's rose quartz is quartz and eight redstone."]
 	quest.5B3530A48FEC0381.title: "Nether Quartz"
+	quest.5B5EB3B40A697889.quest_desc: ["Sequenced assembly: a deployer puts a primer in each casing and a spout adds 25 mB of gunpowder fluid. It feeds the \"Stress\" Auto Pistol and the \"Crank\" SMG."]
+	quest.5B5EB3B40A697889.title: "Pneumatic Pistol Ammo"
 	quest.5BFF747D1F3BF8BE.quest_desc: ["Engine pistons, a block of brass, a fluid tank and flint and steel: a compact source of rotation that runs on the tower's diesel or gasoline. Stop it with a redstone signal."]
 	quest.5BFF747D1F3BF8BE.title: "Diesel Engine"
 	quest.5C32E948EEE03D98.quest_desc: ["Sugar, a slimeball and a mundane potion in a heated basin make four. Candy cane blocks and a full set of candy cane tools come from it."]
@@ -750,6 +812,8 @@
 	quest.616CA5AD6B54820E.title: "A Stronghold"
 	quest.616EAC16C96FC0B2.quest_desc: ["An iron hook and four gold nuggets. Lucky: better odds of treasure. A diamond hook is the durable one, with a 50% chance not to use durability."]
 	quest.616EAC16C96FC0B2.title: "Gold Hook"
+	quest.6170660BBC43FE0F.quest_desc: ["Elite x Quality's guns and their ammo are made only at the Elitebench, three iron ingots and four blocks of iron. The Garand takes 32 iron and 2 planks there."]
+	quest.6170660BBC43FE0F.title: "M1 Garand"
 	quest.61B69BCA480AD122.quest_desc: ["Two copper sheets and a copper ingot make four fluid pipes. Pipes join up on their own as you place them, and carry fluid between anything that holds it."]
 	quest.61B69BCA480AD122.title: "Fluid Pipes"
 	quest.62109268132C4936.quest_desc: ["Five calorite plates around an ostrum tank and a steel rod. The rocket takes two."]
@@ -772,10 +836,18 @@
 	quest.63CEA192232460B3.title: "Mechanical Arm"
 	quest.644F74B4BB9B121C.quest_desc: ["Four andesite alloy. On a heated basin it melts metal for casting: cast iron ingots, pressed from iron and coal in a heated basin, melt into molten cast iron."]
 	quest.644F74B4BB9B121C.title: "Basin Foundry Lid"
+	quest.64659CB5708254BD.quest_desc: ["Mine a mob spawner with Silk Touch and it drops as an item you can place again."]
+	quest.64659CB5708254BD.title: "Apothic Spawners"
+	quest.6478374EE8A9E3E0.quest_desc: ["Something to shoot at that isn't a mob: five iron, redstone and a plank."]
+	quest.6478374EE8A9E3E0.title: "Humanoid Target"
+	quest.64C6C25FA1692890.quest_desc: ["Two fluid pipes and a glass pane on the mechanical crafters. Create Armorer's grips, magazines, sights and refits are made there too."]
+	quest.64C6C25FA1692890.title: "Fluid Pipe Scope"
 	quest.64E369E8743E991E.quest_desc: ["The echo template is an echo shard, deepslate and blaze powder compacted in a heated basin. At a smithing table it and an echo ingot turn a netherite chestplate into an echo one."]
 	quest.64E369E8743E991E.title: "Echo Armour"
 	quest.655BC8086489F3E3.quest_desc: ["Iron sheets and an iron rod. Filled at the oxygen loader and worn in its own slot, it carries extra oxygen for the suit."]
 	quest.655BC8086489F3E3.title: "Oxygen Can"
+	quest.65EE303CD8DB8105.quest_desc: ["Breaks affix items down into their rarity's material: common gear into Mysterious Scrap Metal, then Timeworn Fabric, Luminous Crystal Shards, Arcane Sands and Godforged Pearls as the rarity climbs."]
+	quest.65EE303CD8DB8105.title: "Salvaging Table"
 	quest.679B8A23F2DEA1E3.quest_desc: ["Apply a steel ingot to hardened planks for a steel casing, then a heavy plate to that. Every oil machine has one inside."]
 	quest.679B8A23F2DEA1E3.title: "Heavy Machinery Casing"
 	quest.67C2B4683080812F.quest_desc: ["A block of experience, pressed. The blaze enchanter writes enchantments onto blank templates, and the blaze forger applies them to items."]
@@ -788,10 +860,14 @@
 	quest.681276267D02967B.title: "Archmage Spell Book"
 	quest.68A09A80BDA54D21.quest_desc: ["Cast two barrels, a chamber and a sliding breech, and bore each one; the breech then takes its breechblock. Most cast cannon blocks break into scrap without Silk Touch, so move a finished cannon whole."]
 	quest.68A09A80BDA54D21.title: "Cast Iron Cannon"
+	quest.69473B34BD76FDAB.quest_desc: ["Where bullets are made: copper, iron, gunpowder and an ammo box. The gun smith table doesn't make ammo."]
+	quest.69473B34BD76FDAB.title: "TaCZ Ammo Assembly Table"
 	quest.695BCB07EED54A55.quest_desc: ["Upgrades start from an upgrade base: sticks, emeralds, a honey treat and a diamond. Speed cuts the time bees spend in the hive and speeds up machines; Productivity, which takes draconic chunks, raises a hive's output and a centrifuge's rate."]
 	quest.695BCB07EED54A55.title: "Speed Upgrade"
 	quest.69B8EC6B3743076E.quest_desc: ["The Dominion Wand is made at the Enchanting Apparatus, a Source Relay at the crafting table. Use the wand on a jar, then on a relay, and the relay pulls Source from it; relays pass it on to other relays and jars."]
 	quest.69B8EC6B3743076E.title: "Moving Source"
+	quest.6A64B6AB96169AD1.quest_desc: ["The rifle's rounds: fifteen copper and three gunpowder make 45 at the Ammo Assembly Table."]
+	quest.6A64B6AB96169AD1.title: "5.56x45mm Bullets"
 	quest.6A821D09F9D65F31.quest_desc: ["Ars Creo's wheel: a Starbuncle Charm and a water wheel. It makes rotational force for Create, faster with a gold block in front of it."]
 	quest.6A821D09F9D65F31.title: "Starbuncle Wheel"
 	quest.6A867840A5B18C37.quest_desc: ["Deeper Darker adds this smithing template to ancient city chests. It turns netherite gear into warden gear."]
@@ -846,6 +922,11 @@
 	quest.7106786BEB894002.title: "Blazier"
 	quest.7155F0E7ACD975E8.quest_desc: ["Build a ship at the dockyard: a cog, brigg, caravel, dhow, drakkar, galleon or galley, in any wood. Tick this once you've launched one."]
 	quest.7155F0E7ACD975E8.title: "A Ship"
+	quest.7170F64CBB68B2BD.quest_desc: [
+		"Affix items are gear with a coloured name and extra stats, rolled by rarity, from mobs and chests. Your first one unlocks Haven, the world tier you start in. Press Ctrl+T to pick a tier once you've unlocked more."
+		"With Modern Ragnarok, guns roll affixes too."
+	]
+	quest.7170F64CBB68B2BD.title: "World Tier: Haven"
 	quest.72439FD2BE61D913.quest_desc: ["Voids what goes into it, with a filter for up to nine items. Fluid and energy trash cans do the same for those."]
 	quest.72439FD2BE61D913.title: "Item Trash Can"
 	quest.73E001A7DEEAC194.quest_desc: ["Four iron ingots, a block of cardboard and two redstone dust make a packager. It boxes the contents of the inventory behind it into packages, each addressed to where it should go."]
@@ -864,6 +945,8 @@
 	quest.74F9258858BC6EC1.title: "Ship Upgrades"
 	quest.750A1A964F418DF1.quest_desc: ["Make one from chains, leather and paper: a sturdier book with room for more spells."]
 	quest.750A1A964F418DF1.title: "Ironbound Tome"
+	quest.751CEC361333C578.quest_desc: ["A spout fills andesite alloy with 50 mB of gunpowder fluid. Mix gunpowder in a basin for the fluid; nitropowder fluid makes primer too. Every round takes one."]
+	quest.751CEC361333C578.title: "Primer"
 	quest.75C52F7F20D35941.quest_desc: ["Two iron, two string and a stick. Aquaculture's rods hold a hook, bait, a fishing line and a bobber, and each one changes how the rod fishes."]
 	quest.75C52F7F20D35941.title: "Iron Fishing Rod"
 	quest.75DCDBE0EEA2031A.quest_desc: ["The blueprint and three of one material at a crafting table. Almost anything counts, from iron to Silent Gems' gems and TFMG's aluminum, and each material gives the head its own stats and traits."]
@@ -884,6 +967,10 @@
 	quest.77C919C0D8A0972C.title: "Chain Conveyor"
 	quest.780CAE0E4D843A83.quest_desc: ["The mechanical crafters make a potato cannon from fluid pipes, copper, an andesite alloy and a precision mechanism. It fires crops, and a few of them do more than bounce."]
 	quest.780CAE0E4D843A83.title: "Potato Cannon"
+	quest.78C74461D601B49E.quest_desc: ["Wear a full set of rare gear and kill the Wither, which is summoned in the Nether chapter."]
+	quest.78C74461D601B49E.title: "World Tier: Summit"
+	quest.78CD2CEEFD9D500F.quest_desc: ["The simple table rebuilt with netherite, Arcane Sands and nether bricks. It reforges epic and mythic gear as well, fuelled by Sigils of Rebirth."]
+	quest.78CD2CEEFD9D500F.title: "Reforging Table"
 	quest.7927E97C4E8FFA6E.quest_desc: ["Iron nuggets, a magnetite block, an andesite casing and a shaft; magnetite is mined. A motor turns electricity into rotation: set its speed with a wrench, and a redstone signal stops it."]
 	quest.7927E97C4E8FFA6E.title: "Basic Motor"
 	quest.795E2270536A9542.quest_desc: ["Eight planks and a honeycomb. Placed on an advanced beehive, it makes the hive bigger."]
@@ -908,6 +995,8 @@
 	quest.7AA8B342AA4E93C7.title: "Smart Fluid Pipe"
 	quest.7BCEF8F5B514BAB1.quest_desc: ["A cogwheel and a fluid pipe make a mechanical pump. Turned, it pushes fluid through the pipes it sits in, in the direction it faces; reverse the rotation to pull the other way."]
 	quest.7BCEF8F5B514BAB1.title: "Mechanical Pump"
+	quest.7C4CDB9926801D3F.quest_desc: ["The M1911's rounds: ten copper and two gunpowder make 30 at the Ammo Assembly Table."]
+	quest.7C4CDB9926801D3F.title: ".45 ACP Bullets"
 	quest.7C6AC7DC1AE63700.quest_desc: ["Assemble a train at a station, hand its conductor a schedule, and watch it run the route on its own."]
 	quest.7C6AC7DC1AE63700.quest_subtitle: "Tick this once a train runs its schedule"
 	quest.7C6AC7DC1AE63700.title: "All Aboard"
@@ -917,6 +1006,8 @@
 	quest.7C9E0FB4D14D144E.title: "Portable Energy Interface"
 	quest.7D5679FCDA22F007.quest_desc: ["A warp stone, andesite casing, stone bricks and ender pearls make two. Activate one and you can teleport to it from any other; villages often have one already."]
 	quest.7D5679FCDA22F007.title: "Waystone"
+	quest.7D74F1B14F9AE7C4.quest_desc: ["Fallout's guns have no bench of their own: they're made at the gun smith table. The 10mm Pistol takes 14 iron, 4 iron nuggets and 2 leather, and its 10mm rounds come from the Ammo Assembly Table."]
+	quest.7D74F1B14F9AE7C4.title: "10mm Pistol"
 	quest.7D7AF1F19903D0DF.quest_desc: ["Andesite alloy is what most of Create is made of. Two andesite and two iron nuggets make one on a crafting table, and zinc nuggets work in place of the iron."]
 	quest.7D7AF1F19903D0DF.title: "Andesite Alloy"
 	quest.7DC27D945DE68ECA.quest_desc: ["A smooth stone slab and a chest. Put several flowering blocks in it to give your bees one flowering spot."]

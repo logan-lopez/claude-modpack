@@ -1,0 +1,292 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "apotheosis"
+	group: "38141FC7E950B458"
+	icon: {
+		id: "apotheosis:reforging_table"
+	}
+	id: "1BDCA3F39794A2CF"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7170F64CBB68B2BD"
+			rewards: [{
+				id: "425D5BD0EBE1EB60"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				advancement: "apotheosis:progression/haven"
+				criterion: ""
+				id: "0A5D6510ABEFD0CD"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7170F64CBB68B2BD"]
+			id: "43A2BB7AF820DFAF"
+			rewards: [{
+				id: "225DDA25DA5EE62B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "0393EDB4D127B723"
+				item: { count: 1, id: "apotheosis:gem_dust" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["43A2BB7AF820DFAF"]
+			id: "65EE303CD8DB8105"
+			rewards: [{
+				id: "5C535DD75B4BC9EF"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "65087AF4389A08A7"
+					item: { count: 1, id: "apotheosis:salvaging_table" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7C4C764E467BA8F3"
+					item: { count: 1, id: "apotheosis:mysterious_scrap_metal" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["65EE303CD8DB8105"]
+			id: "33A3CB901281922B"
+			rewards: [{
+				id: "5F731BCB749A269D"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "2338D70361DB1CFB"
+				item: { count: 1, id: "apotheosis:simple_reforging_table" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33A3CB901281922B"]
+			id: "3317C91466835DB7"
+			rewards: [
+				{
+					id: "6F918A2F1DA6F977"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "5724762AE22EDFA3"
+					item: {
+						count: 1
+						id: "apotheosis:mysterious_scrap_metal"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "apotheosis:progression/frontier"
+				criterion: ""
+				id: "00E34D41896EECB1"
+				type: "advancement"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3317C91466835DB7"]
+			id: "1753C678A121947A"
+			rewards: [{
+				id: "0AF07F8FFC132430"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "6505E4692F9544A8"
+				item: { count: 1, id: "apotheosis:gem_cutting_table" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1753C678A121947A"]
+			id: "4548E26475C7303D"
+			rewards: [{
+				id: "3D0CFF461EEF81E3"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "522CBFEEF8B8AFB5"
+				item: { count: 1, id: "apotheosis:sigil_of_socketing" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3317C91466835DB7"]
+			id: "50050FE8336BC82F"
+			rewards: [{
+				id: "60FC1EF5C0E3DF37"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "443D94F93E0AE12B"
+				item: { count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["50050FE8336BC82F"]
+			id: "3CF5162DCCD738D4"
+			rewards: [{
+				id: "5209C0F55582F41F"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				advancement: "apotheosis:gateways/frontier"
+				criterion: ""
+				id: "642C2D586DE33023"
+				type: "advancement"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3317C91466835DB7"]
+			id: "24EBF74646BCD91D"
+			rewards: [
+				{
+					id: "772380CF98F6B64C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "13C4C273198AAE48"
+					item: {
+						count: 1
+						id: "apotheosis:gem_dust"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "apotheosis:progression/ascent"
+				criterion: ""
+				id: "6EBC35C19E2DA094"
+				type: "advancement"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["24EBF74646BCD91D"]
+			id: "78C74461D601B49E"
+			rewards: [{
+				id: "13F4124EFC17D412"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "apotheosis:progression/summit"
+				criterion: ""
+				id: "248AD36D54B2C5C8"
+				type: "advancement"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["78C74461D601B49E"]
+			id: "78CD2CEEFD9D500F"
+			rewards: [{
+				id: "7062BD1BF3701462"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "7114D6A3EC47B0FF"
+				item: { count: 1, id: "apotheosis:reforging_table" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["78CD2CEEFD9D500F"]
+			id: "0D771262CD70BB56"
+			rewards: [{
+				id: "46A31D7A7BD623F3"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "apotheosis:progression/pinnacle"
+				criterion: ""
+				id: "5CFDFBE3771B4D9E"
+				type: "advancement"
+			}]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			id: "64659CB5708254BD"
+			rewards: [{
+				id: "5037FAB7DA7F438B"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				advancement: "apothic_spawners:root"
+				criterion: ""
+				id: "3813CA178F1CEEB6"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["64659CB5708254BD"]
+			id: "374C4049CF5E16C7"
+			rewards: [{
+				id: "2063CA22E9BFB88A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				advancement: "apothic_spawners:modifier"
+				criterion: ""
+				id: "2CBA475E8034F1E5"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+	]
+}

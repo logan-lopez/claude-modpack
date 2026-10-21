@@ -17,6 +17,10 @@ file = "config/ftbquests/quests/chapters/ad_astra_planets.snbt"
 hash = "c09a0fa5262e0d1e9573266a17c57ab9c14886bad49bff284ee9a0f9318e1bd0"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/apotheosis.snbt"
+hash = "d6516e495763cc4ef761f26914509fa29ac10186c4dcc9b581c1764e68692654"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/aquaculture.snbt"
 hash = "85a44562666801ae73007a951f1061cae59d886ddac7ab4d907cf0c6bd8f8d34"
 
@@ -27,6 +31,10 @@ hash = "dfd9d026ae08977b3a03dfc070799ebcb96c293bc0d5be2e0e20efa8b2c59b2f"
 [[files]]
 file = "config/ftbquests/quests/chapters/ars_nouveau_source.snbt"
 hash = "dc572618ebbaa8f3717d4683fc1e3b3a01b55bf9dc7e37753d3883297e0dd36a"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/create_armorer.snbt"
+hash = "79d68f5018166ccd1947f83a62f402351b4428519fad144def953eaeb3f7641c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_basics.snbt"
@@ -121,6 +129,10 @@ file = "config/ftbquests/quests/chapters/storage.snbt"
 hash = "07c3903e724a6203b24a39f99ab0d9227fe6c3391c9337a599947167a4fd7cae"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/tacz_guns.snbt"
+hash = "69172f2b4620f19af3d8fce774d4c0177a2080efee4dcf0e5db9c4dae11b47ef"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/tfmg_oil.snbt"
 hash = "1613de07ca7fcf902c7e89d5b77662b7442f48831d113ee795466f65caae56eb"
 
@@ -142,7 +154,7 @@ hash = "da77e416b557850f5cb1ab68d71de78f9fbc3cf3845e50cdb4dba3a8164f6e7f"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "b5481659b67cea8aee3cd526c10a9d40932077b63f1e02fa5a58b47e5f043563"
+hash = "b3498b372a8a6f062d5fded00c2c6642c61a5842c710b3de10641efa95701e99"
 
 [[files]]
 file = "kubejs/data/ad_astra/tags/fluid/fuel.json"

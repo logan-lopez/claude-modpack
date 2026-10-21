@@ -1,0 +1,161 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_armorer"
+	group: "38141FC7E950B458"
+	icon: {
+		id: "createimmersivetacz:firing_mechanism"
+	}
+	id: "0D461919B1C82D38"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["18CA23C9694BB7C3"]
+			id: "3F08DFF434222848"
+			rewards: [{
+				id: "1BD6F366225DD23F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "35EA31D997910F11"
+				item: { count: 1, id: "createimmersivetacz:gun_barrel" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F08DFF434222848"]
+			id: "26BC5EE9D20A5747"
+			rewards: [{
+				id: "420FA899A220221D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "4263C8F019D48642"
+				item: { count: 1, id: "createimmersivetacz:gun_trigger" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26BC5EE9D20A5747"]
+			id: "3A0A747DDB701D9B"
+			rewards: [{
+				id: "3ABB05838FDD35E6"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "228D91EBAB329F5F"
+				item: { count: 1, id: "createimmersivetacz:firing_mechanism" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F08DFF434222848"]
+			id: "11A8AD497C02A95E"
+			rewards: [{
+				id: "3F5502E4D07A7897"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 32L
+				id: "48E6BDDD4C0FCA58"
+				item: { count: 1, id: "createimmersivetacz:pneumatic_pistol_casing" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3F08DFF434222848"]
+			id: "751CEC361333C578"
+			rewards: [{
+				id: "72B97DA3FDFA8CD9"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 8L
+				id: "2A6B894ED1A58CE4"
+				item: { count: 1, id: "createimmersivetacz:primer" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"11A8AD497C02A95E"
+				"751CEC361333C578"
+			]
+			id: "5B5EB3B40A697889"
+			rewards: [{
+				id: "35638272390A12AE"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 32L
+				id: "488BE3D23207F9C0"
+				item: { components: { "minecraft:custom_data": { AmmoId: "create_armorer:gas_pistol_ammo" }, "minecraft:max_stack_size": 60 }, count: 1, id: "tacz:ammo" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3F08DFF434222848"]
+			id: "64C6C25FA1692890"
+			rewards: [{
+				id: "5EBB201E6DCF85A7"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1A80EC196435D24F"
+				item: { components: { "minecraft:custom_data": { AttachmentId: "create_armorer:scope_pipe" } }, count: 1, id: "tacz:attachment" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3A0A747DDB701D9B"]
+			id: "2EAE369A1FB4E030"
+			rewards: [
+				{
+					id: "1C0614B54A1D3757"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "4883E93A82973EC5"
+					item: {
+						count: 1
+						id: "create:brass_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3915BFE8A400D282"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+}

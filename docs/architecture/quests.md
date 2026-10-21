@@ -24,7 +24,7 @@ pack/config/ftbquests/quests/
   lang/en_us.snbt            every title and description, keyed by object ID
 ```
 
-It holds thirty-two chapters in nine groups, Getting Started, Create, Industry, Space, Combat
+It holds thirty-five chapters in nine groups, Getting Started, Create, Industry, Space, Combat
 and Gear, Food and Farming, Magic, Storage and Travel and Exploration and Bosses, and nothing in the default group. `chapters/getting_started.snbt` is the sample, alone in Getting Started:
 three quests in a chain (a crafting table, Create's andesite alloy, a Create shaft), one item task
 each, a dependency on the one before, laid out left to right at `x` 0, 2 and 4, and a 100 XP
@@ -42,9 +42,12 @@ holds six, `order_index` 0 to 5: `create_electricity` (14 quests) and `create_mo
 `create_fluids`' mechanical pump, `create_enchantment_industry` (8), from its spout, `tfmg_oil`
 (12), from `tfmg_steel`'s steel ingot, and `create_new_age` (17), from the mechanical crafters.
 Space holds `ad_astra_liftoff` (13), from the steel ingot, and `ad_astra_planets` (23), from its
-tier 1 rocket, and Combat and Gear holds
-`create_big_cannons` (14), from `create_fluids`' fluid tank, and `silent_gear` (13), open from the
-start. Food and Farming holds five,
+tier 1 rocket, and Combat and Gear holds five, `order_index` 0 to 4:
+`create_big_cannons` (14), from `create_fluids`' fluid tank, `silent_gear` (13), `tacz_guns`
+(15) and `apotheosis` (15), open from the start, and `create_armorer` (8), from
+`create_crafting`'s mechanical crafters. `tacz_guns` and `create_armorer` are the book's first
+chapters with TaCZ variant tasks (a gun, ammo or attachment matched on its recipe's stack), and
+`apotheosis` its first with advancement tasks. Food and Farming holds five,
 `order_index` 0 to 4: `farmers_delight` (18 quests), `aquaculture` (13) and `productive_bees`
 (12), open from the start, `more_delights` (14), from `farmers_delight`'s cooking pot, and
 `create_kitchen` (13), from `create_basics`' mechanical mixer. Magic holds five, `order_index` 0
