@@ -43,7 +43,7 @@ and move to `archive/` when they're done. Ideas that aren't scheduled yet are in
    `scripts/server-pack.sh` writes a server zip that starts on macOS or Windows with `start.sh`
    or `start.bat`, asks about the EULA, keeps its settings across updates and restarts after a
    crash.
-3. [`09-ftb-quests.md`](09-ftb-quests.md): FTB Quests and XMod Compat, a hand-written sample
+3. [`09-ftb-quests.md`](09-ftb-quests.md) (done, awaiting review): FTB Quests and XMod Compat, a hand-written sample
    chapter in `pack/config/ftbquests/quests/`, the server check failing on quest files that don't
    load as written, `scripts/pull-quests.sh` for in-game edits, and the quests page that
    minecraft-mcp generates against.
@@ -132,8 +132,6 @@ What's deliberately absent, so nobody flags it as missing. Point at `FUTURE.md` 
   Converted 1.20.1 packs other than Create Armorer stay out.
 - **Configs, recipes and default settings.** Every mod runs on its own defaults, and no KubeJS
   scripts exist yet; brief 07 ships the first. See [`FUTURE.md`](FUTURE.md), Integrations.
-- **Quests.** No quest book yet. [Brief 09](09-ftb-quests.md) adds FTB Quests and a sample
-  chapter; real chapters are minecraft-mcp's next plan.
 
 ## Future direction new work must not block
 

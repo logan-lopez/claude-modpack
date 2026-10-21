@@ -17,6 +17,7 @@ and finished ones move to `archive/`. The decisions not to relitigate are the ta
 | `scripts/server-check.sh` | the repo root | Boots a headless NeoForge server from `pack/`. Exit 0 means it reached Done with no mod-loading failure. |
 | `scripts/export.sh` | the repo root | Writes `dist/<name>-<version>.mrpack`. |
 | `scripts/server-pack.sh` | the repo root | Writes `dist/<name>-<version>-server.zip`, a server that starts with `start.sh` or `start.bat`. `SERVE_PORT` (default 8080) when a `packwiz serve` holds 8080. |
+| `scripts/pull-quests.sh [instance's minecraft folder]` | the repo root | Copies the quest book from a Prism instance (default: `Claude Modpack`) into `pack/config/ftbquests/quests/` and refreshes the index, after edits in FTB Quests' editor. Refuses over uncommitted quest changes unless `FORCE=1`. Doesn't commit. |
 | `packwiz modrinth add <slug>` | `pack/` | Adds a mod. Modrinth first; `packwiz curseforge add` only when a mod isn't on Modrinth. |
 
 packwiz may not be on `PATH`: it's in `$(go env GOPATH)/bin`, where the scripts look for it.
@@ -39,5 +40,6 @@ matching one by itself; this table is the same map for every agent).
 | Code | Read first |
 | --- | --- |
 | `pack/config/**`, `pack/kubejs/**` | [Pack overrides](docs/architecture/pack-overrides.md) |
+| `pack/config/ftbquests/**`, `scripts/pull-quests.sh` | [The quest book](docs/architecture/quests.md) |
 | `scripts/server-check.sh`, `scripts/server-check.known-errors.txt` | [The server check](docs/architecture/server-check.md) |
 | `scripts/server-pack.sh`, `server/**` | [The server build](docs/architecture/server-pack.md) |

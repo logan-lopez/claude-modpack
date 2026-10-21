@@ -9,7 +9,9 @@ mods.
 ## What lives where
 
 - **`pack/config/`:** mod configs, copied to the instance's `config/`. Today that's Almost
-  Unified's `almostunified/unification/materials.json`.
+  Unified's `almostunified/unification/materials.json`, and the quest book.
+- **`pack/config/ftbquests/quests/`:** FTB Quests' quest book. It has its own format, rules and
+  check: [the quest book](quests.md).
 - **`pack/kubejs/data/`:** a datapack KubeJS always loads, so recipes and tags here need no
   script. Laid out like any datapack: `data/<namespace>/recipe/...`, `data/<namespace>/tags/...`.
   - **Repairs** of a mod's recipe use the mod's own namespace and path, so they replace it:

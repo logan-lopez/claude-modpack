@@ -40,6 +40,10 @@ defaults/user_jvm_args.txt        -Xmx12G and a comment
 mods/  config/  kubejs/  tacz/    from the server sync
 ```
 
+`config/` carries the [quest book](quests.md), `config/ftbquests/quests/`. A newer zip
+unzipped over an old server replaces its chapters but doesn't delete one the pack dropped: the
+update steps delete `mods/`, `kubejs/` and `tacz/` first, not `config/`.
+
 Never at the top: `eula.txt`, `server.properties`, `user_jvm_args.txt`, `libraries/`, `run.sh`,
 `run.bat`, `world/`, `packwiz.json`. They belong to a running server, and a newer zip unzipped over
 it mustn't replace them.

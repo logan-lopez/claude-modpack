@@ -12,3 +12,5 @@ How the pack works as you use it. One page per thing you do.
   through Create, chest loot, turrets, durability and the ammo box.
 - [Fighting up close](combat.md): Better Combat's swings and combos, which weapons get them, and
   Combat Roll's dodge.
+- [The quest book](quests.md): opening it, the sample chapter, editing in the game and bringing
+  the edits back into the repo with `scripts/pull-quests.sh`.

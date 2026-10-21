@@ -27,6 +27,8 @@ It's built around Create and Timeless and Classics Zero (TaCZ).
   crafting through Create, guns in structure chests, turrets and gun durability.
 - [Fighting up close](docs/guide/combat.md): melee with Better Combat's swings and combos, and a
   dodge roll.
+- [The quest book](docs/guide/quests.md): FTB Quests with a sample chapter, kept in the repo,
+  edited in the game and pulled back with `scripts/pull-quests.sh`.
 
 ## Requirements
 
@@ -43,6 +45,7 @@ It's built around Create and Timeless and Classics Zero (TaCZ).
 scripts/server-check.sh   # boot a headless server from pack/; exit 0 means it reached Done
 scripts/export.sh         # write dist/claude-modpack-<version>.mrpack
 scripts/server-pack.sh    # write dist/claude-modpack-<version>-server.zip, a server to keep
+scripts/pull-quests.sh    # copy the quest book from the Prism instance back into pack/
 cd pack && packwiz modrinth add <slug>   # add a mod, then run the server check
 ```
 

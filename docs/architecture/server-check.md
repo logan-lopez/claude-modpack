@@ -1,8 +1,8 @@
 # The server check
 
 `scripts/server-check.sh` boots a headless NeoForge server from `pack/` and says whether it
-reached "Done". It's the only thing a session can verify about the pack on its own, so every
-change to the mod set ends with it passing.
+reached "Done", and whether the [quest book](quests.md) loaded as written. It's the only thing a
+session can verify about the pack on its own, so every change to the mod set ends with it passing.
 
 **Sources:** `scripts/server-check.sh`, `scripts/server-check.known-errors.txt`
 
@@ -19,15 +19,20 @@ change to the mod set ends with it passing.
 4. Syncs the pack with packwiz-installer-bootstrap (`-g -s server`, from the served URL): the
    mods, and the gun packs in `pack/tacz/` into `run/server/tacz/`, where TaCZ reads them. It
    also deletes files it installed earlier that the pack no longer lists. Then it stops the
-   serve.
+   serve. Before the sync it deletes `run/server/config/ftbquests/quests/`, so the server reads
+   exactly `pack/`'s quest book; the sync puts back a file it installed that's missing on disk,
+   and the script dies before the boot if the synced book differs from `pack/`'s.
 5. Deletes `world/`, `crash-reports/` and `logs/latest.log`, writes `eula.txt` and a
    `server.properties` with a fixed `level-seed`, and starts `./run.sh nogui` with stdin on a
    FIFO.
 6. Polls `logs/latest.log` once a second until one of the outcomes below, then sends `stop` on a
-   pass, or kills the server on a fail.
+   pass, or kills the server on a fail. With a quest book in `pack/`, a pass first waits up to
+   10 seconds for FTB Quests' `Loaded` line, which comes just after Done, and the quest checks
+   run once the server has exited.
 7. Prints a summary: the NeoForge version the server actually ran (from `--fml.neoForgeVersion`
-   in the log), the mod count from the log's `Mod List:` table, the boot time, and on a fail the
-   reason with the log or crash-report lines that show it. On a pass it compares the log's load
+   in the log), the mod count from the log's `Mod List:` table, the boot time, the quest book's
+   counts (`Quests:`, only when `pack/` has a book), and on a fail the reason with the log,
+   crash-report or quest lines that show it. On a pass it compares the log's load
    errors with the [baseline](#the-known-errors-baseline), lists the new and gone ones, then
    prints the first 20 ERROR lines of no known kind, without timestamps and deduplicated.
    `CHECK_UPDATE_BASELINE=1` then rewrites the baseline from this run.
@@ -49,7 +54,17 @@ Checked in this order each second:
 - **The server exited before Done.**
 - **A timeout:** `CHECK_TIMEOUT` seconds (default 300) without Done.
 
-ERROR lines after a pass don't fail the check, known or new. Big packs log harmless errors, and
+Then, after a pass and only when `pack/config/ftbquests/quests/` exists, the quest book fails the
+check ([the quest book](quests.md#what-the-server-check-does) has the detail). The reason starts
+`quests:` and lists each that applies:
+
+- no `Loaded <n> chapter groups, <n> chapters, <n> quests, <n> reward tables` line from FTB
+  Quests;
+- fewer chapters or reward tables loaded than `pack/` has files for;
+- `Server thread` ERROR lines between `Loading quests from` and that line;
+- a file FTB Quests wrote back on stop that differs from `pack/`'s, or is only on one side.
+
+ERROR lines after a pass don't fail the check, known or new, except the quest book's. Big packs log harmless errors, and
 failing on all of them would make the check useless. The baseline is how a session sees them.
 
 ## The known-errors baseline
@@ -93,7 +108,9 @@ written only after a pass. Read the diff first: a fix should only remove lines.
   children first, because `run.sh` runs java without `exec`.
 - **`/bin/bash` is 3.2 here.** Nothing newer: no associative arrays, `mapfile` or `${var,,}`.
 - **A fresh world every run,** so a world saved by an earlier mod set can't hide or cause a
-  failure. Configs in `run/server/config/` do persist between runs.
+  failure. Configs in `run/server/config/` do persist between runs, except the quest book.
+- **Quest files are compared by content, not time.** FTB Quests writes the whole book back on
+  every stop, clean or not; a clean book comes back byte for byte.
 
 ## What it can't catch
 
@@ -114,3 +131,9 @@ without its required `create` and `create_dragons_plus`. `scripts/server-check.s
 2 seconds on `Missing or unsupported mandatory dependencies`. With the log patterns blanked it
 failed on the crash report at 5 seconds instead, and run unwatched the server exited 0 at 7
 seconds, so each layer catches this failure on its own.
+
+Quest files fail the check, unlike the baseline's load errors (Logan, 2026-10-20, brief 09): they
+are the pack's own, and FTB Quests skips a broken chapter and still reaches Done. The failure
+runs that proved it, on 2026-10-20, are in [the quest book's decisions](quests.md#decisions): a
+syntax error, a duplicate ID, an ID over `7FFFFFFFFFFFFFFF` and an unknown item, each exiting 1
+with the problem in its reason.

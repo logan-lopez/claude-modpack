@@ -6,10 +6,10 @@ didn't come over, with why, and what stands in for them. Compare it with the old
 
 **Covers:** `pack/mods/`, `pack/tacz/`
 
-294 entries in `pack/mods/`: about 200 picked from the old pack, 23 added as replacements and new
+296 entries in `pack/mods/`: about 200 picked from the old pack, 23 added as replacements and new
 picks, 8 TaCZ gun packs and addons, 3 for looking after a world (backups, pregeneration, sound), 3
-for melee (Better Combat, Combat Roll, Apothic Combat), the rest libraries they need. The server
-loads 269 jars; the other 25 are client-only (Sodium, Iris and their add-ons, the tooltip and
+for melee (Better Combat, Combat Roll, Apothic Combat), 2 for quests, the rest libraries they need.
+The server loads 271 jars; the other 25 are client-only (Sodium, Iris and their add-ons, the tooltip and
 overlay mods, TacZ Mesh Loader, Sound Physics, and the like). `pack/tacz/` has one more entry, the
 Create Armorer gun pack.
 
@@ -32,6 +32,9 @@ Apotheosis with its Apothic Attributes, Enchanting and Spawners modules, Gateway
 Apotheosis Modern Ragnarok (Apotheosis affixes on TaCZ guns), Apothic Category Compat (puts
 modded weapons, Cataclysm's among them, in the right Apotheosis loot categories), AttributeFix,
 Max Health Fix, Enchantment Descriptions.
+
+**Quests.** FTB Quests and FTB XMod Compat (links quests to JEI and KubeJS). The quest book is in
+[its own page](quests.md).
 
 **Mobs and bosses.** Wildlife and fights: Alex's Mobs Continued (the community port) and its
 Delight addon, Naturalist, Mowzie's Mobs, L_Ender's Cataclysm.
@@ -145,7 +148,6 @@ From the old pack, checked 2026-10-19.
 | Endless Ammo | Endless Ammo Refabricated rebuilt it for 1.21.1, but it's an ammo library and no gun pack here fires its calibers. Dropped (your call, 2026-10-19). |
 | AllTheLeaks, Better FPS Distance, Better Compatibility Checker | 1.20.1 fixes, or only useful when publishing a pack. |
 | Sodium Options API, Sodium Options Mod Compat | Every Reese's Sodium Options 2.2.x declares Options API incompatible, and Reese's is in. Mod Compat needs Options API. |
-| FTB Quests, FTB XMod Compat | Waiting for a quest book. A new pack has no quests yet, and XMod Compat is mostly Quests integration. |
 | Fiber's Gunspack | Not on Modrinth, and packwiz's CurseForge search doesn't find it. |
 | Maxstuff, Gucci & Vuitton Attachments | 1.20.1 gun packs only. TaCZ Pack Upgrader could convert them; your call was to leave them out. Elite X and Fallout, the other two old gun packs, came back with 1.21.1 builds ([Where guns come from](guns.md)). |
 | Mods disabled in the old pack (`.jar.disabled`) | You had turned them off. |

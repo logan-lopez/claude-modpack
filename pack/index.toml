@@ -5,6 +5,22 @@ file = "config/almostunified/unification/materials.json"
 hash = "fd52d588f0a2f9407c82362d47ee71b12fb5baacb113f7dc7de4282caf2f930d"
 
 [[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/getting_started.snbt"
+hash = "0108d9e6f7260ba9d0bf832a6207b55ffa91d1cdcc5f642f933390795dd9acb5"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "da77e416b557850f5cb1ab68d71de78f9fbc3cf3845e50cdb4dba3a8164f6e7f"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us.snbt"
+hash = "9e7c5dc17b0ed2bb1ae622b45f4318a8b0f344cb9cd421e606804ee32928fa82"
+
+[[files]]
 file = "kubejs/data/ad_astra/tags/fluid/fuel.json"
 hash = "52a51f084f0ef796180fa96beb403d32a7baa47dee11b5368d21050441676edc"
 
@@ -785,6 +801,11 @@ hash = "19d86081a1c7654a91f437d85ea34af4e3f2b899c8e0e50d48a04ca97babf7b4"
 metafile = true
 
 [[files]]
+file = "mods/ftb-quests-forge.pw.toml"
+hash = "93330f6ec85532067df176c6baee0e0f6d685c78088b1a2217726f6421899148"
+metafile = true
+
+[[files]]
 file = "mods/ftb-teams-forge.pw.toml"
 hash = "c21c2308684a75cda7dd9d557d129c9f89f49be527da3d5aa675fff444c11f5e"
 metafile = true
@@ -792,6 +813,11 @@ metafile = true
 [[files]]
 file = "mods/ftb-ultimine-forge.pw.toml"
 hash = "3529bc9c3a7b54933869be1d1d84a948d091c3d6064bbb6b17874d7c153b4dca"
+metafile = true
+
+[[files]]
+file = "mods/ftb-xmod-compat.pw.toml"
+hash = "96b8df58491c7190b35bf1c5115f029df6464ec276244557becad1613c5f5125"
 metafile = true
 
 [[files]]

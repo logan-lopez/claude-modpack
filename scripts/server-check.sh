@@ -1,6 +1,7 @@
 #!/bin/bash
 # Boots a headless NeoForge server from pack/ and fails when a mod crashes or a dependency is
-# missing. Exits 0 when the server reaches "Done" with no mod-loading failure.
+# missing, or when the quest book in pack/config/ftbquests/quests/ doesn't load as written. Exits 0
+# when the server reaches "Done" with no mod-loading failure and the book loads clean.
 #
 #   CHECK_PORT     port for `packwiz serve` (default 8080)
 #   CHECK_TIMEOUT  seconds to wait for "Done" (default 300)
@@ -27,6 +28,14 @@ FAIL_PATTERNS=(
   'Error during pre-loading phase'
   'Failed to start the minecraft server'
 )
+
+# The quest book, when pack/ has one. FTB Quests 2101.1.36 loads it after Done (on server start)
+# and logs these two lines around the load even when a chapter fails to parse; every ERROR line
+# between them is about the book. Copied from a real run, see docs/architecture/quests.md.
+QUESTS="$PACK/config/ftbquests/quests"
+SERVER_QUESTS="$SERVER/config/ftbquests/quests"
+QUEST_LOADING='[FTB Quests/]: Loading quests from '
+QUEST_LOADED='\[FTB Quests/\]: Loaded [0-9]+ chapter groups, [0-9]+ chapters, [0-9]+ quests, [0-9]+ reward tables'
 
 say() { printf '[check] %s\n' "$*"; }
 die() { printf '[check] FAIL: %s\n' "$*" >&2; exit 1; }
@@ -113,15 +122,20 @@ if [[ ! -f "$SERVER/libraries/net/neoforged/neoforge/$NEOFORGE/unix_args.txt" ]]
     die "NeoForge installer failed, see run/cache/install.log"
 fi
 
-# 5. Sync the server-side mods, and start from a fresh world.
+# 5. Sync the server-side mods, and start from a fresh world. The quest book goes first: configs
+# persist between runs, and FTB Quests writes its folder, so the server must read only pack/'s.
 fetch https://github.com/packwiz/packwiz-installer-bootstrap/releases/download/v0.0.3/packwiz-installer-bootstrap.jar \
   packwiz-installer-bootstrap.jar
+rm -rf "$SERVER_QUESTS"
 say "syncing mods from http://localhost:$PORT/pack.toml"
 (cd "$SERVER" && java -jar "$CACHE/packwiz-installer-bootstrap.jar" --bootstrap-main-jar "$CACHE/packwiz-installer.jar" \
   -g -s server "http://localhost:$PORT/pack.toml" >"$CACHE/sync.log" 2>&1) ||
   die "packwiz-installer failed: $(tail -n10 "$CACHE/sync.log")"
 kill_tree "$SERVE_PID"
 SERVE_PID=''
+if [[ -d $QUESTS ]] && ! DIFF=$(diff -rq "$QUESTS" "$SERVER_QUESTS" 2>&1); then
+  die "the sync didn't install pack/config/ftbquests/quests as it is: $DIFF"
+fi
 
 cd "$SERVER"
 rm -rf world crash-reports logs/latest.log
@@ -156,12 +170,43 @@ done
 ELAPSED=$((SECONDS - START))
 
 if [[ $RESULT == pass ]]; then
+  # The quest book loads a fraction of a second after Done.
+  if [[ -d $QUESTS ]]; then
+    for _ in {1..10}; do grep -qE "$QUEST_LOADED" "$LOG" && break; sleep 1; done
+  fi
   echo stop >&3 2>/dev/null || true
   for _ in {1..60}; do kill -0 "$SERVER_PID" 2>/dev/null || break; sleep 1; done
 fi
 exec 3>&-
 kill_tree "$SERVER_PID"
 SERVER_PID=''
+
+# The quest book loaded as written: no ERROR line during the load, every chapter and reward table
+# in pack/ counted, and nothing rewritten when the server saved it on stop. FTB Quests skips a
+# chapter it can't parse, and quietly renumbers a bad or duplicate ID and writes the book back.
+QUEST_LOAD='' QUEST_ERRORS='' QUEST_WRITES=''
+if [[ $RESULT == pass && -d $QUESTS ]]; then
+  QUEST_LOAD=$(grep -oE "$QUEST_LOADED" "$LOG" | tail -n1 | sed -E 's/.*Loaded //')
+  QUEST_ERRORS=$(awk -v from="$QUEST_LOADING" 'index($0, from) {on=1; next} on && /\[FTB Quests\/\]: Loaded / {exit}
+    on && /^\[[^]]+\] \[Server thread\/ERROR\]/' "$LOG" | sed -E 's/^\[[^]]+\] //')
+  QUEST_WRITES=$(diff -rq "$QUESTS" "$SERVER_QUESTS" 2>&1 | sed -e "s|$QUESTS/*|pack: |g" -e "s|$SERVER_QUESTS/*|server: |g" || true)
+  have=$( (find "$QUESTS/chapters" -maxdepth 1 -name '*.snbt' 2>/dev/null || true) | wc -l | tr -d ' ')
+  tables=$( (find "$QUESTS/reward_tables" -maxdepth 1 -name '*.snbt' 2>/dev/null || true) | wc -l | tr -d ' ')
+  problems=()
+  if [[ -z $QUEST_LOAD ]]; then
+    problems+=("no 'Loaded ... reward tables' line from FTB Quests")
+  else
+    loaded=$(sed -E 's/.*, ([0-9]+) chapters,.*/\1/' <<<"$QUEST_LOAD")
+    loaded_tables=$(sed -E 's/.*, ([0-9]+) reward tables/\1/' <<<"$QUEST_LOAD")
+    (( loaded < have )) && problems+=("loaded $loaded of $have chapters")
+    (( loaded_tables < tables )) && problems+=("loaded $loaded_tables of $tables reward tables")
+  fi
+  [[ -n $QUEST_ERRORS ]] && problems+=("$(wc -l <<<"$QUEST_ERRORS" | tr -d ' ') ERROR line(s) while loading the book")
+  [[ -n $QUEST_WRITES ]] && problems+=("FTB Quests rewrote the book on save ($(wc -l <<<"$QUEST_WRITES" | tr -d ' ') file(s))")
+  if (( ${#problems[@]} )); then
+    RESULT=fail REASON="quests: $(printf '%s; ' "${problems[@]}" | sed 's/; $//')"
+  fi
+fi
 
 # 8. Summary.
 [[ -f $LOG ]] || LOG=console.log
@@ -175,6 +220,7 @@ echo "NeoForge:  ${RUNNING:-$NEOFORGE (from pack.toml, not seen in the log)} (Mi
 echo "Mods:      ${LOADED:-?} loaded (incl. minecraft and neoforge), $JARS jar(s) in mods/"
 echo "Boot:      ${ELAPSED}s wall${DONE_LINE:+, server says $DONE_LINE}"
 if [[ $RESULT == pass ]]; then
+  [[ -n $QUEST_LOAD ]] && echo "Quests:    $QUEST_LOAD"
   # Load errors against the baseline. New ones are reported, never failed on.
   KEYS=$(load_error_keys "$LOG")
   count() { [[ -n $1 ]] && wc -l <<<"$1" | tr -d ' ' || echo 0; }
@@ -204,6 +250,15 @@ fi
 echo "Reason:    $REASON"
 echo "Log:       run/server/$LOG"
 case $REASON in
+  quests:*)
+    [[ -n $QUEST_LOAD ]] && echo "Quests:    $QUEST_LOAD"
+    [[ -n $QUEST_ERRORS ]] && awk '!seen[$0]++' <<<"$QUEST_ERRORS" | head -n20 | sed 's/^/  /'
+    if [[ -n $QUEST_WRITES ]]; then
+      echo "Rewritten: (pack: is pack/config/ftbquests/quests, server: is what FTB Quests saved)"
+      sed 's/^/  /' <<<"$QUEST_WRITES"
+      diff -r "$QUESTS" "$SERVER_QUESTS" | sed -e "s|$QUESTS/*|pack: |g" -e "s|$SERVER_QUESTS/*|server: |g" |
+        head -n30 | sed 's/^/  /' || true
+    fi ;;
   log:*)
     grep -nF -A12 "${REASON#log: }" "$LOG" | head -n30 | sed 's/^/  /' ;;
   crash*)

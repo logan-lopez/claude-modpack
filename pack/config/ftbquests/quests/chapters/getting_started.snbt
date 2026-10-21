@@ -1,0 +1,49 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_started"
+	group: ""
+	id: "2A372F82EF67248E"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1ECAD497C0AD8335"
+			tasks: [{
+				id: "1C7537BEF5AD8674"
+				item: { count: 1, id: "minecraft:crafting_table" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1ECAD497C0AD8335"]
+			id: "00ED0347E5F2AE0A"
+			tasks: [{
+				id: "2FF089DD267AB544"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00ED0347E5F2AE0A"]
+			id: "4F87995FA90727E9"
+			rewards: [{
+				id: "2671DE60492A0247"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "233FCD7815BE9E2D"
+				item: { count: 1, id: "create:shaft" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+	]
+}

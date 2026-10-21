@@ -280,3 +280,185 @@ The implementer doesn't launch Prism.
 
 Then stop. Report the check summaries, the sync finding and the hand checks for Logan. Don't
 merge anything.
+
+## Report
+
+### Built
+
+- **Mods** (`pack/mods/`): `ftb-quests-forge.pw.toml` (FTB Quests 2101.1.36, file 8885017) and
+  `ftb-xmod-compat.pw.toml` (XMod Compat 21.1.13, file 9267870), both `side = "both"`,
+  `metadata:curseforge`, NeoForge jars. 294 → 296 entries, 269 → 271 server jars.
+- **Quest book** (`pack/config/ftbquests/quests/`): `chapters/getting_started.snbt` and
+  `lang/en_us.snbt` written by hand from the source at `v2101.1.36`; `data.snbt` and
+  `chapter_groups.snbt` are what FTB Quests wrote itself for a book with no `data.snbt`
+  (its defaults, `version: 13`). The sample is the brief's default: crafting table → andesite
+  alloy → shaft, `x` 0/2/4, 100 XP on the last. The hand-written chapter and lang file came back
+  from FTB Quests' writer byte for byte on the first boot.
+- **`scripts/server-check.sh`:** deletes `run/server/config/ftbquests/quests/` before the sync
+  and dies if the synced book differs from `pack/`'s; after Done waits up to 10 s for FTB Quests'
+  `Loaded` line; after the server exits, fails on a missing `Loaded` line, fewer chapters or
+  reward tables than `pack/` has, any `Server thread` ERROR line between `Loading quests from` and
+  `Loaded`, or any file that differs between `pack/` and what FTB Quests saved. Prints
+  `Quests: ...` on a pass and the ERROR lines or the diff on a fail.
+- **`scripts/pull-quests.sh`:** as the brief shaped it, plus `--exclude '*.tmp'` (FTB Library's
+  write-then-rename leaves one only after a crash).
+- **Docs:** listed below.
+
+### Deviations
+
+- **The ERROR-line rule is a window, not a list.** The brief asked for the specific FTB Library
+  and FTB Quests lines. The check instead fails on any `Server thread` ERROR line between
+  `Loading quests from` and `Loaded` (both copied from a real run). The unknown item logs from
+  Minecraft's `ItemStack` logger, not FTB's, and the window catches it and FTB Quests' other load
+  errors without a list that would go stale. Every line seen there in the runs was about the book.
+- **packwiz added Architectury from CurseForge.** `packwiz curseforge add` offered FTB Quests'
+  Architectury dependency and rewrote the existing Modrinth `architectury-api.pw.toml` as a
+  CurseForge one (same jar). Reverted with `git checkout`, per Modrinth first.
+- **The brief was committed first,** as `9ff5ff6 Brief 09: FTB Quests, and a quest book
+  minecraft-mcp can write`, matching the repo's brief/build commit pairs. It and the README and
+  FUTURE edits that came with it were in the tree before this session started.
+
+### Defaults taken
+
+- **Fail on a rewritten file:** kept. FTB Quests *does* write clean files back: every load marks
+  the book dirty (`Chapter.addQuest`, `ChapterGroup.addChapter` call `markDirty`), so every stop
+  or autosave writes the whole book. But a clean book comes back byte for byte, so the check
+  compares content, and a rewrite still means FTB Quests changed something. Written down on the
+  quests page and the server check page.
+- **The sample chapter:** the brief's default.
+- **Unknown item IDs:** it logs (`Tried to load invalid item: ...` at ERROR, Minecraft's
+  `ItemStack` logger), so the check fails on it. FTB Quests also turns the task into
+  `ftbquests:missing_item` and writes that back.
+
+### Acceptance
+
+- **Server check passes,** exit 0, mods up by two (271 jars, from the 269 the mods page recorded):
+
+  ```
+  == server check: PASS ==
+  NeoForge:  21.1.264 (Minecraft 1.21.1)
+  Mods:      299 loaded (incl. minecraft and neoforge), 271 jar(s) in mods/
+  Boot:      50s wall, server says Done (17.831s)!
+  Quests:    1 chapter groups, 1 chapters, 3 quests, 0 reward tables
+  Load errors: 313 known, 0 new, 0 gone
+  ```
+  The 11 other ERROR lines are the same as before (dist cleaner, Small Ships at shutdown). FTB
+  Quests and XMod Compat added no baseline keys, so `load_error_keys` is untouched.
+- **Each breakage fails,** exit 1, reason naming the quest problem:
+  - Syntax error (the chapter's last `}` deleted):
+    ```
+    Reason:    quests: loaded 0 of 1 chapters; 1 ERROR line(s) while loading the book
+    Quests:    1 chapter groups, 0 chapters, 0 quests, 0 reward tables
+      [Server thread/ERROR] [FTB Library/]: Failed to read <repo>/run/server/config/ftbquests/quests/chapters/getting_started.snbt: Unexpected end of file!
+    ```
+  - Duplicate ID (a task's ID set to another task's):
+    ```
+    Reason:    quests: FTB Quests rewrote the book on save (1 file(s))
+    Quests:    1 chapter groups, 1 chapters, 3 quests, 0 reward tables
+    Rewritten: (pack: is pack/config/ftbquests/quests, server: is what FTB Quests saved)
+      Files pack: chapters/getting_started.snbt and server: chapters/getting_started.snbt differ
+      25c25
+      < 				id: "1C7537BEF5AD8674"
+      ---
+      > 				id: "2C6ACE99E0EE0976"
+    ```
+  - ID over `7FFFFFFFFFFFFFFF` (the chapter's ID set to `8000000000000000`):
+    ```
+    Reason:    quests: FTB Quests rewrote the book on save (1 file(s))
+      6c6
+      < 	id: "8000000000000000"
+      ---
+      > 	id: "3BDB44B86861A63F"
+    ```
+  - Unknown item (`create:shaft` → `create:not_a_real_item`):
+    ```
+    Reason:    quests: 1 ERROR line(s) while loading the book; FTB Quests rewrote the book on save (1 file(s))
+      [Server thread/ERROR] [net.minecraft.world.item.ItemStack/]: Tried to load invalid item: 'Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: create:not_a_real_item'
+      42c42
+      < 				item: { count: 1, id: "create:not_a_real_item" }
+      ---
+      > 				item: { components: { "ftbquests:missing_item": "create:not_a_real_item" }, count: 1, id: "ftbquests:missing_item" }
+    ```
+  - Restored, the check passed again (above).
+  - An exploratory boot with a duplicate quest ID in a *second* chapter showed the worst case:
+    FTB Quests read the stray chapter first and renumbered the sample's quest, so the sample's
+    dependency and title then pointed at the stray quest. No ERROR line; only the rewrite shows it.
+- **`git status` after a passing run:** with the book staged, `pack/config/ftbquests/` shows only
+  `A` (staged), no worktree change.
+- **`scripts/pull-quests.sh`,** against a scratch clone of the repo and a scratch instance folder:
+  - instance chapter with one quest's `x` changed: copied, index refreshed, printed
+    `M .../getting_started.snbt`, `M pack/index.toml` and `2 files changed`; the instance's stray
+    `data.snbt.tmp` was left out. Exit 0.
+  - with that uncommitted change in `pack/`: refused, listing it. Exit 1. With `FORCE=1`: copied.
+  - missing source: refused, `no quest book at <path>/config/ftbquests/quests`. Exit 1.
+- **Server zip:** `scripts/server-pack.sh` built `dist/claude-modpack-0.1.0-server.zip` (624M,
+  271 jars); `unzip -l` lists `config/ftbquests/quests/` with `data.snbt`, `chapter_groups.snbt`,
+  `chapters/getting_started.snbt` and `lang/en_us.snbt`.
+- **`checklinks.py`:** 29 files, 0 broken.
+- **Sync experiment** (packwiz-installer into a scratch folder, `-g -s server`, a quest file
+  edited there): kept with the pack unchanged ("Modpack is already up to date!"); kept when
+  another pack file changed (it compares cached hashes, not the disk); **replaced** when that same
+  file changed in the pack. So Logan pulls before the next pack change to the book, not before
+  every launch. Also: deleting a tracked file on disk and syncing again puts it back, which the
+  check's clean quest folder relies on.
+
+One run (the second boot of the session) died before Done with a JVM SIGSEGV in spark's async
+profiler (`ThreadFilter::accept`), unrelated to quests; the rerun passed. Not seen before in the
+repo's docs.
+
+### Size
+
+Sized M, this session M (33 active min, 33 wall, 0 compactions).
+
+### Spot checks for Logan
+
+In the `Claude Modpack` Prism instance, after a `packwiz serve` in `pack/` (the auto-sync):
+
+1. Inventory → **Quests** (FTB Library's sidebar). Getting Started shows three quests left to
+   right with their titles and descriptions; the second and third are locked until the one
+   before is done.
+2. Crafting a crafting table completes the first quest. The last quest's 100 XP can be claimed.
+3. `/ftbquests editing_mode`, drag one quest, quit to the title screen, run
+   `scripts/pull-quests.sh`. The diff should touch only that quest's `x`/`y` in the chapter file.
+   If it reformats the whole file, say so: the sample's layout gets redone from the editor's.
+4. On a quest's item, JEI opens from the book (XMod Compat's recipe link, which the server log
+   shows as `recipe helper provider is [JEI]`), if the book offers it.
+
+### Docs updated
+
+- New: `docs/architecture/quests.md` (layout, pinned format, IDs, lang keys, load and save
+  behavior, the check, the sync finding, the pull script, "Writing quests from another tool"),
+  `docs/guide/quests.md`, `.claude/rules/quests.md` (by `areas.py`).
+- `AGENTS.md`: the Areas row (by `areas.py`) and `scripts/pull-quests.sh` in Commands.
+- `docs/architecture/server-check.md`: the quest outcomes, the clean quest folder, the wait for
+  `Loaded`, the `Quests:` line, comparing by content, and the decision with its failure runs.
+- `docs/architecture/pack-overrides.md`: a What lives where line for the quest book.
+- `docs/architecture/server-pack.md`: quest files in the zip, and dropped chapters staying.
+- `docs/guide/README.md` and the root `README.md`: the quest book page; the root README's command
+  list has `scripts/pull-quests.sh`.
+- `docs/guide/mods.md`: the counts, a Quests paragraph, FTB Quests out of Left behind.
+- `docs/briefs/README.md`: Quests out of Not built. `FUTURE.md`: the Parked bullet gone.
+
+### What minecraft-mcp's quest plan can now lean on
+
+For its next session to update its `FUTURE.md` (Quest generation): the format is pinned in
+[`docs/architecture/quests.md`](../architecture/quests.md), with
+`pack/config/ftbquests/quests/chapters/getting_started.snbt` as the copyable reference; a
+generator writes chapters and `lang/en_us.snbt` there and gets a yes or no from
+`scripts/server-check.sh`, whose fail names the ERROR lines or prints the diff of what FTB Quests
+would have written instead. The check proves parse, IDs, item IDs and exact layout; it doesn't
+prove an item is obtainable when the quest asks for it.
+
+### Follow-ups
+
+- **The editor's layout is unconfirmed** until hand check 3. If dragging a quest reformats the
+  file, the pinned layout changes with it (needs Logan, since it's pinned).
+- **A dangling dependency and capitalized file names** are handled by FTB Quests per its source
+  (dropped, lowercased), and either would fail the check as a rewrite, but neither was caused on
+  purpose.
+- **A task `count` above 1** (a long, `L` in SNBT) hasn't been through a round trip; the first
+  generated chapter with one will show whether the layout holds.
+- **spark's async profiler segfaulted the JVM once** during a server check. If it recurs, spark is
+  a candidate to drop or configure off on the server.
+- **The book's settings are FTB Quests' defaults** (`show_lock_icons: false`, linear progression,
+  circle quests). Tuning them is for when real chapters exist.
