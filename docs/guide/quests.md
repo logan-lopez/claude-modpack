@@ -78,6 +78,11 @@ Four more Create chapters follow, each locked until a quest in the first two:
 - **Ad Astra: Liftoff**, 13 quests, after Steel Ingot: the NASA workbench, the rocket's nose cone,
   fins, steel tanks and engine, the launch pad, the fuel refinery and Giselle's fuel loader, the
   space suit, the oxygen loader and an oxygen can, ending at the tier 1 rocket.
+- **Ad Astra: The Planets**, 23 quests, after the tier 1 rocket: landing on the Moon, desh and
+  the compressor for its plates, the desh engine and tanks for the tier 2 rocket, with the oxygen
+  distributor and gravity normalizer for a base; Mars and ostrum for the tier 3 rocket, the cryo
+  freezer and the netherite space suit; Venus and Mercury, calorite and the jet suit; and the
+  tier 4 rocket to Glacio. Each planet is a quest you complete by landing on it.
 
 **Combat and Gear**, the fifth group:
 
@@ -149,6 +154,23 @@ Four more Create chapters follow, each locked until a quest in the first two:
   red kart; Create Stuff Additions' andesite and brass jetpacks; and Create Teleporters' quantum
   mechanism and entity teleporter. Elevators, and Small Ships' dockyard, a ship (a box to tick),
   its upgrades and a cannon, are open from the start.
+
+**Exploration and Bosses**, the ninth group, is the first with quests you complete by going
+somewhere or killing something rather than handing items in:
+
+- **The Nether**, 18 quests, open from the start: entering the Nether, then a fortress (YUNG's
+  Better Nether Fortresses' own; vanilla fortresses are turned off), blaze rods and the brewing
+  stand, nether wart and wither skeleton skulls, soul sand and killing the Wither for a nether
+  star and a beacon; a bastion and the netherite upgrade template; ancient debris, the netherite
+  ingot and netherite gear. Quartz, a ghast tear and a respawn anchor branch off the first quest.
+- **The End**, 12 quests, after Blaze Rods: eyes of ender, finding a stronghold, entering the
+  End and killing the Ender Dragon, then the dragon egg, dragon's breath and end crystals; an end
+  city, chorus fruit, shulker shells and a shulker box, and the elytra.
+- **The Deep Dark**, 14 quests, after Netherite Ingot: an ancient city, echo shards and Deeper
+  Darker's warden upgrade template, killing the Warden for the Heart of the Deep, the reinforced
+  echo shard and warden armour; the Otherside (the heart opens its portal), an ancient temple,
+  soul crystals, sculk bones and the sonorous staff; and Create: Deep Dark's echo ingot and echo
+  armour.
 
 The rest of the book is planned in minecraft-mcp's
 [outline](../../../minecraft-mcp/docs/design/quest-book.md): its groups, chapters and the order

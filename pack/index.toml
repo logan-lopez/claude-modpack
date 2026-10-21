@@ -6,11 +6,15 @@ hash = "fd52d588f0a2f9407c82362d47ee71b12fb5baacb113f7dc7de4282caf2f930d"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "10b78ae74fe4a48f0714b4170afaf0eebaffd6b2d989d05290bf5bd16717f77e"
+hash = "a413be69b6117bc0e5894b7208da9e79134864a47ebd393b3ca4b22a6a24362b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ad_astra_liftoff.snbt"
 hash = "f7484292cff62768e6c10b6bab6aafe9888865c7eef083483c689cbf42601565"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ad_astra_planets.snbt"
+hash = "c09a0fa5262e0d1e9573266a17c57ab9c14886bad49bff284ee9a0f9318e1bd0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/aquaculture.snbt"
@@ -77,6 +81,10 @@ file = "config/ftbquests/quests/chapters/create_wizardry.snbt"
 hash = "5dd988583d04ddbae02ecd452e22f1a8fae1bc07f096fd017dc1794d947432bc"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/deep_dark.snbt"
+hash = "611a3c9ab0bdef4bc078255926d21dce07f12c24ea1add2147b5ddeff550c69b"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/enchanting.snbt"
 hash = "a9b1085869fc661e8bba9c237a12502a3b46252e5c16729b6b0287d0f92bc153"
 
@@ -121,12 +129,20 @@ file = "config/ftbquests/quests/chapters/tfmg_steel.snbt"
 hash = "165dd55afd5b3dd5fd19e734b033fa96e55d631196150f9f4d7b51e7046d3b05"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/the_end.snbt"
+hash = "71d880100f9a64df0d715c3d8452bbdee0f069be798ecd84ea300b12bdf9bcf1"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/the_nether.snbt"
+hash = "b0d5c18cdd2349ffca825e278020aa5d990913ea5dac52a04d5b6201f7db4524"
+
+[[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "da77e416b557850f5cb1ab68d71de78f9fbc3cf3845e50cdb4dba3a8164f6e7f"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "934c69186cb71df3fdb16430980d382178361ee3533c1f131fcc092783641c9a"
+hash = "b5481659b67cea8aee3cd526c10a9d40932077b63f1e02fa5a58b47e5f043563"
 
 [[files]]
 file = "kubejs/data/ad_astra/tags/fluid/fuel.json"
