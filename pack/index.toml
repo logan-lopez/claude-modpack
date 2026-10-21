@@ -94,7 +94,7 @@ hash = "9648e02b577b93c9da718d1f2460a3d68a607c32d6d2cf39783688d03fa7d684"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/irons_spellbooks.snbt"
-hash = "ec629bcf8161a6a831bcdef286ba0e7d90a2e3a7e334b747bac72ca412c85881"
+hash = "2fc0ff1188930ee63f0e7fcffd251a2a90170f2f5af372f1237e77e27f5e3982"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/more_delights.snbt"
@@ -126,7 +126,7 @@ hash = "da77e416b557850f5cb1ab68d71de78f9fbc3cf3845e50cdb4dba3a8164f6e7f"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "7ea9db460353e52c95910f24f364759ba0fa88acf623c5a40cb1d40f796f24b0"
+hash = "934c69186cb71df3fdb16430980d382178361ee3533c1f131fcc092783641c9a"
 
 [[files]]
 file = "kubejs/data/ad_astra/tags/fluid/fuel.json"

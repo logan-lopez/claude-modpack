@@ -166,7 +166,10 @@ what the client shows instead hasn't been looked at.
 - **An item that adds components to its own stack** is written back with them. Iron's Spells'
   spell books gain an `irons_spellbooks:spell_container` (their slots) when the stack loads, so a
   task or icon written as `{ count: 1, id: "irons_spellbooks:gold_spell_book" }` comes back with
-  `components: { ... }` and fails the server check (2026-10-21).
+  `components: { ... }` and fails the server check (2026-10-21). minecraft-mcp writes such an item
+  with the components FTB Quests saves (on the task's line, on several lines in an icon or a
+  reward), from the export's record of what loading gives it, so the `irons_spellbooks` chapter's
+  three spell books are item tasks.
 - **Every load marks the book dirty** (`Chapter.addQuest` and `ChapterGroup.addChapter` call
   `markDirty`), so the next world save writes the whole book back: an autosave, `save-all` or
   the server stopping. For a clean book the bytes are the same; only the files' times change.

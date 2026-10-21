@@ -360,7 +360,7 @@
 	quest.2EC24750F1A6E051.title: "Cooking Pot"
 	quest.2EF693E8E64154B9.quest_desc: ["Mechanically crafted from diamonds, overcharged diamonds, iron sheets, a brass casing and a block of redstone. The strongest motor."]
 	quest.2EF693E8E64154B9.title: "Reinforced Motor"
-	quest.2F73106C6AD0BDD4.quest_desc: ["Gold ingots, four arcane essence and two hogskin, which hoglins drop. A gold-bound book with room for more spells than the tome. Tick the box once you have one."]
+	quest.2F73106C6AD0BDD4.quest_desc: ["Make one from gold ingots, four arcane essence and two hogskin, which hoglins drop: a gold-bound book with room for more spells than the tome."]
 	quest.2F73106C6AD0BDD4.title: "Apprentice's Spell Book"
 	quest.2F7E1B53608FC57B.quest_desc: ["Cut chorus fruit on the board for four grains. Chorus grows on the End's outer islands."]
 	quest.2F7E1B53608FC57B.title: "Chorus Fruit Grain"
@@ -639,7 +639,7 @@
 	quest.62317A2926E76B27.title: "Bee Cage"
 	quest.62816651A924C812.quest_desc: ["Set the basin on the blaze burner and a powered mechanical mixer above the basin. Drop in a copper ingot and a zinc ingot, and the heated mix makes a brass ingot."]
 	quest.62816651A924C812.title: "Brass"
-	quest.62A02766765D3111.quest_desc: ["Copper ingots, paper and string: the first spell book. Equip it, and the spells written into it can be cast. Tick the box once you have one."]
+	quest.62A02766765D3111.quest_desc: ["Make one from copper ingots, paper and string: the first spell book. Equip it, and the spells written into it can be cast."]
 	quest.62A02766765D3111.title: "Flimsy Journal"
 	quest.62A51E3D268B1BC4.quest_desc: ["Fences and wood. Feed it compostable scraps and it fills with worms, the bait that makes fish bite sooner."]
 	quest.62A51E3D268B1BC4.title: "Worm Farm"
@@ -723,7 +723,7 @@
 	quest.74F0FEDB7C5FDA76.title: "Redstone Magnet"
 	quest.74F9258858BC6EC1.quest_desc: ["Installed at the dockyard: cotton sails for speed, copper plating for maneuverability and iron scantlings for durability."]
 	quest.74F9258858BC6EC1.title: "Ship Upgrades"
-	quest.750A1A964F418DF1.quest_desc: ["Chains, leather and paper. A sturdier book with room for more spells. Tick the box once you have one."]
+	quest.750A1A964F418DF1.quest_desc: ["Make one from chains, leather and paper: a sturdier book with room for more spells."]
 	quest.750A1A964F418DF1.title: "Ironbound Tome"
 	quest.75C52F7F20D35941.quest_desc: ["Two iron, two string and a stick. Aquaculture's rods hold a hook, bait, a fishing line and a bobber, and each one changes how the rod fishes."]
 	quest.75C52F7F20D35941.title: "Iron Fishing Rod"

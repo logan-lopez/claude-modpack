@@ -4,7 +4,15 @@
 	filename: "irons_spellbooks"
 	group: "5F1D36673C78B4B6"
 	icon: {
-		id: "irons_spellbooks:inscription_table"
+		components: {
+			"irons_spellbooks:spell_container": {
+				data: [ ]
+				maxSpells: 8
+				mustEquip: 1b
+				spellWheel: 1b
+			}
+		}
+		id: "irons_spellbooks:gold_spell_book"
 	}
 	id: "136CA92B220A5C4D"
 	images: [ ]
@@ -35,8 +43,9 @@
 				xp: 50
 			}]
 			tasks: [{
-				id: "7B7DC05888EC5314"
-				type: "checkmark"
+				id: "2E300CA158E2FBFA"
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 5, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:copper_spell_book" }
+				type: "item"
 			}]
 			x: 2.0d
 			y: 1.5d
@@ -50,8 +59,9 @@
 				xp: 50
 			}]
 			tasks: [{
-				id: "62DB991FDCE49962"
-				type: "checkmark"
+				id: "4CBC32380EE081B4"
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 6, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:iron_spell_book" }
+				type: "item"
 			}]
 			x: 4.0d
 			y: 1.5d
@@ -182,8 +192,9 @@
 				xp: 100
 			}]
 			tasks: [{
-				id: "33DC298F09AB7C4E"
-				type: "checkmark"
+				id: "4758828CD8E6B8D3"
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 8, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:gold_spell_book" }
+				type: "item"
 			}]
 			x: 6.0d
 			y: 1.5d
