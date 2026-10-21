@@ -24,8 +24,8 @@ pack/config/ftbquests/quests/
   lang/en_us.snbt            every title and description, keyed by object ID
 ```
 
-It holds twenty-five chapters in seven groups, Getting Started, Create, Industry, Space, Combat
-and Gear, Food and Farming and Magic, and nothing in the default group. `chapters/getting_started.snbt` is the sample, alone in Getting Started:
+It holds twenty-eight chapters in eight groups, Getting Started, Create, Industry, Space, Combat
+and Gear, Food and Farming, Magic and Storage and Travel, and nothing in the default group. `chapters/getting_started.snbt` is the sample, alone in Getting Started:
 three quests in a chain (a crafting table, Create's andesite alloy, a Create shaft), one item task
 each, a dependency on the one before, laid out left to right at `x` 0, 2 and 4, and a 100 XP
 reward on the last. It's the format reference, not content. `chapters/create_basics.snbt`
@@ -42,14 +42,17 @@ holds six, `order_index` 0 to 5: `create_electricity` (14 quests) and `create_mo
 `create_fluids`' mechanical pump, `create_enchantment_industry` (8), from its spout, `tfmg_oil`
 (12), from `tfmg_steel`'s steel ingot, and `create_new_age` (17), from the mechanical crafters.
 Space holds `ad_astra_liftoff` (13), from the steel ingot, and Combat and Gear holds
-`create_big_cannons` (14), from `create_fluids`' fluid tank. Food and Farming holds five,
+`create_big_cannons` (14), from `create_fluids`' fluid tank, and `silent_gear` (13), open from the
+start. Food and Farming holds five,
 `order_index` 0 to 4: `farmers_delight` (18 quests), `aquaculture` (13) and `productive_bees`
 (12), open from the start, `more_delights` (14), from `farmers_delight`'s cooking pot, and
 `create_kitchen` (13), from `create_basics`' mechanical mixer. Magic holds five, `order_index` 0
 to 4: `ars_nouveau_source` (11 quests), `irons_spellbooks` (11) and `enchanting` (12), open from
 the start, `ars_nouveau_rituals` (11), from `ars_nouveau_source`'s enchanting apparatus, and
-`create_wizardry` (7), from `irons_spellbooks`' arcane essence. The same rule holds; the chapters
-with no entry, and Rituals, have more than one quest with no dependencies. Every chapter but the sample was drafted and written by minecraft-mcp, which is where real chapters come from, against its
+`create_wizardry` (7), from `irons_spellbooks`' arcane essence. Storage and Travel holds two:
+`storage` (18 quests), open from the start, and `getting_around` (16), from `create_crafting`'s
+mechanical crafters. The same rule holds; the chapters with no entry, Rituals and Getting Around
+have more than one quest with no dependencies. Every chapter but the sample was drafted and written by minecraft-mcp, which is where real chapters come from, against its
 [outline of the whole book](../../../minecraft-mcp/docs/design/quest-book.md).
 
 `data.snbt` is the file FTB Quests wrote itself for a book with no `data.snbt`, so it holds its

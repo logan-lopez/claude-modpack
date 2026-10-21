@@ -85,6 +85,10 @@ Four more Create chapters follow, each locked until a quest in the first two:
   casting sand for a cast iron cannon, the cannon mount, loader, solid shot and powder charges,
   fuzed high explosive shells and a quick-firing breech, then the cannon builder and welder, and
   nethersteel.
+- **Silent Gear**, 13 quests, open from the start: template boards cut on a stone anvil with a
+  crude knife, blueprint paper and a pickaxe blueprint, a pickaxe head and a pickaxe, then blaze
+  gold and the material grader, crimson iron (mined in the Nether) with the salvager, crimson
+  steel and the alloy forge, and azure silver (mined in the End) for azure electrum.
 
 **Food and Farming**, the sixth group:
 
@@ -131,6 +135,20 @@ Four more Create chapters follow, each locked until a quest in the first two:
 - **Enchanting**, 12 quests, open from the start: the enchanting table, hellshelves and seashelves
   and their infused versions, the enchantment library, the deepshelf, the endshelf line to the
   draconic endshelf, and the tomes of scrapping and extraction.
+
+**Storage and Travel**, the eighth group:
+
+- **Storage**, 18 quests, open from the start: a backpack, the iron backpack, an upgrade base and
+  the pickup and magnet upgrades, Dank Storage's first dank and an ender chest off the backpack;
+  Sophisticated Storage's chest, a copper tier upgrade, the storage controller and a storage link,
+  and a trash can, as a second root; and Tom's Simple Storage's inventory connector and cable as a
+  third, to the storage terminal, crafting terminal and wireless terminal, with LaserIO's laser
+  nodes and item cards beside it.
+- **Getting Around**, 16 quests, after the mechanical crafters: a box to tick that opens four
+  branches, the warp stone, waystones, warp scrolls and warp plates; Create: Kart's parts and the
+  red kart; Create Stuff Additions' andesite and brass jetpacks; and Create Teleporters' quantum
+  mechanism and entity teleporter. Elevators, and Small Ships' dockyard, a ship (a box to tick),
+  its upgrades and a cannon, are open from the start.
 
 The rest of the book is planned in minecraft-mcp's
 [outline](../../../minecraft-mcp/docs/design/quest-book.md): its groups, chapters and the order

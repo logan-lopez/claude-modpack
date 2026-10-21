@@ -6,7 +6,7 @@ hash = "fd52d588f0a2f9407c82362d47ee71b12fb5baacb113f7dc7de4282caf2f930d"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "8140a46801ec0f807dd66e61f16a5d35b474c08a3abd6d08e99599757add838a"
+hash = "10b78ae74fe4a48f0714b4170afaf0eebaffd6b2d989d05290bf5bd16717f77e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ad_astra_liftoff.snbt"
@@ -85,6 +85,10 @@ file = "config/ftbquests/quests/chapters/farmers_delight.snbt"
 hash = "f476f4bb5f8046708c15608bc35cb7d07c845081043d89e3f21253df0b63ff25"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/getting_around.snbt"
+hash = "71ea13959107953f4937db711a220b28601195a69ea48a0e51ad98f2b6be384f"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/getting_started.snbt"
 hash = "9648e02b577b93c9da718d1f2460a3d68a607c32d6d2cf39783688d03fa7d684"
 
@@ -101,6 +105,14 @@ file = "config/ftbquests/quests/chapters/productive_bees.snbt"
 hash = "d8ce6a5e015915daca3aebda5491d71cdf45d6104193a9c0aefd147b532c1042"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/silent_gear.snbt"
+hash = "03ae1cdb5edbb52e530756a0ea71b95f11139cc8f505865df8817fd7430bf575"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/storage.snbt"
+hash = "07c3903e724a6203b24a39f99ab0d9227fe6c3391c9337a599947167a4fd7cae"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/tfmg_oil.snbt"
 hash = "1613de07ca7fcf902c7e89d5b77662b7442f48831d113ee795466f65caae56eb"
 
@@ -114,7 +126,7 @@ hash = "da77e416b557850f5cb1ab68d71de78f9fbc3cf3845e50cdb4dba3a8164f6e7f"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "2ac5f8524c30733d5475fcd087ec4006ebb4006c09a52db740a9217536fb8f31"
+hash = "7ea9db460353e52c95910f24f364759ba0fa88acf623c5a40cb1d40f796f24b0"
 
 [[files]]
 file = "kubejs/data/ad_astra/tags/fluid/fuel.json"

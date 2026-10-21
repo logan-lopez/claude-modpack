@@ -1,0 +1,315 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_around"
+	group: "6571B679503116AE"
+	icon: {
+		id: "createteleporters:teleporter"
+	}
+	id: "71ABA115AD07BD0E"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["18CA23C9694BB7C3"]
+			id: "48F91C7BE0BE1E7A"
+			rewards: [{
+				id: "7462F6E452005152"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7D1C744C02487BF6"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["48F91C7BE0BE1E7A"]
+			id: "0D8DEB4793B0CD2D"
+			rewards: [{
+				id: "6C4A2C1CD97B5268"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "085A23C8C954DD89"
+				item: { count: 1, id: "waystones:warp_stone" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D8DEB4793B0CD2D"]
+			id: "7D5679FCDA22F007"
+			rewards: [
+				{
+					id: "40CE8F28D808B9F1"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "37025A4E632D10F7"
+					item: {
+						count: 1
+						id: "minecraft:ender_pearl"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 2L
+				id: "35E20DCA9DEDD64F"
+				item: { count: 1, id: "waystones:waystone" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D8DEB4793B0CD2D"]
+			id: "41C1C91A6AC7DA47"
+			rewards: [{
+				id: "0648491180060D75"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 3L
+				id: "682955948F5B5B6F"
+				item: { count: 1, id: "waystones:warp_scroll" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7D5679FCDA22F007"]
+			id: "3A81744ED309674B"
+			rewards: [{
+				id: "265F6BDAE5A6CDEC"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				count: 2L
+				id: "67F5691997E4A547"
+				item: { count: 1, id: "waystones:warp_plate" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["48F91C7BE0BE1E7A"]
+			id: "194BF4B833718940"
+			rewards: [{
+				id: "560D50D4B673517D"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "250B829E98C77B49"
+					item: { count: 1, id: "create_kart:chassie" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0D51AB89048B5545"
+					item: { count: 1, id: "create_kart:roue" }
+					type: "item"
+				}
+				{
+					id: "3B200FC5C236D0B7"
+					item: { count: 1, id: "create_kart:kart_motor" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["194BF4B833718940"]
+			id: "3B1BA94AAFFA37A6"
+			rewards: [{
+				id: "7D840029F5E2E5C5"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "15C80CA3C8045E5A"
+				item: { count: 1, id: "create_kart:kart_red" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["48F91C7BE0BE1E7A"]
+			id: "4E113836457588C5"
+			rewards: [{
+				id: "759B2D1BE84FDDD5"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "7CC50BD2B22616C6"
+				item: { count: 1, id: "create_sa:andesite_jetpack_chestplate" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4E113836457588C5"]
+			id: "7ECB07A077FF51C9"
+			rewards: [{
+				id: "3EBD7DB29BFD2509"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "20A0D48E0FB2BBEC"
+				item: { count: 1, id: "create_sa:brass_jetpack_chestplate" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["48F91C7BE0BE1E7A"]
+			id: "518D3A98728FCC32"
+			rewards: [{
+				id: "1681392B7E9663BD"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "4A5493839F3F3A44"
+				item: { count: 1, id: "createteleporters:quantum_mechanism" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["518D3A98728FCC32"]
+			id: "29951DB86B5CBE0E"
+			rewards: [{
+				id: "3EC69D704796FF24"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3742C3CF7842EB92"
+				item: { count: 1, id: "createteleporters:teleporter" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			id: "6087A2FF321B51BF"
+			rewards: [{
+				id: "35292EDEC106642D"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				count: 2L
+				id: "298984F2BDC0C558"
+				item: { count: 1, id: "elevatorid:elevator_white" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "594F415ECB2C331F"
+			rewards: [{
+				id: "343140918E7916C9"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "467A187A64FF4DCC"
+				item: { count: 1, id: "smallships:dockyard" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["594F415ECB2C331F"]
+			id: "7155F0E7ACD975E8"
+			rewards: [{
+				id: "4BD4EB7057243B51"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "6142776E722808A2"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7155F0E7ACD975E8"]
+			id: "74F9258858BC6EC1"
+			rewards: [{
+				id: "6DA50F4F14CAF11F"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "54532A88AE48AAFC"
+					item: { count: 1, id: "smallships:cotton_sails" }
+					type: "item"
+				}
+				{
+					id: "0CBC616C77E962B1"
+					item: { count: 1, id: "smallships:copper_plating" }
+					type: "item"
+				}
+				{
+					id: "74E3AEE43115CBFE"
+					item: { count: 1, id: "smallships:iron_scantlings" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7155F0E7ACD975E8"]
+			id: "5D4B88B2653139AE"
+			rewards: [{
+				id: "035C8F3D523876D7"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "6DA67185CA2E344A"
+					item: { count: 1, id: "smallships:cannon" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3AF7F32928D50638"
+					item: { count: 1, id: "smallships:cannon_ball" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 7.5d
+		}
+	]
+}
