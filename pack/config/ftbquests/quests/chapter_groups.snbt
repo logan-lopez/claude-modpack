@@ -5,9 +5,9 @@
 		{ icon: { id: "createaddition:electric_motor" }, id: "002607DF1C0C507C" }
 		{ icon: { id: "ad_astra:tier_1_rocket" }, id: "407E89587E4FC002" }
 		{ icon: { id: "tacz:gun_smith_table" }, id: "38141FC7E950B458" }
-		{ icon: { id: "farmersdelight:cooking_pot" }, id: "01D4CAF8434CE6E3" }
 		{ icon: { id: "ars_nouveau:novice_spell_book" }, id: "5F1D36673C78B4B6" }
-		{ icon: { id: "sophisticatedbackpacks:backpack" }, id: "6571B679503116AE" }
 		{ icon: { id: "minecraft:ender_eye" }, id: "6C84DBAA332BC60C" }
+		{ icon: { id: "farmersdelight:cooking_pot" }, id: "01D4CAF8434CE6E3" }
+		{ icon: { id: "sophisticatedbackpacks:backpack" }, id: "6571B679503116AE" }
 	]
 }

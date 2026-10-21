@@ -6,7 +6,7 @@ hash = "fd52d588f0a2f9407c82362d47ee71b12fb5baacb113f7dc7de4282caf2f930d"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "a413be69b6117bc0e5894b7208da9e79134864a47ebd393b3ca4b22a6a24362b"
+hash = "3bdf4483a4fadfa98c36972387b006dd1e27a3884af7a0244b48dc54efd58758"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ad_astra_liftoff.snbt"
@@ -38,7 +38,7 @@ hash = "1e71a005b74ab22d59d7c087c35a65a93165e987be315391864f884ac797acb6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_armorer.snbt"
-hash = "79d68f5018166ccd1947f83a62f402351b4428519fad144def953eaeb3f7641c"
+hash = "579809a75a5eb8b72eaaf2fa18b94a926b1b9df59d89f3505efce7536c481196"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_basics.snbt"
@@ -46,7 +46,7 @@ hash = "06f0a18638b765d42dc4b7e88552514ee7163ae351b995fc428e77d9d727aecf"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_big_cannons.snbt"
-hash = "9fcbc70d4f3ac9f1709d79ccef029158edf571336fb27acbe01d10e930646aca"
+hash = "dfd283f33a67b2301cc666840b4fd7be5685972bd898465a0ec86108465f40e5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_contraptions.snbt"
@@ -138,7 +138,7 @@ hash = "d8ce6a5e015915daca3aebda5491d71cdf45d6104193a9c0aefd147b532c1042"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/silent_gear.snbt"
-hash = "03ae1cdb5edbb52e530756a0ea71b95f11139cc8f505865df8817fd7430bf575"
+hash = "6420dc68fa94f48472206c921b7c5900683f571f6526478ec792b072990b3342"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage.snbt"
@@ -146,7 +146,7 @@ hash = "07c3903e724a6203b24a39f99ab0d9227fe6c3391c9337a599947167a4fd7cae"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tacz_guns.snbt"
-hash = "69172f2b4620f19af3d8fce774d4c0177a2080efee4dcf0e5db9c4dae11b47ef"
+hash = "50cac8aa75df06efba850ed2eba645134e3e7be96655a899918598a5231430a3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tfmg_oil.snbt"

@@ -24,47 +24,49 @@ pack/config/ftbquests/quests/
   lang/en_us.snbt            every title and description, keyed by object ID
 ```
 
-It holds thirty-nine chapters in nine groups, Getting Started, Create, Industry, Space, Combat
-and Gear, Food and Farming, Magic, Storage and Travel and Exploration and Bosses, and nothing in
-the default group. `chapters/getting_started.snbt`, alone in Getting Started, is the book's
-intro: six quests, a Welcome checkmark with nothing before it, then a crafting table, iron ingots
-and Iron Furnaces' iron furnace in a chain, and two checkmarks off the Welcome (claiming land,
-making a party). It gates nothing. Until v3's M7 it was the hand-written sample of three quests
-(a crafting table, andesite alloy, a shaft) that proved the format; the crafting table quest kept
-its ID. `chapters/create_basics.snbt`
-("Create: Andesite to Precision", `order_index` 0 in Create) is the first real chapter: 19 quests
-from andesite alloy to the precision mechanism. `chapters/create_crafting.snbt` ("Create:
-Mechanical Crafting", `order_index` 1) follows it with 11 quests, and its first quest depends on
-`create_basics`' precision mechanism: the book's first dependency across chapters. Four more
-follow in Create, `order_index` 2 to 5: `create_contraptions` (16 quests) and `create_logistics`
-(17), entered from `create_basics`' andesite casing, `create_fluids` (12), from its mechanical
-press, and `create_trains` (12), from `create_crafting`'s crushing wheels. Each first quest
-depends on that one quest in another chapter, and no other quest leaves its chapter. Industry
-holds six, `order_index` 0 to 5: `create_electricity` (14 quests) and `create_more_machines`
-(13), entered from `create_crafting`'s mechanical crafters, `tfmg_steel` (13), from
-`create_fluids`' mechanical pump, `create_enchantment_industry` (8), from its spout, `tfmg_oil`
-(12), from `tfmg_steel`'s steel ingot, and `create_new_age` (17), from the mechanical crafters.
-Space holds `ad_astra_liftoff` (13), from the steel ingot, and `ad_astra_planets` (23), from its
-tier 1 rocket, and Combat and Gear holds five, `order_index` 0 to 4:
-`create_big_cannons` (14), from `create_fluids`' fluid tank, `silent_gear` (13), `tacz_guns`
-(15) and `apotheosis` (15), open from the start, and `create_armorer` (8), from
-`create_crafting`'s mechanical crafters. `tacz_guns` and `create_armorer` are the book's first
-chapters with TaCZ variant tasks (a gun, ammo or attachment matched on its recipe's stack), and
-`apotheosis` its first with advancement tasks. Food and Farming holds five,
-`order_index` 0 to 4: `farmers_delight` (18 quests), `aquaculture` (13) and `productive_bees`
-(12), open from the start, `more_delights` (14), from `farmers_delight`'s cooking pot, and
-`create_kitchen` (13), from `create_basics`' mechanical mixer. Magic holds six, `order_index` 0
-to 5: `ars_nouveau_source` (11 quests), `irons_spellbooks` (11) and `enchanting` (12), open from
-the start, `ars_nouveau_rituals` (11), from `ars_nouveau_source`'s enchanting apparatus,
-`create_wizardry` (7), from `irons_spellbooks`' arcane essence, and `irons_ancient` (13), from
-its apprentice's spell book. Storage and Travel holds two:
-`storage` (18 quests), open from the start, and `getting_around` (16), from `create_crafting`'s
-mechanical crafters. Exploration and Bosses holds six, `order_index` 0 to 5: `the_nether` (18
-quests), open from the start, `the_end` (12), from its blaze rods, `deep_dark` (14), from its
-netherite ingot, `dungeons` (16) and `mowzies_mobs` (12), open from the start, and `cataclysm`
-(21), from `the_nether`'s Wither; the first three are the book's first chapters with kill,
-dimension and structure tasks. The same rule holds; the chapters with no entry, Rituals, Getting
-Around, Dungeons and Mowzie's Mobs have more than one quest with no dependencies. Every chapter, Getting Started's rewrite included, was drafted and written by minecraft-mcp, which is where real chapters come from, against its
+It holds thirty-nine chapters in nine groups, in this order since Logan arranged them in the
+editor at minecraft-mcp's v3 M7: Getting Started, Create, Industry, Space, Combat and Gear, Magic,
+Exploration and Bosses, Food and Farming, and Storage and Travel. Nothing is in the default group.
+`chapters/getting_started.snbt`, alone in Getting Started, is the book's intro: six quests, a
+Welcome checkmark with nothing before it, then a crafting table, iron ingots and Iron Furnaces'
+iron furnace in a chain, and two checkmarks off the Welcome (claiming land, making a party). It
+gates nothing. Until v3's M7 it was the hand-written sample of three quests (a crafting table,
+andesite alloy, a shaft) that proved the format; the crafting table quest kept its ID.
+`chapters/create_basics.snbt` ("Create: Andesite to Precision", `order_index` 0 in Create) is the
+first real chapter: 19 quests from andesite alloy to the precision mechanism.
+`chapters/create_crafting.snbt` ("Create: Mechanical Crafting", `order_index` 1) follows it with
+11 quests, and its first quest depends on `create_basics`' precision mechanism: the book's first
+dependency across chapters. Four more follow in Create, `order_index` 2 to 5:
+`create_contraptions` (16 quests) and `create_logistics` (17), entered from `create_basics`'
+andesite casing, `create_fluids` (12), from its mechanical press, and `create_trains` (12), from
+`create_crafting`'s crushing wheels. Each first quest depends on that one quest in another
+chapter, and no other quest leaves its chapter. Industry holds six, `order_index` 0 to 5:
+`create_electricity` (14 quests) and `create_more_machines` (13), entered from
+`create_crafting`'s mechanical crafters, `tfmg_steel` (13), from `create_fluids`' mechanical
+pump, `create_enchantment_industry` (8), from its spout, `tfmg_oil` (12), from `tfmg_steel`'s
+steel ingot, and `create_new_age` (17), from the mechanical crafters. Space holds
+`ad_astra_liftoff` (13), from the steel ingot, and `ad_astra_planets` (23), from its tier 1
+rocket. Combat and Gear holds five, `order_index` 0 to 4: `tacz_guns` (15), open from the start,
+`create_armorer` (8), from `create_crafting`'s mechanical crafters, `create_big_cannons` (14),
+from `create_fluids`' fluid tank, and `silent_gear` (13) and `apotheosis` (15), open from the
+start. `tacz_guns` and `create_armorer` were the book's first chapters with TaCZ variant tasks (a
+gun, ammo or attachment matched on its recipe's stack), and `apotheosis` its first with
+advancement tasks. Magic holds six, `order_index` 0 to 5: `ars_nouveau_source` (11 quests),
+`irons_spellbooks` (11) and `enchanting` (12), open from the start, `ars_nouveau_rituals` (11),
+from `ars_nouveau_source`'s enchanting apparatus, `create_wizardry` (7), from `irons_spellbooks`'
+arcane essence, and `irons_ancient` (13), from its apprentice's spell book. Exploration and
+Bosses holds six, `order_index` 0 to 5: `the_nether` (18 quests), open from the start, `the_end`
+(12), from its blaze rods, `deep_dark` (14), from its netherite ingot, `dungeons` (16) and
+`mowzies_mobs` (12), open from the start, and `cataclysm` (21), from `the_nether`'s Wither; the
+first three were the book's first chapters with kill, dimension and structure tasks. Food and
+Farming holds five, `order_index` 0 to 4: `farmers_delight` (18 quests), `aquaculture` (13) and
+`productive_bees` (12), open from the start, `more_delights` (14), from `farmers_delight`'s
+cooking pot, and `create_kitchen` (13), from `create_basics`' mechanical mixer. Storage and
+Travel holds two: `storage` (18 quests), open from the start, and `getting_around` (16), from
+`create_crafting`'s mechanical crafters. The same rule holds; the chapters with no entry,
+Rituals, Getting Around, Dungeons and Mowzie's Mobs have more than one quest with no
+dependencies. Every chapter, Getting Started's rewrite included, was drafted and written by
+minecraft-mcp, which is where real chapters come from, against its
 [outline of the whole book](../../../minecraft-mcp/docs/design/quest-book.md).
 
 `data.snbt` is the file FTB Quests wrote itself for a book with no `data.snbt`, so it holds its

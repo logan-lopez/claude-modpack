@@ -84,14 +84,6 @@ Four more Create chapters follow, each locked until a quest in the first two:
 
 **Combat and Gear**, the fifth group:
 
-- **Create: Big Cannons**, 14 quests, after the fluid tank: the basin foundry lid, cannon drill and
-  casting sand for a cast iron cannon, the cannon mount, loader, solid shot and powder charges,
-  fuzed high explosive shells and a quick-firing breech, then the cannon builder and welder, and
-  nethersteel.
-- **Silent Gear**, 13 quests, open from the start: template boards cut on a stone anvil with a
-  crude knife, blueprint paper and a pickaxe blueprint, a pickaxe head and a pickaxe, then blaze
-  gold and the material grader, crimson iron (mined in the Nether) with the salvager, crimson
-  steel and the alloy forge, and azure silver (mined in the End) for azure electrum.
 - **Guns**, 15 quests, open from the start: TaCZ's gun smith table and an M1911, the ammo box
   and the ammo assembly table for its .45 ACP, the M16A4 and its 5.56 rounds, the attachment
   table and a scope, the M870 and its shells, and a gun from each of the other packs: Elite x
@@ -103,37 +95,21 @@ Four more Create chapters follow, each locked until a quest in the first two:
   primer and pneumatic pistol ammo by sequenced assembly, the fluid pipe scope, and a gun off the
   crafters. That last one is a box to tick: a gun from the crafters isn't saved with the same data
   as one from the Weapon Station, so a hand-in quest wouldn't take it.
+- **Create: Big Cannons**, 14 quests, after the fluid tank: the basin foundry lid, cannon drill and
+  casting sand for a cast iron cannon, the cannon mount, loader, solid shot and powder charges,
+  fuzed high explosive shells and a quick-firing breech, then the cannon builder and welder, and
+  nethersteel.
+- **Silent Gear**, 13 quests, open from the start: template boards cut on a stone anvil with a
+  crude knife, blueprint paper and a pickaxe blueprint, a pickaxe head and a pickaxe, then blaze
+  gold and the material grader, crimson iron (mined in the Nether) with the salvager, crimson
+  steel and the alloy forge, and azure silver (mined in the End) for azure electrum.
 - **Apotheosis**, 15 quests, open from the start: the five world tiers, Haven to Pinnacle, each
   a quest you complete by earning its advancement, with gem dust, the salvaging table and
   mysterious scrap metal, the simple reforging table, the gem cutting table and a sigil of
   socketing, a gate pearl and the Frontier's gateway, and the reforging table on the way. Apothic
   Spawners' silk-touched spawner and a spawner modifier are a branch of their own.
 
-**Food and Farming**, the sixth group:
-
-- **Farmer's Delight**, 18 quests, open from the start: the flint knife and cutting board, the
-  four wild crops, straw, canvas, organic compost and rich soil, the stove and skillet, then the
-  cooking pot (a side root, open at once), cooked rice, beef stew and smoked ham for the honey
-  glazed ham feast. Cooking for Blockheads' recipe book and a kitchen of cooking table, counter
-  and fridge follow the pot; Farming for Blockheads' market and fertilizers are a branch of their
-  own.
-- **More Delights**, 14 quests, after the cooking pot: a box to tick that opens one branch per
-  addon, My Nether's Delight's hoglin stew, blazier, nether stove and leteos compost, Ocean's
-  Delight's squid rings and guardian soup, Aquaculture Delight's fish and chips and halibut,
-  Alex's Mobs Delight's lobster bisque, and End's Delight's chorus grain, end stone knife and the
-  end stove.
-- **Create: Kitchen**, 13 quests, after the mechanical mixer: Slice and Dice's slicer and
-  sprinkler and meals cooked in a heated basin, Create Confectionery's cocoa, chocolate, hot
-  chocolate, marshmallows, candy canes and gingerbread, and Create: Winery's wine cellar for cider
-  and Bordeaux.
-- **Aquaculture**, 13 quests, open from the start: the iron fishing rod, line, bobber and hooks,
-  the worm farm (a side root), the tackle box, the fillet knife and cooked fillets, a fish mount,
-  the diamond rod, and neptunium from Neptune's Bounty.
-- **Productive Bees**, 12 quests, open from the start: the advanced beehive and expansion box,
-  bee cages, honey treats, the feeding slab, the incubator and breeding chamber, a speed upgrade,
-  the bottler and honey generator, and the centrifuge and powered centrifuge.
-
-**Magic**, the seventh group:
+**Magic**, the sixth group:
 
 - **Ars Nouveau: Source**, 11 quests, open from the start: the tattered tome, a novice spell book,
   the scribe's table and the first glyphs (Projectile, Touch, Break), then the imbuement chamber,
@@ -158,22 +134,8 @@ Four more Create chapters follow, each locked until a quest in the first two:
   book and the Ancient Codex; and a furled map to the Lost Citadel in the Nether, Echo of Tyros
   and the Decrepit Key.
 
-**Storage and Travel**, the eighth group:
-
-- **Storage**, 18 quests, open from the start: a backpack, the iron backpack, an upgrade base and
-  the pickup and magnet upgrades, Dank Storage's first dank and an ender chest off the backpack;
-  Sophisticated Storage's chest, a copper tier upgrade, the storage controller and a storage link,
-  and a trash can, as a second root; and Tom's Simple Storage's inventory connector and cable as a
-  third, to the storage terminal, crafting terminal and wireless terminal, with LaserIO's laser
-  nodes and item cards beside it.
-- **Getting Around**, 16 quests, after the mechanical crafters: a box to tick that opens four
-  branches, the warp stone, waystones, warp scrolls and warp plates; Create: Kart's parts and the
-  red kart; Create Stuff Additions' andesite and brass jetpacks; and Create Teleporters' quantum
-  mechanism and entity teleporter. Elevators, and Small Ships' dockyard, a ship (a box to tick),
-  its upgrades and a cannon, are open from the start.
-
-**Exploration and Bosses**, the ninth group, is the first with quests you complete by going
-somewhere or killing something rather than handing items in:
+**Exploration and Bosses**, the seventh group, is mostly quests you complete by going somewhere
+or killing something rather than handing items in:
 
 - **The Nether**, 18 quests, open from the start: entering the Nether, then a fortress (YUNG's
   Better Nether Fortresses' own; vanilla fortresses are turned off), blaze rods and the brewing
@@ -201,6 +163,44 @@ somewhere or killing something rather than handing items in:
   branches, each an eye that leads to an arena and the boss inside: Ignis (and its ignitium for
   the Incinerator), the Netherite Monstrosity, the Harbinger (its witherite for the mechanical
   fusion anvil), the Ender Guardian, the Leviathan, the Ancient Remnant, Maledictus and Scylla.
+
+**Food and Farming**, the eighth group:
+
+- **Farmer's Delight**, 18 quests, open from the start: the flint knife and cutting board, the
+  four wild crops, straw, canvas, organic compost and rich soil, the stove and skillet, then the
+  cooking pot (a side root, open at once), cooked rice, beef stew and smoked ham for the honey
+  glazed ham feast. Cooking for Blockheads' recipe book and a kitchen of cooking table, counter
+  and fridge follow the pot; Farming for Blockheads' market and fertilizers are a branch of their
+  own.
+- **More Delights**, 14 quests, after the cooking pot: a box to tick that opens one branch per
+  addon, My Nether's Delight's hoglin stew, blazier, nether stove and leteos compost, Ocean's
+  Delight's squid rings and guardian soup, Aquaculture Delight's fish and chips and halibut,
+  Alex's Mobs Delight's lobster bisque, and End's Delight's chorus grain, end stone knife and the
+  end stove.
+- **Create: Kitchen**, 13 quests, after the mechanical mixer: Slice and Dice's slicer and
+  sprinkler and meals cooked in a heated basin, Create Confectionery's cocoa, chocolate, hot
+  chocolate, marshmallows, candy canes and gingerbread, and Create: Winery's wine cellar for cider
+  and Bordeaux.
+- **Aquaculture**, 13 quests, open from the start: the iron fishing rod, line, bobber and hooks,
+  the worm farm (a side root), the tackle box, the fillet knife and cooked fillets, a fish mount,
+  the diamond rod, and neptunium from Neptune's Bounty.
+- **Productive Bees**, 12 quests, open from the start: the advanced beehive and expansion box,
+  bee cages, honey treats, the feeding slab, the incubator and breeding chamber, a speed upgrade,
+  the bottler and honey generator, and the centrifuge and powered centrifuge.
+
+**Storage and Travel**, the ninth group:
+
+- **Storage**, 18 quests, open from the start: a backpack, the iron backpack, an upgrade base and
+  the pickup and magnet upgrades, Dank Storage's first dank and an ender chest off the backpack;
+  Sophisticated Storage's chest, a copper tier upgrade, the storage controller and a storage link,
+  and a trash can, as a second root; and Tom's Simple Storage's inventory connector and cable as a
+  third, to the storage terminal, crafting terminal and wireless terminal, with LaserIO's laser
+  nodes and item cards beside it.
+- **Getting Around**, 16 quests, after the mechanical crafters: a box to tick that opens four
+  branches, the warp stone, waystones, warp scrolls and warp plates; Create: Kart's parts and the
+  red kart; Create Stuff Additions' andesite and brass jetpacks; and Create Teleporters' quantum
+  mechanism and entity teleporter. Elevators, and Small Ships' dockyard, a ship (a box to tick),
+  its upgrades and a cannon, are open from the start.
 
 That's the whole book. It's planned in minecraft-mcp's
 [outline](../../../minecraft-mcp/docs/design/quest-book.md): its groups, chapters and the order
