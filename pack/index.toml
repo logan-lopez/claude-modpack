@@ -10,7 +10,7 @@ hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_basics.snbt"
-hash = "f599b449b1c5d1032f9e4a019184abfa14145797793889194e34949386bc782c"
+hash = "d54ccd3d675e169f5aa91e669c105e8852031a071e93a85c9ce29fbd90b56e6a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/getting_started.snbt"
