@@ -27,8 +27,8 @@ It's built around Create and Timeless and Classics Zero (TaCZ).
   crafting through Create, guns in structure chests, turrets and gun durability.
 - [Fighting up close](docs/guide/combat.md): melee with Better Combat's swings and combos, and a
   dodge roll.
-- [The quest book](docs/guide/quests.md): FTB Quests with a sample chapter, kept in the repo,
-  edited in the game and pulled back with `scripts/pull-quests.sh`.
+- [The quest book](docs/guide/quests.md): FTB Quests with a thirty-nine-chapter book, kept in
+  the repo, edited in the game and pulled back with `scripts/pull-quests.sh`.
 
 ## Requirements
 

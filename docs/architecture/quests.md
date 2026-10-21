@@ -25,10 +25,13 @@ pack/config/ftbquests/quests/
 ```
 
 It holds thirty-nine chapters in nine groups, Getting Started, Create, Industry, Space, Combat
-and Gear, Food and Farming, Magic, Storage and Travel and Exploration and Bosses, and nothing in the default group. `chapters/getting_started.snbt` is the sample, alone in Getting Started:
-three quests in a chain (a crafting table, Create's andesite alloy, a Create shaft), one item task
-each, a dependency on the one before, laid out left to right at `x` 0, 2 and 4, and a 100 XP
-reward on the last. It's the format reference, not content. `chapters/create_basics.snbt`
+and Gear, Food and Farming, Magic, Storage and Travel and Exploration and Bosses, and nothing in
+the default group. `chapters/getting_started.snbt`, alone in Getting Started, is the book's
+intro: six quests, a Welcome checkmark with nothing before it, then a crafting table, iron ingots
+and Iron Furnaces' iron furnace in a chain, and two checkmarks off the Welcome (claiming land,
+making a party). It gates nothing. Until v3's M7 it was the hand-written sample of three quests
+(a crafting table, andesite alloy, a shaft) that proved the format; the crafting table quest kept
+its ID. `chapters/create_basics.snbt`
 ("Create: Andesite to Precision", `order_index` 0 in Create) is the first real chapter: 19 quests
 from andesite alloy to the precision mechanism. `chapters/create_crafting.snbt` ("Create:
 Mechanical Crafting", `order_index` 1) follows it with 11 quests, and its first quest depends on
@@ -61,7 +64,7 @@ quests), open from the start, `the_end` (12), from its blaze rods, `deep_dark` (
 netherite ingot, `dungeons` (16) and `mowzies_mobs` (12), open from the start, and `cataclysm`
 (21), from `the_nether`'s Wither; the first three are the book's first chapters with kill,
 dimension and structure tasks. The same rule holds; the chapters with no entry, Rituals, Getting
-Around, Dungeons and Mowzie's Mobs have more than one quest with no dependencies. Every chapter but the sample was drafted and written by minecraft-mcp, which is where real chapters come from, against its
+Around, Dungeons and Mowzie's Mobs have more than one quest with no dependencies. Every chapter, Getting Started's rewrite included, was drafted and written by minecraft-mcp, which is where real chapters come from, against its
 [outline of the whole book](../../../minecraft-mcp/docs/design/quest-book.md).
 
 `data.snbt` is the file FTB Quests wrote itself for a book with no `data.snbt`, so it holds its
@@ -93,20 +96,21 @@ differs from `pack/` (below), so a file must be byte for byte what the writer wo
 - Only the keys the writer writes. It leaves out defaults (`count` on an item task when it's 1,
   `size` when it's 0, `optional_task` when false), so writing one in counts as a rewrite.
 
-The sample is the reference. A quest with a dependency, a reward and a task:
+Getting Started's First Iron is a reference. A quest with a dependency, a reward and a task:
 
 ```
 		{
-			dependencies: ["00ED0347E5F2AE0A"]
-			id: "4F87995FA90727E9"
+			dependencies: ["1ECAD497C0AD8335"]
+			id: "017E6EF61834A56B"
 			rewards: [{
-				id: "2671DE60492A0247"
+				id: "2EFD0D6631BF1436"
 				type: "xp"
-				xp: 100
+				xp: 25
 			}]
 			tasks: [{
-				id: "233FCD7815BE9E2D"
-				item: { count: 1, id: "create:shaft" }
+				count: 8L
+				id: "318C3AB7E9802290"
+				item: { count: 1, id: "minecraft:iron_ingot" }
 				type: "item"
 			}]
 			x: 4.0d
@@ -147,7 +151,7 @@ Titles and descriptions live only in `lang/<locale>.snbt`, keyed `<type>.<ID>.<k
 - `en_us` is the fallback locale (`data.snbt`'s `fallback_locale`). Empty strings and lists
   aren't written.
 
-`chapter.2A372F82EF67248E.title: "Getting Started"` titles the sample chapter. A `title` or
+`chapter.2A372F82EF67248E.title: "Getting Started"` titles Getting Started. A `title` or
 `description` key in a chapter file is the pre-1.21 format: FTB Quests moves it to the lang file
 and writes the book back, so it fails the check. A missing lang key isn't an error on the server;
 what the client shows instead hasn't been looked at.
@@ -157,8 +161,8 @@ what the client shows instead hasn't been looked at.
 - **It loads after Done,** on server start, and only if `config/ftbquests/quests/` exists. It
   logs `Loading quests from <folder>`, any problems, then `Loaded <n> chapter groups, <n>
   chapters, <n> quests, <n> reward tables`, all on the `Server thread`, about 0.2 seconds after
-  Done. The group count includes the default group, so the sample book is `1 chapter groups, 1
-  chapters, 3 quests, 0 reward tables`.
+  Done. The group count includes the default group, so the original sample book was `1 chapter
+  groups, 1 chapters, 3 quests, 0 reward tables`.
 - **A file it can't parse is skipped,** with an ERROR from FTB Library:
   `Failed to read <path>: Unexpected end of file!`. A broken lang file adds FTB Quests'
   `can't read lang file <path>`. The server still reaches Done.
@@ -257,7 +261,7 @@ What a generator such as minecraft-mcp writes, into `pack/config/ftbquests/quest
 - New IDs by the rule above, unique across every file in the book, including the ones it didn't
   write. Dependencies by ID, to quests that exist.
 - Titles and descriptions in `lang/en_us.snbt`, keys sorted with the rest of the file.
-- Exactly the writer's layout (sorted keys, tabs, defaults left out). Copy the sample.
+- Exactly the writer's layout (sorted keys, tabs, defaults left out). Copy a chapter in the book.
 - Item IDs that exist in the pack: minecraft-mcp can check them against its export before the
   boot, which is faster than the check finding them.
 

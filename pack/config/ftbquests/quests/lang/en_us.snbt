@@ -95,14 +95,14 @@
 	quest.00E324586607DBE5.title: "Copper Spool"
 	quest.00E775D4B05D649E.quest_desc: ["Overcharged iron, gold nuggets, a brass casing and a shaft: a stronger motor. A motor extension behind one raises its stress capacity, and its power draw with it."]
 	quest.00E775D4B05D649E.title: "Advanced Motor"
-	quest.00ED0347E5F2AE0A.quest_desc: ["Andesite alloy is what most of Create is made of. Andesite and iron or zinc nuggets make it on a crafting table."]
-	quest.00ED0347E5F2AE0A.title: "Andesite Alloy"
 	quest.014CF98096B18E91.quest_desc: ["Use a copper ingot on a stripped log, by hand or with a deployer, to make copper casing. The fluid machines are built around it."]
 	quest.014CF98096B18E91.title: "Copper Casing"
 	quest.01582CBDAEFC5996.quest_desc: ["Iron ingots, a cauldron, arcane essence and cinder essence. It brews inks and elixirs: pour a fluid in, add an item, and draw the result out with a bottle."]
 	quest.01582CBDAEFC5996.title: "Alchemist Cauldron"
 	quest.017A689763157EBC.quest_desc: ["A mixer makes common ink from copper ingots, an ink sac and a little mana, and a bottle draws it from the cauldron or a spout. Scrolls of the commonest spells are written in it."]
 	quest.017A689763157EBC.title: "Common Ink"
+	quest.017E6EF61834A56B.quest_desc: ["Iron ore sits in stone and deepslate almost everywhere underground, and most thickly in mountains. Smelt the raw iron it drops in a furnace. Eight make an iron furnace."]
+	quest.017E6EF61834A56B.title: "First Iron"
 	quest.01DAD8E551D6BBD8.quest_desc: ["A barrel in eight coal: a pocket inventory of a few slots, each holding far more than a stack. Higher tiers are crafted from the one before, and a dock makes one a block that pipes can reach."]
 	quest.01DAD8E551D6BBD8.title: "Dank 1"
 	quest.021E838B1362DA17.quest_desc: ["The drilling machine's twin for fluid wells, made with a mechanical pump and a hose pulley in place of the spout and tunnel."]
@@ -433,6 +433,8 @@
 	quest.276EBEB807DD35E5.title: "Electrum Wire"
 	quest.27EAE20228BADC68.quest_desc: ["A button, an andesite casing and an electron tube make contraption controls. Riding on a contraption, they switch its drills, saws and harvesters on and off."]
 	quest.27EAE20228BADC68.title: "Contraption Controls"
+	quest.28BB416D9FEEE428.quest_desc: ["Eight iron ingots around a furnace make an iron furnace, which smelts faster than the furnace it's made from. Iron Furnaces' upgrade kits take it on to gold, diamond and beyond without breaking it."]
+	quest.28BB416D9FEEE428.title: "An Iron Furnace"
 	quest.28D5964A1BDAC16D.quest_desc: ["It unlocks the Citadel's vaults."]
 	quest.28D5964A1BDAC16D.title: "Decrepit Key"
 	quest.297847E6A402C283.quest_desc: ["Use the heart on the reinforced deepslate frame at an ancient city's centre, and it's spent opening a portal. Through it is the Otherside, a dimension of sculk below the bedrock."]
@@ -451,6 +453,12 @@
 	quest.29D7F6CADBDA8508.title: "Stirling Engine"
 	quest.29F2892F2A225F74.quest_desc: ["Organic compost slowly decays into rich soil, which gives crops planted on it a chance of a bone meal boost. Mushroom colonies need it too."]
 	quest.29F2892F2A225F74.title: "Rich Soil"
+	quest.2A03DCDF94DC4AFB.quest_desc: [
+		"This book follows the pack in nine groups, down the left side: Getting Started, Create, Industry, Space, Combat and Gear, Magic, Exploration and Bosses, Food and Farming, and Storage and Travel."
+		""
+		"Every group's first chapter is open from the start, so begin wherever you like. Later chapters open from a quest in an earlier one, and each chapter's first quest says which. This chapter covers your first few minutes: a crafting table, iron, a better furnace, and a claim to call your own."
+	]
+	quest.2A03DCDF94DC4AFB.title: "Welcome"
 	quest.2A5B9C95BF5399D0.quest_desc: ["The same for biomes: four saplings, four logs and a compass. Handy when a structure only generates in one kind of biome."]
 	quest.2A5B9C95BF5399D0.title: "Nature's Compass"
 	quest.2A79497B1BEC7A8A.quest_desc: ["Smelt a book. Cooking for Blockheads I shows the food you can make right now from what you carry."]
@@ -536,6 +544,8 @@
 	quest.32FDA4F6A3426DED.title: "Nether Star"
 	quest.3317C91466835DB7.quest_desc: ["Wear a full set of affix items: helmet, chestplate, leggings, boots and something in hand. Then switch to Frontier with Ctrl+T. Each tier up makes mobs and loot stronger."]
 	quest.3317C91466835DB7.title: "World Tier: Frontier"
+	quest.332633687F007A31.quest_desc: ["Claimed chunks are yours: other players can't break or use blocks in them. Press M for the map, then C for the claim screen, and drag with the left button to claim chunks and with the right to give them back."]
+	quest.332633687F007A31.title: "Claim Your Land"
 	quest.3360689BF4EA0CBE.quest_desc: ["An andesite alloy and a dried kelp make two andesite funnels, and twice that two andesite tunnels. A funnel puts items onto a belt or takes them off into a chest; a tunnel on a belt splits what passes under it between the belts beside it."]
 	quest.3360689BF4EA0CBE.title: "Andesite Funnels and Tunnels"
 	quest.33A3CB901281922B.quest_desc: ["Rerolls an item's affixes, common to rare, for levels and its rarity's material. From uncommon up it takes Sigils of Rebirth too."]
@@ -737,8 +747,6 @@
 	quest.4E9989ABF7317C57.title: "Clockwork Bearing"
 	quest.4F13780A7ADD78BE.quest_desc: ["Netherite scrap and four steel ingots, or eight cast iron, in a superheated mixer make eight. Molten, it casts the strongest cannons, for the heaviest charges."]
 	quest.4F13780A7ADD78BE.title: "Nethersteel Ingot"
-	quest.4F87995FA90727E9.quest_desc: ["A shaft carries rotation from one Create machine to the next. Make one from andesite alloy."]
-	quest.4F87995FA90727E9.title: "A Shaft"
 	quest.4FF888A38D24CA23.quest_desc: ["A precision mechanism, a brass casing, iron sheets and redstone make eight. Unpowered, it charges from the rotation in front of it; given a redstone signal, it gives that stress back to the network."]
 	quest.4FF888A38D24CA23.title: "Kinetic Battery"
 	quest.50050FE8336BC82F.quest_desc: ["Use a gate pearl to open a gateway: waves of mobs to beat for loot. Each world tier has its own, and the Gateway of the First Frontier is crafted from spider eyes, iron, bones, an ender pearl and rotten flesh. Gateways' own pearls, for blazes, endermen or slimes, count too."]
@@ -956,6 +964,8 @@
 	quest.680A7675FC6D91EF.title: "Iron Drill"
 	quest.681276267D02967B.quest_desc: ["The Mage's Spell Book with ender pearls, emeralds, a totem of undying, a nether star and the Chimera's Wilden Tribute. It reaches the third and last tier of glyphs."]
 	quest.681276267D02967B.title: "Archmage Spell Book"
+	quest.6876C0FB9D2EBD68.quest_desc: ["Playing with friends? Make a party so you share claims and quest progress. Open your inventory, click My Team at the top left and create a party, then invite players from there, or type /ftbteams party create and a name."]
+	quest.6876C0FB9D2EBD68.title: "Make a Team"
 	quest.68A09A80BDA54D21.quest_desc: ["Cast two barrels, a chamber and a sliding breech, and bore each one; the breech then takes its breechblock. Most cast cannon blocks break into scrap without Silk Touch, so move a finished cannon whole."]
 	quest.68A09A80BDA54D21.title: "Cast Iron Cannon"
 	quest.69473B34BD76FDAB.quest_desc: ["Where bullets are made: copper, iron, gunpowder and an ammo box. The gun smith table doesn't make ammo."]

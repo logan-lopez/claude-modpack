@@ -4,7 +4,7 @@
 	filename: "getting_started"
 	group: "72644D66BC292029"
 	icon: {
-		id: "minecraft:crafting_table"
+		id: "ironfurnaces:iron_furnace"
 	}
 	id: "2A372F82EF67248E"
 	images: [ ]
@@ -12,41 +12,103 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "1ECAD497C0AD8335"
+			id: "2A03DCDF94DC4AFB"
 			tasks: [{
-				id: "1C7537BEF5AD8674"
-				item: { count: 1, id: "minecraft:crafting_table" }
-				type: "item"
+				id: "2F7D7D18EA02961F"
+				type: "checkmark"
 			}]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["1ECAD497C0AD8335"]
-			id: "00ED0347E5F2AE0A"
+			dependencies: ["2A03DCDF94DC4AFB"]
+			id: "1ECAD497C0AD8335"
+			rewards: [{
+				id: "6CB8D6711A7A743F"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
-				id: "2FF089DD267AB544"
-				item: { count: 1, id: "create:andesite_alloy" }
+				id: "1C7537BEF5AD8674"
+				item: { count: 1, id: "minecraft:crafting_table" }
 				type: "item"
 			}]
 			x: 2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["00ED0347E5F2AE0A"]
-			id: "4F87995FA90727E9"
+			dependencies: ["1ECAD497C0AD8335"]
+			id: "017E6EF61834A56B"
 			rewards: [{
-				id: "2671DE60492A0247"
+				id: "2EFD0D6631BF1436"
 				type: "xp"
-				xp: 100
+				xp: 25
 			}]
 			tasks: [{
-				id: "233FCD7815BE9E2D"
-				item: { count: 1, id: "create:shaft" }
+				count: 8L
+				id: "318C3AB7E9802290"
+				item: { count: 1, id: "minecraft:iron_ingot" }
 				type: "item"
 			}]
 			x: 4.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["017E6EF61834A56B"]
+			id: "28BB416D9FEEE428"
+			rewards: [
+				{
+					id: "18A337AF32604B28"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 16
+					id: "2BCD212C9EAADD27"
+					item: {
+						count: 1
+						id: "minecraft:coal"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "06AB85D6F95D393B"
+				item: { count: 1, id: "ironfurnaces:iron_furnace" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A03DCDF94DC4AFB"]
+			id: "332633687F007A31"
+			rewards: [{
+				id: "7EEDDACFE62C38F1"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3B01C8AC53E11013"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2A03DCDF94DC4AFB"]
+			id: "6876C0FB9D2EBD68"
+			rewards: [{
+				id: "6F4712D94B015049"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3B0BCCE0E74426A5"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 1.5d
 		}
 	]
 }

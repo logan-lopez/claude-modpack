@@ -114,7 +114,7 @@ hash = "71ea13959107953f4937db711a220b28601195a69ea48a0e51ad98f2b6be384f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/getting_started.snbt"
-hash = "9648e02b577b93c9da718d1f2460a3d68a607c32d6d2cf39783688d03fa7d684"
+hash = "3f1785b4944cffe293f2a13335aa92551f956d9b2185644465bb127ee9e039a8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/irons_ancient.snbt"
@@ -170,7 +170,7 @@ hash = "da77e416b557850f5cb1ab68d71de78f9fbc3cf3845e50cdb4dba3a8164f6e7f"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "e604ff4fa44d2d82e7e6490911b176641522b1c17333a15e3b14b9eaa06d34c6"
+hash = "ae241caf138f98cd3e22e1c47677d8ed701330c9a09f5ce0a95ab4c7cf574766"
 
 [[files]]
 file = "kubejs/data/ad_astra/tags/fluid/fuel.json"

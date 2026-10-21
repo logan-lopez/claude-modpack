@@ -1,7 +1,7 @@
 # The quest book
 
-FTB Quests' quest book, which the pack ships and keeps in the repo. It has a short sample chapter
-and thirty-eight real ones, drafted by minecraft-mcp.
+FTB Quests' quest book, which the pack ships and keeps in the repo: thirty-nine chapters in nine
+groups, drafted by minecraft-mcp.
 
 **Covers:** [The quest book](../architecture/quests.md)
 
@@ -13,13 +13,11 @@ first).
 
 ## What's in it
 
-**Getting Started**, three quests in a row, left to right:
-
-1. **A Crafting Table:** craft one.
-2. **Andesite Alloy:** Create's andesite alloy. Locked until the first is done.
-3. **A Shaft:** a Create shaft, with 100 XP to claim. Locked until the second is done.
-
-It's there to show the format works end to end, and will be replaced.
+**Getting Started**, the book's front door, 6 quests. A Welcome box to tick names the nine
+groups and says every group's first chapter is open from the start. After it, a crafting table,
+eight iron ingots and Iron Furnaces' iron furnace in a row (100 XP and sixteen coal at the end),
+with two boxes to tick beside them: claiming land with FTB Chunks (M for the map, then C) and
+making a party with FTB Teams. It gates nothing.
 
 **Create: Andesite to Precision**, beside it: Create's early game in 19 quests. It starts at
 andesite alloy and shafts, builds the water wheel and the mechanical press for iron sheets, then
@@ -204,7 +202,7 @@ somewhere or killing something rather than handing items in:
   the Incinerator), the Netherite Monstrosity, the Harbinger (its witherite for the mechanical
   fusion anvil), the Ender Guardian, the Leviathan, the Ancient Remnant, Maledictus and Scylla.
 
-Every chapter but Getting Started's rewrite is in. The book is planned in minecraft-mcp's
+That's the whole book. It's planned in minecraft-mcp's
 [outline](../../../minecraft-mcp/docs/design/quest-book.md): its groups, chapters and the order
 they're drafted in.
 
@@ -243,6 +241,6 @@ A chapter the pack dropped stays on an updated server until you delete it from i
 
 ## What it doesn't do yet
 
-- One real chapter so far, and no rewards beyond XP.
+- Rewards are XP and items only: no reward tables, loot crates or choice rewards.
 - Nothing pulls edits from a server back into the repo; `scripts/pull-quests.sh` reads a Prism
   instance's folder, though any folder shaped like one works.
