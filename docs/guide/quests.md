@@ -65,6 +65,26 @@ Four more Create chapters follow, each locked until a quest in the first two:
 - **Create: Enchantment Industry**, 8 quests, after the spout: the experience lantern, the
   mechanical grindstone that turns experience into a liquid, the experience hatch, printer and
   infuser, and the blaze forger and blaze enchanter with enchanting templates.
+- **Oil and Engines**, 12 quests, after Steel Ingot: TFMG's steel fluid tanks, industrial pipe,
+  heavy machinery casing and steel mechanism, the surface scanner that finds oil deposits, the
+  pumpjack and the distillation tower that splits crude oil into fuels. Diesel Generators' diesel
+  engine, and its modular and huge versions, branch off the first quest.
+- **Create: New Age**, 17 quests, after the mechanical crafters: the generator coil, magnets and
+  carbon brushes, connectors, energisers and the overcharged metals they make, three tiers of
+  motor, heat pipes with the stirling engine and boiler heater, and nuclear fuel for a reactor.
+
+**Space**, the fourth group:
+
+- **Ad Astra: Liftoff**, 13 quests, after Steel Ingot: the NASA workbench, the rocket's nose cone,
+  fins, steel tanks and engine, the launch pad, the fuel refinery and Giselle's fuel loader, the
+  space suit, the oxygen loader and an oxygen can, ending at the tier 1 rocket.
+
+**Combat and Gear**, the fifth group:
+
+- **Create: Big Cannons**, 14 quests, after the fluid tank: the basin foundry lid, cannon drill and
+  casting sand for a cast iron cannon, the cannon mount, loader, solid shot and powder charges,
+  fuzed high explosive shells and a quick-firing breech, then the cannon builder and welder, and
+  nethersteel.
 
 The rest of the book is planned in minecraft-mcp's
 [outline](../../../minecraft-mcp/docs/design/quest-book.md): its groups, chapters and the order

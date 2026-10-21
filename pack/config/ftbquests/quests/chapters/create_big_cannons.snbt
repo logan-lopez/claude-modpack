@@ -1,0 +1,287 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_big_cannons"
+	group: "38141FC7E950B458"
+	icon: {
+		id: "createbigcannons:nethersteel_ingot"
+	}
+	id: "6F06BF032B8459D6"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["430BC91B211B5870"]
+			id: "644F74B4BB9B121C"
+			rewards: [{
+				id: "617DC754A4BADBBF"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "37AC634103A041A6"
+				item: { count: 1, id: "createbigcannons:basin_foundry_lid" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["644F74B4BB9B121C"]
+			id: "49E283491F47C049"
+			rewards: [{
+				id: "1D0324A7E592D978"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "70A2A866894B12E4"
+				item: { count: 1, id: "createbigcannons:cannon_drill" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["49E283491F47C049"]
+			id: "17025CEF04B29ED2"
+			rewards: [{
+				id: "2F20359A07B511EE"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 16L
+				id: "103D3FA58B3B37FE"
+				item: { count: 1, id: "createbigcannons:casting_sand" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17025CEF04B29ED2"]
+			id: "68A09A80BDA54D21"
+			rewards: [{
+				id: "642AB7F216F925A0"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					count: 2L
+					id: "607C4392B2306AA7"
+					item: { count: 1, id: "createbigcannons:cast_iron_cannon_barrel" }
+					type: "item"
+				}
+				{
+					id: "02AB05B370066F4F"
+					item: { count: 1, id: "createbigcannons:cast_iron_cannon_chamber" }
+					type: "item"
+				}
+				{
+					id: "78C10CA316F2A71A"
+					item: { count: 1, id: "createbigcannons:cast_iron_sliding_breech" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68A09A80BDA54D21"]
+			id: "1EEC175F0767E0D0"
+			rewards: [
+				{
+					id: "379A79F100A13192"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 16
+					id: "2AA3553FA3A82189"
+					item: {
+						count: 1
+						id: "minecraft:gunpowder"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "38E2BE443FAB4AB0"
+				item: { count: 1, id: "createbigcannons:cannon_mount" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["68A09A80BDA54D21"]
+			id: "3E71F44F12261E16"
+			rewards: [{
+				id: "4A9FA9E4094E1440"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "40C5478EEEE0927F"
+					item: { count: 1, id: "createbigcannons:cannon_loader" }
+					type: "item"
+				}
+				{
+					id: "6BEFDB2F15B8C998"
+					item: { count: 1, id: "createbigcannons:ram_head" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3E71F44F12261E16"]
+			id: "5330F7AF68993D87"
+			rewards: [{
+				id: "7E2D0F1F07049E9B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "1EC081B606AD4531"
+				item: { count: 1, id: "createbigcannons:solid_shot" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5330F7AF68993D87"]
+			id: "3CD3E7BFB55DAB51"
+			rewards: [{
+				id: "2E695EAF452E20D1"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 8L
+				id: "137C8A4610F6B3B9"
+				item: { count: 1, id: "createbigcannons:powder_charge" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5330F7AF68993D87"]
+			id: "1D6A03F44C45D8EE"
+			rewards: [{
+				id: "6DBCFEC6E3EA9888"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "27D577EE433F5492"
+				item: { count: 1, id: "createbigcannons:impact_fuze" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"3CD3E7BFB55DAB51"
+				"1D6A03F44C45D8EE"
+			]
+			id: "1F58FC1B46D691D5"
+			rewards: [{
+				id: "2D8446686DD68605"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				count: 2L
+				id: "39AAAB08FF2A21F9"
+				item: { count: 1, id: "createbigcannons:he_shell" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3CD3E7BFB55DAB51"]
+			id: "156A89680C56B312"
+			rewards: [{
+				id: "4BD8B89717780FE0"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "00C9C51A0B4E3FC5"
+					item: { count: 1, id: "createbigcannons:quickfiring_mechanism" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7CF4B5A12FFAAE8F"
+					item: { count: 1, id: "createbigcannons:big_cartridge" }
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1EEC175F0767E0D0"]
+			id: "74D5C9F3EA02990E"
+			rewards: [{
+				id: "47F5C8933C1ED194"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "033CC920541E82F8"
+				item: { count: 1, id: "createbigcannons:cannon_builder" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["74D5C9F3EA02990E"]
+			id: "18CE888BCDB625CF"
+			rewards: [{
+				id: "7FDB1330133CC392"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "11DEA3B621A202C7"
+				item: { count: 1, id: "createbigcannons:cannon_welder" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["74D5C9F3EA02990E"]
+			id: "4F13780A7ADD78BE"
+			rewards: [{
+				id: "603DAE62284682B7"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				count: 8L
+				id: "6FAA34ACB7B54B1F"
+				item: { count: 1, id: "createbigcannons:nethersteel_ingot" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+	]
+}

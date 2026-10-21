@@ -6,11 +6,19 @@ hash = "fd52d588f0a2f9407c82362d47ee71b12fb5baacb113f7dc7de4282caf2f930d"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "d222645bb7589d2bc8bf97a8b19cf6947c25857802d1d42d935260201667aa9e"
+hash = "f311ae497d6ee7bd11821b1f55879539aebefb2078d0ec60ad015ba63d47b6c7"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ad_astra_liftoff.snbt"
+hash = "f7484292cff62768e6c10b6bab6aafe9888865c7eef083483c689cbf42601565"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_basics.snbt"
 hash = "06f0a18638b765d42dc4b7e88552514ee7163ae351b995fc428e77d9d727aecf"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/create_big_cannons.snbt"
+hash = "9fcbc70d4f3ac9f1709d79ccef029158edf571336fb27acbe01d10e930646aca"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_contraptions.snbt"
@@ -41,12 +49,20 @@ file = "config/ftbquests/quests/chapters/create_more_machines.snbt"
 hash = "b5b7bdafdad2e4c88eb618f17fd1639156c987959704206881e0c6db876bd456"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/create_new_age.snbt"
+hash = "ecdc2bbd07ece770d82638da1f4795f02672fd4c6fc95e06d8db189f45057982"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/create_trains.snbt"
 hash = "bf65acb5078583e4ae94c91c9c6748af0e2f1d4f9db5edcad1d9ff3c8ed78866"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/getting_started.snbt"
 hash = "9648e02b577b93c9da718d1f2460a3d68a607c32d6d2cf39783688d03fa7d684"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/tfmg_oil.snbt"
+hash = "1613de07ca7fcf902c7e89d5b77662b7442f48831d113ee795466f65caae56eb"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tfmg_steel.snbt"
@@ -58,7 +74,7 @@ hash = "da77e416b557850f5cb1ab68d71de78f9fbc3cf3845e50cdb4dba3a8164f6e7f"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "392923b3604b08bf3d5daf214220dba80aebc02baed8d7547d11ad1548b92f42"
+hash = "4af58c50322eb2ccb92d92045e051bf095489fac7aa2fd2344a881df6e81ecbb"
 
 [[files]]
 file = "kubejs/data/ad_astra/tags/fluid/fuel.json"

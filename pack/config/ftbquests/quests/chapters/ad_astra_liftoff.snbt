@@ -1,0 +1,269 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ad_astra_liftoff"
+	group: "407E89587E4FC002"
+	icon: {
+		id: "ad_astra:tier_1_rocket"
+	}
+	id: "77B4AA428D42B348"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2C8DFC520679DCAC"]
+			id: "08E38215D89F6B6B"
+			rewards: [
+				{
+					id: "25DC5C351E568479"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "0FFBF3DCF6E8C393"
+					item: {
+						count: 1
+						id: "tfmg:heavy_plate"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4FD38C4FCD52DD5C"
+				item: { count: 1, id: "ad_astra:nasa_workbench" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["08E38215D89F6B6B"]
+			id: "4440B711812F947F"
+			rewards: [{
+				id: "495A7B7DD3568562"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "21A651A3D0905531"
+				item: { count: 1, id: "ad_astra:rocket_nose_cone" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["08E38215D89F6B6B"]
+			id: "7C6BD54FBD8CED44"
+			rewards: [{
+				id: "4898AB843B24CF6B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "488D1238184F5688"
+				item: { count: 1, id: "ad_astra:rocket_fin" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["08E38215D89F6B6B"]
+			id: "234A1BB0FEA33BEC"
+			rewards: [{
+				id: "51F20B8A6AA36D12"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 6L
+				id: "06F9AAD2607230EE"
+				item: { count: 1, id: "ad_astra:gas_tank" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["234A1BB0FEA33BEC"]
+			id: "46D53EF8DA9CDA57"
+			rewards: [{
+				id: "1274DB5BE2D6F7C0"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 2L
+				id: "0C6B5E1647099AF5"
+				item: { count: 1, id: "ad_astra:steel_tank" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["08E38215D89F6B6B"]
+			id: "5ED1A52EEDA6C9B7"
+			rewards: [{
+				id: "0640D94A2C0E10E9"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "3E390085E13A8DD4"
+				item: { count: 1, id: "ad_astra:steel_engine" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["08E38215D89F6B6B"]
+			id: "3EB331B0CEEFE6AA"
+			rewards: [{
+				id: "384606997E8D56FF"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "5068A7EDE741BC8E"
+				item: { count: 1, id: "ad_astra:launch_pad" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["08E38215D89F6B6B"]
+			id: "3FF8CB1F92B4357D"
+			rewards: [{
+				id: "6E8E240A247E2FCF"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "13463F89A4FE802E"
+				item: { count: 1, id: "ad_astra:fuel_refinery" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3FF8CB1F92B4357D"]
+			id: "53D84D69C8318882"
+			rewards: [{
+				id: "08616E3734521999"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "3FC689F79827054D"
+				item: { count: 1, id: "ad_astra_giselle_addon:fuel_loader" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["234A1BB0FEA33BEC"]
+			id: "1B0FF5899D1C50F4"
+			rewards: [{
+				id: "7253C70717FA3877"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "6E8582CAE51307B2"
+					item: { count: 1, id: "ad_astra:space_helmet" }
+					type: "item"
+				}
+				{
+					id: "5EBDA67C7392ADE9"
+					item: { count: 1, id: "ad_astra:space_suit" }
+					type: "item"
+				}
+				{
+					id: "2EE367A03F0BA685"
+					item: { count: 1, id: "ad_astra:space_pants" }
+					type: "item"
+				}
+				{
+					id: "0F5F65FF1766D91B"
+					item: { count: 1, id: "ad_astra:space_boots" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1B0FF5899D1C50F4"]
+			id: "16DF58934349AC94"
+			rewards: [{
+				id: "0F898E6B3812FFAF"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "21E0FF0BF9D62636"
+				item: { count: 1, id: "ad_astra:oxygen_loader" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["234A1BB0FEA33BEC"]
+			id: "655BC8086489F3E3"
+			rewards: [{
+				id: "3A5FA406262EBB03"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "205B0A2BAF3A3F86"
+				item: { count: 1, id: "ad_astra_giselle_addon:oxygen_can" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"4440B711812F947F"
+				"7C6BD54FBD8CED44"
+				"46D53EF8DA9CDA57"
+				"5ED1A52EEDA6C9B7"
+			]
+			id: "05AD25FDBCCCB8A1"
+			rewards: [
+				{
+					id: "783FF11FF3DEC192"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "2B83BAF757858605"
+					item: {
+						count: 1
+						id: "ad_astra:fuel_bucket"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "71576207B26ADDAD"
+				item: { count: 1, id: "ad_astra:tier_1_rocket" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+	]
+}

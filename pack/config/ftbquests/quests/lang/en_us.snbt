@@ -3,6 +3,8 @@
 	chapter.00011E84ED5EA39A.title: "Create: More Machines"
 	chapter.06B890659D1F1750.chapter_subtitle: ["From brass casing to the mechanical crafter, crushing wheels and the tools it builds."]
 	chapter.06B890659D1F1750.title: "Create: Mechanical Crafting"
+	chapter.084B69E7170F741E.chapter_subtitle: ["Find oil, pump it up, split it into fuels in a distillation tower, and burn the diesel in an engine."]
+	chapter.084B69E7170F741E.title: "Oil and Engines"
 	chapter.0FB4652418B4DA84.chapter_subtitle: ["The Factory Must Grow's steelworks: coke ovens, the blast furnace and casting steel by the stack."]
 	chapter.0FB4652418B4DA84.title: "Steel and Alloys"
 	chapter.16948E1D867242E0.chapter_subtitle: ["From andesite alloy through brass to the precision mechanism."]
@@ -18,9 +20,17 @@
 	chapter.4A7B7A7FB61DEF2E.title: "Create: Enchantment Industry"
 	chapter.67EBEAD7AC2E98DD.chapter_subtitle: ["From track and train casing to stations, signals and a train that runs itself."]
 	chapter.67EBEAD7AC2E98DD.title: "Create: Trains"
+	chapter.6C61F52EEAE10A87.chapter_subtitle: ["Generator coils and magnets, energised materials, motors, heat, and a nuclear reactor."]
+	chapter.6C61F52EEAE10A87.title: "Create: New Age"
+	chapter.6F06BF032B8459D6.chapter_subtitle: ["Cast and bore a cannon, mount it, load it and fire; then shells, quick-firing breeches, built-up steel and nethersteel."]
+	chapter.6F06BF032B8459D6.title: "Create: Big Cannons"
 	chapter.70FFBEF6E1290061.chapter_subtitle: ["From belts and funnels to packages, frogports and the stock ticker."]
 	chapter.70FFBEF6E1290061.title: "Create: Logistics"
+	chapter.77B4AA428D42B348.chapter_subtitle: ["A NASA workbench, a space suit and fuel: everything the first rocket needs to reach the Moon."]
+	chapter.77B4AA428D42B348.title: "Ad Astra: Liftoff"
 	chapter_group.002607DF1C0C507C.title: "Industry"
+	chapter_group.38141FC7E950B458.title: "Combat and Gear"
+	chapter_group.407E89587E4FC002.title: "Space"
 	chapter_group.72644D66BC292029.title: "Getting Started"
 	chapter_group.7DF81F61BC6148EF.title: "Create"
 	quest.00616C116AB4CE73.quest_desc: ["An andesite casing and a chute make a portable storage interface. When a moving contraption stops beside one, it loads and unloads the contraption's chests."]
@@ -31,16 +41,26 @@
 	quest.00D287ECAAB91B15.title: "Blasting Catalyst Sail"
 	quest.00E324586607DBE5.quest_desc: ["Four copper wire on an empty spool. Motors and generators are wound with them, and you use one on two connectors to run wire between them."]
 	quest.00E324586607DBE5.title: "Copper Spool"
+	quest.00E775D4B05D649E.quest_desc: ["Overcharged iron, gold nuggets, a brass casing and a shaft: a stronger motor. A motor extension behind one raises its stress capacity, and its power draw with it."]
+	quest.00E775D4B05D649E.title: "Advanced Motor"
 	quest.00ED0347E5F2AE0A.quest_desc: ["Andesite alloy is what most of Create is made of. Andesite and iron or zinc nuggets make it on a crafting table."]
 	quest.00ED0347E5F2AE0A.title: "Andesite Alloy"
 	quest.014CF98096B18E91.quest_desc: ["Use a copper ingot on a stripped log, by hand or with a deployer, to make copper casing. The fluid machines are built around it."]
 	quest.014CF98096B18E91.title: "Copper Casing"
 	quest.021E838B1362DA17.quest_desc: ["The drilling machine's twin for fluid wells, made with a mechanical pump and a hose pulley in place of the spout and tunnel."]
 	quest.021E838B1362DA17.title: "Fluid Well Extractor"
+	quest.03EBBAABBCACCC51.quest_desc: ["Terracotta, zinc nuggets and a copper sheet make four. Heat pipes spread heat; a block that gets too hot turns to lava."]
+	quest.03EBBAABBCACCC51.title: "Heat Pipe"
 	quest.04197D14DDEDA5C1.quest_desc: ["A shaft, a propeller, cogwheels and a cast iron pipe. Turned, it draws in air for the blast stove."]
 	quest.04197D14DDEDA5C1.title: "Air Intake"
+	quest.05AD25FDBCCCB8A1.quest_desc: ["The nose cone, six blocks of steel, four fins, two steel tanks and the engine, put together in the NASA workbench. Fuel it, set it on the launch pad, put on the suit and go to the Moon."]
+	quest.05AD25FDBCCCB8A1.title: "Tier 1 Rocket"
 	quest.06C4D3858B6FE6B7.quest_desc: ["A copper rod, andesite alloy and a slimeball make three. Place one on each machine and join them with a spool to carry power."]
 	quest.06C4D3858B6FE6B7.title: "Small Connector"
+	quest.0857BF09DA8F8A5B.quest_desc: ["Andesite alloy, coal and a shaft. Brushes on the coil collect the electricity it makes."]
+	quest.0857BF09DA8F8A5B.title: "Carbon Brushes"
+	quest.08E38215D89F6B6B.quest_desc: ["Heavy plates, iron rods, redstone torches, a crafting table and a block of steel. Every rocket is crafted in it."]
+	quest.08E38215D89F6B6B.title: "NASA Workbench"
 	quest.092518A48FED1029.quest_desc: ["Mix four sugar cane, or other plant matter, with water in a basin to make pulp, and press the pulp into cardboard. Four cardboard make a block of cardboard."]
 	quest.092518A48FED1029.title: "Cardboard"
 	quest.0A23B2C48428080A.quest_desc: ["Use an empty blaze burner on a blaze, in a Nether fortress, to catch it. Brass is mixed heated, and a heated mix needs a blaze burner fed with fuel."]
@@ -49,6 +69,8 @@
 	quest.0BE5752A6DDD6DB9.title: "Alternator"
 	quest.0BFEE4151EC8C9CB.quest_desc: ["Nether quartz and eight redstone dust make rose quartz on a crafting table. Polish it with sand paper, which is paper and sand."]
 	quest.0BFEE4151EC8C9CB.title: "Polished Rose Quartz"
+	quest.0C179C226BE4F22E.quest_desc: ["Sequenced assembly on a heavy plate, two loops: steel cogwheels, nickel sheets, large steel cogwheels, lead sheets, then screws driven in with a screwdriver. It is to TFMG what the precision mechanism is to Create."]
+	quest.0C179C226BE4F22E.title: "Steel Mechanism"
 	quest.0CBB8076D40781EC.quest_desc: ["The mechanical press makes golden sheets from gold ingots."]
 	quest.0CBB8076D40781EC.title: "Golden Sheet"
 	quest.0D43965368217D48.quest_desc: ["Mechanically crafted from brass blocks and sheets, a copper and a brass casing, electron tubes, precision mechanisms, a spout, a mechanical drill, a brass tunnel and sturdy sheets. Place it over a vein, put a drill in and give it rotation, and it brings up the vein's ore; some veins also need drilling fluid."]
@@ -59,14 +81,26 @@
 	quest.0F0B646A315F54D1.title: "Train Observer"
 	quest.0F0F05F18F1352C3.quest_desc: ["Three andesite alloy, an iron ingot and an andesite casing make a mechanical drill. It breaks the blocks in front of it, standing still or riding on a contraption."]
 	quest.0F0F05F18F1352C3.title: "Mechanical Drill"
+	quest.11035283280C5B16.quest_desc: ["A diesel engine with brass sheets and andesite alloy. They stack, and give more stress capacity the more you stack."]
+	quest.11035283280C5B16.title: "Modular Diesel Engine"
+	quest.12CED059BBDD425E.quest_desc: ["A basic energiser with overcharged gold and lightning rods. It energises faster."]
+	quest.12CED059BBDD425E.title: "Advanced Energiser"
 	quest.13601A7E258F0591.quest_desc: ["Crushing wheels grind coal coke into dust, which is what the blast furnace burns."]
 	quest.13601A7E258F0591.title: "Coal Coke Dust"
 	quest.139623F0052D535E.quest_desc: ["A copper casing and dried kelp make a spout. Fed by a pipe, it fills the item below it on a depot or a belt: a bucket, a bottle, or anything a recipe fills with fluid."]
 	quest.139623F0052D535E.title: "Spout"
 	quest.13DC25BF054B85E8.quest_desc: ["A lever, a train casing and a precision mechanism make train controls. A train needs one to be driven: build it on bogeys at a station, glue it together, and assemble it from the station."]
 	quest.13DC25BF054B85E8.title: "Train Controls"
+	quest.156A89680C56B312.quest_desc: ["Use a quick-firing mechanism on a sliding breech to convert it. Open it from the side, load the projectile, then a big cartridge (a sheet pressed in five loops, then filled), and close it; spent cases eject themselves."]
+	quest.156A89680C56B312.title: "Quick-Firing Breech"
 	quest.163798828170E009.quest_desc: ["Andesite alloy, shaftless cogwheels and a large coaxial cogwheel. It turns at the average of its two input shafts, so with a small cogwheel on it, it adds two speeds together."]
 	quest.163798828170E009.title: "Differential"
+	quest.16DF58934349AC94.quest_desc: ["Turns water into oxygen and fills space suits and gas tanks with it. It runs on power, like the refinery."]
+	quest.16DF58934349AC94.title: "Oxygen Loader"
+	quest.17025CEF04B29ED2.quest_desc: ["Sand, dirt and clay. A cannon mould, sawn from a log with a mechanical saw, is built into a cast layer of casting sand; fill the cast with molten metal, let it set, then break it open."]
+	quest.17025CEF04B29ED2.title: "Casting Sand"
+	quest.175FF672D51D6D18.quest_desc: ["Steel fluid tanks with the controller beside them and up to six outputs stacked above, with industrial pipe between, and a heat source under the tanks. Pump crude oil into the controller and it splits into heavy oil, diesel, kerosene, naphtha, gasoline and LPG."]
+	quest.175FF672D51D6D18.title: "Distillation Tower"
 	quest.178AF8F67536B6AC.quest_desc: ["Four cast iron ingots and a block of industrial iron make two; cast iron is an iron ingot and coal pressed in a heated basin. Coke ovens are slow, so build them in long rows."]
 	quest.178AF8F67536B6AC.title: "Coke Oven"
 	quest.17C1B624BF095E81.quest_desc: ["A wooden slab, a stone and a shaft make a windmill bearing, and wool, two sticks and an andesite alloy make two windmill sails. Attach at least eight sails to the bearing and it turns on its own, with no water in sight."]
@@ -75,16 +109,30 @@
 	quest.18BAC74E365D3EF6.title: "Crushed Iron"
 	quest.18CA23C9694BB7C3.quest_desc: ["A brass casing, an electron tube and a crafting table make three mechanical crafters. Set them side by side in a grid, facing the same way, to craft recipes too big for a crafting table; a crushing wheel takes twenty-one of them."]
 	quest.18CA23C9694BB7C3.title: "Mechanical Crafters"
+	quest.18CE888BCDB625CF.quest_desc: ["Cannon blocks placed one by one don't connect. Use the welder on two that line up and match in material and type to join them, though a weld can weaken some cannons."]
+	quest.18CE888BCDB625CF.title: "Cannon Welder"
+	quest.195874A714B642A9.quest_desc: ["Crushing mined thorium gives radioactive thorium one time in ten; pressed onto an iron sheet in sequenced assembly, it becomes fuel."]
+	quest.195874A714B642A9.title: "Nuclear Fuel"
 	quest.1A0A422F73E1F49E.quest_desc: ["A train casing and an electron tube make four train signals. Signals split a track into sections so trains sharing it don't run into each other."]
 	quest.1A0A422F73E1F49E.title: "Train Signal"
+	quest.1B0FF5899D1C50F4.quest_desc: ["Helmet, suit, pants and boots, mostly heavy plates and wool; the suit holds two gas tanks and oxygen gear. Wear all four to breathe and survive the cold outside the Overworld."]
+	quest.1B0FF5899D1C50F4.title: "Space Suit"
+	quest.1C7DC843DD6EE7A0.quest_desc: ["Two heavy plates and a barrel make two. The pumpjack and the distillation tower are both built on them."]
+	quest.1C7DC843DD6EE7A0.title: "Steel Fluid Tank"
 	quest.1D4BDA113AC5A145.quest_desc: ["A glass, a stock link and a gold ingot make a stock ticker. It shows everything in its network and takes orders: pick what you want and the packagers send it to you."]
 	quest.1D4BDA113AC5A145.title: "Stock Ticker"
+	quest.1D6A03F44C45D8EE.quest_desc: ["A stone button and redstone make four. A fuze on a shell's head sets it off; deployers can fit them."]
+	quest.1D6A03F44C45D8EE.title: "Impact Fuze"
 	quest.1E12D7A55B984B9C.quest_desc: ["Fireproof bricks, cast iron pipes and a block of cast iron. It's the base of the blast furnace: build a cylinder of fireproof bricks around it and feed iron, flux and fuel in through the hole at the top."]
 	quest.1E12D7A55B984B9C.title: "Blast Furnace Output"
 	quest.1E92E5A75E5CC566.quest_desc: ["Dried kelp, a precision mechanism, a propeller, iron sheets and a cogwheel make eight. Join two ends with more tube and turn either end, and it moves a stack at a time between inventories, filtered at the input."]
 	quest.1E92E5A75E5CC566.title: "Pneumatic Tube"
 	quest.1ECAD497C0AD8335.quest_desc: ["Four planks of any wood make a crafting table."]
 	quest.1ECAD497C0AD8335.title: "A Crafting Table"
+	quest.1EEC175F0767E0D0.quest_desc: ["Place the cannon on a mount and power its hammer face with redstone to assemble it. Rotation into the mount aims it up, down and side to side; power the lit face to fire."]
+	quest.1EEC175F0767E0D0.title: "Cannon Mount"
+	quest.1F58FC1B46D691D5.quest_desc: ["Mechanically crafted from iron ingots, packed guncotton and a wooden slab. Fit a fuze, or it lands like solid shot."]
+	quest.1F58FC1B46D691D5.title: "High Explosive Shell"
 	quest.1FD34643773C8684.quest_desc: ["A brass casing, two capacitors, a copper rod and electrum wire. It stores power, and accumulators placed together join into one bigger store."]
 	quest.1FD34643773C8684.title: "Accumulator"
 	quest.1FF68F8097C7D658.quest_desc: ["A stock link and a precision mechanism make two factory gauges. A gauge keeps a target amount of one item in stock, ordering the ingredients from the network and sending them to the machines that make it."]
@@ -103,6 +151,10 @@
 	quest.221C682830211660.title: "Fluid Valve"
 	quest.2247B1FE82C858BD.quest_desc: ["Iron sheets, shafts, andesite alloy and an andesite casing. Given rotation, it rolls ingots into rods and sheets into wire."]
 	quest.2247B1FE82C858BD.title: "Rolling Mill"
+	quest.22A13C9DAA4D9BA3.quest_desc: ["Works like a blaze burner under a boiler, but burns heat instead of fuel: the more heat it gets, the more it gives."]
+	quest.22A13C9DAA4D9BA3.title: "Boiler Heater"
+	quest.234A1BB0FEA33BEC.quest_desc: ["Iron sheets around an iron rod. Steel tanks, the space suit and the oxygen loader are all built around them."]
+	quest.234A1BB0FEA33BEC.title: "Gas Tank"
 	quest.23501177234F51FB.quest_desc: ["A transmitter and an item vault make a stock link. On a packager, it joins that packager's inventory to a logistics network every other stock link on the same frequency can see."]
 	quest.23501177234F51FB.title: "Stock Link"
 	quest.243789BED85BE7B2.quest_desc: ["A precision mechanism in a brass casing makes a rotation speed controller. It sets the speed of the cogwheel above it, whatever is turning it."]
@@ -125,6 +177,8 @@
 	quest.299214CE85FAF453.title: "Sticky Mechanical Piston"
 	quest.29D0DB23B08C9878.quest_desc: ["A blaze burner and an anvil, upgraded at a smithing table with a blaze upgrade template. Fed liquid experience it works as an anvil with no repair cost, and it can apply enchanting templates or strip an enchantment into one."]
 	quest.29D0DB23B08C9878.title: "Blaze Forger"
+	quest.29D7F6CADBDA8508.quest_desc: ["Given heat from below, it slowly turns, and faster with more heat. A solar heating plate makes heat during the day."]
+	quest.29D7F6CADBDA8508.title: "Stirling Engine"
 	quest.2B5899321CCD9012.quest_desc: ["A block of experience, a sponge and a copper casing. It soaks up experience from nearby players and orbs, glowing brighter the more it holds, and works on a contraption too."]
 	quest.2B5899321CCD9012.title: "Experience Lantern"
 	quest.2BA0D84C6A29B165.quest_desc: ["Six dried kelp make a mechanical belt. Use it on two shafts in a line and it joins them with a belt that carries items, and anything standing on it, as the shafts turn."]
@@ -133,8 +187,14 @@
 	quest.2C8DFC520679DCAC.title: "Steel Ingot"
 	quest.2E205DF4A005B094.quest_desc: ["A slimeball, an item vault and an andesite alloy make a package frogport. Set on a chain conveyor, it sends packages along the chain and catches the ones addressed to it."]
 	quest.2E205DF4A005B094.title: "Package Frogport"
+	quest.2E2B5001B725B899.quest_desc: ["Set the base on top of the pipe from the deposit, the hammer holder behind it, the connector and head above, joined by hammer parts and super glued. A machine input under the crank takes the rotation that drives it, and crude oil comes out of the base."]
+	quest.2E2B5001B725B899.title: "Pumpjack"
+	quest.2EF693E8E64154B9.quest_desc: ["Mechanically crafted from diamonds, overcharged diamonds, iron sheets, a brass casing and a block of redstone. The strongest motor."]
+	quest.2EF693E8E64154B9.title: "Reinforced Motor"
 	quest.2FB357D1CB1E49B9.quest_desc: ["Two iron sheets and an iron ingot make four chutes. Items fall down a chute, and an encased fan blows them up one."]
 	quest.2FB357D1CB1E49B9.title: "Chutes"
+	quest.3026A843F2423034.quest_desc: ["An andesite casing and a lightning rod. Given electricity and rotation, it energises items on a depot or belt under it."]
+	quest.3026A843F2423034.title: "Basic Energiser"
 	quest.3360689BF4EA0CBE.quest_desc: ["An andesite alloy and a dried kelp make two andesite funnels, and twice that two andesite tunnels. A funnel puts items onto a belt or takes them off into a chest; a tunnel on a belt splits what passes under it between the belts beside it."]
 	quest.3360689BF4EA0CBE.title: "Andesite Funnels and Tunnels"
 	quest.33A61C13CFCF2BC5.quest_desc: ["Sixteen andesite alloy, four planks and a stone make two crushing wheels on the mechanical crafters. Set the pair side by side and spin them toward each other, and whatever drops between them is crushed."]
@@ -153,16 +213,28 @@
 	quest.3770784E5E24E8F3.title: "Re-Packager"
 	quest.3AA6E08BCA344734.quest_desc: ["A wooden door and a train casing make a train door. It opens on its own when the train stops at a station."]
 	quest.3AA6E08BCA344734.title: "Train Door"
+	quest.3B7CF31CCE0DB47E.quest_desc: ["Built around a steam engine, and connects to a shaft like one. Give it fuel and it turns."]
+	quest.3B7CF31CCE0DB47E.title: "Huge Diesel Engine"
 	quest.3B8FDE5B8CB91501.quest_desc: ["The mechanical crafters make a wand of symmetry from glass, an ender pearl, a precision mechanism, a brass ingot and obsidian. Every block you place or break is mirrored across the plane you set."]
 	quest.3B8FDE5B8CB91501.title: "Wand of Symmetry"
+	quest.3CD3E7BFB55DAB51.quest_desc: ["Packed gunpowder, pressed from three gunpowder, in an empty charge of string and wool. A cast iron cannon needs one charge per barrel to fire the shot clear, and bursts on more than two."]
+	quest.3CD3E7BFB55DAB51.title: "Powder Charge"
 	quest.3DB4704C88B0A42B.quest_desc: ["A brass sheet, a spout and three nixie tubes. Over a basin and among bookshelves, it does an enchanting table's infusion recipes with liquid experience."]
 	quest.3DB4704C88B0A42B.title: "Infuser"
 	quest.3DC3E416CB6F686D.quest_desc: ["Mechanically crafted from twelve shafts and eight planks. It meshes with large cogwheels at a third of their speed and small ones at a sixth."]
 	quest.3DC3E416CB6F686D.title: "Colossal Cogwheel"
 	quest.3E2C7E69DB501D03.quest_desc: ["Two slimeballs, an iron sheet and an iron nugget make super glue. Use it to drag a box over blocks, and they move together as one contraption."]
 	quest.3E2C7E69DB501D03.title: "Super Glue"
+	quest.3E71F44F12261E16.quest_desc: ["Works like a mechanical piston with extension poles, and needs a ram head on the end. Disassemble the cannon first, and line up the loader, the munitions and the barrel."]
+	quest.3E71F44F12261E16.title: "Cannon Loader"
+	quest.3EB331B0CEEFE6AA.quest_desc: ["Heavy plates and steel rods. Place the rocket on it to launch; a redstone signal launches a placed rocket by itself."]
+	quest.3EB331B0CEEFE6AA.title: "Launch Pad"
+	quest.3EE94B64D98641DD.quest_desc: ["Rebar and a brass ingot. Deployers hold it to drive screws when they assemble steel mechanisms."]
+	quest.3EE94B64D98641DD.title: "Screwdriver"
 	quest.3F523886DD1C4542.quest_desc: ["Crush obsidian into powdered obsidian, then build a sturdy sheet on it by sequenced assembly: a spout pours on lava and a press flattens it. It's the toughest sheet Create makes."]
 	quest.3F523886DD1C4542.title: "Sturdy Sheet"
+	quest.3FF8CB1F92B4357D.quest_desc: ["Refines crude oil into rocket fuel. It runs on power: Ad Astra's coal generator burns anything a furnace does, or use Crafts & Additions' alternator. A tier 1 rocket also burns diesel, gasoline or kerosene straight from the distillation tower."]
+	quest.3FF8CB1F92B4357D.title: "Fuel Refinery"
 	quest.40D889BD937BEF25.quest_desc: ["Electricity starts with copper wire: a stonecutter makes two from a copper ingot, and the rolling mill makes it from copper sheets."]
 	quest.40D889BD937BEF25.title: "Copper Wire"
 	quest.41C839ED1B4A4F67.quest_desc: ["An andesite alloy on an andesite casing makes a depot. It holds one stack for a press, a spout or a deployer to work on, and a funnel or an arm can take it off again."]
@@ -177,6 +249,8 @@
 	quest.43440F667B05C3A8.title: "Industrial Fan"
 	quest.4344E26953141519.quest_desc: ["A cogwheel, an andesite casing and a whisk make a mechanical mixer. The whisk is two andesite alloy and five iron sheets."]
 	quest.4344E26953141519.title: "Mechanical Mixer"
+	quest.4440B711812F947F.quest_desc: ["A lightning rod on four heavy plates."]
+	quest.4440B711812F947F.title: "Rocket Nose Cone"
 	quest.44638097D1B5911E.quest_desc: ["The mechanical press makes brass sheets from brass ingots. Four of them and an andesite alloy make the brass hand a deployer needs."]
 	quest.44638097D1B5911E.title: "Brass Sheets"
 	quest.4581013F8819B460.quest_desc: ["Mechanically crafted from three copper spools, brass sheets, a capacitor, an iron rod and andesite alloy. It turns power back into rotation, at a speed you set."]
@@ -187,16 +261,26 @@
 	quest.4632BB1D627937A7.title: "Item Vault"
 	quest.46B090983E584A01.quest_desc: ["Two andesite alloy, a slimeball, two cobblestone and a redstone dust make a sticker. On a redstone signal it grabs the block in front of it, or lets it go."]
 	quest.46B090983E584A01.title: "Sticker"
+	quest.46D53EF8DA9CDA57.quest_desc: ["A gas tank in five heavy plates with a steel rod: the rocket's fuel tanks. It takes two."]
+	quest.46D53EF8DA9CDA57.title: "Steel Tank"
+	quest.46ED55DF7CC6D5E0.quest_desc: ["A stonecutter makes eight from a steel ingot. Oil lies in deposits deep underground, and a pumpjack needs a line of industrial pipe from the deposit up to the surface."]
+	quest.46ED55DF7CC6D5E0.title: "Industrial Pipe"
 	quest.479C0B4F3E9AC3CA.quest_desc: ["Use a sturdy sheet on a brass casing, by hand or with a deployer, to make a train casing. Every train block is built around one."]
 	quest.479C0B4F3E9AC3CA.title: "Train Casing"
+	quest.49E283491F47C049.quest_desc: ["Bores out cast cannon blocks. It needs rotation and water, drinks more water the faster it turns, and its speed must match the lathe turning the cast."]
+	quest.49E283491F47C049.title: "Cannon Drill"
 	quest.4C844D1D2D6389AF.quest_desc: ["A block of experience used on a fluid hatch. Right-click it to store your experience as liquid, and shift-right-click to take it back."]
 	quest.4C844D1D2D6389AF.title: "Experience Hatch"
+	quest.4D122DC8E2842FB4.quest_desc: ["Eight copper ingots around a block of andesite alloy. Turned by a shaft and surrounded by magnets it makes electricity; it never turns anything itself."]
+	quest.4D122DC8E2842FB4.title: "Generator Coil"
 	quest.4E03C2567F5E822B.quest_desc: ["The mechanical press flattens an iron ingot into an iron sheet. Sheets go into the mixer's whisk, the blaze burner and the electron tube."]
 	quest.4E03C2567F5E822B.title: "Iron Sheets"
 	quest.4E566D1A38D22D74.quest_desc: ["One in the furnace's wall takes in hot air. One on the top hole collects furnace gas, and items sent into it fall into the furnace."]
 	quest.4E566D1A38D22D74.title: "Blast Furnace Hatch"
 	quest.4E9989ABF7317C57.quest_desc: ["A wooden slab, a brass casing and an electron tube make a clockwork bearing. It turns two contraptions as the hands of a clock, keeping the time of day."]
 	quest.4E9989ABF7317C57.title: "Clockwork Bearing"
+	quest.4F13780A7ADD78BE.quest_desc: ["Netherite scrap and four steel ingots, or eight cast iron, in a superheated mixer make eight. Molten, it casts the strongest cannons, for the heaviest charges."]
+	quest.4F13780A7ADD78BE.title: "Nethersteel Ingot"
 	quest.4F87995FA90727E9.quest_desc: ["A shaft carries rotation from one Create machine to the next. Make one from andesite alloy."]
 	quest.4F87995FA90727E9.title: "A Shaft"
 	quest.4FF888A38D24CA23.quest_desc: ["A precision mechanism, a brass casing, iron sheets and redstone make eight. Unpowered, it charges from the rotation in front of it; given a redstone signal, it gives that stress back to the network."]
@@ -206,10 +290,18 @@
 	quest.504D351FBD9ED049.title: "Bulk Washing"
 	quest.5244761B280AD1DA.quest_desc: ["Eight planks around a shaft make a water wheel."]
 	quest.5244761B280AD1DA.title: "Water Wheel"
+	quest.5257B2EC0F15ABDD.quest_desc: ["Iron and gold ingots run under an energiser come out overcharged. Better magnets, energisers, motors and the boiler heater are made from them."]
+	quest.5257B2EC0F15ABDD.title: "Overcharged Metals"
 	quest.52CA7AE24F66B168.quest_desc: ["Eight andesite alloy and a shaft. Use one on an item drain to make a grindstone drain and set another on top: it grinds experience nuggets and blocks into liquid experience. It also does a grindstone's and sand paper's work."]
 	quest.52CA7AE24F66B168.title: "Mechanical Grindstone"
 	quest.52E43BB62D3E15DF.quest_desc: ["Two iron sheets and an iron rod make 24 empty spools to wind wire onto."]
 	quest.52E43BB62D3E15DF.title: "Empty Spools"
+	quest.5330F7AF68993D87.quest_desc: ["Iron ingots and nuggets on a wooden slab: the plainest projectile."]
+	quest.5330F7AF68993D87.title: "Solid Shot"
+	quest.53D84D69C8318882.quest_desc: ["Pipe fuel into it and it fuels a rocket or rover nearby, so a rocket on its pad can be refuelled without buckets."]
+	quest.53D84D69C8318882.title: "Fuel Loader"
+	quest.5443668589EE1D52.quest_desc: ["Overcharged iron and gold make four, stronger than redstone magnets. Fluxuated magnetite and netherite magnets are stronger still."]
+	quest.5443668589EE1D52.title: "Layered Magnet"
 	quest.544FAEE2C9689280.quest_desc: ["Three iron sheets, an iron ingot and an andesite casing make a mechanical saw. On a contraption it fells whole trees; set flat, it cuts logs into planks."]
 	quest.544FAEE2C9689280.title: "Mechanical Saw"
 	quest.55D93DE64B5FA0BA.quest_desc: ["A mechanical press, a fluid tank and a block of copper: Dreams and Desires' press for its hydraulic compacting recipes."]
@@ -222,12 +314,18 @@
 	quest.5832952C9BEE4718.title: "Basin"
 	quest.5A2404D93E4218BD.quest_desc: ["Dreams and Desires' casing: a zinc ingot used on copper casing, by hand or with a deployer."]
 	quest.5A2404D93E4218BD.title: "Industrial Casing"
+	quest.5BFF747D1F3BF8BE.quest_desc: ["Engine pistons, a block of brass, a fluid tank and flint and steel: a compact source of rotation that runs on the tower's diesel or gasoline. Stop it with a redstone signal."]
+	quest.5BFF747D1F3BF8BE.title: "Diesel Engine"
 	quest.5CF785860DBB1437.quest_desc: ["A brass sheet, a spout and a block of iron. Set what to print in its filter, pipe in the fluid it needs, and it copies written books or changes a package's pattern."]
 	quest.5CF785860DBB1437.title: "Printer"
+	quest.5D2646E3EAF4F84D.quest_desc: ["Andesite alloy and copper nuggets make two. Use copper wire, sawn from copper sheets, on two connectors to run a wire between them; a connector set to pull with a wrench draws from the block it stands on."]
+	quest.5D2646E3EAF4F84D.title: "Electrical Connector"
 	quest.5DE5F3F44D5367EF.quest_desc: ["An electron tube, a brass ingot and a dried kelp make two brass funnels, and an electron tube, two brass ingots and two dried kelp two brass tunnels. Brass ones take a filter, and a brass tunnel can share items out in turn, or send them to whichever side has room."]
 	quest.5DE5F3F44D5367EF.title: "Brass Funnels and Tunnels"
 	quest.5DFBD39E0512825D.quest_desc: ["Crushed limestone, the blast furnace's flux. Crushed raw iron and limesand make molten steel, slag and furnace gas."]
 	quest.5DFBD39E0512825D.title: "Limesand"
+	quest.5ED1A52EEDA6C9B7.quest_desc: ["Heavy plates around an engine frame (eight steel rods and a plate) and a fan (four plates and a rod)."]
+	quest.5ED1A52EEDA6C9B7.title: "Steel Engine"
 	quest.5F136CC8B55C4B0F.quest_desc: ["Train track is made by sequenced assembly: a deployer puts two iron nuggets on a stone slab, and a press fixes them down. Lay it with curves and slopes by clicking from one end to the other."]
 	quest.5F136CC8B55C4B0F.title: "Train Track"
 	quest.5FCCE99426A7102C.quest_desc: ["A wooden slab, an andesite casing and a piston extension pole make a mechanical piston, and two planks and an andesite alloy make eight poles. The poles behind it set how far it pushes."]
@@ -236,14 +334,24 @@
 	quest.5FF5EB5DE0DF9AFF.title: "Tesla Coil"
 	quest.61B69BCA480AD122.quest_desc: ["Two copper sheets and a copper ingot make four fluid pipes. Pipes join up on their own as you place them, and carry fluid between anything that holds it."]
 	quest.61B69BCA480AD122.title: "Fluid Pipes"
+	quest.622762E96190B0B0.quest_desc: ["Both are TFMG ores: crush them, smelt the crushed ore and press the ingots into sheets. Steel mechanisms take both."]
+	quest.622762E96190B0B0.title: "Lead and Nickel"
 	quest.62816651A924C812.quest_desc: ["Set the basin on the blaze burner and a powered mechanical mixer above the basin. Drop in a copper ingot and a zinc ingot, and the heated mix makes a brass ingot."]
 	quest.62816651A924C812.title: "Brass"
 	quest.63CEA192232460B3.quest_desc: ["Three brass sheets, an andesite alloy, a precision mechanism and a brass casing make a mechanical arm. It picks items up from one place and puts them down in another, within reach of where it stands."]
 	quest.63CEA192232460B3.title: "Mechanical Arm"
+	quest.644F74B4BB9B121C.quest_desc: ["Four andesite alloy. On a heated basin it melts metal for casting: cast iron ingots, pressed from iron and coal in a heated basin, melt into molten cast iron."]
+	quest.644F74B4BB9B121C.title: "Basin Foundry Lid"
+	quest.655BC8086489F3E3.quest_desc: ["Iron sheets and an iron rod. Filled at the oxygen loader and worn in its own slot, it carries extra oxygen for the suit."]
+	quest.655BC8086489F3E3.title: "Oxygen Can"
+	quest.679B8A23F2DEA1E3.quest_desc: ["Apply a steel ingot to hardened planks for a steel casing, then a heavy plate to that. Every oil machine has one inside."]
+	quest.679B8A23F2DEA1E3.title: "Heavy Machinery Casing"
 	quest.67C2B4683080812F.quest_desc: ["A block of experience, pressed. The blaze enchanter writes enchantments onto blank templates, and the blaze forger applies them to items."]
 	quest.67C2B4683080812F.title: "Enchanting Template"
 	quest.680A7675FC6D91EF.quest_desc: ["Two blocks of iron and five iron ingots. It's the bit a drilling machine runs; diamond and netherite drills last longer."]
 	quest.680A7675FC6D91EF.title: "Iron Drill"
+	quest.68A09A80BDA54D21.quest_desc: ["Cast two barrels, a chamber and a sliding breech, and bore each one; the breech then takes its breechblock. Most cast cannon blocks break into scrap without Silk Touch, so move a finished cannon whole."]
+	quest.68A09A80BDA54D21.title: "Cast Iron Cannon"
 	quest.6B44A722F756302F.quest_desc: ["A train casing and a compass make two train stations. Place one beside a track; it's where a train is assembled, and where it stops."]
 	quest.6B44A722F756302F.title: "Train Station"
 	quest.6C0E47B4AD488F7D.quest_desc: ["Polished rose quartz and an iron sheet make an electron tube."]
@@ -270,6 +378,10 @@
 	quest.73FA39500FA10D30.title: "Copper Sheets"
 	quest.74D431E29A0341A9.quest_desc: ["A shaft, an andesite casing and a propeller make an encased fan. The propeller is four iron sheets around an andesite alloy. Items the fan blows through water are washed, through lava smelted, and through fire smoked."]
 	quest.74D431E29A0341A9.title: "Encased Fan"
+	quest.74D5C9F3EA02990E.quest_desc: ["Puts the layers of a built-up cannon together; pulse it with power to grab or let go. Blasting the finished layers with a fan into lava turns them into built-up cannon blocks, stronger than cast ones."]
+	quest.74D5C9F3EA02990E.title: "Cannon Builder"
+	quest.74F0FEDB7C5FDA76.quest_desc: ["Iron nuggets around a block of redstone make two. Place them around the coil: the stronger the magnets, the more of the rotation becomes electricity, and the more stress the coil takes."]
+	quest.74F0FEDB7C5FDA76.title: "Redstone Magnet"
 	quest.7634101950E16F0B.quest_desc: ["A copper casing, a dried kelp block and a copper sheet make a hose pulley. It lowers a hose into a lake or a pool of lava and drains it, or fills one; a big enough body of water never runs out."]
 	quest.7634101950E16F0B.title: "Hose Pulley"
 	quest.76C1818AB31349DC.quest_desc: ["A brass casing, a dried kelp block and an iron sheet make an elevator pulley. It lifts a contraption between floors, stopping at each elevator contact it passes, like a lift."]
@@ -280,10 +392,18 @@
 	quest.77C919C0D8A0972C.title: "Chain Conveyor"
 	quest.780CAE0E4D843A83.quest_desc: ["The mechanical crafters make a potato cannon from fluid pipes, copper, an andesite alloy and a precision mechanism. It fires crops, and a few of them do more than bounce."]
 	quest.780CAE0E4D843A83.title: "Potato Cannon"
+	quest.7927E97C4E8FFA6E.quest_desc: ["Iron nuggets, a magnetite block, an andesite casing and a shaft; magnetite is mined. A motor turns electricity into rotation: set its speed with a wrench, and a redstone signal stops it."]
+	quest.7927E97C4E8FFA6E.title: "Basic Motor"
+	quest.797E46E3D3BC28A1.quest_desc: ["Reactor casing is bricks and an iron sheet energised, deployed and pressed. Reactor rods hold the reaction, the fuel acceptor takes fuel, and the heat vent sends heat into heat pipes. Encase it all in reactor casing or glass against radiation, and give the heat somewhere to go, or it melts down."]
+	quest.797E46E3D3BC28A1.title: "Nuclear Reactor"
 	quest.799FFB79754D33F8.quest_desc: ["An eye of ender, an amethyst shard, redstone ore and sticks. Use it to find the ore veins under the ground near you; the Ore Vein Atlas keeps track of the ones you've found."]
 	quest.799FFB79754D33F8.title: "Ore Vein Finder"
+	quest.79C16CA564983056.quest_desc: ["Shows the chunks around it in a 5 by 5 grid; the ones with an oil deposit glow. Dig down where it points."]
+	quest.79C16CA564983056.title: "Surface Scanner"
 	quest.79DFF370FD992E55.quest_desc: ["A zinc sheet, a copper sheet and a redstone torch. Most electric machines take one or two."]
 	quest.79DFF370FD992E55.title: "Capacitor"
+	quest.79E2DACAF78DB921.quest_desc: ["An advanced energiser with overcharged diamonds, diamonds and copper. Energise diamonds first."]
+	quest.79E2DACAF78DB921.title: "Reinforced Energiser"
 	quest.7AA8B342AA4E93C7.quest_desc: ["A brass sheet, a fluid pipe and an electron tube make a smart fluid pipe. Give it a filter and only that fluid passes."]
 	quest.7AA8B342AA4E93C7.title: "Smart Fluid Pipe"
 	quest.7BCEF8F5B514BAB1.quest_desc: ["A cogwheel and a fluid pipe make a mechanical pump. Turned, it pushes fluid through the pipes it sits in, in the direction it faces; reverse the rotation to pull the other way."]
@@ -291,6 +411,8 @@
 	quest.7C6AC7DC1AE63700.quest_desc: ["Assemble a train at a station, hand its conductor a schedule, and watch it run the route on its own."]
 	quest.7C6AC7DC1AE63700.quest_subtitle: "Tick this once a train runs its schedule"
 	quest.7C6AC7DC1AE63700.title: "All Aboard"
+	quest.7C6BD54FBD8CED44.quest_desc: ["Six heavy plates make four, which is what a rocket takes."]
+	quest.7C6BD54FBD8CED44.title: "Rocket Fins"
 	quest.7C9E0FB4D14D144E.quest_desc: ["A brass casing, a chute and a copper spool. It charges or drains a moving contraption that stops beside it."]
 	quest.7C9E0FB4D14D144E.title: "Portable Energy Interface"
 	quest.7D7AF1F19903D0DF.quest_desc: ["Andesite alloy is what most of Create is made of. Two andesite and two iron nuggets make one on a crafting table, and zinc nuggets work in place of the iron."]

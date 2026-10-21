@@ -1,0 +1,329 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_new_age"
+	group: "002607DF1C0C507C"
+	icon: {
+		id: "create_new_age:reactor_casing"
+	}
+	id: "6C61F52EEAE10A87"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["18CA23C9694BB7C3"]
+			id: "4D122DC8E2842FB4"
+			rewards: [{
+				id: "7BA9FB95C38D8A27"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "638036A2B86A110D"
+				item: { count: 1, id: "create_new_age:generator_coil" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D122DC8E2842FB4"]
+			id: "74F0FEDB7C5FDA76"
+			rewards: [{
+				id: "242F2B79E7B83F94"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 8L
+				id: "149D46D3A129922C"
+				item: { count: 1, id: "create_new_age:redstone_magnet" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4D122DC8E2842FB4"]
+			id: "0857BF09DA8F8A5B"
+			rewards: [{
+				id: "6B1008CA55DBC3A7"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "4B7C952844D6417B"
+				item: { count: 1, id: "create_new_age:carbon_brushes" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0857BF09DA8F8A5B"]
+			id: "5D2646E3EAF4F84D"
+			rewards: [{
+				id: "6C3D83D1435853A6"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "223B576EEBE62E83"
+				item: { count: 1, id: "create_new_age:electrical_connector" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D2646E3EAF4F84D"]
+			id: "3026A843F2423034"
+			rewards: [{
+				id: "17442A53EF00B979"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "50CCE11AB9A31DAB"
+				item: { count: 1, id: "create_new_age:basic_energiser" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D2646E3EAF4F84D"]
+			id: "7927E97C4E8FFA6E"
+			rewards: [{
+				id: "1C1C8D672916ADC8"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "07BA8CE5AEEA7217"
+				item: { count: 1, id: "create_new_age:basic_motor" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3026A843F2423034"]
+			id: "5257B2EC0F15ABDD"
+			rewards: [{
+				id: "679464FA0517813E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "11D090C85DC1DB89"
+					item: { count: 1, id: "create_new_age:overcharged_iron" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1D80FC0A8FE127BE"
+					item: { count: 1, id: "create_new_age:overcharged_gold" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5257B2EC0F15ABDD"]
+			id: "5443668589EE1D52"
+			rewards: [{
+				id: "75CA4AC1C0D5B62E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 8L
+				id: "272A6125C917ADD9"
+				item: { count: 1, id: "create_new_age:layered_magnet" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5257B2EC0F15ABDD"]
+			id: "12CED059BBDD425E"
+			rewards: [{
+				id: "57F799030D4D2F42"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "2E106AE8AF5FBE34"
+				item: { count: 1, id: "create_new_age:advanced_energiser" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7927E97C4E8FFA6E"
+				"5257B2EC0F15ABDD"
+			]
+			id: "00E775D4B05D649E"
+			rewards: [{
+				id: "7967F92FDA5746BF"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "2EACE78D78CC59F9"
+				item: { count: 1, id: "create_new_age:advanced_motor" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["12CED059BBDD425E"]
+			id: "79E2DACAF78DB921"
+			rewards: [{
+				id: "0C6CEEAC7FE8FCF4"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "562F8B44DEB8B07C"
+				item: { count: 1, id: "create_new_age:reinforced_energiser" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00E775D4B05D649E"]
+			id: "2EF693E8E64154B9"
+			rewards: [{
+				id: "10A3056DD50B2044"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "53CD5131DC314228"
+				item: { count: 1, id: "create_new_age:reinforced_motor" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4D122DC8E2842FB4"]
+			id: "03EBBAABBCACCC51"
+			rewards: [{
+				id: "5EAADAB5197FC1E9"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 8L
+				id: "47B5128F22A66E1B"
+				item: { count: 1, id: "create_new_age:heat_pipe" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["03EBBAABBCACCC51"]
+			id: "29D7F6CADBDA8508"
+			rewards: [{
+				id: "4EB04F77ECDAF80C"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "249B3CD2FCA1FCEB"
+				item: { count: 1, id: "create_new_age:stirling_engine" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"03EBBAABBCACCC51"
+				"5257B2EC0F15ABDD"
+			]
+			id: "22A13C9DAA4D9BA3"
+			rewards: [{
+				id: "502D15EE1D642A51"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "49801FB90F25B236"
+				item: { count: 1, id: "create_new_age:heater" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3026A843F2423034"]
+			id: "195874A714B642A9"
+			rewards: [{
+				id: "7F2635BC39CC94CE"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "454A39BF105B4920"
+				item: { count: 1, id: "create_new_age:nuclear_fuel" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"195874A714B642A9"
+				"22A13C9DAA4D9BA3"
+			]
+			id: "797E46E3D3BC28A1"
+			rewards: [{
+				id: "031841648C47929C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					count: 16L
+					id: "793BF7B4E672CA88"
+					item: { count: 1, id: "create_new_age:reactor_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "125AC0C66A364247"
+					item: { count: 1, id: "create_new_age:reactor_rod" }
+					type: "item"
+				}
+				{
+					id: "36D72B002F32249F"
+					item: { count: 1, id: "create_new_age:reactor_fuel_acceptor" }
+					type: "item"
+				}
+				{
+					id: "2B5FF03F8032ABB1"
+					item: { count: 1, id: "create_new_age:reactor_heat_vent" }
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 1.5d
+		}
+	]
+}
