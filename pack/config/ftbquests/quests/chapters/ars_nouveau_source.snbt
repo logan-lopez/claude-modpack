@@ -1,0 +1,226 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ars_nouveau_source"
+	group: "5F1D36673C78B4B6"
+	icon: {
+		id: "ars_nouveau:enchanting_apparatus"
+	}
+	id: "7B1462BC31B82F10"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "08AE9F39D7ADB0A5"
+			rewards: [{
+				id: "0A07EC8563EA7CE2"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "12BFE989522D087C"
+				item: { count: 1, id: "ars_nouveau:worn_notebook" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["08AE9F39D7ADB0A5"]
+			id: "19A08F6D0AEA692F"
+			rewards: [{
+				id: "500B37702EE6BF1F"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "77A37CBF86377909"
+				item: { count: 1, id: "ars_nouveau:novice_spell_book" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["19A08F6D0AEA692F"]
+			id: "55ECCA33AF4870E4"
+			rewards: [{
+				id: "3F29AE1BB356221E"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "629A3F14285AAE6F"
+				item: { count: 1, id: "ars_nouveau:scribes_table" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["55ECCA33AF4870E4"]
+			id: "24974C509DC442F4"
+			rewards: [{
+				id: "70B541971891B9B4"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "7F5DB94C30F7E429"
+					item: { count: 1, id: "ars_nouveau:glyph_projectile" }
+					type: "item"
+				}
+				{
+					id: "47131CCB3EE8677E"
+					item: { count: 1, id: "ars_nouveau:glyph_touch" }
+					type: "item"
+				}
+				{
+					id: "1F01D095C0023F93"
+					item: { count: 1, id: "ars_nouveau:glyph_break" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["08AE9F39D7ADB0A5"]
+			id: "3E662A4D2B3BC8FF"
+			rewards: [{
+				id: "0DAB1498E5D59B9E"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "62217B4EBC3E44DE"
+				item: { count: 1, id: "ars_nouveau:imbuement_chamber" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3E662A4D2B3BC8FF"]
+			id: "0D4B096E0D561E37"
+			rewards: [{
+				id: "31A5607A9AF50C77"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 8L
+				id: "3DEA4BB54A53127D"
+				item: { count: 1, id: "ars_nouveau:source_gem" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D4B096E0D561E37"]
+			id: "6019B70E00801379"
+			rewards: [{
+				id: "2AF64C1B6CA0A746"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "219F04F8334A1904"
+				item: { count: 1, id: "ars_nouveau:source_jar" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6019B70E00801379"]
+			id: "708DE29A1933F201"
+			rewards: [{
+				id: "766BF521A7E9F72D"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "552FFAE2EDB3577E"
+				item: { count: 1, id: "ars_nouveau:volcanic_sourcelink" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D4B096E0D561E37"]
+			id: "1D9C70F074C8E416"
+			rewards: [{
+				id: "493AD4577FE8F92B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 16L
+				id: "137B635405E07510"
+				item: { count: 1, id: "ars_nouveau:sourcestone" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1D9C70F074C8E416"]
+			id: "09948ED1E8B7DE79"
+			rewards: [{
+				id: "347E6CA36279FD04"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "00D2E4AA25BC4D60"
+				item: { count: 1, id: "ars_nouveau:arcane_pedestal" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"09948ED1E8B7DE79"
+				"708DE29A1933F201"
+			]
+			id: "097147F0F717DEC3"
+			rewards: [
+				{
+					id: "554F8565D7253884"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "0C052199C670424C"
+					item: {
+						count: 1
+						id: "ars_nouveau:source_gem"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "34D833EFC5D63869"
+					item: { count: 1, id: "ars_nouveau:enchanting_apparatus" }
+					type: "item"
+				}
+				{
+					id: "50EE07FABD88FB68"
+					item: { count: 1, id: "ars_nouveau:arcane_core" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+}

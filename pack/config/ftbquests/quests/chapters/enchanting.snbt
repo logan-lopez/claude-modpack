@@ -1,0 +1,211 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "enchanting"
+	group: "5F1D36673C78B4B6"
+	icon: {
+		id: "apothic_enchanting:draconic_endshelf"
+	}
+	id: "48F05D1F663C727E"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "175B536816261262"
+			rewards: [{
+				id: "10DC609516EC107D"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "39D4201E3DD2395E"
+				item: { count: 1, id: "minecraft:enchanting_table" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["175B536816261262"]
+			id: "60733F566282395B"
+			rewards: [{
+				id: "6072E20FC1B5A568"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "5FC65262ADB269CD"
+				item: { count: 1, id: "apothic_enchanting:hellshelf" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60733F566282395B"]
+			id: "1DB6C6F5F33038E7"
+			rewards: [{
+				id: "614ADF6768DC28B5"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "03A7D7BE467A51D4"
+				item: { count: 1, id: "apothic_enchanting:infused_hellshelf" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1DB6C6F5F33038E7"]
+			id: "31ADBA74FD5E78BD"
+			rewards: [{
+				id: "25354E9988CF9BE9"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "6FA63C6989B226CB"
+				item: { count: 1, id: "apothic_enchanting:library" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["175B536816261262"]
+			id: "3153A87E7D07CA8E"
+			rewards: [{
+				id: "3E343B5E5119AF42"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "59D79CDB20621EA7"
+				item: { count: 1, id: "apothic_enchanting:seashelf" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3153A87E7D07CA8E"]
+			id: "6EED6889E0466CF9"
+			rewards: [{
+				id: "45686FB7FB17F699"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "749F727D7AB4BA21"
+				item: { count: 1, id: "apothic_enchanting:infused_seashelf" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6EED6889E0466CF9"
+				"1DB6C6F5F33038E7"
+			]
+			id: "315DBBB07CA780AC"
+			rewards: [{
+				id: "2D9791F7A3A89D99"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2EC9E0C24235CFAC"
+				item: { count: 1, id: "apothic_enchanting:deepshelf" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["315DBBB07CA780AC"]
+			id: "0C67DB7326145622"
+			rewards: [{
+				id: "479384AACAD80F12"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "15C1155FDCEEED33"
+				item: { count: 1, id: "apothic_enchanting:endshelf" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C67DB7326145622"]
+			id: "1C5662B38E0DB19D"
+			rewards: [{
+				id: "2D150193469228F1"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "038E239D496E3CF9"
+				item: { count: 1, id: "apothic_enchanting:pearl_endshelf" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["175B536816261262"]
+			id: "5F3D7A5915C6B7F3"
+			rewards: [{
+				id: "41C72173AEA2208C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "13E2F8024B619C9F"
+				item: { count: 1, id: "apothic_enchanting:scrap_tome" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5F3D7A5915C6B7F3"]
+			id: "0CA69E767799BC5A"
+			rewards: [{
+				id: "48166925214D4284"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "407FD9AF07EC9D9E"
+				item: { count: 1, id: "apothic_enchanting:extraction_tome" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0C67DB7326145622"]
+			id: "3D1BB170E12701C3"
+			rewards: [{
+				id: "5D45B0BB55E768B9"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0D5A9DF9C0970403"
+				item: { count: 1, id: "apothic_enchanting:draconic_endshelf" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+	]
+}

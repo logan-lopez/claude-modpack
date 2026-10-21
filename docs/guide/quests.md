@@ -110,6 +110,28 @@ Four more Create chapters follow, each locked until a quest in the first two:
   bee cages, honey treats, the feeding slab, the incubator and breeding chamber, a speed upgrade,
   the bottler and honey generator, and the centrifuge and powered centrifuge.
 
+**Magic**, the seventh group:
+
+- **Ars Nouveau: Source**, 11 quests, open from the start: the tattered tome, a novice spell book,
+  the scribe's table and the first glyphs (Projectile, Touch, Break), then the imbuement chamber,
+  source gems, a source jar and volcanic sourcelink, sourcestone and arcane pedestals, and the
+  enchanting apparatus on its arcane core.
+- **Ars Nouveau: Rituals and Familiars**, 11 quests, after the enchanting apparatus: the ritual
+  brazier, the dominion wand and a source relay, the ritual of binding and a familiar (a box to
+  tick), a starbuncle charm and Ars Creo's starbuncle wheel, a ring of lesser discount, an
+  elemental focus (a box to tick), and a branch of its own from the mage's spell book through the
+  ritual of summon wilden to the archmage spell book.
+- **Iron's Spells: Scrolls and Spellbooks**, 11 quests, open from the start: the inscription
+  table, the flimsy journal and ironbound tome, arcane and cinder essence, the alchemist cauldron,
+  common and uncommon ink, the scroll forge and arcane anvil, and the apprentice's spell book. The
+  three spell books are boxes to tick: FTB Quests saves a spell book's stack with its spell slots,
+  which minecraft-mcp can't write yet.
+- **Create: Wizardry**, 7 quests, after Iron's arcane essence: arcane casing, sheets, pipes and
+  pump, the mana siphon, the blaze caster and the channeler.
+- **Enchanting**, 12 quests, open from the start: the enchanting table, hellshelves and seashelves
+  and their infused versions, the enchantment library, the deepshelf, the endshelf line to the
+  draconic endshelf, and the tomes of scrapping and extraction.
+
 The rest of the book is planned in minecraft-mcp's
 [outline](../../../minecraft-mcp/docs/design/quest-book.md): its groups, chapters and the order
 they're drafted in.

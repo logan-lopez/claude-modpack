@@ -6,5 +6,6 @@
 		{ icon: { id: "ad_astra:tier_1_rocket" }, id: "407E89587E4FC002" }
 		{ icon: { id: "tacz:gun_smith_table" }, id: "38141FC7E950B458" }
 		{ icon: { id: "farmersdelight:cooking_pot" }, id: "01D4CAF8434CE6E3" }
+		{ icon: { id: "ars_nouveau:novice_spell_book" }, id: "5F1D36673C78B4B6" }
 	]
 }

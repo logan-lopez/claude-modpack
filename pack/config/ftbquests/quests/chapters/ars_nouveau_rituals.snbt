@@ -1,0 +1,195 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ars_nouveau_rituals"
+	group: "5F1D36673C78B4B6"
+	icon: {
+		id: "ars_nouveau:archmage_spell_book"
+	}
+	id: "77F0A23847420849"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["097147F0F717DEC3"]
+			id: "1E9CB2E621A1E820"
+			rewards: [{
+				id: "2AAC0BA4C9122347"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "5E977D2B60D7AE4A"
+				item: { count: 1, id: "ars_nouveau:ritual_brazier" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E9CB2E621A1E820"]
+			id: "69B8EC6B3743076E"
+			rewards: [{
+				id: "066ED92D61303EE3"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "37C6CB9977014F16"
+					item: { count: 1, id: "ars_nouveau:dominion_wand" }
+					type: "item"
+				}
+				{
+					id: "6A031A9D9AEF96E2"
+					item: { count: 1, id: "ars_nouveau:relay" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E9CB2E621A1E820"]
+			id: "5DFB616106F47811"
+			rewards: [{
+				id: "1F6A5EE1BF79D0E9"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "64F41FCC2776C75D"
+				item: { count: 1, id: "ars_nouveau:ritual_binding" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5DFB616106F47811"]
+			id: "09C0A68BBCD14E2A"
+			rewards: [{
+				id: "315A9322FEEE4B86"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "16DCC52CC86930B1"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["69B8EC6B3743076E"]
+			id: "48EE318313205A87"
+			rewards: [{
+				id: "53BA8358C0D3F32F"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "0FFE0B729E18F05F"
+				item: { count: 1, id: "ars_nouveau:starbuncle_charm" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["48EE318313205A87"]
+			id: "6A821D09F9D65F31"
+			rewards: [{
+				id: "01D58B485A11B858"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "34F9069F0FD73F3E"
+				item: { count: 1, id: "ars_creo:starbuncle_wheel" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E9CB2E621A1E820"]
+			id: "79AB7049D387D3BF"
+			rewards: [{
+				id: "45070DD944E9AF3E"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "2CE9C2A546B22A3C"
+				item: { count: 1, id: "ars_nouveau:ring_of_lesser_discount" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1E9CB2E621A1E820"]
+			id: "5CA0C8BF926F4137"
+			rewards: [{
+				id: "35E1CE5A3D2776CE"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "68EA99C756924705"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			id: "533D688BC6018EEE"
+			rewards: [{
+				id: "083E4533E0DC02B0"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "3CB7122E26B94607"
+				item: { count: 1, id: "ars_nouveau:apprentice_spell_book" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["533D688BC6018EEE"]
+			id: "58CDAC04BBAD4220"
+			rewards: [{
+				id: "4670AA315AC99E74"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1F3A3635D65C6424"
+				item: { count: 1, id: "ars_nouveau:ritual_wilden_summon" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["58CDAC04BBAD4220"]
+			id: "681276267D02967B"
+			rewards: [{
+				id: "0FF983A1F3E8ED98"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6E47AFEB9294BBF8"
+				item: { count: 1, id: "ars_nouveau:archmage_spell_book" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+	]
+}

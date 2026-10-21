@@ -24,8 +24,8 @@ pack/config/ftbquests/quests/
   lang/en_us.snbt            every title and description, keyed by object ID
 ```
 
-It holds twenty chapters in six groups, Getting Started, Create, Industry, Space, Combat and Gear
-and Food and Farming, and nothing in the default group. `chapters/getting_started.snbt` is the sample, alone in Getting Started:
+It holds twenty-five chapters in seven groups, Getting Started, Create, Industry, Space, Combat
+and Gear, Food and Farming and Magic, and nothing in the default group. `chapters/getting_started.snbt` is the sample, alone in Getting Started:
 three quests in a chain (a crafting table, Create's andesite alloy, a Create shaft), one item task
 each, a dependency on the one before, laid out left to right at `x` 0, 2 and 4, and a 100 XP
 reward on the last. It's the format reference, not content. `chapters/create_basics.snbt`
@@ -45,8 +45,11 @@ Space holds `ad_astra_liftoff` (13), from the steel ingot, and Combat and Gear h
 `create_big_cannons` (14), from `create_fluids`' fluid tank. Food and Farming holds five,
 `order_index` 0 to 4: `farmers_delight` (18 quests), `aquaculture` (13) and `productive_bees`
 (12), open from the start, `more_delights` (14), from `farmers_delight`'s cooking pot, and
-`create_kitchen` (13), from `create_basics`' mechanical mixer. The same rule holds; the three with
-no entry have more than one quest with no dependencies. Every chapter but the sample was drafted and written by minecraft-mcp, which is where real chapters come from, against its
+`create_kitchen` (13), from `create_basics`' mechanical mixer. Magic holds five, `order_index` 0
+to 4: `ars_nouveau_source` (11 quests), `irons_spellbooks` (11) and `enchanting` (12), open from
+the start, `ars_nouveau_rituals` (11), from `ars_nouveau_source`'s enchanting apparatus, and
+`create_wizardry` (7), from `irons_spellbooks`' arcane essence. The same rule holds; the chapters
+with no entry, and Rituals, have more than one quest with no dependencies. Every chapter but the sample was drafted and written by minecraft-mcp, which is where real chapters come from, against its
 [outline of the whole book](../../../minecraft-mcp/docs/design/quest-book.md).
 
 `data.snbt` is the file FTB Quests wrote itself for a book with no `data.snbt`, so it holds its
@@ -157,6 +160,10 @@ what the client shows instead hasn't been looked at.
 - **An unknown item** logs Minecraft's `Tried to load invalid item: 'Unknown registry key in
   ResourceKey[minecraft:root / minecraft:item]: create:not_a_real_item'` at ERROR, and the task
   becomes `ftbquests:missing_item`, which is how it's written back.
+- **An item that adds components to its own stack** is written back with them. Iron's Spells'
+  spell books gain an `irons_spellbooks:spell_container` (their slots) when the stack loads, so a
+  task or icon written as `{ count: 1, id: "irons_spellbooks:gold_spell_book" }` comes back with
+  `components: { ... }` and fails the server check (2026-10-21).
 - **Every load marks the book dirty** (`Chapter.addQuest` and `ChapterGroup.addChapter` call
   `markDirty`), so the next world save writes the whole book back: an autosave, `save-all` or
   the server stopping. For a clean book the bytes are the same; only the files' times change.

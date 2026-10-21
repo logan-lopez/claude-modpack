@@ -7,6 +7,8 @@
 	chapter.084B69E7170F741E.title: "Oil and Engines"
 	chapter.0FB4652418B4DA84.chapter_subtitle: ["The Factory Must Grow's steelworks: coke ovens, the blast furnace and casting steel by the stack."]
 	chapter.0FB4652418B4DA84.title: "Steel and Alloys"
+	chapter.136CA92B220A5C4D.chapter_subtitle: ["Spell books with more slots, the essences and inks that go into scrolls, and the forge and anvil that make and improve them."]
+	chapter.136CA92B220A5C4D.title: "Iron's Spells: Scrolls and Spellbooks"
 	chapter.16948E1D867242E0.chapter_subtitle: ["From andesite alloy through brass to the precision mechanism."]
 	chapter.16948E1D867242E0.title: "Create: Andesite to Precision"
 	chapter.183DE125B39604C0.chapter_subtitle: ["Better rods, hooks, bait and lines, fillets from the catch, and neptunium from Neptune's Bounty."]
@@ -24,6 +26,8 @@
 	chapter.3B4294989B442542.title: "Create: Kitchen"
 	chapter.4657BE0574DA7DA4.chapter_subtitle: ["From the first bearing to pistons, pulleys and machines that move."]
 	chapter.4657BE0574DA7DA4.title: "Create: Contraptions"
+	chapter.48F05D1F663C727E.chapter_subtitle: ["Apothic Enchanting's shelves: eterna, quanta and arcana, infusion at the table, and the tomes and library that move enchantments around."]
+	chapter.48F05D1F663C727E.title: "Enchanting"
 	chapter.4A7B7A7FB61DEF2E.chapter_subtitle: ["Experience as a fluid: grind it, store it, and enchant and forge with it by machine."]
 	chapter.4A7B7A7FB61DEF2E.title: "Create: Enchantment Industry"
 	chapter.67EBEAD7AC2E98DD.chapter_subtitle: ["From track and train casing to stations, signals and a train that runs itself."]
@@ -34,14 +38,21 @@
 	chapter.6F06BF032B8459D6.title: "Create: Big Cannons"
 	chapter.70FFBEF6E1290061.chapter_subtitle: ["From belts and funnels to packages, frogports and the stock ticker."]
 	chapter.70FFBEF6E1290061.title: "Create: Logistics"
+	chapter.767A5A787F1AC863.chapter_subtitle: ["Mana as a fluid: arcane pipes that hold it, a siphon that draws it, and machines that cast spells and catch lightning."]
+	chapter.767A5A787F1AC863.title: "Create: Wizardry"
 	chapter.77B4AA428D42B348.chapter_subtitle: ["A NASA workbench, a space suit and fuel: everything the first rocket needs to reach the Moon."]
 	chapter.77B4AA428D42B348.title: "Ad Astra: Liftoff"
+	chapter.77F0A23847420849.chapter_subtitle: ["The ritual brazier, a familiar of your own, starbuncles to carry things, and the spell books for tier two and three glyphs."]
+	chapter.77F0A23847420849.title: "Ars Nouveau: Rituals and Familiars"
+	chapter.7B1462BC31B82F10.chapter_subtitle: ["A spell book and its first glyphs, then Source: gems, jars, a sourcelink, and the Enchanting Apparatus that crafts with it."]
+	chapter.7B1462BC31B82F10.title: "Ars Nouveau: Source"
 	chapter.7E2AA7B1C3287E01.chapter_subtitle: ["Advanced hives, bees caught, fed and bred, upgrades, and centrifuges that spin combs into honey, wax and metal."]
 	chapter.7E2AA7B1C3287E01.title: "Productive Bees"
 	chapter_group.002607DF1C0C507C.title: "Industry"
 	chapter_group.01D4CAF8434CE6E3.title: "Food and Farming"
 	chapter_group.38141FC7E950B458.title: "Combat and Gear"
 	chapter_group.407E89587E4FC002.title: "Space"
+	chapter_group.5F1D36673C78B4B6.title: "Magic"
 	chapter_group.72644D66BC292029.title: "Getting Started"
 	chapter_group.7DF81F61BC6148EF.title: "Create"
 	quest.00616C116AB4CE73.quest_desc: ["An andesite casing and a chute make a portable storage interface. When a moving contraption stops beside one, it loads and unloads the contraption's chests."]
@@ -58,6 +69,10 @@
 	quest.00ED0347E5F2AE0A.title: "Andesite Alloy"
 	quest.014CF98096B18E91.quest_desc: ["Use a copper ingot on a stripped log, by hand or with a deployer, to make copper casing. The fluid machines are built around it."]
 	quest.014CF98096B18E91.title: "Copper Casing"
+	quest.01582CBDAEFC5996.quest_desc: ["Iron ingots, a cauldron, arcane essence and cinder essence. It brews inks and elixirs: pour a fluid in, add an item, and draw the result out with a bottle."]
+	quest.01582CBDAEFC5996.title: "Alchemist Cauldron"
+	quest.017A689763157EBC.quest_desc: ["A mixer makes common ink from copper ingots, an ink sac and a little mana, and a bottle draws it from the cauldron or a spout. Scrolls of the commonest spells are written in it."]
+	quest.017A689763157EBC.title: "Common Ink"
 	quest.021E838B1362DA17.quest_desc: ["The drilling machine's twin for fluid wells, made with a mechanical pump and a hose pulley in place of the spout and tunnel."]
 	quest.021E838B1362DA17.title: "Fluid Well Extractor"
 	quest.02272EBBF77AEAC1.quest_desc: ["Four string and an iron ingot: a line for the rod's line slot."]
@@ -70,30 +85,50 @@
 	quest.04197D14DDEDA5C1.title: "Air Intake"
 	quest.05AD25FDBCCCB8A1.quest_desc: ["The nose cone, six blocks of steel, four fins, two steel tanks and the engine, put together in the NASA workbench. Fuel it, set it on the launch pad, put on the suit and go to the Moon."]
 	quest.05AD25FDBCCCB8A1.title: "Tier 1 Rocket"
+	quest.05CEA6A594FB5030.quest_desc: ["A block of lapis and an arcane ingot, which is an ingot crafted with eight arcane essence. Casing for the machines that handle mana."]
+	quest.05CEA6A594FB5030.title: "Arcane Casing"
 	quest.06C4D3858B6FE6B7.quest_desc: ["A copper rod, andesite alloy and a slimeball make three. Place one on each machine and join them with a spool to carry power."]
 	quest.06C4D3858B6FE6B7.title: "Small Connector"
 	quest.075DE9AB03FE7CD7.quest_desc: ["Sugar and cinder flour, crushed from netherrack, mix into gingerdough; bake it in a furnace."]
 	quest.075DE9AB03FE7CD7.title: "Gingerbread"
 	quest.0857BF09DA8F8A5B.quest_desc: ["Andesite alloy, coal and a shaft. Brushes on the coil collect the electricity it makes."]
 	quest.0857BF09DA8F8A5B.title: "Carbon Brushes"
+	quest.08AE9F39D7ADB0A5.quest_desc: ["A book and a lapis lazuli. It's Ars Nouveau's guide: every block, glyph and ritual in this group has a page in it."]
+	quest.08AE9F39D7ADB0A5.title: "Tattered Tome"
+	quest.08C8941F95FDEB74.quest_desc: ["A bucket's worth of common ink and a copper ingot brew uncommon ink in the cauldron. Each rarer ink brews the same way from the one below it: iron for rare, gold for epic, an amethyst shard for legendary."]
+	quest.08C8941F95FDEB74.title: "Uncommon Ink"
 	quest.08E38215D89F6B6B.quest_desc: ["Heavy plates, iron rods, redstone torches, a crafting table and a block of steel. Every rocket is crafted in it."]
 	quest.08E38215D89F6B6B.title: "NASA Workbench"
 	quest.092518A48FED1029.quest_desc: ["Mix four sugar cane, or other plant matter, with water in a basin to make pulp, and press the pulp into cardboard. Four cardboard make a block of cardboard."]
 	quest.092518A48FED1029.title: "Cardboard"
+	quest.097147F0F717DEC3.quest_desc: ["The apparatus (gold, sourcestone and a diamond) sits on an Arcane Core. Fill the pedestals around it, use the middle item on the apparatus, and it crafts with Source from the jars nearby: charms, rings, the dominion wand and more."]
+	quest.097147F0F717DEC3.title: "Enchanting Apparatus"
 	quest.0990FE1228ECB728.quest_desc: ["Three iron, four bricks and a campfire. It cooks food on top like a campfire, and heats a cooking pot or skillet set on it."]
 	quest.0990FE1228ECB728.title: "Stove"
+	quest.09948ED1E8B7DE79.quest_desc: ["Sourcestone, a Source Gem and gold nuggets. Pedestals hold a recipe's items around the Enchanting Apparatus, within three blocks, or beside the Imbuement Chamber."]
+	quest.09948ED1E8B7DE79.title: "Arcane Pedestals"
+	quest.09C0A68BBCD14E2A.quest_desc: ["Bind a Starbuncle, Drygmy, Whirlisprig, Wixie, Bookwyrm or Amethyst Golem, then use its script to summon it as a familiar. Each grants something: a Starbuncle Speed, a Bookwyrm picking up items, a Drygmy more Earth damage and looting."]
+	quest.09C0A68BBCD14E2A.title: "A Familiar"
 	quest.0A23B2C48428080A.quest_desc: ["Use an empty blaze burner on a blaze, in a Nether fortress, to catch it. Brass is mixed heated, and a heated mix needs a blaze burner fed with fuel."]
 	quest.0A23B2C48428080A.title: "Blaze Burner"
+	quest.0B0102F4B04D8008.quest_desc: ["Mages, cultists and other spellcasters drop it, and it turns up in their chests. A spout also makes it from redstone and Create: Wizardry's mana."]
+	quest.0B0102F4B04D8008.title: "Arcane Essence"
 	quest.0BE5752A6DDD6DB9.quest_desc: ["Mechanically crafted from four copper spools, iron sheets, an iron rod and andesite alloy. It turns rotation into power."]
 	quest.0BE5752A6DDD6DB9.title: "Alternator"
 	quest.0BFEE4151EC8C9CB.quest_desc: ["Nether quartz and eight redstone dust make rose quartz on a crafting table. Polish it with sand paper, which is paper and sand."]
 	quest.0BFEE4151EC8C9CB.title: "Polished Rose Quartz"
 	quest.0C179C226BE4F22E.quest_desc: ["Sequenced assembly on a heavy plate, two loops: steel cogwheels, nickel sheets, large steel cogwheels, lead sheets, then screws driven in with a screwdriver. It is to TFMG what the precision mechanism is to Create."]
 	quest.0C179C226BE4F22E.title: "Steel Mechanism"
+	quest.0C67DB7326145622.quest_desc: ["End stone bricks, a bookshelf, an ender pearl and Infused Dragon's Breath, which is dragon's breath infused at 80 eterna and 60 arcana."]
+	quest.0C67DB7326145622.title: "Endshelf"
+	quest.0CA69E767799BC5A.quest_desc: ["A Tome of Superior Scrapping infused at the table makes four. It takes all of an item's enchantments and leaves the item whole."]
+	quest.0CA69E767799BC5A.title: "Tome of Extraction"
 	quest.0CBB8076D40781EC.quest_desc: ["The mechanical press makes golden sheets from gold ingots."]
 	quest.0CBB8076D40781EC.title: "Golden Sheet"
 	quest.0D43965368217D48.quest_desc: ["Mechanically crafted from brass blocks and sheets, a copper and a brass casing, electron tubes, precision mechanisms, a spout, a mechanical drill, a brass tunnel and sturdy sheets. Place it over a vein, put a drill in and give it rotation, and it brings up the vein's ore; some veins also need drilling fluid."]
 	quest.0D43965368217D48.title: "Drilling Machine"
+	quest.0D4B096E0D561E37.quest_desc: ["An amethyst shard or a lapis lazuli in the Imbuement Chamber becomes a Source Gem, the material nearly everything else here is made from."]
+	quest.0D4B096E0D561E37.title: "Source Gems"
 	quest.0DB3CEDF139BC729.quest_desc: ["A double hook can catch two things at once, a redstone hook gives you longer to reel a fish in, and a note hook plays an alert when a fish approaches. Light and heavy hooks cast further or shorter."]
 	quest.0DB3CEDF139BC729.title: "Special Hooks"
 	quest.0DD19F9CDE23C62E.quest_desc: ["Two andesite alloy and three logs make three linear chassis, or three radial chassis. A chassis carries the blocks beside it, in a line or a ring, when the contraption it belongs to moves."]
@@ -104,6 +139,8 @@
 	quest.0F0D4205866FF14D.title: "Nether Stove"
 	quest.0F0F05F18F1352C3.quest_desc: ["Three andesite alloy, an iron ingot and an andesite casing make a mechanical drill. It breaks the blocks in front of it, standing still or riding on a contraption."]
 	quest.0F0F05F18F1352C3.title: "Mechanical Drill"
+	quest.0F78D7404B6233D8.quest_desc: ["An arcane pipe and a cogwheel: a mechanical pump for mana."]
+	quest.0F78D7404B6233D8.title: "Arcane Pump"
 	quest.11035283280C5B16.quest_desc: ["A diesel engine with brass sheets and andesite alloy. They stack, and give more stress capacity the more you stack."]
 	quest.11035283280C5B16.title: "Modular Diesel Engine"
 	quest.112EAAE8696F55A8.quest_desc: ["Atlantic halibut, an egg and an onion in the cooking pot. A neptunium knife, from Aquaculture's best metal, cuts more fillets from each fish."]
@@ -126,6 +163,12 @@
 	quest.16DF58934349AC94.title: "Oxygen Loader"
 	quest.17025CEF04B29ED2.quest_desc: ["Sand, dirt and clay. A cannon mould, sawn from a log with a mechanical saw, is built into a cast layer of casting sand; fill the cast with molten metal, let it set, then break it open."]
 	quest.17025CEF04B29ED2.title: "Casting Sand"
+	quest.175B536816261262.quest_desc: [
+		"A book, diamonds and obsidian. The shelves around it set its Eterna (the highest level it can enchant at), Quanta (how random the result is) and Arcana (rarer enchantments, and more of them)."
+		""
+		"The table also infuses: an item enchanted at the right eterna, quanta and arcana becomes something else."
+	]
+	quest.175B536816261262.title: "Enchanting Table"
 	quest.175FF672D51D6D18.quest_desc: ["Steel fluid tanks with the controller beside them and up to six outputs stacked above, with industrial pipe between, and a heat source under the tanks. Pump crude oil into the controller and it splits into heavy oil, diesel, kerosene, naphtha, gasoline and LPG."]
 	quest.175FF672D51D6D18.title: "Distillation Tower"
 	quest.178AF8F67536B6AC.quest_desc: ["Four cast iron ingots and a block of industrial iron make two; cast iron is an iron ingot and coal pressed in a heated basin. Coke ovens are slow, so build them in long rows."]
@@ -142,6 +185,8 @@
 	quest.1958706F267D3E8E.title: "Powered Centrifuge"
 	quest.195874A714B642A9.quest_desc: ["Crushing mined thorium gives radioactive thorium one time in ten; pressed onto an iron sheet in sequenced assembly, it becomes fuel."]
 	quest.195874A714B642A9.title: "Nuclear Fuel"
+	quest.19A08F6D0AEA692F.quest_desc: ["A book and an iron shovel, pickaxe, axe and sword. It casts spells built from glyphs, and a novice book reaches the first tier of them."]
+	quest.19A08F6D0AEA692F.title: "Novice Spell Book"
 	quest.1A0A422F73E1F49E.quest_desc: ["A train casing and an electron tube make four train signals. Signals split a track into sections so trains sharing it don't run into each other."]
 	quest.1A0A422F73E1F49E.title: "Train Signal"
 	quest.1A1B01133C6E0D63.quest_desc: ["A knife of end stone, the first of End's Delight's knives; purpur and dragon tooth ones come later."]
@@ -152,6 +197,8 @@
 	quest.1B0FF5899D1C50F4.title: "Space Suit"
 	quest.1BD3448C6EBB129A.quest_desc: ["Dirt, straw, rotten flesh and bone meal, or tree bark in place of the flesh. Placed down, it composts better with sun, water and mushrooms nearby."]
 	quest.1BD3448C6EBB129A.title: "Organic Compost"
+	quest.1C5662B38E0DB19D.quest_desc: ["An endshelf with end rods and ender pearls."]
+	quest.1C5662B38E0DB19D.title: "Pearlescent Endshelf"
 	quest.1C7DC843DD6EE7A0.quest_desc: ["Two heavy plates and a barrel make two. The pumpjack and the distillation tower are both built on them."]
 	quest.1C7DC843DD6EE7A0.title: "Steel Fluid Tank"
 	quest.1C800E1A530AED38.quest_desc: ["Press cocoa beans into crushed cocoa, then run it through crushing wheels for cocoa powder and cocoa butter."]
@@ -160,10 +207,16 @@
 	quest.1D4BDA113AC5A145.title: "Stock Ticker"
 	quest.1D6A03F44C45D8EE.quest_desc: ["A stone button and redstone make four. A fuze on a shell's head sets it off; deployers can fit them."]
 	quest.1D6A03F44C45D8EE.title: "Impact Fuze"
+	quest.1D9C70F074C8E416.quest_desc: ["Eight stone around a Source Gem makes eight. The pedestals, the core and the apparatus are built from it."]
+	quest.1D9C70F074C8E416.title: "Sourcestone"
+	quest.1DB6C6F5F33038E7.quest_desc: ["A hellshelf infused at a table with at least 45 eterna and 30 quanta. Infused shelves give more, and Blazing and Glowing Hellshelves are crafted from them."]
+	quest.1DB6C6F5F33038E7.title: "Infused Hellshelf"
 	quest.1E12D7A55B984B9C.quest_desc: ["Fireproof bricks, cast iron pipes and a block of cast iron. It's the base of the blast furnace: build a cylinder of fireproof bricks around it and feed iron, flux and fuel in through the hole at the top."]
 	quest.1E12D7A55B984B9C.title: "Blast Furnace Output"
 	quest.1E92E5A75E5CC566.quest_desc: ["Dried kelp, a precision mechanism, a propeller, iron sheets and a cogwheel make eight. Join two ends with more tube and turn either end, and it moves a stack at a time between inventories, filtered at the input."]
 	quest.1E92E5A75E5CC566.title: "Pneumatic Tube"
+	quest.1E9CB2E621A1E820.quest_desc: ["An arcane pedestal, a block of source gems and gold ingots. Use a ritual tablet on it to start that ritual, which draws Source from jars nearby; a redstone signal stops it."]
+	quest.1E9CB2E621A1E820.title: "Ritual Brazier"
 	quest.1EBFD1B83AE45DAA.quest_desc: ["Rice in the cooking pot, with a bowl to serve it."]
 	quest.1EBFD1B83AE45DAA.title: "Cooked Rice"
 	quest.1ECAD497C0AD8335.quest_desc: ["Four planks of any wood make a crafting table."]
@@ -172,6 +225,8 @@
 	quest.1EEC175F0767E0D0.title: "Cannon Mount"
 	quest.1F58FC1B46D691D5.quest_desc: ["Mechanically crafted from iron ingots, packed guncotton and a wooden slab. Fit a fuze, or it lands like solid shot."]
 	quest.1F58FC1B46D691D5.title: "High Explosive Shell"
+	quest.1FA6531E9812A75F.quest_desc: ["A book, wooden slabs and fences. It writes the spell on a scroll into a spell book, as long as the scroll isn't too rare for the book."]
+	quest.1FA6531E9812A75F.title: "Inscription Table"
 	quest.1FD34643773C8684.quest_desc: ["A brass casing, two capacitors, a copper rod and electrum wire. It stores power, and accumulators placed together join into one bigger store."]
 	quest.1FD34643773C8684.title: "Accumulator"
 	quest.1FF68F8097C7D658.quest_desc: ["A stock link and a precision mechanism make two factory gauges. A gauge keeps a target amount of one item in stock, ordering the ingredients from the network and sending them to the machines that make it."]
@@ -186,6 +241,8 @@
 	quest.215A3AF9A52B9BA0.title: "Item Drain"
 	quest.218A96191183E169.quest_desc: ["Four cogwheels around a large coaxial cogwheel. It meshes like a large cogwheel, but its shaft turns twice as fast and the other way."]
 	quest.218A96191183E169.title: "Planetary Gearset"
+	quest.21D9DE08DAB39D42.quest_desc: ["Blocks of amethyst, a diamond, polished deepslate and an anvil. It combines two scrolls of a spell into a stronger one, and puts upgrade orbs and spells onto gear."]
+	quest.21D9DE08DAB39D42.title: "Arcane Anvil"
 	quest.21F6889484056B47.quest_desc: ["A blast furnace needs reinforcements to run, and they're made of steel. Mix two iron ingots and coal in a heated basin for two steel ingots; Create Ironworks' superheated mix of iron and coal dust works too."]
 	quest.21F6889484056B47.title: "First Steel"
 	quest.221C682830211660.quest_desc: ["An iron sheet and a fluid pipe make a fluid valve. Turn it one way and it opens, the other way and it shuts its pipe."]
@@ -202,6 +259,8 @@
 	quest.23501177234F51FB.title: "Stock Link"
 	quest.243789BED85BE7B2.quest_desc: ["A precision mechanism in a brass casing makes a rotation speed controller. It sets the speed of the cogwheel above it, whatever is turning it."]
 	quest.243789BED85BE7B2.title: "Rotation Speed Controller"
+	quest.24974C509DC442F4.quest_desc: ["Projectile (a fletching table and an arrow) and Touch (a button) say how a spell is cast; Break (an iron pickaxe) is what it does. Throw the codex's items onto the table and it scribes the glyph."]
+	quest.24974C509DC442F4.title: "First Glyphs"
 	quest.25FE4152DE215902.quest_desc: ["Cut tentacles and dough in the cooking pot."]
 	quest.25FE4152DE215902.title: "Squid Rings"
 	quest.2617388B88D71E1F.quest_desc: ["Zinc ore and deepslate zinc ore generate in the world. Smelt or blast the ore, or the raw zinc it drops, into zinc ingots."]
@@ -234,6 +293,8 @@
 	quest.2A79497B1BEC7A8A.title: "Cooking for Blockheads"
 	quest.2A994F9F5FE41D1A.quest_desc: ["Place it below a pipe and it sprinkles the fluid over what's beneath. Water keeps farmland wet, and other fluids affect mobs differently."]
 	quest.2A994F9F5FE41D1A.title: "Sprinkler"
+	quest.2AF913BCDD8C451F.quest_desc: ["Polished deepslate and crying obsidian. It forges a scroll from ink, paper and a spell's focus; the ink sets the scroll's rarity."]
+	quest.2AF913BCDD8C451F.title: "Scroll Forge"
 	quest.2B3E9EA3CA32E298.quest_desc: ["Two iron and a stick. Craft it with a fish to cut fillets; the bigger the fish, the more you get."]
 	quest.2B3E9EA3CA32E298.title: "Iron Fillet Knife"
 	quest.2B4A4B050D0ABEF5.quest_desc: ["Sugar, cocoa butter, cocoa beans and milk mix into dark chocolate in a heated basin; press it into bars in a basin. White and ruby chocolate have recipes of their own."]
@@ -254,6 +315,8 @@
 	quest.2EC24750F1A6E051.title: "Cooking Pot"
 	quest.2EF693E8E64154B9.quest_desc: ["Mechanically crafted from diamonds, overcharged diamonds, iron sheets, a brass casing and a block of redstone. The strongest motor."]
 	quest.2EF693E8E64154B9.title: "Reinforced Motor"
+	quest.2F73106C6AD0BDD4.quest_desc: ["Gold ingots, four arcane essence and two hogskin, which hoglins drop. A gold-bound book with room for more spells than the tome. Tick the box once you have one."]
+	quest.2F73106C6AD0BDD4.title: "Apprentice's Spell Book"
 	quest.2F7E1B53608FC57B.quest_desc: ["Cut chorus fruit on the board for four grains. Chorus grows on the End's outer islands."]
 	quest.2F7E1B53608FC57B.title: "Chorus Fruit Grain"
 	quest.2F7EA6158CFA5B5D.quest_desc: ["Stand near heat and hold food in your other hand to cook on the go, or sneak to place the skillet on a stove as a block."]
@@ -262,10 +325,16 @@
 	quest.2FB357D1CB1E49B9.title: "Chutes"
 	quest.3026A843F2423034.quest_desc: ["An andesite casing and a lightning rod. Given electricity and rotation, it energises items on a depot or belt under it."]
 	quest.3026A843F2423034.title: "Basic Energiser"
+	quest.3153A87E7D07CA8E.quest_desc: ["Prismarine bricks, a potion, a bookshelf and a pufferfish. The ocean's shelf."]
+	quest.3153A87E7D07CA8E.title: "Seashelf"
 	quest.31597E1ECB363882.quest_desc: ["It burns honey for power. Speed upgrades raise its output, Productivity ones lower its honey use."]
 	quest.31597E1ECB363882.title: "Honey Generator"
+	quest.315DBBB07CA780AC.quest_desc: ["Cracked deepslate tiles and books make a Dormant Deepshelf, which wakes at a table with 60 eterna, 40 quanta and 40 arcana. It takes a table of infused shelves to get there."]
+	quest.315DBBB07CA780AC.title: "Deepshelf"
 	quest.319BAB19D9033039.quest_desc: ["Planks and red wool. Place it and a merchant appears, selling seeds, saplings and bone meal for an emerald each."]
 	quest.319BAB19D9033039.title: "Market"
+	quest.31ADBA74FD5E78BD.quest_desc: ["Ender chests, four infused shelves and an enchanting table. It stores enchanted books as points per enchantment and hands back any level it has the points for."]
+	quest.31ADBA74FD5E78BD.title: "Enchantment Library"
 	quest.32259CD68BAF70F0.quest_desc: ["Five red grapes press into red grape pomace, in a basin or by hand; the cellar matures it into Bordeaux. White grape pomace makes the white wines, and both make rosé."]
 	quest.32259CD68BAF70F0.title: "Bordeaux"
 	quest.3360689BF4EA0CBE.quest_desc: ["An andesite alloy and a dried kelp make two andesite funnels, and twice that two andesite tunnels. A funnel puts items onto a belt or takes them off into a chest; a tunnel on a belt splits what passes under it between the belts beside it."]
@@ -298,6 +367,8 @@
 	quest.3B8FDE5B8CB91501.title: "Wand of Symmetry"
 	quest.3CD3E7BFB55DAB51.quest_desc: ["Packed gunpowder, pressed from three gunpowder, in an empty charge of string and wool. A cast iron cannon needs one charge per barrel to fire the shot clear, and bursts on more than two."]
 	quest.3CD3E7BFB55DAB51.title: "Powder Charge"
+	quest.3D1BB170E12701C3.quest_desc: ["An endshelf, ender pearls and the dragon's head. The strongest shelf there is."]
+	quest.3D1BB170E12701C3.title: "Draconic Endshelf"
 	quest.3D913DD0246529D6.quest_desc: ["Used on farmland: red fertilizer speeds up growth, green increases crop output, and yellow prevents trampling."]
 	quest.3D913DD0246529D6.title: "Fertilizer"
 	quest.3DB4704C88B0A42B.quest_desc: ["A brass sheet, a spout and three nixie tubes. Over a basin and among bookshelves, it does an enchanting table's infusion recipes with liquid experience."]
@@ -306,12 +377,16 @@
 	quest.3DC3E416CB6F686D.title: "Colossal Cogwheel"
 	quest.3E2C7E69DB501D03.quest_desc: ["Two slimeballs, an iron sheet and an iron nugget make super glue. Use it to drag a box over blocks, and they move together as one contraption."]
 	quest.3E2C7E69DB501D03.title: "Super Glue"
+	quest.3E662A4D2B3BC8FF.quest_desc: ["Archwood planks and gold ingots. It imbues an item with Source, gathering it slowly by itself or drawing it from Source Jars within two blocks. Items on pedestals beside it are part of some recipes and aren't used up."]
+	quest.3E662A4D2B3BC8FF.title: "Imbuement Chamber"
 	quest.3E71F44F12261E16.quest_desc: ["Works like a mechanical piston with extension poles, and needs a ram head on the end. Disassemble the cannon first, and line up the loader, the munitions and the barrel."]
 	quest.3E71F44F12261E16.title: "Cannon Loader"
 	quest.3EB331B0CEEFE6AA.quest_desc: ["Heavy plates and steel rods. Place the rocket on it to launch; a redstone signal launches a placed rocket by itself."]
 	quest.3EB331B0CEEFE6AA.title: "Launch Pad"
 	quest.3EE94B64D98641DD.quest_desc: ["Rebar and a brass ingot. Deployers hold it to drive screws when they assemble steel mechanisms."]
 	quest.3EE94B64D98641DD.title: "Screwdriver"
+	quest.3F33CD73F5C47DCF.quest_desc: ["An energized core, iron and copper sheets, a hopper and a bottle o' lightning on a mechanical crafter. It catches lightning bolts as liquid lightning. The first bottle comes from a charged creeper or a magic chest."]
+	quest.3F33CD73F5C47DCF.title: "Channeler"
 	quest.3F523886DD1C4542.quest_desc: ["Crush obsidian into powdered obsidian, then build a sturdy sheet on it by sequenced assembly: a spout pours on lava and a press flattens it. It's the toughest sheet Create makes."]
 	quest.3F523886DD1C4542.title: "Sturdy Sheet"
 	quest.3FF8CB1F92B4357D.quest_desc: ["Refines crude oil into rocket fuel. It runs on power: Ad Astra's coal generator burns anything a furnace does, or use Crafts & Additions' alternator. A tier 1 rocket also burns diesel, gasoline or kerosene straight from the distillation tower."]
@@ -326,6 +401,8 @@
 	quest.42FAC795FA7878AD.title: "Mechanical Bearing"
 	quest.430BC91B211B5870.quest_desc: ["Two copper sheets and a barrel make a fluid tank. Tanks placed together merge into one, up to three blocks across and as tall as you stack them."]
 	quest.430BC91B211B5870.title: "Fluid Tank"
+	quest.430E8B900918976B.quest_desc: ["Ancient Knights drop it. A superheated mixer makes eight from blaze powder and netherite scrap."]
+	quest.430E8B900918976B.title: "Cinder Essence"
 	quest.43440F667B05C3A8.quest_desc: ["An industrial casing, a propeller and a cogwheel: a heavier encased fan for bulk processing."]
 	quest.43440F667B05C3A8.title: "Industrial Fan"
 	quest.4344E26953141519.quest_desc: ["A cogwheel, an andesite casing and a whisk make a mechanical mixer. The whisk is two andesite alloy and five iron sheets."]
@@ -354,6 +431,8 @@
 	quest.479C0B4F3E9AC3CA.title: "Train Casing"
 	quest.47CDD6766DCC1EBD.quest_desc: ["Four straw make a canvas, for canvas signs and rugs."]
 	quest.47CDD6766DCC1EBD.title: "Canvas"
+	quest.48EE318313205A87.quest_desc: ["Starbuncles wander woods looking for gold nuggets; hold one out and a starbuncle takes it and leaves a Starbuncle Token. The token and gold ingots at the apparatus make a charm that summons one to move items, set up with the dominion wand."]
+	quest.48EE318313205A87.title: "Starbuncle Charm"
 	quest.49E283491F47C049.quest_desc: ["Bores out cast cannon blocks. It needs rotation and water, drinks more water the faster it turns, and its speed must match the lathe turning the cast."]
 	quest.49E283491F47C049.title: "Cannon Drill"
 	quest.4B0F1278608B561F.quest_desc: ["Planks and a slab. It turns grape pomace into wine, and apple must into cider. Red and white grapes grow wild in plains and forests."]
@@ -397,6 +476,8 @@
 	quest.52E43BB62D3E15DF.title: "Empty Spools"
 	quest.5330F7AF68993D87.quest_desc: ["Iron ingots and nuggets on a wooden slab: the plainest projectile."]
 	quest.5330F7AF68993D87.title: "Solid Shot"
+	quest.533D688BC6018EEE.quest_desc: ["A Novice Spell Book with obsidian, diamonds, blocks of quartz and blaze rods. It reaches the second tier of glyphs and keeps every glyph the novice book knew."]
+	quest.533D688BC6018EEE.title: "Mage's Spell Book"
 	quest.53D84D69C8318882.quest_desc: ["Pipe fuel into it and it fuels a rocket or rover nearby, so a rocket on its pad can be refuelled without buckets."]
 	quest.53D84D69C8318882.title: "Fuel Loader"
 	quest.5443668589EE1D52.quest_desc: ["Overcharged iron and gold make four, stronger than redstone magnets. Fluxuated magnetite and netherite magnets are stronger still."]
@@ -407,10 +488,14 @@
 	quest.55D93DE64B5FA0BA.title: "Hydraulic Press"
 	quest.55DAAAE2F82BB588.quest_desc: ["Fireproof bricks, a cast iron pipe and cast iron ingots. Pump molten metal into it and it casts ingots."]
 	quest.55DAAAE2F82BB588.title: "Casting Basin"
+	quest.55ECCA33AF4870E4.quest_desc: ["Archwood slabs, logs and gold nuggets; archwood grows in the world's archwood forests. Use your spell book on it to open the codex, where each glyph costs a few items and some experience."]
+	quest.55ECCA33AF4870E4.title: "Scribe's Table"
 	quest.575E0DE6849C913D.quest_desc: ["Two andesite alloy make eight shafts on a crafting table. Shafts go into over a hundred recipes, the cogwheels, the water wheel and the mechanical press among them."]
 	quest.575E0DE6849C913D.title: "Shafts"
 	quest.5832952C9BEE4718.quest_desc: ["Five andesite alloy make a basin. The mixer's recipes need one."]
 	quest.5832952C9BEE4718.title: "Basin"
+	quest.58CDAC04BBAD4220.quest_desc: ["Vexing archwood, wilden drops and a block of lapis. With a Wilden Spike, Horn and Wing beside the brazier it summons the Wilden Chimera, a mid-level boss for a caster with tier two spells. It drops the Wilden Tribute."]
+	quest.58CDAC04BBAD4220.title: "Ritual of Summon Wilden"
 	quest.5906D50189533688.quest_desc: ["Slice and Dice cooks the cooking pot's meals in a heated basin with a mechanical mixer, bowl and all. Central Kitchen makes a blaze burner a heat source for the cooking pot itself, and lets a funnel take the food out."]
 	quest.5906D50189533688.title: "Soup by the Batch"
 	quest.5993625E2D28292A.quest_desc: ["A honeycomb and a honey bottle. It calms an angry bee, and coaxes a bee out of a nest."]
@@ -425,6 +510,8 @@
 	quest.5BFF747D1F3BF8BE.title: "Diesel Engine"
 	quest.5C32E948EEE03D98.quest_desc: ["Sugar, a slimeball and a mundane potion in a heated basin make four. Candy cane blocks and a full set of candy cane tools come from it."]
 	quest.5C32E948EEE03D98.title: "Candy Cane"
+	quest.5CA0C8BF926F4137.quest_desc: ["Ars Elemental's lesser focuses of fire, water, earth and air are imbued from an amethyst shard, three of the element's essence and gold, and strengthen that school's spells. A Mark of Mastery, imbued from a Wilden Tribute and essences, makes a lesser focus a full one."]
+	quest.5CA0C8BF926F4137.title: "Elemental Focus"
 	quest.5CF785860DBB1437.quest_desc: ["A brass sheet, a spout and a block of iron. Set what to print in its filter, pipe in the fluid it needs, and it copies written books or changes a package's pattern."]
 	quest.5CF785860DBB1437.title: "Printer"
 	quest.5D034C394DBF179E.quest_desc: ["Seven iron and a grindstone. It spins combs into honey, wax and whatever the bee gathers: a metal bee's comb gives its metal."]
@@ -433,8 +520,12 @@
 	quest.5D2646E3EAF4F84D.title: "Electrical Connector"
 	quest.5D38DBB64406601F.quest_desc: ["Neptune's Bounty, a rare catch, holds neptunium. Its tools and armor work best in water: breathing and seeing underwater, swimming faster, and a rod that fish bite sooner."]
 	quest.5D38DBB64406601F.title: "Neptunium Ingot"
+	quest.5D9C9B3B0612CDBF.quest_desc: ["Pressed from arcane ingots, or an iron sheet filled with mana by a spout."]
+	quest.5D9C9B3B0612CDBF.title: "Arcane Sheets"
 	quest.5DE5F3F44D5367EF.quest_desc: ["An electron tube, a brass ingot and a dried kelp make two brass funnels, and an electron tube, two brass ingots and two dried kelp two brass tunnels. Brass ones take a filter, and a brass tunnel can share items out in turn, or send them to whichever side has room."]
 	quest.5DE5F3F44D5367EF.title: "Brass Funnels and Tunnels"
+	quest.5DFB616106F47811.quest_desc: ["Vexing archwood, blank parchment, an ender pearl and source gems. Performed near a creature that can be a familiar, it turns the creature into a Bound Script."]
+	quest.5DFB616106F47811.title: "Ritual of Binding"
 	quest.5DFBD39E0512825D.quest_desc: ["Crushed limestone, the blast furnace's flux. Crushed raw iron and limesand make molten steel, slag and furnace gas."]
 	quest.5DFBD39E0512825D.title: "Limesand"
 	quest.5E395A684288100D.quest_desc: ["Cocoa powder, sugar and milk in a heated basin, filled into glass bottles with a spout. It grants Regeneration."]
@@ -445,10 +536,16 @@
 	quest.5F136CC8B55C4B0F.title: "Train Track"
 	quest.5F14EA76D92060B2.quest_desc: ["Harvest grass, wheat or rice with a knife to collect straw."]
 	quest.5F14EA76D92060B2.title: "Straw"
+	quest.5F3D7A5915C6B7F3.quest_desc: ["Eight books and an anvil make eight. On an anvil with an enchanted item it takes half the item's enchantments as a book and destroys the item."]
+	quest.5F3D7A5915C6B7F3.title: "Tome of Scrapping"
 	quest.5FCCE99426A7102C.quest_desc: ["A wooden slab, an andesite casing and a piston extension pole make a mechanical piston, and two planks and an andesite alloy make eight poles. The poles behind it set how far it pushes."]
 	quest.5FCCE99426A7102C.title: "Mechanical Piston"
 	quest.5FF5EB5DE0DF9AFF.quest_desc: ["Mechanically crafted from copper spools, capacitors, a brass casing, brass sheets, an electron tube and andesite alloy. Powered, it charges what sits below it on a depot or belt."]
 	quest.5FF5EB5DE0DF9AFF.title: "Tesla Coil"
+	quest.6019B70E00801379.quest_desc: ["Archwood slabs and glass. Jars store the Source that sourcelinks gather, and the chamber, the apparatus and rituals draw on jars nearby."]
+	quest.6019B70E00801379.title: "Source Jar"
+	quest.60733F566282395B.quest_desc: ["Nether bricks, a blaze rod, a bookshelf and a potion. A shelf of the Nether, stronger than a bookshelf."]
+	quest.60733F566282395B.title: "Hellshelf"
 	quest.616073B5456244D7.quest_desc: ["Place an item on it, then use it with the recipe's tool in hand to break the item down: a knife for food, an axe to strip a log."]
 	quest.616073B5456244D7.title: "Cutting Board"
 	quest.616EAC16C96FC0B2.quest_desc: ["An iron hook and four gold nuggets. Lucky: better odds of treasure. A diamond hook is the durable one, with a 50% chance not to use durability."]
@@ -461,8 +558,12 @@
 	quest.62317A2926E76B27.title: "Bee Cage"
 	quest.62816651A924C812.quest_desc: ["Set the basin on the blaze burner and a powered mechanical mixer above the basin. Drop in a copper ingot and a zinc ingot, and the heated mix makes a brass ingot."]
 	quest.62816651A924C812.title: "Brass"
+	quest.62A02766765D3111.quest_desc: ["Copper ingots, paper and string: the first spell book. Equip it, and the spells written into it can be cast. Tick the box once you have one."]
+	quest.62A02766765D3111.title: "Flimsy Journal"
 	quest.62A51E3D268B1BC4.quest_desc: ["Fences and wood. Feed it compostable scraps and it fills with worms, the bait that makes fish bite sooner."]
 	quest.62A51E3D268B1BC4.title: "Worm Farm"
+	quest.62DDC33A69B7A00D.quest_desc: ["Arcane sheets, the pump, a casing and an item drain on a mechanical crafter. It draws mana out of players, spells and mobs as a fluid, and a crystalline block above a full siphon grows arcane essence."]
+	quest.62DDC33A69B7A00D.title: "Mana Siphon"
 	quest.63CEA192232460B3.quest_desc: ["Three brass sheets, an andesite alloy, a precision mechanism and a brass casing make a mechanical arm. It picks items up from one place and puts them down in another, within reach of where it stands."]
 	quest.63CEA192232460B3.title: "Mechanical Arm"
 	quest.644F74B4BB9B121C.quest_desc: ["Four andesite alloy. On a heated basin it melts metal for casting: cast iron ingots, pressed from iron and coal in a heated basin, melt into molten cast iron."]
@@ -475,10 +576,16 @@
 	quest.67C2B4683080812F.title: "Enchanting Template"
 	quest.680A7675FC6D91EF.quest_desc: ["Two blocks of iron and five iron ingots. It's the bit a drilling machine runs; diamond and netherite drills last longer."]
 	quest.680A7675FC6D91EF.title: "Iron Drill"
+	quest.681276267D02967B.quest_desc: ["The Mage's Spell Book with ender pearls, emeralds, a totem of undying, a nether star and the Chimera's Wilden Tribute. It reaches the third and last tier of glyphs."]
+	quest.681276267D02967B.title: "Archmage Spell Book"
 	quest.68A09A80BDA54D21.quest_desc: ["Cast two barrels, a chamber and a sliding breech, and bore each one; the breech then takes its breechblock. Most cast cannon blocks break into scrap without Silk Touch, so move a finished cannon whole."]
 	quest.68A09A80BDA54D21.title: "Cast Iron Cannon"
 	quest.695BCB07EED54A55.quest_desc: ["Upgrades start from an upgrade base: sticks, emeralds, a honey treat and a diamond. Speed cuts the time bees spend in the hive and speeds up machines; Productivity, which takes draconic chunks, raises a hive's output and a centrifuge's rate."]
 	quest.695BCB07EED54A55.title: "Speed Upgrade"
+	quest.69B8EC6B3743076E.quest_desc: ["The Dominion Wand is made at the Enchanting Apparatus, a Source Relay at the crafting table. Use the wand on a jar, then on a relay, and the relay pulls Source from it; relays pass it on to other relays and jars."]
+	quest.69B8EC6B3743076E.title: "Moving Source"
+	quest.6A821D09F9D65F31.quest_desc: ["Ars Creo's wheel: a Starbuncle Charm and a water wheel. It makes rotational force for Create, faster with a gold block in front of it."]
+	quest.6A821D09F9D65F31.title: "Starbuncle Wheel"
 	quest.6A91EBF992B96D9C.quest_desc: ["Five buttons and an iron hook. Hang it on a wall and mount your best catch."]
 	quest.6A91EBF992B96D9C.title: "Fish Mount"
 	quest.6AEAF22FB861C585.quest_desc: ["Iron, a rose bush and a BaBee upgrade. With two caged bees and empty cages, it breeds bees for you; which bees breed into which is in each bee's info."]
@@ -505,12 +612,16 @@
 	quest.6ED955A757045B19.title: "Precision Mechanism"
 	quest.6EDFD65CE85B2DEF.quest_desc: ["Coal goes in from any side, and coal coke drops out after a while. Carbon dioxide comes out of the top and creosote from the other sides."]
 	quest.6EDFD65CE85B2DEF.title: "Coal Coke"
+	quest.6EED6889E0466CF9.quest_desc: ["A seashelf infused at a table with at least 45 eterna, 15 quanta and 10 arcana."]
+	quest.6EED6889E0466CF9.title: "Infused Seashelf"
 	quest.6F16E7B4BD7E8FD8.quest_desc: ["A sturdy sheet and paper make four train schedules. Write in where to go and when to leave, then give it to the train's conductor and the train drives itself."]
 	quest.6F16E7B4BD7E8FD8.title: "Train Schedule"
 	quest.6F7969F9EBB25C6A.quest_desc: ["A shaft, an andesite casing and a block of iron make a mechanical press. It presses ingots into sheets."]
 	quest.6F7969F9EBB25C6A.title: "Mechanical Press"
 	quest.7005D32BEDEA332C.quest_desc: ["A golden sheet, an andesite alloy and a block of copper make a steam engine. Put it on the side of a fluid tank with blaze burners under the tank and water pumped in, and the tank becomes a boiler; the engine turns a shaft in front of it. More tanks, more heat and more engines make more power."]
 	quest.7005D32BEDEA332C.title: "Steam Engine"
+	quest.708DE29A1933F201.quest_desc: ["Source gems, gold ingots and a lava bucket. It burns fuel for Source, more for archwood logs, and fills the jars around it. The other sourcelinks feed on crop growth, food, mob deaths or potions."]
+	quest.708DE29A1933F201.title: "Volcanic Sourcelink"
 	quest.7106786BEB894002.quest_desc: ["Eight blaze rods and a nether brick. Its heat runs from embers to a live flame, white-hot and blazing, and it cooks to match: smoking, campfire cooking, smelting and baking."]
 	quest.7106786BEB894002.title: "Blazier"
 	quest.73E001A7DEEAC194.quest_desc: ["Four iron ingots, a block of cardboard and two redstone dust make a packager. It boxes the contents of the inventory behind it into packages, each addressed to where it should go."]
@@ -523,6 +634,8 @@
 	quest.74D5C9F3EA02990E.title: "Cannon Builder"
 	quest.74F0FEDB7C5FDA76.quest_desc: ["Iron nuggets around a block of redstone make two. Place them around the coil: the stronger the magnets, the more of the rotation becomes electricity, and the more stress the coil takes."]
 	quest.74F0FEDB7C5FDA76.title: "Redstone Magnet"
+	quest.750A1A964F418DF1.quest_desc: ["Chains, leather and paper. A sturdier book with room for more spells. Tick the box once you have one."]
+	quest.750A1A964F418DF1.title: "Ironbound Tome"
 	quest.75C52F7F20D35941.quest_desc: ["Two iron, two string and a stick. Aquaculture's rods hold a hook, bait, a fishing line and a bobber, and each one changes how the rod fishes."]
 	quest.75C52F7F20D35941.title: "Iron Fishing Rod"
 	quest.7634101950E16F0B.quest_desc: ["A copper casing, a dried kelp block and a copper sheet make a hose pulley. It lowers a hose into a lake or a pool of lava and drains it, or fills one; a big enough body of water never runs out."]
@@ -531,6 +644,8 @@
 	quest.76C1818AB31349DC.title: "Elevator Pulley"
 	quest.76F6310F407E471C.quest_desc: ["Four andesite alloy, two iron sheets and an andesite casing make a mechanical harvester, and three iron sheets, three andesite alloy and an andesite casing a mechanical plough. Moving over a field, one reaps ripe crops and replants them, and the other tills the ground."]
 	quest.76F6310F407E471C.title: "Harvester and Plough"
+	quest.77BC20BC33378845.quest_desc: ["A blaze burner assembled with a shriving stone, an arcane ingot, an arcane rune and mana. Give it a scroll and superheat it, and it casts the scroll's spell on its own, paying in mana."]
+	quest.77BC20BC33378845.title: "Blaze Caster"
 	quest.77C919C0D8A0972C.quest_desc: ["Four andesite casings and a large cogwheel make two chain conveyors. Link them with chains and the chains carry rotation, and packages, between them over any distance."]
 	quest.77C919C0D8A0972C.title: "Chain Conveyor"
 	quest.780CAE0E4D843A83.quest_desc: ["The mechanical crafters make a potato cannon from fluid pipes, copper, an andesite alloy and a precision mechanism. It fires crops, and a few of them do more than bounce."]
@@ -543,6 +658,8 @@
 	quest.797E46E3D3BC28A1.title: "Nuclear Reactor"
 	quest.799FFB79754D33F8.quest_desc: ["An eye of ender, an amethyst shard, redstone ore and sticks. Use it to find the ore veins under the ground near you; the Ore Vein Atlas keeps track of the ones you've found."]
 	quest.799FFB79754D33F8.title: "Ore Vein Finder"
+	quest.79AB7049D387D3BF.quest_desc: ["A Ring of Potential (iron nuggets and a source gem) with diamonds, ender pearls and source gems at the apparatus. It adds a little mana and regeneration, and makes every spell cheaper to cast."]
+	quest.79AB7049D387D3BF.title: "Ring of Lesser Discount"
 	quest.79C16CA564983056.quest_desc: ["Shows the chunks around it in a 5 by 5 grid; the ones with an oil deposit glow. Dig down where it points."]
 	quest.79C16CA564983056.title: "Surface Scanner"
 	quest.79DFF370FD992E55.quest_desc: ["A zinc sheet, a copper sheet and a redstone torch. Most electric machines take one or two."]
@@ -572,6 +689,8 @@
 	quest.7E29C2D7F06EBDD2.title: "Empty Blaze Burner"
 	quest.7E8D002E58D5A9FF.quest_desc: ["A wooden slab, an andesite casing and a cogwheel make a gantry carriage, and two andesite alloy and a redstone dust make eight gantry shafts. The carriage rides along a turning shaft, carrying its contraption with it."]
 	quest.7E8D002E58D5A9FF.title: "Gantry"
+	quest.7EF51364E83D93C2.quest_desc: ["Arcane sheets and an arcane ingot make four. Mana leaks quickly out of any pipe that isn't insulated with arcane material, so mana goes through these."]
+	quest.7EF51364E83D93C2.title: "Arcane Pipes"
 	quest.7FC823D7C99801FE.quest_desc: ["Iron, a chest and a block of iron. It holds a rod with its hooks, bait, lines and bobbers."]
 	quest.7FC823D7C99801FE.title: "Tackle Box"
 }

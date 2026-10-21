@@ -1,0 +1,141 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_wizardry"
+	group: "5F1D36673C78B4B6"
+	icon: {
+		id: "create_wizardry:channeler"
+	}
+	id: "767A5A787F1AC863"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0B0102F4B04D8008"]
+			id: "05CEA6A594FB5030"
+			rewards: [{
+				id: "03251F4DD59C3613"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "402199B029BE5772"
+				item: { count: 1, id: "create_wizardry:arcane_casing" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05CEA6A594FB5030"]
+			id: "5D9C9B3B0612CDBF"
+			rewards: [{
+				id: "4F1BFF96B4453DA2"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 8L
+				id: "1B8168CCF82F19B8"
+				item: { count: 1, id: "create_wizardry:arcane_sheet" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D9C9B3B0612CDBF"]
+			id: "7EF51364E83D93C2"
+			rewards: [{
+				id: "42047BE4CF060D95"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 8L
+				id: "2AD1C42DE8239733"
+				item: { count: 1, id: "create_wizardry:arcane_pipe" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7EF51364E83D93C2"]
+			id: "0F78D7404B6233D8"
+			rewards: [{
+				id: "6F4203F739078A32"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "64751792FD1E5D6B"
+				item: { count: 1, id: "create_wizardry:arcane_pump" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F78D7404B6233D8"]
+			id: "62DDC33A69B7A00D"
+			rewards: [
+				{
+					id: "29E9DB99E46C46A7"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "2418CA4376D00C30"
+					item: {
+						count: 1
+						id: "irons_spellbooks:arcane_essence"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2F3EA5C423C4D39D"
+				item: { count: 1, id: "create_wizardry:mana_siphon" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["62DDC33A69B7A00D"]
+			id: "77BC20BC33378845"
+			rewards: [{
+				id: "6A16A20B49800222"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "3B6FBFA9CE61DBFB"
+				item: { count: 1, id: "create_wizardry:blaze_caster" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["62DDC33A69B7A00D"]
+			id: "3F33CD73F5C47DCF"
+			rewards: [{
+				id: "414F0E1FD7BD88CD"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6D2BD2BCE471AFE8"
+				item: { count: 1, id: "create_wizardry:channeler" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+	]
+}
