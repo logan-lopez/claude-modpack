@@ -86,6 +86,30 @@ Four more Create chapters follow, each locked until a quest in the first two:
   fuzed high explosive shells and a quick-firing breech, then the cannon builder and welder, and
   nethersteel.
 
+**Food and Farming**, the sixth group:
+
+- **Farmer's Delight**, 18 quests, open from the start: the flint knife and cutting board, the
+  four wild crops, straw, canvas, organic compost and rich soil, the stove and skillet, then the
+  cooking pot (a side root, open at once), cooked rice, beef stew and smoked ham for the honey
+  glazed ham feast. Cooking for Blockheads' recipe book and a kitchen of cooking table, counter
+  and fridge follow the pot; Farming for Blockheads' market and fertilizers are a branch of their
+  own.
+- **More Delights**, 14 quests, after the cooking pot: a box to tick that opens one branch per
+  addon, My Nether's Delight's hoglin stew, blazier, nether stove and leteos compost, Ocean's
+  Delight's squid rings and guardian soup, Aquaculture Delight's fish and chips and halibut,
+  Alex's Mobs Delight's lobster bisque, and End's Delight's chorus grain, end stone knife and the
+  end stove.
+- **Create: Kitchen**, 13 quests, after the mechanical mixer: Slice and Dice's slicer and
+  sprinkler and meals cooked in a heated basin, Create Confectionery's cocoa, chocolate, hot
+  chocolate, marshmallows, candy canes and gingerbread, and Create: Winery's wine cellar for cider
+  and Bordeaux.
+- **Aquaculture**, 13 quests, open from the start: the iron fishing rod, line, bobber and hooks,
+  the worm farm (a side root), the tackle box, the fillet knife and cooked fillets, a fish mount,
+  the diamond rod, and neptunium from Neptune's Bounty.
+- **Productive Bees**, 12 quests, open from the start: the advanced beehive and expansion box,
+  bee cages, honey treats, the feeding slab, the incubator and breeding chamber, a speed upgrade,
+  the bottler and honey generator, and the centrifuge and powered centrifuge.
+
 The rest of the book is planned in minecraft-mcp's
 [outline](../../../minecraft-mcp/docs/design/quest-book.md): its groups, chapters and the order
 they're drafted in.

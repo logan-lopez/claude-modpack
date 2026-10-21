@@ -1,0 +1,231 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_kitchen"
+	group: "01D4CAF8434CE6E3"
+	icon: {
+		id: "create_winery:bordeaux"
+	}
+	id: "3B4294989B442542"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4344E26953141519"]
+			id: "6E3D0D2EA1E2CA79"
+			rewards: [{
+				id: "3A4C59BA10F882B6"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "080A86E6E424EA11"
+				item: { count: 1, id: "sliceanddice:slicer" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E3D0D2EA1E2CA79"]
+			id: "5906D50189533688"
+			rewards: [{
+				id: "252636D2DC67EBE7"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 8L
+				id: "4DC31FB04B8164BC"
+				item: { count: 1, id: "farmersdelight:vegetable_soup" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6E3D0D2EA1E2CA79"]
+			id: "2A994F9F5FE41D1A"
+			rewards: [{
+				id: "2999464058380635"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "608998CCAFB0FB93"
+				item: { count: 1, id: "sliceanddice:sprinkler" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6E3D0D2EA1E2CA79"]
+			id: "1C800E1A530AED38"
+			rewards: [{
+				id: "7862D46B73F955DE"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "23473A80BA87AAE6"
+				item: { count: 1, id: "create_confectionery:cocoa_powder" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C800E1A530AED38"]
+			id: "2B4A4B050D0ABEF5"
+			rewards: [{
+				id: "6017FDA3A2434155"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "7C180F18055A2528"
+				item: { count: 1, id: "create_confectionery:bar_of_black_chocolate" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C800E1A530AED38"]
+			id: "5E395A684288100D"
+			rewards: [{
+				id: "729C16CCFAF2F27F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				count: 2L
+				id: "726B7FD3FB2554AD"
+				item: { count: 1, id: "create_confectionery:hot_chocolate_bottle" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6E3D0D2EA1E2CA79"]
+			id: "2DA6D02307D9BB90"
+			rewards: [{
+				id: "191A91EB474ABEAE"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 8L
+				id: "40793CB9E5D69C6B"
+				item: { count: 1, id: "create_confectionery:marshmallow" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2DA6D02307D9BB90"]
+			id: "514BD1F485694ACB"
+			rewards: [{
+				id: "5708154D41BA3250"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "086A60B3C8CB893C"
+				item: { count: 1, id: "create_confectionery:chocolate_glazed_marshmallow" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6E3D0D2EA1E2CA79"]
+			id: "5C32E948EEE03D98"
+			rewards: [{
+				id: "33E59639A2534922"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "1D24681FDACE52FF"
+				item: { count: 1, id: "create_confectionery:candy_cane" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6E3D0D2EA1E2CA79"]
+			id: "075DE9AB03FE7CD7"
+			rewards: [{
+				id: "61AAA7C426D06420"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "57CA26C373878436"
+				item: { count: 1, id: "create_confectionery:gingerbread" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6E3D0D2EA1E2CA79"]
+			id: "4B0F1278608B561F"
+			rewards: [{
+				id: "0C9B933E7F300906"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "2050B41AB1BF7381"
+				item: { count: 1, id: "create_winery:wine_cellar" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["4B0F1278608B561F"]
+			id: "1A39575D180D1E5E"
+			rewards: [{
+				id: "32F2543C888D3CC2"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6AC9B9952B0AE592"
+				item: { count: 1, id: "create_winery:cider" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4B0F1278608B561F"]
+			id: "32259CD68BAF70F0"
+			rewards: [{
+				id: "70FBEEC6226BF210"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "47D2C4FA7DB9AB9C"
+				item: { count: 1, id: "create_winery:bordeaux" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+	]
+}

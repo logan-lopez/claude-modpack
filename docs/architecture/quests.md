@@ -24,8 +24,8 @@ pack/config/ftbquests/quests/
   lang/en_us.snbt            every title and description, keyed by object ID
 ```
 
-It holds fifteen chapters in five groups, Getting Started, Create, Industry, Space and Combat and
-Gear, and nothing in the default group. `chapters/getting_started.snbt` is the sample, alone in Getting Started:
+It holds twenty chapters in six groups, Getting Started, Create, Industry, Space, Combat and Gear
+and Food and Farming, and nothing in the default group. `chapters/getting_started.snbt` is the sample, alone in Getting Started:
 three quests in a chain (a crafting table, Create's andesite alloy, a Create shaft), one item task
 each, a dependency on the one before, laid out left to right at `x` 0, 2 and 4, and a 100 XP
 reward on the last. It's the format reference, not content. `chapters/create_basics.snbt`
@@ -42,7 +42,11 @@ holds six, `order_index` 0 to 5: `create_electricity` (14 quests) and `create_mo
 `create_fluids`' mechanical pump, `create_enchantment_industry` (8), from its spout, `tfmg_oil`
 (12), from `tfmg_steel`'s steel ingot, and `create_new_age` (17), from the mechanical crafters.
 Space holds `ad_astra_liftoff` (13), from the steel ingot, and Combat and Gear holds
-`create_big_cannons` (14), from `create_fluids`' fluid tank. The same rule holds. Every chapter but the sample was drafted and written by minecraft-mcp, which is where real chapters come from, against its
+`create_big_cannons` (14), from `create_fluids`' fluid tank. Food and Farming holds five,
+`order_index` 0 to 4: `farmers_delight` (18 quests), `aquaculture` (13) and `productive_bees`
+(12), open from the start, `more_delights` (14), from `farmers_delight`'s cooking pot, and
+`create_kitchen` (13), from `create_basics`' mechanical mixer. The same rule holds; the three with
+no entry have more than one quest with no dependencies. Every chapter but the sample was drafted and written by minecraft-mcp, which is where real chapters come from, against its
 [outline of the whole book](../../../minecraft-mcp/docs/design/quest-book.md).
 
 `data.snbt` is the file FTB Quests wrote itself for a book with no `data.snbt`, so it holds its

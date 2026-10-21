@@ -6,11 +6,15 @@ hash = "fd52d588f0a2f9407c82362d47ee71b12fb5baacb113f7dc7de4282caf2f930d"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "f311ae497d6ee7bd11821b1f55879539aebefb2078d0ec60ad015ba63d47b6c7"
+hash = "b6bbe0b49442709c0b2b9f02e3583afe6a971c745dcdabf06769f22d5ace2612"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ad_astra_liftoff.snbt"
 hash = "f7484292cff62768e6c10b6bab6aafe9888865c7eef083483c689cbf42601565"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/aquaculture.snbt"
+hash = "85a44562666801ae73007a951f1061cae59d886ddac7ab4d907cf0c6bd8f8d34"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_basics.snbt"
@@ -41,6 +45,10 @@ file = "config/ftbquests/quests/chapters/create_fluids.snbt"
 hash = "053069d2f6f36971b364080f57001e2c01e469d1289a889069efc92ffd632e9b"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/create_kitchen.snbt"
+hash = "fbd2e263cdd97126f7ebc99e463f7a17c923fa6bfe00d987ec3edceccb67a7bb"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/create_logistics.snbt"
 hash = "7e73e49efffecd614b710c929d09a8ca11a7b77ee0f5042830dd163be2313fe1"
 
@@ -57,8 +65,20 @@ file = "config/ftbquests/quests/chapters/create_trains.snbt"
 hash = "bf65acb5078583e4ae94c91c9c6748af0e2f1d4f9db5edcad1d9ff3c8ed78866"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/farmers_delight.snbt"
+hash = "f476f4bb5f8046708c15608bc35cb7d07c845081043d89e3f21253df0b63ff25"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/getting_started.snbt"
 hash = "9648e02b577b93c9da718d1f2460a3d68a607c32d6d2cf39783688d03fa7d684"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/more_delights.snbt"
+hash = "88b96e717eb85cefc2d6bf671881ee26d47ab0476f9cd11e438af32c711b891b"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/productive_bees.snbt"
+hash = "d8ce6a5e015915daca3aebda5491d71cdf45d6104193a9c0aefd147b532c1042"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tfmg_oil.snbt"
@@ -74,7 +94,7 @@ hash = "da77e416b557850f5cb1ab68d71de78f9fbc3cf3845e50cdb4dba3a8164f6e7f"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "4af58c50322eb2ccb92d92045e051bf095489fac7aa2fd2344a881df6e81ecbb"
+hash = "5c205eb0b1e6a93f432ea17df58151b28684b0ed8bcf3c4558123d5fa94c4efc"
 
 [[files]]
 file = "kubejs/data/ad_astra/tags/fluid/fuel.json"

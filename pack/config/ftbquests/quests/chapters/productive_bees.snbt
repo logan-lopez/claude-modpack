@@ -1,0 +1,208 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "productive_bees"
+	group: "01D4CAF8434CE6E3"
+	icon: {
+		id: "productivebees:powered_centrifuge"
+	}
+	id: "7E2AA7B1C3287E01"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "521803A908C4BFE3"
+			rewards: [{
+				id: "59529E008F37C27B"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "3DB67E7F244220C1"
+				item: { count: 1, id: "productivebees:advanced_oak_beehive" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["521803A908C4BFE3"]
+			id: "795E2270536A9542"
+			rewards: [{
+				id: "3D98AF58FB41D232"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "5FB96C4C2AFDBE9F"
+				item: { count: 1, id: "productivebees:expansion_box_oak" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["521803A908C4BFE3"]
+			id: "62317A2926E76B27"
+			rewards: [{
+				id: "4D4EC74A3133A201"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "351E2AC9C9F747A4"
+				item: { count: 1, id: "productivebees:bee_cage" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["521803A908C4BFE3"]
+			id: "5993625E2D28292A"
+			rewards: [{
+				id: "1F31442B588BFC45"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "6099386A95861BA2"
+				item: { count: 1, id: "productivebees:honey_treat" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["521803A908C4BFE3"]
+			id: "7DC27D945DE68ECA"
+			rewards: [{
+				id: "12F3FF1B2F822E1B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B9B52EDFDFDF0E5"
+				item: { count: 1, id: "productivebees:feeder" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["521803A908C4BFE3"]
+			id: "524C21F9F93613CD"
+			rewards: [{
+				id: "481BA075037A347B"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "2BF020782B6AD5CF"
+				item: { count: 1, id: "productivebees:incubator" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5993625E2D28292A"]
+			id: "6AEAF22FB861C585"
+			rewards: [{
+				id: "52BC51A40687F9DC"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "13983EAA3CA6083B"
+				item: { count: 1, id: "productivebees:breeding_chamber" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["5993625E2D28292A"]
+			id: "695BCB07EED54A55"
+			rewards: [{
+				id: "70D4FA8A134F2725"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "262B02AC1D1342BA"
+				item: { count: 1, id: "productivelib:upgrade_time" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["521803A908C4BFE3"]
+			id: "59A7A2DB52B40D40"
+			rewards: [{
+				id: "57E379E5E6A80EA9"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "6A5906A9540B135A"
+				item: { count: 1, id: "productivebees:bottler" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["521803A908C4BFE3"]
+			id: "31597E1ECB363882"
+			rewards: [{
+				id: "12893B4D71C1D687"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "6FAB8422D2EB113A"
+				item: { count: 1, id: "productivebees:honey_generator" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["521803A908C4BFE3"]
+			id: "5D034C394DBF179E"
+			rewards: [{
+				id: "7375F226B6982546"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "75028E9493CC492F"
+				item: { count: 1, id: "productivebees:centrifuge" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D034C394DBF179E"]
+			id: "1958706F267D3E8E"
+			rewards: [{
+				id: "5D7EF05427646C56"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0B844AF77699E177"
+				item: { count: 1, id: "productivebees:powered_centrifuge" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+	]
+}

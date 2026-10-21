@@ -1,0 +1,236 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "aquaculture"
+	group: "01D4CAF8434CE6E3"
+	icon: {
+		id: "aquaculture:neptunium_ingot"
+	}
+	id: "183DE125B39604C0"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "75C52F7F20D35941"
+			rewards: [{
+				id: "44D4E91D94FBED55"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "6575A48532A02E4C"
+				item: { count: 1, id: "aquaculture:iron_fishing_rod" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75C52F7F20D35941"]
+			id: "02272EBBF77AEAC1"
+			rewards: [{
+				id: "14E2425D00EAA40C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "58E30BCA02899411"
+				item: { count: 1, id: "aquaculture:fishing_line" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["75C52F7F20D35941"]
+			id: "6CDB55CCAB4ED5CB"
+			rewards: [{
+				id: "0707694BC6ACCD2F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1978A6C40CB57942"
+				item: { count: 1, id: "aquaculture:bobber" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["75C52F7F20D35941"]
+			id: "7A08E657D5CA98F7"
+			rewards: [{
+				id: "6213989CBBC54CEB"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 2L
+				id: "00EFEF7AD79FBE81"
+				item: { count: 1, id: "aquaculture:iron_hook" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A08E657D5CA98F7"]
+			id: "0DB3CEDF139BC729"
+			rewards: [{
+				id: "0F57F9EEFA692BF0"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					id: "6AFA9AB508A85C66"
+					item: { count: 1, id: "aquaculture:double_hook" }
+					type: "item"
+				}
+				{
+					id: "0BD4F16519434146"
+					item: { count: 1, id: "aquaculture:redstone_hook" }
+					type: "item"
+				}
+				{
+					id: "711D8293FC761288"
+					item: { count: 1, id: "aquaculture:note_hook" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A08E657D5CA98F7"]
+			id: "616EAC16C96FC0B2"
+			rewards: [{
+				id: "1C3BFBCE7598DEE5"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "703A2603F685B57A"
+				item: { count: 1, id: "aquaculture:gold_hook" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			id: "62A51E3D268B1BC4"
+			rewards: [{
+				id: "662D0452CEFFB9F0"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "63FBE5A8D5E83E2C"
+				item: { count: 1, id: "aquaculture:worm_farm" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["75C52F7F20D35941"]
+			id: "7FC823D7C99801FE"
+			rewards: [{
+				id: "4F9CF4DDC81EA080"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "0C1499655D138838"
+				item: { count: 1, id: "aquaculture:tackle_box" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["75C52F7F20D35941"]
+			id: "2B3E9EA3CA32E298"
+			rewards: [{
+				id: "59E4F09009590F04"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "36E2C401DCBFB08A"
+				item: { count: 1, id: "aquaculture:iron_fillet_knife" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2B3E9EA3CA32E298"]
+			id: "4E032225DAD42979"
+			rewards: [{
+				id: "57DA240ACF9E9151"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 8L
+				id: "1DFAF26EA26C350A"
+				item: { count: 1, id: "aquaculture:fish_fillet_cooked" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A08E657D5CA98F7"]
+			id: "6A91EBF992B96D9C"
+			rewards: [{
+				id: "70CE6D410F41C1EC"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "5517610F0DFF1673"
+				item: { count: 1, id: "aquaculture:oak_fish_mount" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["75C52F7F20D35941"]
+			id: "142EA203BB462043"
+			rewards: [{
+				id: "697AD3D91F57F710"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "7F92E783CC7B7939"
+				item: { count: 1, id: "aquaculture:diamond_fishing_rod" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["142EA203BB462043"]
+			id: "5D38DBB64406601F"
+			rewards: [{
+				id: "2C2DDDD4B0919F5C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				count: 4L
+				id: "5E791DB381A4E8AB"
+				item: { count: 1, id: "aquaculture:neptunium_ingot" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+	]
+}

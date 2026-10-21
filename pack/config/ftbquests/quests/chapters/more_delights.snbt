@@ -1,0 +1,241 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "more_delights"
+	group: "01D4CAF8434CE6E3"
+	icon: {
+		id: "ends_delight:end_stove"
+	}
+	id: "298422B399CAA56B"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2EC24750F1A6E051"]
+			id: "6CEF21A6E88DE0B4"
+			rewards: [{
+				id: "774B5338086805F0"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "12B171BB365858BE"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CEF21A6E88DE0B4"]
+			id: "4623CEED0643A2A0"
+			rewards: [{
+				id: "271D3EE7A81DCEC1"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3C15406DAFDD473E"
+				item: { count: 1, id: "mynethersdelight:spicy_hoglin_stew" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6CEF21A6E88DE0B4"]
+			id: "7106786BEB894002"
+			rewards: [{
+				id: "06FE7C759231F62E"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "064462BF94A5824E"
+				item: { count: 1, id: "mynethersdelight:blazier" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7106786BEB894002"]
+			id: "0F0D4205866FF14D"
+			rewards: [{
+				id: "778733838A925D15"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "58E54EA29C8889FC"
+				item: { count: 1, id: "mynethersdelight:nether_bricks_stove" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CEF21A6E88DE0B4"]
+			id: "6C1F25D584FCC12A"
+			rewards: [{
+				id: "2CED38ED3DFAE250"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "0FC7DE344A478ED5"
+				item: { count: 1, id: "mynethersdelight:letios_compost" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6CEF21A6E88DE0B4"]
+			id: "36C11FA792F77331"
+			rewards: [{
+				id: "66300418C4E399F3"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 3L
+				id: "2E7B1F51981C8095"
+				item: { count: 1, id: "oceansdelight:cut_tentacles" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["36C11FA792F77331"]
+			id: "25FE4152DE215902"
+			rewards: [{
+				id: "1FB2A2725D209CAB"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3D4329EF73C4D534"
+				item: { count: 1, id: "oceansdelight:squid_rings" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6CEF21A6E88DE0B4"]
+			id: "3A1CC98B34459587"
+			rewards: [{
+				id: "04E06A0FAB867197"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1126F997D1A98241"
+				item: { count: 1, id: "oceansdelight:guardian_soup" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6CEF21A6E88DE0B4"]
+			id: "46E2F1F40DEBEFCD"
+			rewards: [{
+				id: "2E98FF8B13E4E99F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3C8F06BD70842761"
+				item: { count: 1, id: "aquaculturedelight:fish_and_chips" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6CEF21A6E88DE0B4"]
+			id: "112EAAE8696F55A8"
+			rewards: [{
+				id: "3C2B9FB507E2807F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "26282023C2CE1CAD"
+				item: { count: 1, id: "aquaculturedelight:halibut_with_tartar_sauce" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["6CEF21A6E88DE0B4"]
+			id: "2755B91BF7351A20"
+			rewards: [{
+				id: "7BE5D60E63F29278"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "00B4C742EF35C2BC"
+				item: { count: 1, id: "amcdelight:lobster_bisque" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6CEF21A6E88DE0B4"]
+			id: "2F7E1B53608FC57B"
+			rewards: [{
+				id: "79C2C5371F0374DC"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "62A9D31E6F49CEC5"
+				item: { count: 1, id: "ends_delight:chorus_fruit_grain" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6CEF21A6E88DE0B4"]
+			id: "1A1B01133C6E0D63"
+			rewards: [{
+				id: "60EB624A4540555A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "041CA84861FE2E52"
+				item: { count: 1, id: "ends_delight:end_stone_knife" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1A1B01133C6E0D63"]
+			id: "271C58BD203F0D96"
+			rewards: [{
+				id: "5CD0B26CFE5B42B0"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "777F20A56B26D2D3"
+				item: { count: 1, id: "ends_delight:end_stove" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+	]
+}
